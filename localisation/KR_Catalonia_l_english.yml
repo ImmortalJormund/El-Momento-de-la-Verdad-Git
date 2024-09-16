@@ -1,0 +1,100 @@
+﻿l_english:
+
+### Parties ###
+CAT_totalist_party:0 "BOC"
+CAT_totalist_party_long:0 "Bloque Obrero y Campesino"
+CAT_syndicalist_party:0 "CNT"
+CAT_syndicalist_party_long:0 "Confederació Nacional del Treball"
+CAT_radical_socialist_party:0 "PSUC"
+CAT_radical_socialist_party_long:0 "Partit Socialista Unificat de Catalunya"
+CAT_social_democrat_party:0 "ERC"
+CAT_social_democrat_party_long:0 "Esquerra Republicana de Catalunya" 
+CAT_social_liberal_party:0 "ACR"
+CAT_social_liberal_party_long:0 "Acció Catalana Republicana"
+CAT_market_liberal_party:0 "UDC"
+CAT_market_liberal_party_long:0 "Unió Democràtica de Catalunya"
+CAT_social_conservative_party:0 "LC"
+CAT_social_conservative_party_long:0 "Lliga Catalana"
+CAT_authoritarian_democrat_party:0 "PSM"
+CAT_authoritarian_democrat_party_long:0 "Partido Socialista Monárquico Alfonso XIII"
+CAT_paternal_autocrat_party:0 "Exèrcit Popular de Catalunya"
+CAT_paternal_autocrat_party_long:0 "Exèrcit Popular de Catalunya"
+CAT_national_populist_party:0 "NS"
+CAT_national_populist_party_long:0 "Nosaltres Sols!"
+
+### Country Names ###
+CAT_totalist:0 "Catalonia"
+CAT_totalist_ADJ:0 "Catalan"
+CAT_totalist_DEF:0 "Catalonia"
+CAT_syndicalist:0 "Catalonia"
+CAT_syndicalist_ADJ:0 "Catalan"
+CAT_syndicalist_DEF:0 "Catalonia"
+CAT_radical_socialist:0 "Catalonia"
+CAT_radical_socialist_ADJ:0 "Catalan"
+CAT_radical_socialist_DEF:0 "Catalonia"
+CAT_social_democrat:0 "Catalonia"
+CAT_social_democrat_ADJ:0 "Catalan"
+CAT_social_democrat_DEF:0 "Catalonia"
+CAT_social_liberal:0 "Catalonia"
+CAT_social_liberal_ADJ:0 "Catalan"
+CAT_social_liberal_DEF:0 "Catalonia"
+CAT_market_liberal:0 "Catalonia"
+CAT_market_liberal_ADJ:0 "Catalan"
+CAT_market_liberal_DEF:0 "Catalonia"
+CAT_social_conservative:0 "Catalonia"
+CAT_social_conservative_ADJ:0 "Catalan"
+CAT_social_conservative_DEF:0 "Catalonia"
+CAT_authoritarian_democrat:0 "Catalonia"
+CAT_authoritarian_democrat_ADJ:0 "Catalan"
+CAT_authoritarian_democrat_DEF:0 "Catalonia"
+CAT_paternal_autocrat:0 "Catalonia"
+CAT_paternal_autocrat_ADJ:0 "Catalan"
+CAT_paternal_autocrat_DEF:0 "Catalonia"
+CAT_national_populist:0 "Catalonia"
+CAT_national_populist_ADJ:0 "Catalan"
+CAT_national_populist_DEF:0 "Catalonia"
+
+### Focuses ###
+CAT_focus:0 "Catalan Focus Tree"
+
+CAT_Independence:0 "Som i Serem Gent Catalana!"
+CAT_Independence_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."
+
+CAT_Set_up_Comissio_Industries_de_Guerra:0 "Creation of Comissió d'Indústries de Guerra"
+CAT_Set_up_Comissio_Industries_de_Guerra_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."
+
+CAT_Tiznaos_Take_to_the_Streets:0 "Tiznaos Roll to the Streets"
+CAT_Tiznaos_Take_to_the_Streets_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."
+
+CAT_Reconcile_with_Batet:0 "Catalanize the Local Officers"
+CAT_Reconcile_with_Batet_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."
+
+CAT_Arm_the_Segadors:0 "Els Segadors Spill Spanish Blood Once More"
+CAT_Arm_the_Segadors_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."
+
+CAT_Nosotros_Solos:0 "Recruit the Kingslayers to Our Cause"
+CAT_Nosotros_Solos_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."
+
+CAT_Nosotros_Solos:0 "Recruit the Kingslayers to Our Cause"
+CAT_Nosotros_Solos_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."
+
+CAT_Close_Ranks_with_the_Anarchists:0 "Close Ranks with the Anarchists"
+CAT_Close_Ranks_with_the_Anarchists_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."
+
+CAT_Raise_the_Estelada_High:0 "Homage to Catalonia"
+CAT_Raise_the_Estelada_High_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."
+
+CAT_Mossos_d_Esquadra:0 "Militarize Mossos d’Esquadra"
+CAT_Mossos_d_Esquadra_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."
+
+CAT_Dismiss_Spanish_Sympathizers:0 "Imprison Autonomist Traitors"
+CAT_Dismiss_Spanish_Sympathizers_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."
+
+CAT_Volunteers_From_France:0 "Catalans From Across the Border"
+CAT_Volunteers_From_France_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."
+
+CAT_L_Estaca:0 "L'Estaca"
+CAT_L_Estaca_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."
+
+CAT_Catalonia_Breathes_Free:0 "First Free Breath of Catalonia"
+CAT_Catalonia_Breathes_Free_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."

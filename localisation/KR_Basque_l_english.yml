@@ -1,0 +1,680 @@
+﻿l_english:
+
+### Parties ###
+BAS_totalist_party:0 "EPK"
+BAS_totalist_party_long:0 " Euskadiko Partidu Komunista"
+BAS_syndicalist_party:0 "LKN-IFA"
+BAS_syndicalist_party_long:0 "Lanaren Konfederazio Nazionala-Iberiar Federazio Anarkista"
+BAS_radical_socialist_party:0 "ELA"
+BAS_radical_socialist_party_long:0 "Eusko Langileen Alkartasuna(Basque Workers' Solidarity)"
+BAS_social_democrat_party:0 "EAE"
+BAS_social_democrat_party_long:0 "Euzko Alderdi Jeltzalea (Basque Nationalist Action)" 
+BAS_social_liberal_party:0 "EAE Autonomo"
+BAS_social_liberal_party_long:0 "Euzko Alderdi Jeltzalea Autonomoa (Basque Nationalist Action- Autonomist Faction)"
+BAS_market_liberal_party:0 "EAJ"
+BAS_market_liberal_party_long:0 "Euzko Alderdi Jeltzalea (Basque Nationalist Party)"
+BAS_social_conservative_party:0 "EAJ"
+BAS_social_conservative_party_long:0 "Euzko Alderdi Jeltzalea (Basque Nationalist Party)"
+BAS_authoritarian_democrat_party:0 "EAJ-Aberri"
+BAS_authoritarian_democrat_party_long:0 "Euzko Alderdi Jeltzalea - Aberri (Basque Nationalist Party Aberri Faction)"
+BAS_paternal_autocrat_party:0 "Errekete"
+BAS_paternal_autocrat_party_long:0 "Errekete (Requetés)"
+BAS_national_populist_party:0 "EMB"
+BAS_national_populist_party_long:0 "Euzkadi Mendigoxale Batza"
+
+### Country Names ###
+BAS_totalist:0 "Jacobin Republic of Euskadi"
+BAS_totalist_ADJ:0 "Basque"
+BAS_totalist_DEF:0 "Jacobin Republic of Euskadi"
+BAS_syndicalist:0 "Freed Coastal Territories of Euskadi"
+BAS_syndicalist_ADJ:0 "Basque"
+BAS_syndicalist_DEF:0 "Freed Coastal Territories of Euskadi"
+BAS_radical_socialist:0 "Socialist Union of Euskadi"
+BAS_radical_socialist_ADJ:0 "Basque"
+BAS_radical_socialist_DEF:0 "Socialist Union of Euskadi"
+BAS_social_democrat:0 "Euskadi"
+BAS_social_democrat_ADJ:0 "Basque"
+BAS_social_democrat_DEF:0 "Euskadi"
+BAS_social_liberal:0 "Euskadi"
+BAS_social_liberal_ADJ:0 "Basque"
+BAS_social_liberal_DEF:0 "Euskadi"
+BAS_market_liberal:0 "Euskadi"
+BAS_market_liberal_ADJ:0 "Basque"
+BAS_market_liberal_DEF:0 "Euskadi"
+BAS_social_conservative:0 "Euskadi"
+BAS_social_conservative_ADJ:0 "Basque"
+BAS_social_conservative_DEF:0 "Euskadi"
+BAS_authoritarian_democrat:0 "Independent State of Bizkaia"
+BAS_authoritarian_democrat_ADJ:0 "Basque"
+BAS_authoritarian_democrat_DEF:0 "Independent State of Bizkaia"
+BAS_paternal_autocrat:0 "Kingdom of Navarre"
+BAS_paternal_autocrat_ADJ:0 "Basque"
+BAS_paternal_autocrat_DEF:0 "Kingdom of Navarre"
+BAS_national_populist:0 "Mountaineer Republic of Euskadi"
+BAS_national_populist_ADJ:0 "Basque"
+BAS_national_populist_DEF:0 "Mountaineer Republic of Euskadi"
+
+BAS_EUSKAL_HERRIA:0 "Euskal Herria"
+BAS_EUSKAL_HERRIA_ADJ:0 "Basque"
+BAS_EUSKAL_HERRIA_DEF:0 "Euskal Herria"
+
+BAS_VASCONIA:0 "Vasconia"
+BAS_VASCONIA_ADJ:0 "Vasconian"
+BAS_VASCONIA_DEF:0 "Vasconia"
+
+BAS_Carlist:0 "Iberian Union"
+BAS_Carlist_ADJ:0 "Iberian"
+BAS_Carlist_DEF:0 "Iberian Union"
+
+BAS_Jacobin_Spain:0 "Federal Republic of Spain"
+BAS_Jacobin_Spain_ADJ:0 "Spanish"
+BAS_Jacobin_Spain_DEF:0 "Federal Popular Republic of Spain"
+
+BAS_CHL:0 "Txile-Euskadi"
+BAS_CHL_ADJ:0 "Txile-Euskadian"
+BAS_CHL_DEF:0 "Txile-Euskadi"
+
+BAS_True_Jacobin:0 "Proletarian Commune of Euskadi"
+BAS_True_Jacobin_ADJ:0 "Basque"
+BAS_True_Jacobin_DEF:0 "Proletarian Commune of Euskadi"
+
+BAS_True_Jacobin_1:0 "Proletarian Commune of Euskadi-Frantzia"
+BAS_True_Jacobin_1_ADJ:0 "Basque"
+BAS_True_Jacobin_1_DEF:0 "Proletarian Commune of Euskadi-Frantzia"
+
+### Focuses ###
+Basque_focus:0 "Basque Focus Tree"
+
+BAS_Freedom:0 "Cry of Freedom over Euskadi"
+BAS_Freedom_desc:0 "For as long as any of us remember, the Spanish flag has hung over the lands of Euskadi, keeping Basques chained to their dying empire. When the Republic was proclaimed four years ago, we expected the more liberal Spaniards to honour our customs, but that project was a short-lived and chaotic disaster, and only brought back the harsh military rule that again stomped on our independence. The new king claimed to bring more freedoms to us, but spat in our face with the rejection of the reforms. We have taken matters into our own hands, and while the future is uncertain, Basques have finally removed the shackle of Madrid."
+
+BAS_Utilize_Industry_in_Bilbao:0 "Utilize Industry in Bilbao"
+BAS_Utilize_Industry_in_Bilbao_desc:0 "Bilbao, our largest settlement, has long been a developing city. Its factories and mills churn out products day and night, everything from weapons to ships to civilian goods. The provisional government has decided to enact emergency nationalisation of these factories to supply us with everything we need to stop a potential Spanish invasion into our lands."
+
+BAS_Iron_Ring_of_Bilbao:0 "Iron Ring of Bilbao"
+BAS_Iron_Ring_of_Bilbao_desc:0 "The Iron Ring of Bilbao is a set of fortifications and bunkers around the entire Basque territory that was originally meant to defend our lands from possible Communard invasion, but our government has expanded it secretly for years now in case Spain would ever fall into a situation where we could proclaim independence. While nowhere near complete, these labyrinthine constructions could shelter our soldiers and civilians alike should the enemy over the border seek to threaten our freedom."
+
+BAS_Empty_The_Warehouses:0 "Loot Guns"
+BAS_Empty_The_Warehouses_desc:0 "The Spanish Guardia Civil had many of its troops posted on our lands, and the border with France was manned by some of Spain’s most loyal soldiers. When Alfonso was shot, these troops scrambled for the heartlands of Spain, and only a skeleton crew was left behind to keep us in check, a garrison that we easily defeated when our revolt began. There remains many guns and other weapons in storage, left by the Spaniards, and it would be a sin to leave them to rust in the warehouses. Basque patriots will put them to good use against their former owners."
+
+BAS_Raise_The_Ertzana:0 "Raise the Ertzana"
+BAS_Raise_The_Ertzana_desc:0 "Ertzana is the local police force of Basques hastily established from those native Guardia Asalto and Guardia Civil troops, who were present here when the instability and chaos engulfed Spain. While merely a militia by the standards of national militaries, these policemen are willing to die for our country and must serve as a first line of defence as we create a proper military force."
+
+BAS_Expand_the_Iron_Ring:0 "Expand the Iron Ring"
+BAS_Expand_the_Iron_Ring_desc:0 "The government of Euskadi has seen it fit to utilize volunteer tradesmen gathered from both our main parties of EAJ and EAE but also from the trade union ELA to further extend the Iron ring of Bilbao. We cannot build quite as strong fortifications in this short timespan as the main body of the Iron Ring has, but every bunker and trench helps in this difficult situation."
+
+BAS_The_Great_Enemy_Falters:0 "The Great Enemy Falters!"
+BAS_The_Great_Enemy_Falters_desc:0 "The Spanish, still struggling to keep their bloated carcass of former empire over the water, could have most likely squashed us in direct confrontation initially, but thanks to the emergency measures enacted by our government, we were able to produce strong enough defences to deter our former masters from attacking Euskadi."
+
+BAS_Euzko_Gudariak:0 "Euzko Gudariak"
+BAS_Euzko_Gudariak_desc:0 "The BASut People’s Army was a small force under the command of White General Mikhail Korobeinikov who triumphantly fought the Reds in the waning months of the Russian Civil War. Though long since disbanded, the memory of these brave BASut heroes and their ferocity in the face of a mightier foe is commendable and an example our new armed forces should follow. We shall recreate this YPA and solidify it as the national army of our newly independent state. Under the banner of the BASut People’s Army, our new homeland shall be safe and sovereign forevermore."
+
+BAS_Cover_the_Basics:0 "Contacts with Llama, Star and Ugartechea"
+BAS_Cover_the_Basics_desc:0 "Living out in Siberia has its advantages, but the level of industrialization is not one of them. We lack some of the most basic manufacturing capabilities when it comes to producing weapons of war, so we must import whatever weaponry we can manage to purchase off international sellers while we also scavenge the carcass of the dying Russian state to find any and all weapons we can find. As long as it still shoots or is able to kill or maim, it shall find a use in our army."
+
+BAS_Every_Man_a_Guerilla:0 "Every Man A Gudari!"
+BAS_Mobilize_BASuts_desc:0 "We must mobilize our main population if we are to survive the rigors of the modern world. Every able-bodied BASut man shall be taught how to shoot as well as the basics of military combat and warfare. At a moment’s notice, we could be invaded once more, so our entire population needs to be ready for this likely inevitability. Through sheer manpower and through mastery of this Winter Wasteland, we shall overcome our foes."
+
+BAS_Remembering_the_Cause:0 "Remembering the Cause"
+BAS_Remembering_the_Cause_desc:0 "We must save our people, and the only way to truly do that is through steel. Weapons and machines of war must be produced, new guns and artillery created, and more soldiers trained and deployed. Only through readiness for war can we truly be saved, for war is an eternal and harsh fact of life, and the only way to truly ready ourselves is to ensure we have more guns than we know what to do with."
+
+BAS_Spy_on_our_Enemies:0 "Infiltrators and Saboteurs"
+BAS_Spy_on_our_Enemies_desc:0 "Siberia is a vast land that hosts a vast array of varied peoples. Within our own borders, minority communities dot the landscape, consisting of native peoples like the Evens, Evenks, Tatars, Buryats, Kyrgz, Chukchis, and Dolgans, as well as a large Russian subpopulation and even a decent amount of Ukranians and Czechs who settled here after the RCW. We should reach out to these minority groups and conscript them into our militias so that we may better bolster the BASutian wave, for we cannot afford to let nearly half our population sit idly by as we BASuts fight for survival and sovereignty."
+
+BAS_Mendigoizale_Culture:0 "Militarize Mendigoizales"
+BAS_Mendigoizale_Culture_desc:0 "The frozen wastes of Siberia - this eternal land of permafrost - is one of the harshest settled regions on Earth. Despite blistering winds and bone-chilling cold, our people have carved out a culture and a history here in this icy hell. Our people know these lands and this climate like no others. We must tap into this innate knowledge and showcase it in all of our military strategy. We are the people of the permafrost, and we shall show our enemies what this name means as we dye the pure white snow red with their blood."
+
+BAS_The_Legend_of_Basque_Sailors:0 "From Sailors to Marines"
+BAS_The_Legend_of_Basque_Sailors_desc:0 "We Sakha, or BASuts, are a Turkic peoples - born from the true Sons of the Steppe who migrated here long ago on their great conquests and crusades. We are their kin, and as such their nomadic martial legacy burns like a raging fire inside us, rallying us forward to ever greater military excellence. Horse rearing and riding is in our blood, for these beasts come from these plains themselves. This nomadic legacy shall become a pillar of our military might, for the honor and victories of our ancestors shall only inspire us to higher levels of greatness."
+
+BAS_Army_of_Fervent_Believers:0 "Whip the Men Into a Frenzy"
+BAS_Army_of_Fervent_Believers_desc:0 "No matter how prepared our doctrines and our soldiers seem, there is no denying we likely shall always face larger and more daunting foes. Meeting these enemies of BASutia on the open and fair battlefield would spell doom for our people and our newly gained independence. Partisan tactics, guerilla strategies, and asymmetrical warfare is our only true path to survival. We shall use the land and the Winter as our allies and strike any foe foolish enough to invade our frozen lands repeatedly and without reprieve. They will not be allowed to rest, they will not be shown mercy, and they shall know only fear, for we shall be the haunters and spectres of this frozen hell - may all fear the True North."
+
+BAS_Secure_Our_Independence:0 "Defenders of Sovereignty"
+BAS_Secure_Our_Independence_desc:0 "For the first time in centuries, the BASut people march to the beat of their own war drums, for we are no longer the subjects of foreigners and Southerners. We are the one, true masters of this frozen Eden we call home, and we shall defend it at all costs. Our sovereignty, our independence, our right to dictate our own futures - all these rights these foreign dogs have tried to take from us. This injustice ends now, for we are the people of BASutia, and we shall fight for the right to live as we choose, or we shall die trying. The era of BASut oppression at the hands of the Russians is at an end, so let us give rise to the new age of this icy North."
+
+BAS_First_Basque_Elections:0 "First Basque Elections"
+BAS_First_Basque_Elections_desc:0 "Through sheer will and bravery, we have secured our independence. Finally, the people of BASutia have earned the right to determine their own destiny, and that is exactly what we have now progressed towards together as a newly free people. Soon, we shall hold the first BASutian elections, allowing our fair people to dictate the path their new government shall take. Though some in the nation are uneasy about throwing our fate to the wolves, so to speak, the majority of our provisional government feels it is now time for our people to make the choice for themselves. So, let us rejoice, and welcome our new future as the vote counting finally begins."
+
+BAS_ELA_Victory:0 "Solidarist Victory"
+BAS_ELA_Victory_desc:0 "In a surprise steal, the Confederalist party led by Pavel Ksenofontov has won the first BASutian elections. A known populist and avowed republican with a known sympathy towards Socialism and other Left Wing policies, Pavel and his party are expected to push for a confederation of the local minorities with the BASuts while drastically liberalize the nation as he pursues less radical, more palatable Socialist policies within our traditionally conservative society - ever staying wary of our people’s natural aversion to Socialism following the Reds’ cruelty during the Russian Civil War."
+
+BAS_EAE_Victory:0 "Nationalist Action Victory"
+BAS_EAE_Victory_desc:0 "Winning over much of the urban and educated liberal population within BASutia, Gavriil Ksenofontov and his Federalist party has won the first BASutian elections. A famous ethnographer and historian know for documenting the various peoples of Eastern Siberia, Gavriil is expected to push heavily for new educational and economic reform as he seeks to establish a new federalist system here in BASutia linking together the various regions and ethnicities that make up our diverse republic."
+
+BAS_EAJ_Victory:0 "Nationalist Party Victory"
+BAS_EAJ_Victory_desc:0 "In a victory that has come at a surprise to no one, Kyulyumnuur’s Union of BASuts has won the day in our recent inaugural elections. Riding the conservative BASutian majority to victory, Kyulyumnuur is expected to continue the long-held atmosphere of BASutian primacy as he and his allies work to create a truly modern, profitable, and uniquely BASut republic."
+
+BAS_Aberri_Victory:0 "Aberri Victory"
+BAS_Aberri_Victory_desc:0 "Platon Oyunsky, also known as Platon Alekseevich Slepstov or the ‘Ytaachy’ as his follower call him, has somehow secured a victory in our first national elections, shocking the nation. A prolific author and notable father to modern BASutian nationalism, Oyunsky - once a pen name he has since completely adopted - now seeks to strip away all in BASutia that is simply not wholly BASut in nature in an effort to preserve our unique heritage from outside influences. Under his leadership, BASutia shall embrace the ways of our ancestors and truly become a purely BASut state."
+
+BAS_Rally_the_Unions:0 "Rally the Union"
+BAS_Rally_the_Unions_desc:0 "In an effort to bring together the various peoples of BASutia and introduce them to soft Socialist reforms, we shall create a series of peasant councils. These assemblies shall allow our citizens to organize amongst themselves and better protect themselves against the predatory nature of capitalism while pooling together their resources to better represent themselves and their local communities in the wider government."
+
+BAS_Enshrine_Catholic_Socialist_Values:0 "Solidarity between Christian and Socialist"
+BAS_Enshrine_Catholic_Socialist_Values_desc:0 "The Evenks are the single largest native minority group within our borders, dwarfed only by the populations of the BASuts and the large Russian minority. We must grant autonomy to these groups so as to curry more favor with their leaders and representatives, easing relations within our government as we better integrate the Evenks into our society - without consuming their unique identity of course."
+
+BAS_Taxation_for_the_Common_Man:0 "Taxation For the Common Man"
+BAS_Taxation_for_the_Common_Man_desc:0 "Like in many societies, much of the wealth in BASutia has pooled around the upper echelons of society, while the lowest classes writhe in poverty. Despite this dichotomy, the tax rate in our nation is largely flat. We must rectify this egregious oversight of economic liberty and introduce a graduated progressive tax. Those at the top must pay more than those at the bottom, for that is only fair."
+
+BAS_Democratize_Unionism:0 "From Union to a Proper Party"
+BAS_Democratize_Unionism_desc:0 "Like in many societies, much of the wealth in BASutia has pooled around the upper echelons of society, while the lowest classes writhe in poverty. Despite this dichotomy, the tax rate in our nation is largely flat. We must rectify this egregious oversight of economic liberty and introduce a graduated progressive tax. Those at the top must pay more than those at the bottom, for that is only fair."
+
+BAS_Devotion_of_the_Basque_Worker:0 "Nationalism, Faith and Socialism as Our New Creed"
+BAS_Devotion_of_the_Basque_Worker_desc:0 "To fully cement the new liberties, rights, freedoms, and laws we have passed since the creation of our young republic, we have decided to go forward and pen a new constitution of the BASutian Republic. This document shall enshrine these privileges and restraints into national law, setting the bedrock of this republic so that future generations may build off it and improve it as time goes on."
+
+BAS_Build_Bridges_Over_the_Pyrenees:0 "Bridges Over the Pyrenees"
+BAS_Build_Bridges_Over_the_Pyrenees_desc:0 "The Vseobuch, meaning Universal Education, is a proposed mass educational reform that will completely rebuild the educational system in BASutia from the ground up, modernizing it and rebuilding it along Western lines. Every child in BASutia shall receive a public, secular education using state-mandated, Western-influenced curriculum, educating our next generation properly like none has before it. With this education, they shall be ready for the modern world they are inheriting."
+
+BAS_Attract_Foreign_Capital:0 "Invest in Euskadi!"
+BAS_Attract_Foreign_Capital_desc:0 "We live in a virtual icebox, and our economy shows it. Without foreign capital flowing into our economy, warming it enough to thaw the great icy grip our isolation has wrought, our attempts at nation building and modernization are as good as dead. We must reach out to foreign financiers to melt the frozen barriers that stall our economic transformation."
+
+BAS_Form_the_Popular_Front:0 "Lead the Popular Front"
+BAS_Form_the_Popular_Front_desc:0 "We live in a virtual icebox, and our economy shows it. Without foreign capital flowing into our economy, warming it enough to thaw the great icy grip our isolation has wrought, our attempts at nation building and modernization are as good as dead. We must reach out to foreign financiers to melt the frozen barriers that stall our economic transformation."
+
+BAS_Strengthen_Republicanism:0 "God, Fueros and Republic"
+BAS_Strengthen_Republicanism_desc:0 "We live in a virtual icebox, and our economy shows it. Without foreign capital flowing into our economy, warming it enough to thaw the great icy grip our isolation has wrought, our attempts at nation building and modernization are as good as dead. We must reach out to foreign financiers to melt the frozen barriers that stall our economic transformation."
+
+BAS_Propel_Euskadi_Into_Modernity:0 "Euskadi Rises to Modernity"
+BAS_Propel_Euskadi_Into_Modernity_desc:0 "With the foundations of their rule established, the ruling party under [tag.getleader] is set to begin the bulk of their planned reforms that shall transform BASutia into a new state - one poised to take on the struggles and tribulations of modernity. BASutia will never be the same, and all shall be changed in our wake, for the metamorphosis of BASutian society is about to begin."
+
+BAS_Preserve_Basque_Culture:0 "Celebrate Basque Culture"
+BAS_Preserve_Basque_Culture_desc:0 "The various local beliefs and cultures, whether they be shamanistic, druidistic, primalist, tribalist, or any other more archaic form of identity, are all inherent parts of our national identity. This mix of diverse backgrounds and histories is what has formed the modern BASutian identity. We must legitimize and legalize all of these cultures, for each one is integral to our newly minted nation."
+
+BAS_The_Founders_Vision:0 "The Founder's Vision"
+BAS_The_Founders_Vision_desc:0 "Praise the Yytaachy, the great Guide, Oyunsky, for he shall deliver the BASut people to deliverance and prosperity. As the Guide of our nation and the father of our cultural rebirth, he is the one true leader for us all. We must bend to his will and follow his every command, for he who communes with the gods is the highest among us all. Praise the Yytaachy, praise BASutia!"
+
+BAS_Curtail_Harmful_Vices:0 "A New Age of Morality"
+BAS_Curtail_Harmful_Vices_desc:0 "BASut culture is the greatest culture in the land! We are the greatest of all Siberians and of all Turkic peoples. We are the descendants of great conquerors and the children of the Aiy, our noble and primordial gods. Our culture and our way of life must be preserved and spread at all costs, for all in our borders shall be made to embrace BASut culture or be rejected by it."
+
+BAS_Expel_the_Outsiders:0 "Purify Euskadi from Maketos"
+BAS_Expel_the_Outsiders_desc:0 "The Evenks, though distinct culturally and genetically, are our Turkic kin. They and their similar tribes like the Evens and the Dolgans are our brothers and sisters in all senses of the words. We must assimilate them into the one true BASutian culture, erasing away their minor differences and deviations from our righteous path. Together, we shall make BASutia great, and those that oppose us and this move shall be eradicated, for only traitors and fools would deny our righteousness."
+
+BAS_Mobilize_the_Masses:0 "Expand the Abertzale Organization"
+BAS_Mobilize_the_Masses_desc:0 "The Evenks, though distinct culturally and genetically, are our Turkic kin. They and their similar tribes like the Evens and the Dolgans are our brothers and sisters in all senses of the words. We must assimilate them into the one true BASutian culture, erasing away their minor differences and deviations from our righteous path. Together, we shall make BASutia great, and those that oppose us and this move shall be eradicated, for only traitors and fools would deny our righteousness."
+
+BAS_Contact_Our_Irish_Comrades:0 "The Irish Connection"
+BAS_Contact_Our_Irish_Comrades_desc:0 "The Aiy, our primordial deities and ancestral gods, must be obeyed and praised at all times. Without these great beings, both we and the world would not exist, for all of time and creation is at their whim. Only the Yytaachy can commune with these great ones, and so we shall follow his word and give praise to our gods. Only then, will fortune and prosperity smile down upon us - the chosen few, the BASuts."
+
+BAS_Align_with_the_Hegemon:0 "Align with the Global Hegemon?"
+BAS_Align_with_the_Hegemon_desc:0 "Despite past grievances, Russia is our natural ally. We have a long history of cooperation, their people make up more than a quarter of our population, and they are right on our doorstep. We should reach out and strike an accord before their tanks and riflemen start to march over the border."
+
+BAS_Join_The_Double_Eagle:0 "Ally the Defenders of Catholic Order"
+BAS_Join_The_Double_Eagle_desc:0 "Siberia is our natural ally, for we are both newly independent states seeking to throw off the shackles of imperialism and foreign rule. Together, we shall rule this frozen domain and put our own people first, before the greedy needs of the Southerners."
+
+BAS_Armed_Neutrality:0 "Basques, Alone!"
+BAS_Armed_Neutrality_desc:0 "We cannot trust a single soul outside our own borders, for all foreign powers circle our infantile state like wolves on the hunt. We must stand resolute and strong, protecting our independence and our neutrality with military might. BASutia shall not become a slave to foreign entanglements and whims so soon after freeing ourselves from such nightmares."
+
+BAS_Compromise_with_Internationale:0 "Compromise with the Internationale"
+BAS_Compromise_with_Internationale_desc:0 "Down South, along the Eastern Steppe, a new force rises. This meteoric force seeks to free Asia and all of its inhabitants from the yoke of foreign rule and perversions. We must ride with the Khan and this great movement, to free Asia and its peoples once and for all!"
+
+BAS_The_Wild_Card:0 "The Wild Card"
+BAS_The_Wild_Card_desc:0 "The closest power to us that did not once also lord over our people, and the natural enemy to our former oppressors, Japan is clearly the ally for our newly independent state. Only by standing with Tokyo can we truly remain free and keep our culture alive, even if that means giving up a piece of our soul to the Eastern Hegemon."
+
+BAS_Euskadi_Economy_Springs_Up:0 "Euskadi's Economy Springs to Action"
+BAS_Euskadi_Economy_Springs_Up_desc:0 "With our independence secured, we must work towards creating a truly prosperous, modern economy free from the entrapments of our imperialist past. Without a bustling economy, our new state shall wither and die before it can even draw first breath, and so the creation of a new financial system to support our infantile nation is a top priority."
+
+BAS_The_Riches_of_Our_Lands:0 "Earth's Many Riches"
+BAS_The_Riches_of_Our_Lands_desc:0 "In order to more efficiently utilize the resources of the state, all natural resources shall be nationalized under our ruling regime. From this centralized control apparatus, the economy of our nation shall be planned in advance until it is ready to run on its own two feet."
+
+BAS_Kickstart_Basque_Industrial_Revolution:0 "Industrial Revolution Lands to Euskadi"
+BAS_Kickstart_Basque_Industrial_Revolution_desc:0 "The farmer is the lifeblood of BASutia. These brave families till the frozen soil and turn permafrost into sustenance before our eyes. Without these knowledgeable herders and croppers, our people would surely starve. We must subsidize these groups and help them establish larger, more modernized farms to better feed our growing population."
+
+BAS_Agriculture_as_Our_Backbone:0 "Agricultural Machine to Feed Our People"
+BAS_Agriculture_as_Our_Backbone_desc:0 "To farm in this frozen wasteland is no easy task. Only the southernmost reaches of our nation are habitable for crop farming while agriculture elsewhere in the nation is primarily livestock and reindeer herding. We must expand these sectors of food production, increasing the size of the Southern fields while expanding and fertilizing the grazing lands of the North. We are masters of feeding our people in these frozen plains, and we shall take this expertise into the modern age with us."
+
+BAS_Minas_de_Rodalquilar:0 "Minas de Rodalquilar"
+BAS_Minas_de_Rodalquilar_desc:0 "The Urasa are a type of summer home traditionally built by the local tribes of BASutia. Built like large, rounded cones similar to conical yurts but made out of more permanent materials. We shall begin a development scheme to build prefabricated Urasas around the nation out of wood and cement to provide permanent housing to our growing populations."
+
+BAS_Develop_Machinery:0 "Mechanize Every Aspect of Basque Life"
+BAS_Develop_Machinery_desc:0 "A viable merchant class is necessary to create a prosperous and viable modern economy. We must enact favorable legislation to encourage entrepreneurialism within our population to create their own business, which in turn will slowly create a middle, mercantile class within our borders. On their backs, our economy shall grow."
+
+BAS_Bring_Deustuko_Unibertsitatea_Into_Public_Ownership:0 "Deustuko Unibertsitatea"
+BAS_Bring_Deustuko_Unibertsitatea_Into_Public_Ownership_desc:0 "Aldanzolo is a massive mining conglomerate operating out here in BASutia and first started by the Russians. With their absence, the ruins of this great monopoly now lie dormant and begging to be utilized. Primarily concerned with gold mining, we shall pick up where they left off and continue to extract this shimmering metal from the ground to finance our rapidly growing economy."
+
+BAS_Llama_and_Star:0 "Fund Llama and Star"
+BAS_Llama_and_Star_desc:0 "With the economy beginning to hum along and with enough capital to undertake such an endeavor now within our state’s coffers, the time has begun to industrialize the lands of permafrost. Factories shall rise from the ice and snow as we cloud the white and blue skies with the black smog of modernity and progress. The heat of these factories shall thaw the ice that binds us and carry us to our new future!"
+
+BAS_Fund_Ferrocarriles_Vascongados:0 "Ferrocarriles Vascongados"
+BAS_Fund_Ferrocarriles_Vascongados_desc:0 "Tales and legends dating back decades exist of shimmering rock being found rarely in the deep pits and fissures that dot our landscape. These deposits of near mythical §CBlue Clay§ have haunted the myths of tribals and Russian imperialists alike, alluring the greedy and the adventurous alike with the siren’s song of infinite wealth. In reality, this ‘§CBlue Clay§’ is no mythical force or material, but diamond - tons and tons of the stuff lying underneath the volcanic plates of Siberia. We must follow the myths and rumors and find these springs of immeasurable wealth to further fund the BASutian miracle."
+
+BAS_Industry_to_Rival_Spain:0 "Industry to Rival Spain"
+BAS_Industry_to_Rival_Spain_desc:0 "Our economy now hurls along like a well-fueled train, carrying our infantile state and our people towards a bright new age. Into modernity we go, blind to what the future may hold but prepared for all that could await us. Together, we are BASutia, and with our economic successes established, our shared future has never looked brighter."
+
+BAS_Syndicalist_Revolution:0 "Syndicalist Revolution"
+BAS_Syndicalist_Revolution_desc:0 "Raging against tradition and primalism, Maksim Ammosov and his band of Socialist revolutionaries have thrown off the yoke of BASut supremacy and now charge forth into a bright, Red unknown. Now free from the trappings of the past, Ammosov shall be the herald of BASutia’s Proletarian Revolutionary."
+
+BAS_Destroy_Nationalist_Influence:0 "Eradicate Aberri Ultranationalists"
+BAS_Destroy_Nationalist_Influence_desc:0 "The past has done nothing but hold BASutia and its peoples back, trapping us in the bonds of primalism, tribalism, superstition, and backwards fear caused by lack of understanding. We shall do away with these shackles and free our people with the egalitarian justice that only Socialism can bring. Under a Red Banner, BASutia shall march out of the past and into its bright future - one illuminated by a Red Star."
+
+BAS_Memory_of_Los_Justicieros:0 "Venerate Los Justicieros"
+BAS_Memory_of_Los_Justicieros_desc:0 "The past has done nothing but hold BASutia and its peoples back, trapping us in the bonds of primalism, tribalism, superstition, and backwards fear caused by lack of understanding. We shall do away with these shackles and free our people with the egalitarian justice that only Socialism can bring. Under a Red Banner, BASutia shall march out of the past and into its bright future - one illuminated by a Red Star."
+
+BAS_Refurbish_San_Sebastian:0 "San Sebastian, Heart of Bizkaia"
+BAS_Refurbish_San_Sebastian_desc:0 "The past has done nothing but hold BASutia and its peoples back, trapping us in the bonds of primalism, tribalism, superstition, and backwards fear caused by lack of understanding. We shall do away with these shackles and free our people with the egalitarian justice that only Socialism can bring. Under a Red Banner, BASutia shall march out of the past and into its bright future - one illuminated by a Red Star."
+
+BAS_Concessions_to_Tradition:0 "Concessions to the Church"
+BAS_Concessions_to_Tradition_desc:0 "The past has done nothing but hold BASutia and its peoples back, trapping us in the bonds of primalism, tribalism, superstition, and backwards fear caused by lack of understanding. We shall do away with these shackles and free our people with the egalitarian justice that only Socialism can bring. Under a Red Banner, BASutia shall march out of the past and into its bright future - one illuminated by a Red Star."
+
+BAS_The_Course_of_Our_Movement:0 "The Course of Our Movement?"
+BAS_The_Course_of_Our_Movement_desc:0 "The past has done nothing but hold BASutia and its peoples back, trapping us in the bonds of primalism, tribalism, superstition, and backwards fear caused by lack of understanding. We shall do away with these shackles and free our people with the egalitarian justice that only Socialism can bring. Under a Red Banner, BASutia shall march out of the past and into its bright future - one illuminated by a Red Star."
+
+BAS_Create_Syndicalist_Unions:0 "Alliance with the Solidarists"
+BAS_Create_Syndicalist_Unions_desc:0 "Though we are transitioning to a Socialist society, we are not fully ready to abandon all Capitalist principles. A small trading class shall be allowed to exist, serving as a connection to the outer world and its interconnected economy while also generating a small amount of economic mobility within our own borders, hopefully preventing stagnation."
+
+BAS_Nationalize_Euskalduna:0 "Euskalduna Painted Crimson and Black"
+BAS_Nationalize_Euskalduna_desc:0 "A united people’s council is needed to serve as a forum for all peoples within our nation, so that each and every BASutian can have their voice be heard. A grand, unified Sakha Soviet shall be erected to serve as the main representative body of our regime, based on the old systems of the failed Bolsheviks and updated to mesh better with our specific peoples. Through this assembly, every voice shall be heard and every concern or idea for the state and its functions noted. The time for true democracy and representation is finally upon us."
+
+BAS_Crimson_Coast:0 "The Crimson Coast"
+BAS_Crimson_Coast_desc:0 "With our revolution successful, now comes the time where we must make a choice on our destiny. Do we belong with our other Socialist powers, should we be the heralds of a new world revolution, or should we simply just sit in the lands of permafrost and focus on ourselves above all others - these questions and more haunt our regime and sow division within our ranks. We must decide on a policy for the future, here and now."
+
+BAS_Basque_Jacobins_Seize_the_Day:0 "Basque Jacobins Seize the Day!"
+BAS_Jacobins_Seize_the_Day_desc:0 "Raging against tradition and primalism, Maksim Ammosov and his band of Socialist revolutionaries have thrown off the yoke of BASut supremacy and now charge forth into a bright, Red unknown. Now free from the trappings of the past, Ammosov shall be the herald of BASutia’s Proletarian Revolutionary."
+
+BAS_Centralization_Through_Any_Means:0 "Centralization Through Any Means"
+BAS_Centralization_Through_Any_Means_desc:0 "The past has done nothing but hold BASutia and its peoples back, trapping us in the bonds of primalism, tribalism, superstition, and backwards fear caused by lack of understanding. We shall do away with these shackles and free our people with the egalitarian justice that only Socialism can bring. Under a Red Banner, BASutia shall march out of the past and into its bright future - one illuminated by a Red Star."
+
+BAS_Revive_the_Spectre_of_Communism:0 "Revive the Spectre of Communism"
+BAS_Revive_the_Spectre_of_Communism_desc:0 "The past has done nothing but hold BASutia and its peoples back, trapping us in the bonds of primalism, tribalism, superstition, and backwards fear caused by lack of understanding. We shall do away with these shackles and free our people with the egalitarian justice that only Socialism can bring. Under a Red Banner, BASutia shall march out of the past and into its bright future - one illuminated by a Red Star."
+
+BAS_Bend_the_Unions_to_Our_Will:0 "Remove Christ From the Unions"
+BAS_Bend_the_Unions_to_Our_Will_desc:0 "The past has done nothing but hold BASutia and its peoples back, trapping us in the bonds of primalism, tribalism, superstition, and backwards fear caused by lack of understanding. We shall do away with these shackles and free our people with the egalitarian justice that only Socialism can bring. Under a Red Banner, BASutia shall march out of the past and into its bright future - one illuminated by a Red Star."
+
+BAS_Bring_in_French_Theorists:0 "Wisdom From the Source"
+BAS_Bring_in_French_Theorists_desc:0 "The past has done nothing but hold BASutia and its peoples back, trapping us in the bonds of primalism, tribalism, superstition, and backwards fear caused by lack of understanding. We shall do away with these shackles and free our people with the egalitarian justice that only Socialism can bring. Under a Red Banner, BASutia shall march out of the past and into its bright future - one illuminated by a Red Star."
+
+BAS_Introduce_Cult_of_Reason_to_Iberia:0 "Iberian Cult of Reason"
+BAS_Introduce_Cult_of_Reason_to_Iberia_desc:0 "The past has done nothing but hold BASutia and its peoples back, trapping us in the bonds of primalism, tribalism, superstition, and backwards fear caused by lack of understanding. We shall do away with these shackles and free our people with the egalitarian justice that only Socialism can bring. Under a Red Banner, BASutia shall march out of the past and into its bright future - one illuminated by a Red Star."
+
+BAS_Rekindle_Class_Warfare:0 "Rekindle Class Warfare in Euskadi"
+BAS_Rekindle_Class_Warfare_desc:0 "Though we are transitioning to a Socialist society, we are not fully ready to abandon all Capitalist principles. A small trading class shall be allowed to exist, serving as a connection to the outer world and its interconnected economy while also generating a small amount of economic mobility within our own borders, hopefully preventing stagnation."
+
+BAS_Fortitude_of_the_Party_Line:0 "Fortitude of the Party Line"
+BAS_Fortitude_of_the_Party_Line_desc:0 "A united people’s council is needed to serve as a forum for all peoples within our nation, so that each and every BASutian can have their voice be heard. A grand, unified Sakha Soviet shall be erected to serve as the main representative body of our regime, based on the old systems of the failed Bolsheviks and updated to mesh better with our specific peoples. Through this assembly, every voice shall be heard and every concern or idea for the state and its functions noted. The time for true democracy and representation is finally upon us."
+
+BAS_First_Jacobins_of_Iberia:0 "True Revolution Arrives to Iberia"
+BAS_First_Jacobins_of_Iberia_desc:0 "With our revolution successful, now comes the time where we must make a choice on our destiny. Do we belong with our other Socialist powers, should we be the heralds of a new world revolution, or should we simply just sit in the lands of permafrost and focus on ourselves above all others - these questions and more haunt our regime and sow division within our ranks. We must decide on a policy for the future, here and now."
+
+BAS_Return_to_Tradition:0 "Return to Tradition"
+BAS_Return_to_Tradition_desc:0 "The dream of BASut independence is dead, for the Russian bear has once again seized the lands of permafrost for its own desires. Now, BASutia once again resides within the clutches of the Russians, this time at the mercy of Commander Innokentiy Smolin. Under Commander Smolin, this wild frozen wasteland shall be tamed once more in preparation for Mother Russia’s future needs."
+
+BAS_Contact_Claimants:0 "Bidezko Errege"
+BAS_Contact_Claimants_desc:0 "The BASuts, with their history of hunting, trapping, and militia-raising, are an extensively armed people. A series of weapons seizures, buybacks, and raids will be carried out until every last firearm in this icy hell is in the hands of Russians, and only in the hands of Russians."
+
+BAS_Invite_Spanish_Carlists:0 "Our Spanish Comrades"
+BAS_Invite_Spanish_Carlists_desc:0 "The two tracts that lead into BASutia were destroyed by the tribal defenders, blockaded with ice, rock, and snow in an effort to halt our advance. We must repair these lifelines into the BASutian heartlands so that troops, supplies, and Russians can flow more freely into these newly reacquired heartlands."
+
+BAS_Reinvigorate_Carlist_Unionism:0 "Our Own Sindicatos Libres"
+BAS_Reinvigorate_Carlist_Unionism_desc:0 "The two tracts that lead into BASutia were destroyed by the tribal defenders, blockaded with ice, rock, and snow in an effort to halt our advance. We must repair these lifelines into the BASutian heartlands so that troops, supplies, and Russians can flow more freely into these newly reacquired heartlands."
+
+BAS_Ally_the_Moderates:0 "Eta Tira Beltzari!"
+BAS_Ally_the_Moderates_desc:0 "The two tracts that lead into BASutia were destroyed by the tribal defenders, blockaded with ice, rock, and snow in an effort to halt our advance. We must repair these lifelines into the BASutian heartlands so that troops, supplies, and Russians can flow more freely into these newly reacquired heartlands."
+
+BAS_Eradicate_Socialist_Vermin:0 "Eradicate the Beast of Syndicalism"
+BAS_Eradicate_Socialist_Vermin_desc:0 "The uprising of the BASuts was not a spontaneous incident, nor did it happen by chance. It was an orchestrated revolt backed by terrorist cells and political figures, and all those involved are guilty! Every known agitator shall be rounded up, imprisoned, and interrogated until all those responsible for this heinous attack on Russian lives are found and captured. None shall escape the burning lead of justice we have waiting in store for them."
+
+BAS_Basque_Tint_to_Our_Movement:0 "Basque Country, Cradle of Carlism"
+BAS_Basque_Tint_to_Our_Movement_desc:0 "The uprising of the BASuts was not a spontaneous incident, nor did it happen by chance. It was an orchestrated revolt backed by terrorist cells and political figures, and all those involved are guilty! Every known agitator shall be rounded up, imprisoned, and interrogated until all those responsible for this heinous attack on Russian lives are found and captured. None shall escape the burning lead of justice we have waiting in store for them."
+
+BAS_Show_of_Goodwill:0 "Education Through Faith"
+BAS_Show_of_Goodwill_desc:0 "The uprising of the BASuts was not a spontaneous incident, nor did it happen by chance. It was an orchestrated revolt backed by terrorist cells and political figures, and all those involved are guilty! Every known agitator shall be rounded up, imprisoned, and interrogated until all those responsible for this heinous attack on Russian lives are found and captured. None shall escape the burning lead of justice we have waiting in store for them."
+
+BAS_Navarre_Pearl_of_Iberia:0 "Province Fit For the True King"
+BAS_Navarre_Pearl_of_Iberia_desc:0 "Commander Smolin has proven himself here in this frozen hell to be a capable administrator and an apt military commander. With his reputation only growing, many within his clique have begun to suggest that he should be the next Supreme Ruler of Vladivostok and all of Transamur. With his claim as strong as any other candidates, especially given his proven experience in lording over an ice-swept wasteland, Smolin is likely the most suitable candidate. We shall ride into Vladivostok and stake his claim, and if we must, we shall fight for it if necessary."
+
+BAS_Kingdom_of_the_Faithful_Restored:0 "Under the Tree of Gernika"
+BAS_Kingdom_of_the_Faithful_Restored_desc:0 "Commander Smolin has proven himself here in this frozen hell to be a capable administrator and an apt military commander. With his reputation only growing, many within his clique have begun to suggest that he should be the next Supreme Ruler of Vladivostok and all of Transamur. With his claim as strong as any other candidates, especially given his proven experience in lording over an ice-swept wasteland, Smolin is likely the most suitable candidate. We shall ride into Vladivostok and stake his claim, and if we must, we shall fight for it if necessary."
+
+BAS_Reinforce_the_Errekete:0 "The Red Berets as Our Sword"
+BAS_Reinforce_the_Errekete_desc:0 "Commander Smolin has proven himself here in this frozen hell to be a capable administrator and an apt military commander. With his reputation only growing, many within his clique have begun to suggest that he should be the next Supreme Ruler of Vladivostok and all of Transamur. With his claim as strong as any other candidates, especially given his proven experience in lording over an ice-swept wasteland, Smolin is likely the most suitable candidate. We shall ride into Vladivostok and stake his claim, and if we must, we shall fight for it if necessary."
+
+BAS_Carlism_Not_Nationalism:0 "Traditionalism, Not Nationalism"
+BAS_Carlism_Not_Nationalism_desc:0 "Commander Smolin has proven himself here in this frozen hell to be a capable administrator and an apt military commander, but the time to bend the knee to the true Supreme Commander has come. Planning a trip to Vladivostok, Smolin shall fly to the capital of Russian interests in the East and officially declare his loyalty to the Master of the Home Harbor."
+
+BAS_Our_Destiny:0 "Our Birthright"
+BAS_Our_Destiny_desc:0 "Commander Smolin has proven himself here in this frozen hell to be a capable administrator and an apt military commander, but the time to bend the knee to the true Supreme Commander has come. Planning a trip to Vladivostok, Smolin shall fly to the capital of Russian interests in the East and officially declare his loyalty to the Master of the Home Harbor."
+
+BAS_Navy:0 "Birth of the Sakha Fleet"
+BAS_Navy_desc:0 "With our union with the sea, we now have a need to create a sea-worthy navy capable of defending our shores. Using old Russian naval infrastructure, we shall begin the work needed to create a new Sakha Fleet to protect our merchant marine and to project our power outwards from our newly acquired coast."
+
+BAS_Naval_Treaty_With_Japan:0 "Naval Treaty with Japan"
+BAS_Naval_Treaty_With_Japan_desc:0 "As the closest major power to us that did not once lord over our peoples, Japan is likely the best potential ally to reach out to. With a long history of naval dominance under their belts, they are clearly the ones to emulate when it comes to naval warfare. We shall establish a treaty with Tokyo and work together to establish a BASutian navy."
+
+BAS_Naval_Treaty_With_Canada:0 "Naval Treaty with Canada"
+BAS_Naval_Treaty_With_Canada_desc:0 "Though across the Pacific Ocean from us, none can deny Canada’s mastery at sea - especially with the bulk of the old Brittonian fleet under their command. We should establish a treaty with Ottawa and set up trade and communication channels between our nation so that these Canucks can help us create a truly BASutian fleet."
+
+BAS_Merchant_Fleet:0 "A Merchant Fleet"
+BAS_Merchant_Fleet_desc:0 "Without a viable and independent merchant marine, our economy may as well stay stuck in the permafrost. The global market is where the money is, and that is where we need to tap into. We shall create a new merchant marine for BASutia to feed our growing economy with the materials and trade goods of this newly interconnected modern world."
+
+BAS_Air:0 "Sakha Air Force"
+BAS_Air_desc:0 "There are quite a few people who joined our fight for independence that were experienced pilots or ground crew, originally working in the Kolchak regime's air force before joining us. We can utilize them in the creation of our own air force. We shall take to these icy skies and protect our homelands from above."
+
+BAS_Open_Pilot_Academy:0 "The BASutsk Aeronautics Academy"
+BAS_Open_Pilot_Academy_desc:0 "Officers and experts will be needed if we are to create a truly modern air force. By setting up an academy to train the next generation of pilots and engineers, we can ensure our air servicemen are properly educated for whatever the future throws at us."
+
+BAS_Air_Force_Investment:0 "Air Force Investments"
+BAS_Air_Force_Investment_desc:0 "The air force budget does not just ensure our pilots are paid. It also ensures that our planes are maintained, new weapons of war are researched and developed, and that our air force is always on the cutting edge, or as close to it as we can be with the resources at our disposal. The government should allocate some more to this budget, so that we will always be able to control BASutia’s blue skies."
+
+BAS_Improve_Air_Fleet:0 "Improve the Air Fleet" 
+BAS_Improve_Air_Fleet_desc:0 "Despite all our previous effort, our humble air force still has the same outdated fighters we started out with. This must change if we wish to ensure the safety of BASutia’s skies and territory. New designs shall be drafted, or borrowed from foreign powers, so that we may truly become the lords and masters of these frozen skies."
+
+BAS_Contact_the_Exiles:0 "Contact the Exiled"
+BAS_Contact_the_Exiles_desc:0 "Across the sea lies the noble land of Beringia - another newly-independent nation fighting against colonialist oppression. Furthermore, due to migrations across the Bering Strait millennia ago, these Amerindians are descended from our own ancestors. In pursuit of ethnic unity and new allies, we should reach out to Chiefs Towner and Dixon so that together we children of the Bering Sea may live in harmony while fending off any foe together."
+
+BAS_Our_Colonies_in_the_New_World:0 "Following the Migrating Whales Up North"
+BAS_Our_Colonies_in_the_New_World_desc:0 "Commander Smolin has proven himself here in this frozen hell to be a capable administrator and an apt military commander, but the time to bend the knee to the true Supreme Commander has come. Planning a trip to Vladivostok, Smolin shall fly to the capital of Russian interests in the East and officially declare his loyalty to the Master of the Home Harbor."
+
+BAS_Contact_the_Diaspora:0 "The Eight Basque Province"
+BAS_Contact_the_Diaspora_desc:0 "Commander Smolin has proven himself here in this frozen hell to be a capable administrator and an apt military commander, but the time to bend the knee to the true Supreme Commander has come. Planning a trip to Vladivostok, Smolin shall fly to the capital of Russian interests in the East and officially declare his loyalty to the Master of the Home Harbor."
+
+BAS_Liberation_Comes:0 "Resurrecting the Spirit of San Sebastian"
+BAS_Liberation_Comes_desc:0 "With our union with the sea, we now have a need to create a sea-worthy navy capable of defending our shores. Using old Russian naval infrastructure, we shall begin the work needed to create a new Sakha Fleet to protect our merchant marine and to project our power outwards from our newly acquired coast."
+
+BAS_Strategic_Alliances:0 "Allies in Desperate Times"
+BAS_Strategic_Alliances_desc:0 "As the closest major power to us that did not once lord over our peoples, Japan is likely the best potential ally to reach out to. With a long history of naval dominance under their belts, they are clearly the ones to emulate when it comes to naval warfare. We shall establish a treaty with Tokyo and work together to establish a BASutian navy."
+
+BAS_The_New_Power_of_Iberia:0 "The Small Iberian Powerhouse!"
+BAS_The_New_Power_of_Iberia_desc:0 "Though across the Pacific Ocean from us, none can deny Canada’s mastery at sea - especially with the bulk of the old Brittonian fleet under their command. We should establish a treaty with Ottawa and set up trade and communication channels between our nation so that these Canucks can help us create a truly BASutian fleet."
+
+BAS_Euskadi_Free_of_Castille:0 "Breaking the Shackles of Castile Forever"
+BAS_Euskadi_Free_of_Castille_desc:0 "Without a viable and independent merchant marine, our economy may as well stay stuck in the permafrost. The global market is where the money is, and that is where we need to tap into. We shall create a new merchant marine for BASutia to feed our growing economy with the materials and trade goods of this newly interconnected modern world."
+
+BAS_Iparralde:0 "Iparralde is Ours Alone!"
+BAS_Air_desc:0 "There are quite a few people who joined our fight for independence that were experienced pilots or ground crew, originally working in the Kolchak regime's air force before joining us. We can utilize them in the creation of our own air force. We shall take to these icy skies and protect our homelands from above."
+
+BAS_Beyond_Iberia:0 "Abandon Iberia to Its Rot"
+BAS_Beyond_Iberia_desc:0 "Officers and experts will be needed if we are to create a truly modern air force. By setting up an academy to train the next generation of pilots and engineers, we can ensure our air servicemen are properly educated for whatever the future throws at us."
+
+BAS_Iberian_Roots:0 "Regrow Our Iberian Roots"
+BAS_Iberian_Roots_desc:0 "The air force budget does not just ensure our pilots are paid. It also ensures that our planes are maintained, new weapons of war are researched and developed, and that our air force is always on the cutting edge, or as close to it as we can be with the resources at our disposal. The government should allocate some more to this budget, so that we will always be able to control BASutia’s blue skies."
+
+BAS_Basque_Irredentism:0 "Basque Irredentism" 
+BAS_Basque_Irredentism_desc:0 "Despite all our previous effort, our humble air force still has the same outdated fighters we started out with. This must change if we wish to ensure the safety of BASutia’s skies and territory. New designs shall be drafted, or borrowed from foreign powers, so that we may truly become the lords and masters of these frozen skies."
+
+
+### Ideas ###
+BAS_Peasant_Councils:0 "Peasant Councils"
+BAS_Evenks_Autonomy:0 "Autonomy for Evenks"
+BAS_Progressive_Taxation_idea:0 "Progressive Taxation"
+BAS_Vseobuch:0 "Vseobuch"
+BAS_Liberal_Reforms:0 "Liberal Reforms"
+BAS_Local_Culture:0 "Local Culture"
+BAS_Local_Customs:0 "Local Customs"
+BAS_Yytachy:0 "Yytachy"
+BAS_assimilating_evenks:0 "Assimilating Evenks"
+BAS_Praising_Gods:0 "Praising Gods"
+BAS_armed_neutrality:0 "Armed Neutrality"
+BAS_economy:0 "First Economy Reforms"
+BAS_national_economy:0 "National BASut Economy"
+BAS_capital_economy:0 "Capitalist Economy"
+BAS_modern_urahas:0 "Modern Urahas"
+BAS_Transitional_Period:0 "Transitional Period"
+BAS_Market_Socialism:0 "Market Socialism"
+BAS_Supreme_Soviet:0 "The Supreme BASut Soviet"
+BAS_Blue_Clay_found:0 "Mining the §CBlue Clay§!"
+BAS_army:0 "BASut Warfare Tactics"
+BAS_peoples_army:0 "BASut People's Army"
+BAS_partisan_warfare:0 "Native Resistance"
+BAS_air_academy:0 "Air Academy"
+BAS_JAP_Naval_Treaty:0 "Naval Treaty with Japan"
+BAS_CAN_Naval_Treaty:0 "Naval Treaty with Canada"
+BAS_merchant_fleet:0 "Merchant Fleet"
+
+
+### Events ###
+
+
+### Events ###
+BAS.1.t:0 "Spanish No More!"
+BAS.1.d:0 "For so long, Euskadi has been nothing but a province of Spain. They have tried to erase our identity, our language, our customs and our culture. But no more will we listen to the commands of Madrid, no more will they dictate how the rich lands of Euskadi are governed. From Bilbao to the Pyrenees, Euskadi is free, and our people are ready to fight and die to retain that freedom, no matter the odds!"
+BAS.1.a:0 "Independence!"
+
+BAS.2.t:0 "Eusko Gudarostea"
+BAS.2.d:0 "The Eusko Gudarostea, our national army, has been mobilized for the first time. Initially merely a militia force, our commander in chief, Alberto de Montaud Noguerol, has reformed this fledgling force into a proper military. Supplied with guns smuggled in from both Commune of France and Ireland, this hodgepodge arsenal shall serve as deterrent against the blasted Spaniards until we create a more standardized system. For now, the dusty Lebels and Lee-Enfields will be our sword and our faith in the Lord our shield, and with them we shall strike down the Spanish invader should they dare to enter our rightful land. However, we must not remain idle, much work is to be done for our military to be truly modern and on par with that of Spain and our other neighbours."
+BAS.2.a:0 "Eusko Gudariak gora!"
+
+BAS.3.t:0 "Attempt to reign in the Carlists?"
+BAS.3.d:0 "While we recently suffered a great blow through the minority revolts, many of our generals feel like a possible victory could be gained against the Basques. One of our officers, colonel Varela, has noted that while Basques are generally Republican, there is a substantial Carlist movement in the territory of the separatist state. We are of course not friends with the Carlists, but perhaps we could exploit this situation as the local Carlists are bound to not enjoy the republicanism of their rivals. After all, the enemy of my enemy is my friend. We should at least explore this option. On the other hand, General Mola has proposed that we send a small force to destroy the political leadership of these rebels in an instant. While risky, it could lead to far faster success, and does not require assistance from our rival monarchists."
+BAS.3.a:0 "We can trust Valera with this!"
+BAS.3.c:0 "The military mission may just lead to further issues"
+
+BAS.8.t:0 "The Question of Carlist Militants"
+BAS.8.d:0 "The Basque republic is only taking its first moves in the world, but already our politicians are preparing for any threat to it, both external and internal. While we are unlikely to be invaded by the French or Spanish as such conflict could spark a much larger war, there are forces within Euskadi that could easily destroy our fledgling democracy. The Carlists, traditionalist monarchist rivals of the the Spanish Alfonsist monarchy, have made it clear many times that they consider liberal democracy an aberration of nature. While they participated in elections during the Republic era and even briefly allied the Basque Nationalist Party, it is clear that coexistence with the Carlists will be strained at best in our new republic. Many within our government urge the use of Ertzana against them, as their powerful Errekete militias could attempt a coup against our government. However, there are others, especially among EAJ and Aberri, who consider them a necessary evil against Spanish or French tyranny, as after all, the Erreketes helped us defeat the Spanish bastards during the struggle for independence. Ultimately, the decision lies with the lehendakari."
+BAS.8.a:0 "Useful or not, we can’t leave nothing for chance. Crush them!"
+BAS.8.b:0 "They’re Basques just like we, let them be."
+
+BAS.9.t:0 "Traditionalists Crush the Republican Movement"
+BAS.9.d:0 "The Basque government had grown too used to their powerful position in the separatist territory. This has proven to be a catastrophic mistake, as Carlist Erreketes marched to Bilbao today armed to the teeth, completely dismantling what little defences had been established. Commanded by a Carlist militant and politician, Antonio de Lizarza Iribarren, the Errekete militias clashed with socialist and republican militias, but given the completely unexpected nature of this attack, the Basque defences were overwhelmed and their men slaughtered in a series of street skirmishes. The government buildings were swiftly encircled and the entire separatist movement dismantled, although as of now it remains unclear whether Lizarza is acting on behalf of the Basque traditionalist militias or the wider Carlist cause. Whatever the case, the Basque republic has been destroyed as quickly as it began, forced to kneel under the boot of reactionary traditionalism."
+BAS.9.a:0 "Viva Cristo Rey!"
+
+BAS.10.t:0 "The Spanish retreat!"
+BAS.10.d:0 "Despite the seemingly impossible odds, we have managed to defend our independence, and the dogs in Madrid have retreated. Whatever plots they had planned for us, they have been thwarted, and it appears as though the Spanish have given up on trying to reclaim their lost territory. We must remain vigilant for future invasions, but for now, we are free to pursue our own destiny!"
+BAS.10.a:0 "Basques are free at last."
+
+BAS.12.t:0 "Addressing the Chronic Firearm Shortage"
+BAS.12.d:0 "While we have plenty of rifles and pistols thanks to the raided arsenals of Guardia Civil and Spanish garrisons, it is becoming increasingly clear that we lack many of the things needed by a modern army. Rifles and pistols may be good for skirmishes with police or light border-guarding duties, but what we need is artillery, anti-aircraft guns and anti-tank weapons to hold our own against a conventional military force. Our stock of machine guns is equally woeful, with only a few old MG 08s bought from Germany and some Chauchats smuggled in from France. The government has created an extensive weapons purchase program for the next year, where artillery and ammunition will be purchased from German Krupp plants and machine guns from Bohemian Zbrojovka Brno, as these manufacturers are known to be best among their peers."
+BAS.12.a:0 "Weapons to make the earth tremble!"
+
+BAS.18.t:0 "Aberri Eguna!"
+BAS.18.d:0 "Aberri Eguna, or Fatherland Day, is not a particularly old tradition, but one that has captured Basque hearts in the short timespan it has been celebrated. Originally, such a concept was coined by Sabino Arana, but it was put into action by EAJ in 1932 to commemorate his death. The day is a celebration of all things Basque, from the traditional music to local sports and foods, but most importantly, the Basque cider. Sabino believed that without direct and swift action, Basque culture and people would be dissolved into the greater Spanish whole, but the continued tradition of Aberri Eguna proves every year that these fears were unsubstantiated. All around Euskadi, people gather to celebrate, families meet no matter the distances, religious communities pray for the nation, political parties hold rallies to commemorate the father of the republic and the newfound independence. Most interestingly, the celebrations are not merely confined to Euskadi itself, but our Basque brothers over the Pyrenees hold their own parties, defying the French encroachment on Basque culture year after another. Yet another year of free Euskadi passes, and every year meets us with more prosperity!"
+BAS.18.a:0 "Bring out the cider, to Euskadi!"
+BAS.180.a:0 " Bring out the cider, to Euskadi!"
+
+BAS.19.t:0 "Choosing the National Flag"
+BAS.19.d:0 "The Basque flag, Ikurriña, is among our most distinguishable symbols, but given the long history of Basques dating back to prehistoric times, there have been many flag designs that could equally work as a national symbol. We can, of course, simply keep the Ikurriña, but there are those who prefer the Arrano beltza, Black Eagle, a symbol commonly attributed to the Navarrese king Sancho VII. While not quite as prominent as the beloved Ikurriña, it is favoured by many Basque nationalists, especially those who don’t feel right about using a flag designed by the Arana brothers. Aberri nationalists on the other hand have proposed using the original design made by Luis and Sabino Arana, the father of Basque republicanism, which is a slightly different variant of the Ikurriña. This flag, however, is least likely to be accepted due to its minimal design change."
+BAS.19.a:0 "Ikurriña stays!"
+BAS.19.b:0 "Arrano beltza looks nice!"
+BAS.19.c:0 "Go with Arana's original design!"
+
+BAS.20.t:0 "[GetYear] Basque National Elections"
+BAS.20.d:0 "For the first time in our history, we are able to hold independent, proper elections made up only of Basque parties. There are 4 parties present at the elections.\nThe left-most party to participate in the elections is the reorganized ELA union, seeking to advance the agenda of Basque workers through parliamentary means. While not as popular as the more moderate EAE, they stand a chance of winning as the other socialist and syndicalist parties of Euskadi have boycotted the elections.\n\nThe second left-wing party is the EAE, led by Tomas Bilbao Hospitallet, who, like the EAJ, believe in a strong Basque state, but disagree with the overt clerical attitude of EAJ. While nowhere near as large as the EAJ, EAE is growing increasingly more popular as the internal conflicts of EAJ cause it to haemorrhage supporters tired of the constant bickering.\n\nThe behemoth of Basque politics is the EAJ party, a strongly Catholic nationalist conservative party. EAJ has dominated the political scene of Euskadi ever since its inception, and their strong links to tradition appeal many within the new state. However, they are staunchly republican, and thus have drawn the ire of many Carlists. Their moderate views into future relations with Spain have also caused them to lose support of the more radical Aberri faction.\n\nThe last but not the least is the radical independence-seeking wing of EAJ, Aberri, led by the brother of legendary Basque nationalist Sabino Arana, Luis Arana. Arana disagrees with the moderate and conciliatory view the EAJ holds of Spain. Arana’s party believes that only armed preparation and vigilant eye on the border will keep Euskadi safe from the imperialists of Madrid, and while they agree with EAJ in economic matters, a compromise between these parties is hardly realistic.\nThe elections have already started in Euskadi, with the general euphoria of independence slightly easing into more temperate state as the population prepares to settle their political differences through the ballot box." 
+BAS.20.a:0 "ELA’s Trade Unionism Wins the Day!"
+BAS.20.b:0 "The People Put Their Trust in EAE!"
+BAS.20.c:0 "EAJ Hegemony Remains!"
+BAS.20.e:0 "The Radical Independents of Aberri Seize Victory!"
+
+BAS.21.t:0 "The Red Worker’s Cross"
+BAS.21.d:0 "Given the nature of Basque society, many doubted that the trade union masquerading as a political party such as ELA would remain faithful to the democratic process of Euskadi. However, given the influx of various left-wing actors in the region after the ban of Spanish trade unions, our movement has undergone a rapid transformation into something completely different. We have proven the naysayers wrong, providing an alternative to the bourgeois democratic parties of our rivals. Our new movements respects Basque tradition and faith as much as any other, but we have merged these century-old ways with the worker’s unity and equal treatment of our new socialist ideology. We have also committed to the republican model, and while this may mean temporary electoral defeats, our leadership believes that only by respecting the democratic apparatus can true progress be achieved in these beautiful lands."
+BAS.21.a:0 "Glory to the Constitution!"
+
+BAS.22.t:0 "Our French Brethren"
+BAS.22.d:0 "Our new state is in dire needs of reforms, and while there are many pressing matters from infrastructure to bureaucracy, the most important above all else is the creation of uniquely Basque identity. We have struggled so long under the Spanish, and while we are free, there are others who are far less lucky. The situation over the Pyrenees is more dire, as despite all the sacrifices our Basque brothers made during the Weltkrieg, the Syndicalist government has forgotten them and even cracked down on their Catholic traditions. This cannot stand, we must establish a program to deliver aid to them and perhaps even fuel separatism among our kin over the Pyrenees. One day, a united Basque republic may become reality, but for now, sending aid to our cousins is the most important thing."
+BAS.22.a:0 "Unite the Basques!"
+
+BAS.23.t:0 "Invest in Euskadi!"
+BAS.23.d:0 "Our nation is small and economy weak. If Euskadi is to nurture a strong economy, we must find other nations willing to engage in trade with us. To this end, the government has decided to embark on a program of setting up embassies around the globe in potential partner states, which could then lead to further co-operation economically. Achieving recognition from these states would also improve our legitimacy domestically and internationally."
+BAS.23.a:0 "Let us hope they see reason."
+
+BAS.24.t:0 "Euskadi Seeks For Recognition"
+BAS.24.d:0 "The area formerly known as Basque country has recently rebelled from Spain and established themselves as an independent nation. While small, our political experts indicate that they most likely have the means to retain this independence. Recently, their envoys have approached our officials, seeking recognition of their statehood. While this would likely not gain us much, the likelihood of it backfiring is also small."
+BAS.24.a:0 "They have our recognition."
+BAS.24.b:0 "Perhaps we can establish an embassy in their capital."
+BAS.24.c:0 "Let us not annoy the Spanish."
+
+BAS.25.t:0 "[FROM.GetNameDefCap] Recognizes Us"
+BAS.25.d:0 "The [FROM.GetAdjective] government has recognized us as an independent state in front of the international audience. Since we now have their recognition, our ambassadors will continue dialogue and possibly secure trade deals with these new partners, which will surely help our economy."
+BAS.25.a:0 "The legitimacy of Basque independence grows!"
+
+BAS.26.t:0 "[FROM.GetNameDefCap] Will Open Embassy in Bilbao"
+BAS.26.d:0 "The [FROM.GetAdjective] Ministry of Foreign Affairs has recognized our independence and even agreed to open their embassy in Bilbao. Since we now have their recognition, our ambassadors will continue dialogue and possibly secure trade deals with these new partners, which will surely help our economy."
+
+BAS.27.t:0 "[FROM.GetNameDefCap] Refused to Recognize Our Independence!"
+BAS.27.d:0 "The [FROM.GetAdjective] have refused to recognize our state, citing the need to maintain cordial relations with the Spanish state, which would be compromised by recognizing our separatist state."
+BAS.27.a:0 "Their loss"
+
+BAS.28.t:0 "Invest in [FROM.GetName]?"
+BAS.28.d:0 "The Basque government has sent us a trade request after our recognition of their independence. While small in size, the Basque country, or Euskadi as they refer to themselves, is home to a large shipping industry and multiple mines that have proven capable of producing high quality ore and other goods. While they ask for investments, the sum is quite small, and fostering a stronger bond with this new nation could help us if we ever require materials their industry can provide."
+BAS.28.a:0 "Bargains like this don’t come everyday, accept it!"
+BAS.28.b:0 "Investing in some Iberian backwater? Bah!"
+
+BAS.29.t:0 "[FROM.GetNameDefCap] Agreed to Invest!"
+BAS.29.d:0 "The [FROM.GetAdjective] government has received our advances well, agreeing to the conditions offered in our trade deal! Already, we are seeing an uptick in Basque economic development!"
+BAS.29.a:0 "Lovely smell of fresh capital!"
+
+BAS.30.t:0 "[FROM.GetNameDefCap] Refused to Invest!"
+BAS.30.d:0 "The [FROM.GetAdjective] government refused to invest in our proposed venture. While this setback is not a major one, it is a disappointing one, as the wheels of the industrial machine will need to find their grease from somewhere else."
+BAS.30.a:0 "Damn them!"
+
+BAS.31.t:0 "Towards the New Dawn!"
+BAS.31.d:0 "One of the main programs of EAE has always been to combat the clerical attitudes of Basques, where church plays a massive role in everything from governance to education. While EAE respects the position of the church, we also support the secularist approaches of our former Spanish comrades in the Republican Left and other parties. While their wholly anti-clerical nature is anathema to the Basque nature, we still believe that the power of the church should be combated somewhat. As such, lehendakari Belauste has proposed a set of reforms aimed at lessening the church’s power, especially on education. This has been explained as a means to lower strain on the clergy and to free their resources for more religious purposes.\n\n We have also decided to remove the requirement for party members having Basque surnames, as whether elements of our society want it or not, the Spanish immigrants can’t simply be kicked out. This is likely to boost our numbers even further, as the xenophobia of the Aberrianos and jetzales of EAJ is likely to push many Spaniards to join our party. We will create a new, pluralist Euskadi, where even those of original Spanish heritage will be softly integrated into the wider Basque society."
+BAS.31.a:0 "Race to Progress!"
+
+BAS.32.t:0 "Renewed Basque Culture"
+BAS.32.d:0 "Lehendakari [ROOT.GetLeader] has recently brought the topic of Basque culture to the Parliament, holding a speech in front of the gathered representatives that lamented the consequences of the repression Spain has reaped on Basque identity. Forever different from other European nations due to the peculiarity of Basque language, Euskara, and fiercely independent-minded, the Basques have persevered as separate from Spain for centuries.\n\nThanks to our newfound freedom, it is perhaps time to properly forge a Basque identity entirely separate from the Iberians and French. New programs will be formed to teach our history to the youth and Basque nationalist art and literature will receive generous governmental aid. The Euskaltzaindia institute is to be completely funded by EAJ, with even our rivals in other parties supporting this initiative. San Sebastian, the culinary capital of Euskadi, will receive further state investment to turn it into a veritable beacon of Basque culture, and last but not least, the sports of Euskadi are to be supported, both in the form of the traditional pelota court sports and the national favourite, football, a sport many of our politicians greatly enjoy playing. This new initiative has received support from all across the political spectrum, and is set to begin in the coming weeks."
+BAS.32.a:0 "To a New Basque Identity!"
+
+BAS.33.t:0 "Remembering Sabino Arana"
+BAS.33.d:0 "Our Lehendakari, Luis Arana Goiri, is a veritable beacon of Basque nationalism himself, but he himself concedes that without the monolithic work performed by his brother, Sabino, our movement, no, our independence would likely not exist. Aberrianos, and all of Euskadi owe so much to him, and in his legacy must this new state be built. Just like Arana, many within our ranks are disturbed by the amount of maketos, Spaniards, in our lands, taking jobs from honest Basque workers. But while that issue must be dealt with in time, first we must complete those ordeals that Arana set in motion so many years ago, such as the creation of a Catholic, traditional but republican state in Euskadi, the revival and standardisation of the Euskara language.\n\n We will also reclaim Arana’s family home from the moderates of EAJ, who have squatted there for too long, and it shall be turned into a proper memorial of Euskadi’s greatest hero. His works will be published in schools, the national flag will be swapped to his original design country-wide, and city streets will be renamed in his honours. The time has come to celebrate the Father of Euskadi, and Aberri will do his legacy justice through our new mandate!"
+BAS.33.a:0 "In the Memory of Arana ta Goiri'taŕ Sabin!"
+
+BAS.34.t:0 "The Fate of Spanish Interlopers"
+BAS.34.d:0 "Ever since the Basques separated from Spain, the question of what to do with the Spanish minority remaining here in Euskadi has caused friction in the newly established parliament. Today, this matter seems to have received its final conclusion, as Aberri militants march across Basque country gathering those of Spanish origin, often at gunpoint, and load them into wagons and lorries. Any protests or bargaining are only met with silence or at best, an order to stay quiet. The convoys of trucks snake their way through the rural backroads, hoping to go mostly unnoticed by the local Basque population, and eventually arrive to the Spanish border.\n\n There, the civilians are ordered out of the vehicles and sent marching over the border, rifle barrels of their guards pointed at their backs. While this massive expulsion of perceived foreigners will likely be met with great hostility from the other parties, notably EAE, the aberzales believe that as long as Spaniards live on our soil, we are in a constant risk of espionage and Madrid’s agents undermining our independence. Aberri has done its duty to keep Euskadi free in the future as well, and while in the short term this will be a major blow to the nation diplomatically and economically, the party leadership believes it to be a necessary evil."
+BAS.34.a:0 "Another Spanish chain on us breaks."
+
+BAS.35.t:0 "The Emerald Isle"
+BAS.35.d:0 "It is no secret that both our founder, Sabino Arana, and his brother, our lehendakari Luis Arana, look up to the Irish. Like us, they fought their colonial overlords and overthrew the shackles of oppression, but they have gone to great lengths to revitalize the Irish culture and language, something we aspire to do. Similarly, the Irish have remained faithful to their Catholic faith, and they have worked diligently to build republican institutions from the ashes of the British imperial administration. While the future of Ireland is unclear, at this moment they stand as the greatest inspiration to our movement, a brotherly nation with similar values to ours, and we must set out to strengthen this bond both economically and politically through diplomatic avenues.\n\n May our countries blossom to their full potential, as partners in the anti-imperial struggle, in a world dominated by colonialists and greedy profiteers. Lehendakari Arana has even proposed a proper state visit to Dublin to meet the Irish government and discuss furthering co-operation between our two nations."
+BAS.35.a:0 "Sabino’s dream will come to fruition!"
+
+BAS.50.t:0 "Mines de Rodalquillar"
+BAS.50.d:0 "It is no secret that Euskadi houses a significant mineral wealth. In fact, the reason for so many Spanish immigrants in our lands is directly because of these resources, as the industrial revolution and its consequences brought them here to mine them for the Spanish imperial machine. While in their usual manners, the Spanish managed to completely mismanage these mines, our administration has decided to not repeat their embarrassing blunders.\n\n The company Mines de Rodalquillar has received considerable investment from both the government, international companies and local private entrepreneurs, and the prospects of discovering great gold veins inside the Pyrenean mountains looks more likely by the day. Already, gold has been mined from various excavation sites, and although small in general output, the sudden increase in discoveries is making eyes turn, worldwide, towards the Euskadi economy."
+BAS.50.a:0 "Riches from the deep!"
+
+BAS.51.t:0 "Ferrocarriles Vascongados"
+BAS.51.d:0 "Few things are as important to a functioning state as the transport network, especially now that our industry is finally seeing significant growth. As such, we have expanded government subsidies to the company Ferrocarriles Vascongados, which has long served as the railway company of Basque Country. With the connections to Spain mostly severed, the company saw heavy losses initially, and only the rapid actions of the government kept it afloat. However, as more and more goods made in our country locally are shipped off into the world, and the industrial boom of Euskadi is in full swing, their locomotives work day and night to keep up with the demand.\n\n Many Basque citizens are also happy with the company’s growing focus on passenger transport, as their railway network expands to fit the demands of industry and agriculture, these new connections can also be used to ferry civilians between cities and towns. The chugging sound of the Euskadi-class steam locomotives speeding through the rolling hills and meadows of our nation is becoming more and more familiar by the day."
+BAS.51.a:0 "Railways are the gateway to prosperity!"
+
+BAS.52.t:0 " Ferrocarriles Vascongados Starts Production of Local Locomotives!"
+BAS.52.d:0 "News have come from the leadership of the Ferrocarriles Vascongados company, informing our government that they have begun building a new class of steam locomotives, the Biskaia-class, and carriages in their plants to feed the ever-growing need for these vehicles in our country. As a major war seems more likely to break out in Europe with every passing day, the company has stated that it cannot rely on export models and must prepare with local production, even if only to supplant the existing stock of carriages and engines they possess. Our ministers seem eager to purchase these new locomotives too, and have placed an order for a handful of them for testing in military operations."
+BAS.52.a:0 "Healthy innovation is always good to see."
+
+BAS.60.t:0 "The End of Basque Republic"
+BAS.60.d:0 "The Basque republican movement was thought to have eclipsed the Carlists in popularity at the dawn of the 3rd decade of , but recent events have proven these assumptions critically wrong. Today, the constitution of this pathetic republic was destroyed, and the most prominent leaders of the left-wing Republican parties were confined in house arrest, waiting trials. There are some, especially among the Aberri ultranationalists, who could be converted to see the righteousness of our cause, but most of the republicans shall stand before the judge for their actions. While the monarch’s council has urged caution when dealing with these nationalist and separatist fanatics, as pushing them too far would likely cause an insurgency against our rule, we must weed out the most republican-minded and ensure that no liberal or socialist traitor will threaten our rule. The Basque Republic is dead, and in its place, new Navarre and eventually Spain will be built, one bound by tradition, faith, old laws and monarchist vision!"
+BAS.60.a:0 "Down with the Traitors!"
+
+BAS.61.t:0 "Navarre, Pearl of Iberia"
+BAS.61.d:0 "Spain is in disarray. Syndicalist revolutionaries, liberal republicans and populist fanatics all seek to tear it apart, and neither the pretender Alfonsists nor the corrupt and delusional political parties of Spain will do anything about it. In their inaction, they will doom Spain to face a war in the coming years, one that will destroy the very fabric of what it means to be Spanish.\n\n Thankfully, the fate of Spain is not in the hands of these incompetent buffoons. No, it will be decided by the hands of loyal Basque and Navarrese men, the patriot of True Spain, an immortal entity not burdened by the softness of Alfonsine monarchists nor the republican insanity. We will begin the campaign to see this vision come to life, a Carlist Spain that will return the nation back to its roots. Our new realm is secure, and it stands as a testament to the traditionalism inherent in the Spanish nature. It is time to bring this transformation to rest of Spain."
+BAS.61.a:0 "Viva Espana!"
+
+BAS.70.t:0 "Comrades of the Coast"
+BAS.70.d:0 "In the fishing hamlets of our Atlantic coast, there has long been an enclave of our other arch-nemesis besides the Spanish, the godless militant anarchists of CNT-FAI. While in the wider Iberian peninsula those guerillas sow chaos and anarchy wherever they go, here in Euskadi the ranks of local CNT-FAI are mostly fishermen and dock workers, who only really engage in union activity in rare cases of upper management ineptitude. The ideological basis of this group is debatable, and while even our own Catholic union doesn’t engage in dialogue with this small movement, it is clear that they are mainly isolationist cell. However, there are certain firebrands within our ranks that see their very existence as affront to God, and demand that we wipe out these pitiful bands before they help the Spanish or French in destroying us. This is likely to be seen as very tyrannic, but on the other hand it could help finish off the last vestige of Spanish influence on our soil."
+BAS.70.a:0 "Let them be, they are clearly peaceful"
+BAS.70.b:0 "They compromise our independence."
+
+BAS.71.t:0 "The Coast Rises Up!"
+BAS.71.d:0 "During the attack on various anarchist hamlets along the Bay of Biscay, the governmental troops soon found their efforts in vain as the locals had discovered their plans. After destroying anything valuable to the anarchists, the units began their long trek home, only to be set upon by various anarchist groups laying in ambush along the roads. In a series of running battles, where the army attempted to retreat to Bilbao, the military was served reversal after another when the black and red-clad assailants proved their mastery over terrain and improvised weaponry alike, decimating the enemy morale.\n\nUpon reaching the capital, however, they were greeted by the final attack of the syndicalists, and in this swift but brutal battle, the government was overthrown. Revolution arrived to Euskadi, and the black and red banners rose to towards the sky over Bilbao. The overconfident members of the government had been shown the errors of their ways, and many were captured while on the run towards the Spanish border, a nation they had despised for so long. The coastal folk had toppled the old regime, and the new territory would be organized to serve their needs above all else."
+BAS.71.a:0 "Victory is Ours!"
+
+BAS.73.t:0 " The Red Lehendakari!"
+BAS.73.d:0 "The streets of Bilbao were finally becoming cleaner as rain washed away the grime and filth left over from the large battle, fought less than a week ago. The anarchist flags, hoisted over the buildings of the mighty coastal city, waved lazily in the wind. The city had been caught in a lethargic mood, as the final celebrations of the CNT-FAI victory had  died down and the fishermen turned anarchist revolutionaries realized the scope of their new duties. Already many among their ranks had simply deserted and returned home, leaving only the most ideologically motivated or opportunistic to pick over the carcass of the Basque Republic’s institutions.\n\n The cracks of the anarchist movement were beginning to show, their loose confederation of separate enclaves of coastal unionism buckling under the weight of managing a territory the size of Euskadi, and factionalism was running rampant. Now, the most capable anarchists had decided to gather a congress to nominate a temporary leader, who would act as a mediator for the various factions within the movement. As the ragged militias and union bosses gathered at the city hall of Bilbao, still covered in bullet holes from the revolt, their congress could begin.\n\n However, mere moments after the nomination of Justo Garate Arriola as the mediator, a sharp cry from outside the city hall captured everyone’s attention. The few anarchist guards left outside the main hall opened fire on something, but the grunts of pain soon revealed them to be on the receiving end of bullets. The anarchists gathered in the hall attempted to react, when bullets began peppering the building and hand grenades flew into the space from both inside and outside the building. The sound of explosions made the few city blocks around the city hall tremble, and in the five minutes the exchange of fire had taken place in, the leadership of Basque CNT-FAI was utterly wiped out.\n\n A man in his mid-30s, dressed in the simple monos overalls of Iberian workers, entered the room, flanked by bodyguards in similar suits. The only distinguishing feature on their clothes was a symbol similar to those used by the French Jacobins over the northern border. The leading man, Jesús Larrañaga observed the carnage for a second before marching across the destroyed hall to the podium and addressing his men, members of the Partido Comunista de Euzkadi. In a room littered by corpses, where blood slowly seeped into the wooden planks below, the Jacobin revolution of Iberia had begun."
+BAS.73.a:0 "Jacobinism has arrived to Iberia."
+
+BAS.80.t:0 "The Question of French Leadership"
+BAS.80.d:0 "With Basque troops now storming the few last military holdouts in Madrid, the defeat of the Castilian imperialists is certain. Spain lies in ruins, the rump holdings of Castile decimated by concentrated Basque advance, and with the Jacobin banners raising over Madrid, Seville and Gibraltar, the last hopes of Spanish chauvinism have been shattered. As Jacobin boots crush the last remnant of Spanish backwardness, a very real question has now risen to many lips inside our realm. The population of Euskadi is far too small to completely occupy Spain, and our intention from the start was to unite with the other communist cells in Iberia to share power in a popular federal republic. Now that former Spanish lands are united, however, many Spanish leaders have proposed holding an inner-party elections to determine who will lead the new republic.\n\n The Basque leadership has agreed to this offer, and five candidates have stepped up to contest the incumbent Leandro Carro Hernaez for the chairman’s seat. Probably the most prominent of these challengers is Dolores Ibárruri, famously known as La Pasionaria, being a strong advocate for feminism and Marxist-Leninism, and also of Basque origin. Another Basque communist veteran is Vicente Uribe, who became well-known for both his propaganda skills during the war, and the laws he pushed to help the situation of farmers and rural smallholders, earning him much fame among Spain’s rural folk. Representing the youth wing of the Jacobins is José Cazorla Maure, leaving the shadow of his mentor Carillo. His reputation is somewhat hampered by the harsh crackdowns he performed during the war against Spain, though his connection with the radical youth wing of the party has earned him many votes. \n\nThe candidate of our armed forces is Enrique Lister, known for being a talented militia leader during the war, and while he runs a platform of increased military control and militarisation, he is known to exhibit some internationalist and agrarian tendencies as well. Finally, the dark horse in the race is unquestionably Andres Nin, a follower of the Trotsky doctrine of internationalism and leader of Izquierda Comunista de España, he is the only candidate to not be part of Spanish communist party. "
+BAS.80.a:0 "Vicente Uribe secures Basque rule!"
+BAS.80.b:0 "La Pasionaria dominates the election!"
+BAS.80.c:0 "José Cazorla Maure brings out the young voters and triumphs!"
+BAS.80.e:0 "Enrique Lister’s military men lead us onward!"
+BAS.80.f:0 "Andres Nin snatches an unexpected Trotskyist victory!"
+BAS.80.g:0 "Leandro Carro Hernaez continues as the Red Lehendakari!"
+
+BAS.81.t:0 "The Question of French Leadership"
+BAS.81.d:0 "As Basque troops raise the Jacobin banners over Parisian roofs and the dust settles, many Communards can hardly believe their eyes. Yet with every passing day, it’s becoming increasingly clear that the Jacobin rule is here to stay, with the Communards exhausted from their fight against the Germans and their country ruined from the two front war. However, as the Basque commune’s leadership has announced its dedication towards creating an unified Ibero-French Jacobin Commune, many French Jacobins are now demanding that we honour our commitment to the cause and remember their sponsorship of our regime so many years ago by allowing their representatives to also compete for party leadership.\n\n Should we agree upon their request, the candidates most likely to win would be either the leader of Parti communiste français, Maurice Thorez, or the representative of the National Jacobins faction, Jacques Doriot. While Doriot follows an ideology quite different from the Red Jacobinism which Basque Jacobins subscribe to, he is nonetheless an important figure of French Jacobinism and thus not easy to sideline.\n\n Both Marcel Cachin and  Jacques Duclos have also announced their bids for the leadership, Marcel Cachin banking on his reputation as one of the founders of PCF while Duclos has apparently decided to step out of the shadow of Thorez as one of the main ideologues leading PCF in the period between Weltkriegs. While these two candidates do not appear to have as high a chance of winning the nomination, they still lead the last candidate to appear by a wide margin, that being Andre Marty. Being a former Jacobin, his expulsion from the party led him to Basque country, and without his help our revolution may very well have been thwarted. His aggressive and brutal methods have earned him quite a bit of infamy in Iberia, and while his chances of victory are slim, many fear the reign that he would bring to the new union of Iberia and France."
+BAS.81.a:0 "Thorez takes the premiership, as expected!"
+BAS.81.b:0 "Doriot’s National Jacobins rise to the challenge!"
+BAS.81.c:0 "Duclos pulls a surprise victory!"
+BAS.81.e:0 "Cachin snatches victory from his rivals!"
+BAS.81.f:0 "The dark horse, Andre Marty, secures the victory!"
+BAS.81.g:0 "Basque blood earned us this victory, Basques shall lead as well."
+
+BAS.82.t:0 "Curious Flotsam"
+BAS.82.d:0 "As dusk enveloped the sky over Biscayan coast, one of the last fishing trawlers was slowly chugging towards the shore, returning from a successful day’s work. As the piers of San Sebastian came into view, the sky began to darken in turn, and a torrential rainstorm began to churn the sea below. So close to the shore, the boat had no real danger, but the boat crew spotted an even smaller vessel that would not be as lucky, should the storm continue. A man in a tiny inflatable dinghy was closing towards the city, his boat tossing and turning in the raging sea, and the boat’s captain made the decision to help him. As the fishing vessel closed in to save the man, his dinghy capsized, plunging the old man into the water. Only the quick actions of the deckhands saved his life, and soon he was dragged out of the water. The deckhands were treated by a bemusing sight, as an old, bearded Asian man with a clear dogged determination burning in his eyes stared back at them.\n\n The man’s backstory remained a mystery as the Basque fishermen did not speak any of the languages the man did, although they could understand few of the French words he said. With this limited communication, the fishermen took him to the local headquarters of the Basque Communist Party, where a few of the officials could converse with the stranger in French. To their surprise, the man claimed to be Ho Chi Minh, one of the founders of Parti communiste français and a hero of the Indochinese resistance struggle. Hearing of our bravery against the Spanish imperialists and the following struggle to reclaim the Jacobin homeland, he decided to return from his self-imposed exile and announce his bid for the leadership of French and Iberian Jacobins.\n\n The news sent the new union of communist states into a frenzy, as the leaders of Spanish, Basque and French Jacobins are struggling to come to grips with the peculiarity of this proclamation. Nonetheless, many Basques sympathize with Ho Chi Minh, finding his anti-colonial struggle more relatable than the French state that up until recently held very anti-regionalist views. The strange arrival also holds quite a bit of legitimacy due to his role in forming the PCF, much to the dismay of French Jacobins."
+BAS.82.a:0 "Uncle Ho shall lead us to greatness!"
+
+BAS.100.t:0 "Offer From [FROM.GetName]"
+BAS.100.d:0 "The 'government' of [FROM.GetName] has approached us with an offer to join our country as a region with wide autonomy. We can always reject if we consider their territory as integral part of our country, but perhaps we should respect their desire to have autonomy?"
+BAS.100.a:0 "We agree."
+BAS.100.b:0 "No, we must claim their territory!"
+
+BAS.101.t:0 "[FROM.GetName] Agrees!"
+BAS.101.d:0 "The [FROM.GetAdjective] government agreed to give us wide autonomy. We will save our current government and even national elections!"
+BAS.101.a:0 "Splendid!"
+
+BAS.102.t:0 "[FROM.GetName] Refused!"
+BAS.102.d:0 "The [FROM.GetAdjective] government refused to give us wide autonomy. Moreover, they claimed our territory as their rightful. We must be ready for war."
+BAS.102.a:0 "We will fight for our independence!"
+
+BAS.103.t:0 "[FROM.GetName] Wants to Join Our Alliance"
+BAS.103.d:0 "The government of [FROM.GetName] has approached us with a friendly request to join our alliance. Will we accept them?"
+BAS.103.a:0 "They will be a vital ally against Russians!"
+BAS.103.b:0 "We don't want problems with Russia..."
+
+BAS.104.t:0 "[FROM.GetName] Refuses Alliance!"
+BAS.104.d:0 "The [FROM.GetAdjective] government refused to have us in their alliance. This is a great disgrace, but we will be good on our own."
+BAS.104.a:0 "We'll cope alone."
+BAS.104.b:0 "Send an offer to Japan then..."
+BAS.104.c:0 "Send an offer to Mongolia then..."
+
+BAS.105.t:0 "[FROM.GetName] Wants to Join Us"
+BAS.105.d:0 "The government of [FROM.GetName] wants to join us as an autonomous socialist republic."
+BAS.105.a:0 "They're welcome!"
+
+BAS.111.t:0 "The One True King?"
+BAS.111.d:0 "A crowd of stone-faced men had gathered on the inner yard of the Biscayan Assembly Hall. Their gazes were directed at the large tree located in the middle of this space, an oak which vibrant leaves sheltered the crowd from the scorching sun. This tree, the only one on the yard, was no mere decoration, but the Tree of Gernika, a symbol of continuation for the entire Basque people. While the original tree had died in 1860, this successor known as the “son", has stood in Gernika ever since, and traditionally both Carlist claimants and Spanish kings swore to uphold the civil liberties of the Biscayan people here. Today, however, the Lords of Biscay, a council of highly influential members of Basque society, have gathered to discuss a matter of utmost importance, the claimants of the crown of the newly proclaimed Carlist Kingdom of Navarre. \n\n Before the Lords, the claimants or their representatives have arrived. The most legitimate, at least by mainline Carlist reasoning, is Javier de Borbón-Parma y de Braganza, who has become the primary candidate for Carlist succession in Spain and wields considerable influence in the movement. However, Carlos Pío de Habsburgo-Lorena y de Borbón has also gathered a considerable movement around him, due to the connections he has with Austria, and his strong opposition to socialism. \n\n Many Basques have their reservations regarding these two claimants, however, as the new independence has made them extremely wary of the Spanish. As such, they believe that a more controllable monarch would be ideal for the Basque Carlists. Some have pointed out that as the new kingdom claims the title of Kingdom of Navarre, we should honour the traditions of that kingdom as well, mainly the lack of the Salic Law. With the absence of this law, it would be possible to crown a queen as well, and some have pointed to Carlos Pío’s mother, Infanta Blanca, as a possible candidate. While this would cause us to cut ties with Spanish Carlists, it would give us far more leverage as Basques. Ultimately, the decision lies in the hands of the Lords of Biscay "
+BAS.111.a:0 "Follow the mainline opinion, crown Javier I!"
+BAS.111.b:0 " Carlos VIII is the rightful king of the Carlists!"
+BAS.111.c:0 "Spaniards be damned, crown Queen Blanca!"
+BAS.111.e:0 "Is there a possibility we may have missed someone?"
+
+BAS.112.t:0 "The One True King?"
+BAS.112.d:0 "As the Lords of Biscay inquired on a possible fourth claimant, one of the men in the crowd cleared his throat and spoke. He claimed to be a representative of the crown of Two Sicilies, currently ruled by king Ferdinando III. While the house of Bourbon-Two Sicilies is very distinct from the Spanish Bourbons of both the Carlist and Alphonsist lines, they too are descendants of Charles III of Spain, and the envoy of the Sicilian crown expressed his interest to potentially unite the two realms again. While this notion was immediately protested by all three Carlist claimants present, the Basque members of the crowd seemed far less bemused by this suggestion. \n\n While their claim to rule is feeble at best, it could provide a solution to the succession dilemma and also separate Kingdom of Navarre from direct Spaniard rule. However, this would likely cause a massive uproar in the Carlist ranks, and produce a schism of such scale that the movement could potentially tear apart. Nonetheless, Two Sicilies is a powerful ally and a legitimate kingdom with actual land that they control, not a landless claimant like the Bourbon Carlists."
+BAS.112.a:0 "The needs of the Basques come first, Ferdinando shall rule Navarre!"
+BAS.112.b:0 "Follow the mainline opinion, crown Javier I!"
+BAS.112.c:0 " Carlos VIII is the rightful king of the Carlists!"
+BAS.112.e:0 "Spaniards be damned, crown Queen Blanca!"
+
+BAS.153.t:0 "From Red Coast to the World"
+BAS.153.d:0 "After our rebellion succeeded and the oppressive rule of the city-dwellers came to an end, it has become more than clear that the various fishing hamlets and small settlements of the Biscayan coast are not exactly the most ideologically homogenous. While our movement has its roots in the CNT-FAI activity of San Sebastian, particularly the Los Justicieros group, but for most of our members, anarchism is merely some lofty ideal and the real reason for their continued support lies in the unity provided by the movement. However, given the fact that we are now in control of this vast territory, there are those within our movement that demand a more concrete ideological basis with which to build our new freed communes with.\n\n While the lands of the Basque country boast many riches and factories, a model similar to France or Britain is simply not sustainable on our resources, but this does not mean that we cannot look to other forms of syndicalism instead. Given the naval tradition of the Basque peoples and the many sailors within our unions, we could adopt the identity of red raiders, pillaging capitalist shipping as it passes by our territory, and playing our part in the global struggle while also gathering means to eventually reach the level of development our allies boast. This option, however, is bound to cause many traditionalists still present in our lands to protest or even revolt. \n\n There is, however, another option. Given the pious nature of the Basque people, and as such, we could seek to adopt the Christian syndicalist theories into our movement to gather support from even those who were previously members of Aberri and EAJ. "
+BAS.153.a:0 "We will keep our Agrarian Syndicalist roots!"
+BAS.153.b:0 "The Red Raiders of the Biscayan Coast shall sail for the revolution!"
+BAS.153.c:0 "The meek shall inherit the land, under the Red Banner and Cross!"
+
+BAS.154.t:0 "Future Course of Aberri"
+BAS.154.d:0 "When our party first came to power, many feared that Aberri’s nationalism would be the downfall of Basque democracy. While we are certainly more willing to take action to secure the independence of Euskadi than the soft liberals of EAE or the moderates of EAJ, Aberri has honoured its democratic mandate and elections will run their normal course. However, given that our political platform has gone through a crash course of reforms and corrections, the party leadership has questioned lehendakari Arana on how this new course should be reflected in the next elections. \n\n Of course, we could retain our Christian democrat program, but there are other options as well. One posed by the more moderate wing of our movement is the adoption of the so-called National Democratic model, very popular in Poland and Czechia. Now that we have proven our dedication to democracy, we could use this ideological model to create even greater unity among the Basques and foster the golden era of Basque identity. However, the other option is a form of conservatism often seen in nations like ours, that have recently gained independence. This National Conservatism focuses heavily on the creation of a highly homogenous and unitary state, unified by ethnicity and piety. Given our stance on Basque cultural supremacy and traditional societal values, this would fit the movement well."
+BAS.154.a:0 "Where there are Basque politics, there is Catholicism first and foremost!"
+BAS.154.b:0 "Through the mandate of democracy shall we build a great nation!"
+BAS.154.c:0 "National Conservatism fits the Basque nature like a glove!"
+
+BAS.155.t:0 "Splinter Party No More!"
+BAS.155.d:0 "When we triumphed in the first free Basque elections, our movement was merely a splinter of the far larger EAJ party, made up of city liberals and middle class socialists, but all this is now in the past. The Basque National Action has grown into a true mass movement, and the Popular Front strategy has paid off immensely. But now that our movement has shifted away from small-circle theorists into proper action, a new question has risen. Where do we go from here? So far the middle class nature of our leadership has made the movement more liberal than socialist in many ways, but going forward, we may have to distance further from the centre to forge an identity of our own. \n\n The Basque society is very conservative in nature, but perhaps our movement is just what is needed to break the Basques from their outdated stupor and finally bring Euskadi to the 20th century. The Radical Progressivist ideas could provide a framework for us to work with in achieving this goal. \n\n Other option would be to bring socialist rhetoric to the toiling masses of Basque farmers, who have up until recently primarily supported Aberri, Carlists or the Basque Nationalist Party. By adopting more agrarian policies and a populist approach, we could possibly turn this large population to our side, although it would likely also greatly affect the direction of our reforms."
+BAS.155.a:0 "Liberal Socialism got us here, and it will take us forward!"
+BAS.155.b:0 "Progress above all else!"
+BAS.155.c:0 "Liberty to the toiler of the fields!"
+
+BAS.156.t:0 "Beyond Union Politics"
+BAS.156.d:0 "Few expected us to win in the elections, and even fewer expected us to remain faithful to the values of Basque democracy. However, despite our radical stances, we have done so, and now hold considerable sway over the politics of Euskadi. This has, however, meant that as our union becomes more like a political party, the ideological basis becomes increasingly more muddled. There are those within our ranks who say we have betrayed the basis of the union. While such naysayers are merely a minority, they are a vocal one, and increasingly growing into a nuisance. As such, the union-party leadership has proposed that we outline our policies in preparation for the next elections, and fully adopt a socialist model within the democratic framework. \n\n One option, albeit an outlandish one, is to drift towards the Sicilian Fascist movement. This movement is considerably more agrarian than ours, but adopting their ideas could net us votes from the rural folk. Their considerable emphasis on Christian values and democratic nationalism is also something we greatly value. \n\n However, if we wish to remain more broad in our ideological thinking, we could simply adopt Left Nationalism as a base guideline for our movement, taking inspiration from our Irish comrades who have long utilized a mix of socialism and nationalism to fight the perfidious Albion, just like we maintain vigilance against the eternal enemy of Spain."
+BAS.156.a:0 "Keep the course of Christian Socialism!"
+BAS.156.b:0 "Italians may be onto something with this whole Fascism thing…"
+BAS.156.c:0 "Nothing wrong with a bit of Crimson Nationalism."
+
+BAS.157.t:0 "What to Call Our New Republic?"
+BAS.157.d:0 "With our struggle for independence, we have proven to the world that Basques are an entity separate from Spain, now and forever. But many international actors have now approached on a question nobody really thought before we gained this newfound freedom. Just what should our nation be called? Under Spain, it was simply known as Basque Country, but to the Basques, this are has always been Euskal Herria. The name our new republic uses now is Euskadi, as homage to its original user, Sabino Arana. There has also been rapid rise in the use of Vasconia internationally, which has in the past been used as a synonym for Euskal Herria, to refer to the Basques by their own name for the people."
+BAS.157.a:0 "Euskadi shall remain, for Sabino’s glory!"
+BAS.157.b:0 "Euskal Herria fits the best!"
+BAS.157.c:0 "Vasconia, to celebrate our ancient people!"
+
+BAS.200.t:0 "[FROM.GetName] Invades Siberia!"
+BAS.200.d:0 "The self-proclaimed [FROM.GetAdjective] government has invaded their 'claims' in Eastern Siberia, violating our borders, since the area is impassable for the troups or any border security. We must do something!"
+BAS.200.a:0 "Declare war on them!"
+BAS.200.b:0 "We can't do it now!"
+
+BAS.201.t:0 "[FROM.GetName] Invades Okhotsk!"
+BAS.201.d:0 "The self-proclaimed [FROM.GetAdjective] government has invaded their 'claims' in Eastern Siberia, violating our border with only reason to have access to the sea. What shall we do?"
+BAS.201.a:0 "Declare war on them!"
+BAS.201.b:0 "Let them have this..."
+
+BAS.202.t:0 "The Question of Ancestral Unity"
+BAS.202.d:0 "Millennia ago, the Bering Strait was frozen over, allowing passage by land between Asia and North America quite possible. This caused a series of migrations and counter-migrations that resulted in the seeding of Human life and civilization across the New World. Though untold centuries have passed, the genetics of the BASut people and the wider peoples of Mongolia and Siberia are still close to the blood of the Native Americans. Interestingly, the world now is blessed with both an independent BASut state and an independent Native American state, both centered around the great Bering Sea, and both desperate for allies in this harsh and unforgiving world. With this in mind, we have propositioned our kin across the Bering Sea to form an alliance, so that together, we can resist neocolonialism and imperialism in all its forms while bringing our disparate people together as if it was 20,000 B.C.E all over again."
+BAS.202.a:0 "We welcome our long lost kin with open arms!"
+BAS.202.b:0 "We do not need these misguided foreign fools!"
+
+
