@@ -6550,13 +6550,13 @@ country_event = { #Kill Portugal or nah
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.148" }
 	title = sprd.149.t
 	desc = sprd.149.d
-	picture = GFX_report_event_SPA_paradox
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = { #Yes.
 		name = sprd.149.a
+		SPR = { country_event = { id = sprd.284 days = 150 } }
 		add_political_power = 20
 		increase_ruling_party_popularity_by_3
 		}
@@ -7664,15 +7664,10 @@ country_event = {#
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.284" }
 	title = sprd.284.t
 	desc = sprd.284.d
-	picture = GFX_report_event_SPA_paradox
 
 	fire_only_once = yes
-	trigger = { 
-		tag = SPR
-		NOT = {
-			has_country_flag = SPR_allow_psoe
-		}	
-	}	
+	is_triggered_only = yes
+	
 	option = { #Yes.
 		name = sprd.284.a
 		add_political_power = 20
