@@ -19,11 +19,11 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event CAT.20"
+		log = "[GetDateText]: [Root.GetName]: event GLC.20"
 		remove_all_ministers = yes
 		hidden_effect = {
 			country_event = {
-				id = CAT.20
+				id = GLC.20
 				months = 48
 			}
 		}
@@ -32,7 +32,7 @@ country_event = {
 	option = {
 		name = GLC.20.a
 		ai_chance = {
-			factor = 10
+			factor = 80
 		}
 		meta_effect = {
 			text = {
@@ -60,7 +60,7 @@ country_event = {
 	option = {
 		name = GLC.20.b
 		ai_chance = {
-			factor = 30
+			factor = 80
 		}
 		meta_effect = {
 			text = {
@@ -88,7 +88,7 @@ country_event = {
 	option = {
 		name = GLC.20.c
 		ai_chance = {
-			factor = 35
+			factor = 80
 			}
 		meta_effect = {
 			text = {
@@ -116,7 +116,7 @@ country_event = {
 	option = {
 		name = GLC.20.e
 		ai_chance = {
-			factor = 25
+			factor = 80
 			}
 		meta_effect = {
 			text = {
@@ -144,7 +144,7 @@ country_event = {
 	option = {
 		name = GLC.20.f
 		ai_chance = {
-			factor = 25
+			factor = 80
 			}
 		meta_effect = {
 			text = {
@@ -172,7 +172,7 @@ country_event = {
 	option = {
 		name = GLC.20.g
 		ai_chance = {
-			factor = 25
+			factor = 80
 			}
 		meta_effect = {
 			text = {

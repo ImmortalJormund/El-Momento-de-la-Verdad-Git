@@ -949,8 +949,8 @@ ideas = {
 			allowed = { always = no }
             modifier = {
 				army_org_regain = 0.05
-				offence = 0.15
-				defence = 0.15
+				offence = 0.05
+				defence = 0.05
 				supply_consumption_factor = -0.1
 				planning_speed = -0.1
 				conscription_factor = -0.1
@@ -964,7 +964,7 @@ ideas = {
 				stability_factor = 0.15
 				research_speed_factor = 0.1
 				political_power_gain = 0.05
-				consumer_goods_factor = -0.2
+				consumer_goods_factor = -0.1
 			}
 			picture = SPR_a_las_barricadas
 		}
@@ -982,7 +982,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
 			allowed = { always = no }
             modifier = {
-				conscription = 0.05
+				conscription = 0.01
 				industrial_capacity_factory = 0.11
 				production_speed_buildings_factor = 0.1
 			}
@@ -1127,9 +1127,8 @@ ideas = {
 			allowed = { always = no }
             modifier = {
 				political_power_factor = 0.15
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.1
 				research_speed_factor = 0.15
-				conscription = 0.03
 			}
 			picture = minority_rights_idea
 		}
@@ -1151,6 +1150,16 @@ ideas = {
             modifier = {
 				planning_speed = 0.15
 				research_speed_factor = 0.08
+			}
+			picture = GRU_SPD_LIBERAL_EDUCATION
+		}
+			SPR_National_Individualism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+            modifier = {
+				surrender_limit = 0.15
+				compliance_growth = 0.05
+				consumer_goods_factor = 0.1				
 			}
 			picture = GRU_SPD_LIBERAL_EDUCATION
 		}
@@ -1215,6 +1224,16 @@ ideas = {
 				social_liberal_drift = 0.07
 				consumer_goods_factor = -0.15
 				political_power_cost = -0.05
+			}
+			picture = generic_liberalism
+		}
+			SPR_Equal_Spain = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+            modifier = {
+				social_liberal_drift = 0.02
+				conscription_factor = 0.15
+				political_power_factor = -0.1
 			}
 			picture = generic_liberalism
 		}
@@ -1541,6 +1560,29 @@ ideas = {
 			}
 			picture = worker_guarantees
 		}
+			SPR_Evolution = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+            modifier = {
+				war_support_factor = -0.05
+				stability_factor_factor = 0.1
+				party_popularity_stability_factor = 0.1
+			}
+			picture = worker_guarantees
+		}
+			SPR_Against_Extremism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+            modifier = {
+				war_support_factor = 0.15
+				mobilization_speed = 0.15
+				radical_socialist_drift = 0.03
+				totalist_drift = -0.01		
+				paternal_autocrat_drift = -0.01				
+				national_populist_drift = -0.01
+			}
+			picture = worker_guarantees
+		}
 		SPR_absolutism_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
 			allowed = { always = no }
@@ -1841,6 +1883,114 @@ ideas = {
 				army_bonus_air_superiority_factor = 0.1
 				enemy_army_bonus_air_superiority_factor = -0.1
 			}
+		}
+			SPR_Vienna_Circle = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = 0.15
+			}
+			picture = generic_liberalism
+		}
+			SPR_kuking = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+            modifier = {
+				experience_gain_factor = 0.1
+				experience_gain_army = 0.12
+				experience_gain_army_unit_factor = 0.1
+			}
+			picture = generic_liberalism
+		}
+			SPR_edelweiss = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+            modifier = {
+				acclimatization_cold_climate_gain_factor = 0.12
+				special_forces_cap = 0.08
+				winter_attrition = -0.1
+			}
+			picture = generic_liberalism
+		}
+			SPR_dynastic_ties = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.1
+				command_power_gain = 0.08
+				war_stability_factor = 0.05
+			}
+			picture = generic_liberalism
+		}
+			SPR_west_sahara_purchase = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.2
+			}
+			picture = generic_liberalism
+		}
+			SPR_stormtroopers = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+            modifier = {
+				special_forces_attack_factor = 0.05
+				fortification_damage = 0.1
+			}
+			picture = generic_liberalism
+		}
+			SPR_officer_exchange = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+            modifier = {
+				experience_gain_factor = 0.1
+				experience_gain_army = 0.12
+				experience_gain_army_unit_factor = 0.1
+			}
+			picture = generic_liberalism
+		}
+			SPR_redcoat_fury = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+            modifier = {
+				breakthrough_factor = 0.1
+				marine_attack_factor = 0.12
+				marine_defence_factor = 0.12
+			}
+			picture = generic_liberalism
+		}
+			SPR_legion_allies = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+            modifier = {
+				experience_loss_factor = -0.1
+				special_forces_training_time_factor = -0.1
+				acclimatization_hot_climate_gain_factor = 0.13
+				heat_attrition_factor = -0.13
+			}
+			picture = generic_liberalism
+		}
+			SPR_anti_syndicalist_struggle = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+			modifier = {
+			offensive_war_stability_factor = 0.1
+			drift_defence_factor = 0.1
+			foreign_subversive_activities = -0.15
+			send_volunteer_size = 3
+
+			}
+			picture = generic_liberalism
+		}
+			SPR_the_legitime_kingdom = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
+			allowed = { always = no }
+            modifier = {
+				non_core_manpower = 0.15
+				surrender_limit = 0.25
+				compliance_gain = 0.03
+			}
+			picture = generic_liberalism
 		}
 		
 		###########################
