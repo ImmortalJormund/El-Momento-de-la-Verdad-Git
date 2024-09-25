@@ -279,6 +279,8 @@ ideologies = {
 			revolutionary_bolivarianism_subtype = {can_be_randomly_selected = no} #Revolutionary Bolivarianism
 			radsoc_clientelism_subtype = {can_be_randomly_selected = no} #Clientelism
 			left_carlism_subtype = {can_be_randomly_selected = no} #Left Carlism
+			radsoc_yellow_syndicalism_subtype = {can_be_randomly_selected = no color = { 240 225 48 } } #Yellow Syndicalism
+			radsoc_paternal_socialism_subtype = {can_be_randomly_selected = no}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_RADICAL_SOCIALIST_1"

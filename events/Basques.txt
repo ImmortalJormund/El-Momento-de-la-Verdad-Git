@@ -1985,12 +1985,12 @@ country_event = { #radsoc ideology pick
 
 	option = { #oh no
 		name = BAS.156.b
-		set_country_leader_ideology = fascism_subtype
+		set_country_leader_ideology = radsoc_paternal_socialism_subtype
 	}
 
 	option = { #oh no
 		name = BAS.156.c
-		set_country_leader_ideology = left_nationalism_subtype
+		set_country_leader_ideology = radsoc_yellow_syndicalism_subtype
 			}
 		}
 	}

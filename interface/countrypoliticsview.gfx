@@ -899,10 +899,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/agrarian_syndicalism_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_libertarian_possibilism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/libertarian_possibilism_group.png"
-	}
-	spriteType = {
 	    name = "GFX_ideology_de_leonism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/de_leonism_group.png"
 	}
@@ -1033,6 +1029,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_syn_kotahitanga_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/syn_kotahitanga_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_libertarian_possibilism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/libertarian_possibilism_group.png"
 	}
 
 	spriteType = {
@@ -1252,10 +1252,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/radsoc_socialist_feminism_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_left_carlism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/left_carlism_group.png"
-	}
-	spriteType = {
 		name = "GFX_ideology_radsoc_revisionist_marxism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/radsoc_revisionist_marxism_group.png"
 	}
@@ -1346,6 +1342,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_radsoc_clientelism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/radsoc_clientelism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_left_carlism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/left_carlism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_radsoc_yellow_syndicalism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/yellow_syndicalism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_radsoc_paternal_socialism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/radsoc_paternal_socialism_group.png"
 	}
 	
 	spriteType = {
@@ -1730,10 +1738,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/soclib_humanistic_capitalism_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_soclib_blasquismo_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/blasquismo_group.png"
-	}
-	spriteType = {
 		name = "GFX_ideology_soclib_dixiecrat_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/soclib_dixiecrat_group.png"
 	}
@@ -1857,14 +1861,14 @@ spriteTypes = {
 		name = "GFX_ideology_kritarchy_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/kritarchy_group.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_soclib_blasquismo_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/blasquismo_group.png"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_free_market_capitalist_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/free_market_capitalist_group.png"
-	}
-	spriteType = {
-		name = "GFX_ideology_blasquismo_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/blasquismo_group.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_libertarian_subtype"
@@ -2047,11 +2051,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/enlightened_conservatism_group.png"
 	}
 	spriteType = {
+		name = "GFX_ideology_blasquismo_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/blasquismo_group.png"
+	}
+	spriteType = {
 		name = "GFX_ideology_marlib_kleptocracy_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/marlib_kleptocracy_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_marlib_lerrouxism_subtype"
+		name = "GFX_ideology_marlib_lerrouxismo_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/marlib_lerrouxismo_group.png"
 	}
 
@@ -2264,14 +2272,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/humanisme_integral_group.png"
 	}
 	spriteType = {
+		name = "GFX_ideology_soccon_maurism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/soccon_maurism_group.png"
+	}
+	spriteType = {
 		name = "GFX_ideology_soccon_liberal_conservative_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/soccon_liberal_conservative_group.png"
 	}
-	spriteType = {
-		name = "GFX_ideology_soccon_maurism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/soccon_maurism_group.png"
-		
-	}
+	
 	spriteType = {
 		name = "GFX_ideology_autdem_christian_democracy_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/autdem_christian_democracy_group.png"
@@ -2291,10 +2299,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_prussian_constitutionalism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/prussian_constitutionalism_group.png"
-	}
-	spriteType = {
-		name = "GFX_ideology_maurism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/maurism_group.png"	
 	}
 	spriteType = {
 		name = "GFX_ideology_colonial_govt_subtype"
@@ -2532,6 +2536,10 @@ spriteTypes = {
 		name = "GFX_ideology_authdem_poujadisme_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/authdem_poujadisme_group.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_maurism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/maurism_group.png"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_junta_subtype"
@@ -2548,10 +2556,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_red_tinted_autocracy_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/red_tinted_autocracy_group.png"
-	}
-	spriteType = {
-		name = "GFX_ideology_pataut_synarchism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/pataut_synarchism_group.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_corporatocracy_subtype"
@@ -2833,11 +2837,14 @@ spriteTypes = {
 		name = "GFX_ideology_poujadisme_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/poujadisme_group.png"
 	}
-
 	spriteType = {
 		name = "GFX_ideology_pataut_maurism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/pataut_maurism_group.png"
-	}	
+	}
+	spriteType = {
+		name = "GFX_ideology_pataut_synarchism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/pataut_synarchism_group.png"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_integralism_subtype"

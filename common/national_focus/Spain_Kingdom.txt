@@ -4385,7 +4385,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_fate_of_france"
-			country_event = sprd.1109
+			country_event = sprd.1110
 			}
 		}
 	focus = {
@@ -4421,6 +4421,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_fate_of_france"
 			add_ideas = SPR_the_legitime_kingdom
+			country_event = sprd.1109
 			}
 		}
 	focus = {
@@ -4454,7 +4455,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_fate_of_france"
-			country_event = sprd.109
+			country_event = sprd.1114
 			}
 		}
 		focus = {
@@ -6105,6 +6106,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
+			country_event = sprd.193
 			remove_ideas = SPR_DisUnited_Party
 			add_ideas = SPR_United_Party
 			add_popularity = {
@@ -6131,6 +6133,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
+			country_event = sprd.194
 			add_ideas = SPR_Mistakes_of_the_Past
 			add_popularity = {
 				ideology = market_liberal
@@ -6155,6 +6158,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
+			country_event = sprd.195
 			add_political_power = -75
 			add_ideas = SPR_True_Jacobins_idea
 			remove_ideas = SPR_Rising_Separatism
@@ -6181,6 +6185,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
+			country_event = sprd.197
 			add_ideas = SPR_Lerrouxism_Unbowed
 			add_war_support = 0.05
 		}
@@ -6202,6 +6207,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
+			country_event = sprd.196
 			add_ideas = SPR_Endorsed_Kleptocracy
 			add_political_power = 150
 		}
@@ -6223,6 +6229,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
+			country_event = sprd.199
 			add_ideas = SPR_Catalans_Are_Okay_I_Guess
 			add_manpower = 5000
 			add_stability = 0.1
@@ -6245,6 +6252,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
+			country_event = sprd.198
 			add_ideas = SPR_Fuck_Catalans
 			add_popularity = {
 				ideology = market_liberal
@@ -6269,6 +6277,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
+			country_event = sprd.200
 			add_ideas = SPR_Populist_Spain
 			add_war_support = 0.1
 			add_popularity = {
@@ -7170,6 +7179,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
+			country_event = sprd.201
 			add_political_power = 65
 			add_ideas = SPR_Parallel_Emperor
 		}
@@ -7210,6 +7220,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
+			country_event = sprd.202
 			add_ideas = SPR_Anti-Clericalism 
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
@@ -7229,6 +7240,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
+			country_event = sprd.203
 			add_political_power = 150
 			add_stability = 0.05
 		}
@@ -7257,6 +7269,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
+			country_event = sprd.204
 			add_ideas = SPR_Silver_Tongued_Demagogue
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }

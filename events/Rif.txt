@@ -114,7 +114,7 @@ country_event = {
 
 	option = { #oh no
 		name = RIF.17.f
-		set_country_leader_ideology = soclib_radical_progressivism_subtype
+		set_country_leader_ideology = kritarchy_subtype
 			}
 		}
 	}
