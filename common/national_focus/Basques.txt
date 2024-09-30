@@ -271,6 +271,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = BAS.20
+			}
+			hidden_effect = {
+			country_event = {
+				id = BAS.19
+				days = 15			
+			}
 		}
 	}
 	focus = {
@@ -2719,6 +2725,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			add_ideas = BAS_powerhouse_of_iberia
 			add_war_support = 0.1
 			add_political_power = 75
 			add_command_power = 150
@@ -2743,6 +2750,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			add_ideas = BAS_free_of_castile
 			add_war_support = 0.1
 			add_political_power = 75
 			add_command_power = 150
