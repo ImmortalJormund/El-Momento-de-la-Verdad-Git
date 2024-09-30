@@ -1083,34 +1083,6 @@ country_event = {
 			popularity = 0.1
 		}
 	}
-	option = {
-		name = sprd.27.b #No, the time of the kingdom is over
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SPR_future_of_the_monarchy
-					option = SPR_FUTURE_OF_THE_MONARCHY_NEW_KING
-				}
-			}
-		}
-		add_political_power = -100
-		create_country_leader = {
-			name = "Francisco Franco Bahamonde"
-			desc = "POLITICS_FRANSISCO_FRANCO_DESC"
-			picture = "gfx/leaders/SPR/Portrait_SPR_Franco_Bahamonde.png"
-			expire = "1.1.1"
-			ideology = authdem_junta_subtype
-		}
-		custom_effect_tooltip = SPR_become_republic
-		set_cosmetic_tag = SPR_republic
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-		}
-		add_ideas = SPR_Francisco_Franco_Bahamonde_hog_ade
-		set_country_flag = SPR_republic
-	}
 }
 
 # Replacing the king - Juan assassinated
@@ -1156,42 +1128,6 @@ country_event = {
 			ideology = authoritarian_democrat
 			popularity = 0.1
 		}
-	}
-	option = {
-		name = sprd.27.b #No, the time of the kingdom is over
-		ai_chance = {
-			factor = 40
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SPR_future_of_the_monarchy
-					option = SPR_FUTURE_OF_THE_MONARCHY_NEW_KING
-				}
-			}
-		}
-		add_political_power = -100
-		create_country_leader = {
-			name = "Francisco Franco Bahamonde"
-			desc = "POLITICS_FRANSISCO_FRANCO_DESC"
-			picture = "gfx/leaders/SPR/Portrait_SPR_Franco_Bahamonde.png"
-			expire = "1.1.1"
-			ideology = authdem_junta_subtype
-		}
-		custom_effect_tooltip = SPR_become_republic
-		set_cosmetic_tag = SPR_republic
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-		}
-		if = {
-			limit = {
-				NOT = { has_government = authoritarian_democrat }
-			}
-			set_politics = {
-				ruling_party = authoritarian_democrat
-			}
-		}
-		add_ideas = SPR_Francisco_Franco_Bahamonde_hog_ade
-		set_country_flag = SPR_republic
 	}
 }
 
@@ -4846,79 +4782,6 @@ country_event = { #Subsequent Elections
 	}
 }
 
-
-country_event = { #Constitutional republic?
-	id = sprd.103
-	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.103" }
-	title = sprd.103.t
-	desc = sprd.103.d
-	picture = GFX_report_event_generic_strike
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = { #Yes.
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = SPR_politics
-					option = SPR_POLITICS_AUTHDEM
-				}
-			}
-			#modifier = {
-				#factor = 3
-				#has_country_flag = { SPR_new_constitution }
-			#}
-		}
-		name = sprd.103.a
-		add_stability = 0.05
-		hidden_effect = {
-			set_country_flag = SPR_constitutional_republic
-			create_country_leader = {
-				name = "Francisco Franco Bahamonde"
-				desc = "POLITICS_FRANSISCO_FRANCO_DESC"
-				picture = "gfx/leaders/SPR/Portrait_SPR_Franco_Bahamonde.png"
-				expire = "1.1.1"
-				ideology = christian_democracy_subtype
-			}
-		}
-	}
-	option = { #No.
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = SPR_politics
-						option = SPR_POLITICS_SOCCON
-					}
-					has_game_rule = {
-						rule = SPR_politics
-						option = SPR_POLITICS_MARLIB
-					}
-					has_game_rule = {
-						rule = SPR_politics
-						option = SPR_POLITICS_SOCLIB
-					}
-					has_game_rule = {
-						rule = SPR_politics
-						option = SPR_POLITICS_SOCDEM
-					}
-				}
-			}
-			#modifier = {
-				#factor = 3
-				#has_country_flag = { SPR_leaders_arrested }
-			#}
-		}
-		name = sprd.103.b
-		add_stability = -0.05
-		set_country_flag = SPR_francoist
-	}
-}
 
 country_event = { #Reconcile with moderate socialists
 	id = sprd.104
