@@ -363,7 +363,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = unlock_focuses
-			 set_cosmetic_tag = BAS_Aberri
 		}
 	}
 	focus = {
@@ -383,7 +382,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_ideas = BAS_Politicized_Union
+			add_ideas = BAS_Rallied_Union
 		}
 	}
 	focus = {
@@ -403,7 +402,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_ideas = BAS_Compromises_With_Church
+			add_ideas = BAS_Solidarism
 		}
 	}
 	focus = {
@@ -452,7 +451,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = BAS.156
-			add_ideas = BAS_Progressive_Taxation_idea
+			add_ideas = BAS_Union_into_Party
 		}
 	}
 	focus = {
@@ -478,6 +477,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			add_ideas = BAS_Crimson_Catholicism
 			country_event = BAS.21
 		}
 	}
@@ -527,6 +527,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = BAS.23
+			add_ideas = BAS_Booming_Trade
 		}
 	}
 	focus = {
@@ -549,6 +550,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = BAS.23
+			add_ideas = BAS_True_Republicanism
 			}
 	}
 	focus = {
@@ -571,6 +573,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = BAS.155
+			add_ideas = BAS_Popular_Front
 			add_synd_to_coalition
 			}
 			add_radsoc_to_coalition
@@ -838,9 +841,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			GER = {
-				country_event = BAS.100
-			}
+				country_event = BAS.108
 		}
 	}
 	focus = {
@@ -995,9 +996,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			CAN = {
-				country_event = BAS.202
-			}
+				country_event = BAS.106
 		}
 	}
 	focus = {
@@ -1758,6 +1757,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = BAS.243
 			add_stability = -0.15
 			decrease_ruling_party_popularity_by_5 = yes
 			add_political_power = 150
@@ -1782,6 +1782,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = BAS.237
 			add_ideas = BAS_Los_Justiciaros
 			}
 	}
@@ -1802,6 +1803,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = BAS.238
 			add_research_slot = 1
 			add_ideas = BAS_Red_San_Sebastian
 		}
@@ -1826,6 +1828,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = BAS.241
 			add_political_power = -150
 			add_ideas = BAS_Concessions_to_Tradition
 		}
@@ -1850,6 +1853,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+				country_event = BAS.240
 				add_ideas = BAS_Union_of_ELA_and_CNT
 			172 = {
 				add_extra_state_shared_building_slots = 2
@@ -1880,6 +1884,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+				country_event = BAS.239
 				add_ideas = BAS_Red_Fleet
 				172 = {
 				add_extra_state_shared_building_slots = 5
@@ -1932,6 +1937,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = BAS.242
 			add_research_slot = 1
 			add_ideas = BAS_Crimson_Coast
 		}
@@ -1997,6 +2003,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = BAS.75
 			add_ideas = BAS_Revive_the_Spectre_of_Communism
 			}
 	}
@@ -2017,6 +2024,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = BAS.246
 			add_research_slot = 1
 			add_ideas = BAS_Bend_the_Unions_to_Our_Will
 		}
@@ -2041,9 +2049,9 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = BAS.76
 			add_political_power = -150
 			add_ideas = BAS_French_Theorists
-			country_event = BAS.76
 			172 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2074,6 +2082,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+				country_event = BAS.245
 				add_ideas = BAS_Introduce_Cult_of_Reason_to_Iberia
 				add_research_slot = 1
 		}
@@ -2128,7 +2137,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = BAS.74
+			country_event = BAS.248
 		}
 	}
 	focus = {
@@ -2151,7 +2160,7 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 			add_ideas = BAS_First_Jacobins_of_Iberia
-			country_event = BAS.77
+			country_event = BAS.247
 			every_state = {
 				limit = { is_core_of = SPR }
 				add_core_of = BAS
@@ -2415,7 +2424,6 @@ focus_tree = {
 		available = {
 			is_subject = no
 			has_government = paternal_autocrat
-			has_completed_focus = BAS_Show_of_Goodwill
 		}	
 		prerequisite = {
 			focus = BAS_Eradicate_Socialist_Vermin
@@ -2471,6 +2479,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			has_government = paternal_autocrat
+			41 = { is_fully_controlled_by = ROOT } #Madrid
 		}
 		prerequisite = {
 			focus = BAS_Carlism_Not_Nationalism
@@ -2510,10 +2519,12 @@ focus_tree = {
 		y = 0
 		cost = 4
 		available = {
+			has_country_flag = BAS_secured_its_independence
 			is_subject = no
 			NOT = {
 			has_government = totalist
 			has_government = paternal_autocrat
+			has_government = syndicalist
 			}
 		}
 		ai_will_do = {
@@ -2749,6 +2760,7 @@ focus_tree = {
 				is_owned_by = BAS
 				is_coastal = yes
 			}
+			has_country_flag = BAS_secured_its_independence
 			is_subject = no
 		}
 		ai_will_do = {
@@ -2884,7 +2896,7 @@ focus_tree = {
 			172 = { add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = dockyard
-				level = 2
+				level = 3
 				instant_build = yes
 				}
 			}
@@ -2913,7 +2925,7 @@ focus_tree = {
 			factor = 5
 		}
 		completion_reward = {
-			add_ideas = BAS_merchant_fleet
+			add_ideas = BAS_Trawlers_to_Gunboats
 			}
 		}	
 	focus = {
@@ -2940,7 +2952,7 @@ focus_tree = {
 			factor = 5
 		}
 		completion_reward = {
-			add_ideas = BAS_merchant_fleet
+			add_ideas = BAS_Hire_Fishermen
 			add_manpower = 10000
 		}
 	}	
@@ -2968,7 +2980,7 @@ focus_tree = {
 			factor = 5
 		}
 		completion_reward = {
-			add_ideas = BAS_merchant_fleet
+			add_ideas = BAS_Reverse_Engineer_Spanish_Designs
 			navy_experience = 20
 		}
 	}	
@@ -2995,12 +3007,12 @@ focus_tree = {
 			factor = 5
 		}
 		completion_reward = {
-			add_ideas = BAS_merchant_fleet	
+			add_ideas = BAS_From_Auxiliary_to_A_True_Fleet	
 		}
 	}	
 	focus = {
 		id = BAS_Air
-		icon = GFX_BAS_Air
+		icon = GFX_goal_SKM_Sikkim_Air_Service
 		relative_position_id = BAS_Euzko_Gudariak
 		x = -4
 		y = 0
@@ -3014,19 +3026,19 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 25	
 			add_ace = {
-				name = "Vera"
-				surname = "Zakharova"
-				callsign = "Chyychaah"
+				name = "Robert"
+				surname = "Iribane"
+				callsign = "Irrintizina"
 				type = fighter_genius
-				is_female = yes
+				is_female = no
 			}
 			add_equipment_to_stockpile = {
-				type = small_plane_airframe amount = 25 producer = TRM
+				type = small_plane_airframe amount = 250 producer = SPR
 			}
 			add_equipment_to_stockpile = {
 				type = medium_plane_airframe
-				amount = 25
-				producer = TRM
+				amount = 100
+				producer = SPR
 			}
 		}
 	}
@@ -3069,6 +3081,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			add_ideas = BAS_Fokker_Vultures
 			add_doctrine_cost_reduction = {
 				name = air_doc_bonus
 				cost_reduction = 0.5
@@ -3079,7 +3092,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAS_Improve_Air_Fleet
-		icon = GFX_goal_ELS_Plane_Lease
+		icon = GFX_goal_anti_air
 		relative_position_id = BAS_Air
 		x = 1
 		y = 1
@@ -3100,6 +3113,12 @@ focus_tree = {
 				bonus = 1
 				uses = 3
 				category = air_equipment
+			}
+			172 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 5
+				instant_build = yes
 			}
 		}
 	}
