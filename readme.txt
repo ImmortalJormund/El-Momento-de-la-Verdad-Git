@@ -2,9 +2,9 @@ Hello there cool dudes and cold-blooded comrades
 
 Here's a few tips on how to install mod. First, go to Documents/Paradox Interactive/Hearts of Iron IV/mod and paste the mod there.
  Then change the mod descriptor file to match the path of your PC.
- That should do it. If it doesn't, join the KX Discord and come call me an useless cunt in the kx-submods-chat.
+ That should do it. If it doesn't, join the KX Discord and come call me an useless cunt in the kx-submods-chat, and hopefully we can get it fixed.
  
- Secondly, once the mod works, you may want to know that this is an alpha or beta build depending on how much leeway you'll give me. Much of the mod is very WIP, and thus I'd recommend sticking to Spain for the time being.
+ Secondly, once the mod works, you may want to know that this is an alpha or beta build depending on how much leeway you'll give me. Much of the mod is very WIP, and thus I'd recommend sticking to Spain and Basques for the time being.
  Paths are relatively easy to get. As Spain, avoid the civil war by not banning CNT-FAI and Carlists and by focusing on diplomacy, then restore monarchy, restore elections and elect the party you want.
  For democratic Syndicalists and Radical Socialists, do not ban them. For democratic Paternal Autocrats, ban socialists.
  
