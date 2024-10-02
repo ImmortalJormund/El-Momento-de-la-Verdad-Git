@@ -129,7 +129,7 @@ create_country_leader = {
 	name = "Joaquim Bau i Nolla"
 	picture = "gfx/leaders/CAT/Portrait_CAT_Joaquim_Bau_i_Nolla.png"
 	expire = "1.1.1"
-	ideology = authdem_monsoc_subtype
+	ideology = generic_national_democracy_subtype
 }
 
 create_country_leader = {
@@ -178,6 +178,6 @@ create_country_leader = {
 	name = "Jaume Compte i Canelles"
 	picture = "gfx/leaders/CAT/Portrait_CAT_Jaume_Compte_i_Canelles.png"
 	expire = "1.1.1"
-	ideology = popcom_subtype 
+	ideology = national_communism_subtype 
 }
 

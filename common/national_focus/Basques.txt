@@ -1322,10 +1322,6 @@ focus_tree = {
 		y = 0
 		cost = 3
 		available = {
-			OR = {
-				has_democratic_government = yes
-				has_government = national_populist
-			}
 			has_country_flag = BAS_secured_its_independence
 		}
 		ai_will_do = {
@@ -1345,19 +1341,13 @@ focus_tree = {
 		prerequisite = {
 			focus = BAS_Euskadi_Economy_Springs_Up
 		}
-		available = {
-			OR = {
-				has_government = national_populist
-				has_government = social_democrat
-			}
-		}
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = BAS_economy_1
-				add_idea = BAS_national_economy_1
+				add_idea = BAS_economy_2
 			}
 			add_resource = {
 				type = steel
@@ -1386,57 +1376,9 @@ focus_tree = {
 			factor = 95
 		}
 		completion_reward = {
-			if = {
-				limit = { has_completed_focus = BAS_The_Riches_of_Our_Lands }
-				effect_tooltip = {
 					swap_ideas = {
-						remove_idea = BAS_national_economy_1
-						add_idea = BAS_national_economy_2
-					}
-				}
-			}
-			else = {
-				effect_tooltip = {
-					swap_ideas = {
-						remove_idea = BAS_capital_economy_1
-						add_idea = BAS_capital_economy_2
-					}
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_idea = BAS_national_economy_1
-					}
-					swap_ideas = {
-						remove_idea = BAS_national_economy_1
-						add_idea = BAS_national_economy_2
-					}
-				}
-				else_if = {
-					limit = {
-						has_idea = BAS_national_economy_3
-					}
-					swap_ideas = {
-						remove_idea = BAS_national_economy_3
-						add_idea = BAS_national_economy_4
-					}
-				}
-				else_if = {
-					limit = {
-						has_idea = BAS_capital_economy_1
-					}
-					swap_ideas = {
-						remove_idea = BAS_capital_economy_1
-						add_idea = BAS_capital_economy_2
-					}
-				}
-				else = {
-					swap_ideas = {
-						remove_idea = BAS_capital_economy_3
-						add_idea = BAS_capital_economy_4
-					}
-				}
+					remove_idea = BAS_economy_2
+					add_idea = BAS_economy_3
 			}
 		}
 	}
@@ -1447,6 +1389,9 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 4
+		available = {
+			has_completed_focus = BAS_Kickstart_Basque_Industrial_Revolution
+		}
 		prerequisite = {
 			focus = BAS_The_Riches_of_Our_Lands
 			focus = BAS_Develop_Machinery
@@ -1455,57 +1400,9 @@ focus_tree = {
 			factor = 95
 		}
 		completion_reward = {
-			if = {
-				limit = { has_completed_focus = BAS_The_Riches_of_Our_Lands }
-				effect_tooltip = {
 					swap_ideas = {
-						remove_idea = BAS_national_economy_1
-						add_idea = BAS_national_economy_3
-					}
-				}
-			}
-			else = {
-				effect_tooltip = {
-					swap_ideas = {
-						remove_idea = BAS_capital_economy_1
-						add_idea = BAS_capital_economy_3
-					}
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_idea = BAS_national_economy_1
-					}
-					swap_ideas = {
-						remove_idea = BAS_national_economy_1
-						add_idea = BAS_national_economy_3
-					}
-				}
-				else_if = {
-					limit = {
-						has_idea = BAS_national_economy_2
-					}
-					swap_ideas = {
-						remove_idea = BAS_national_economy_2
-						add_idea = BAS_national_economy_4
-					}
-				}
-				else_if = {
-					limit = {
-						has_idea = BAS_capital_economy_1
-					}
-					swap_ideas = {
-						remove_idea = BAS_capital_economy_1
-						add_idea = BAS_capital_economy_3
-					}
-				}
-				else = {
-					swap_ideas = {
-						remove_idea = BAS_capital_economy_2
-						add_idea = BAS_capital_economy_4
-					}
-				}
+						remove_idea = BAS_economy_3
+						add_idea = BAS_economy_4
 			}
 		}
 	}
@@ -1536,12 +1433,6 @@ focus_tree = {
 		cost = 4
 		prerequisite = {
 			focus = BAS_Euskadi_Economy_Springs_Up
-		}
-		available = {
-			OR = {
-				has_government = authoritarian_democrat
-				has_government = social_conservative
-			}
 		}
 		ai_will_do = {
 			factor = 100
@@ -1601,39 +1492,9 @@ focus_tree = {
 			factor = 95
 		}
 		completion_reward = {
-			if = {
-				limit = { has_completed_focus = BAS_The_Riches_of_Our_Lands }
-				effect_tooltip = {
 					swap_ideas = {
-						remove_idea = BAS_national_economy_4
-						add_idea = BAS_national_economy_5
-					}
-				}
-			}
-			else = {
-				effect_tooltip = {
-					swap_ideas = {
-						remove_idea = BAS_capital_economy_4
-						add_idea = BAS_capital_economy_5
-					}
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_idea = BAS_national_economy_4
-					}
-					swap_ideas = {
-						remove_idea = BAS_national_economy_4
-						add_idea = BAS_national_economy_5
-					}
-				}
-				else = {
-					swap_ideas = {
-						remove_idea = BAS_capital_economy_4
-						add_idea = BAS_capital_economy_5
-					}
-				}
+						remove_idea = BAS_economy_4
+						add_idea = BAS_economy_5
 			}
 			172 = {
 				add_extra_state_shared_building_slots = 4
@@ -1684,39 +1545,9 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
-			if = {
-				limit = { has_completed_focus = BAS_The_Riches_of_Our_Lands }
-				effect_tooltip = {
 					swap_ideas = {
-						remove_idea = BAS_national_economy_5
-						add_idea = BAS_national_economy_6
-					}
-				}
-			}
-			else = {
-				effect_tooltip = {
-					swap_ideas = {
-						remove_idea = BAS_capital_economy_5
-						add_idea = BAS_capital_economy_6
-					}
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_idea = BAS_national_economy_5
-					}
-					swap_ideas = {
-						remove_idea = BAS_national_economy_5
-						add_idea = BAS_national_economy_6
-					}
-				}
-				else = {
-					swap_ideas = {
-						remove_idea = BAS_capital_economy_5
-						add_idea = BAS_capital_economy_6
-					}
-				}
+						remove_idea = BAS_economy_5
+						add_idea = BAS_economy_6
 			}
 		}
 	}
@@ -2631,7 +2462,6 @@ focus_tree = {
 		cost = 4
 		available = {
 			is_subject = no
-			is_faction_leader = yes
 		}
 		prerequisite = {
 			focus = BAS_Beyond_Iberia
@@ -2716,10 +2546,12 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
+		mutually_exclusive = {
+			focus = BAS_Euskadi_Free_of_Castille
+		}
 		prerequisite = {
 			focus = BAS_Liberation_Comes
 			focus = BAS_Strategic_Alliances
-			focus = BAS_Iparralde
 		}
 		ai_will_do = {
 			factor = 100
@@ -2741,10 +2573,12 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
+		mutually_exclusive = {
+			focus = BAS_The_New_Power_of_Iberia
+		}
 		prerequisite = {
 			focus = BAS_Contact_the_Diaspora
 			focus = BAS_Our_Colonies_in_the_New_World
-			focus = BAS_Iparralde
 		}
 		ai_will_do = {
 			factor = 100

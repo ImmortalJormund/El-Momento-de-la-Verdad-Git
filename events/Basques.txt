@@ -109,6 +109,116 @@ country_event = {
 	}
 }
 country_event = { 
+	id = BAS.12
+	title = BAS.12.t 
+	desc = BAS.12.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = BAS.12.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+				producer = FRA
+		}
+		country_event = {
+			id = BAS.13
+			days = 20
+		}
+	}
+}
+country_event = { 
+	id = BAS.13
+	title = BAS.13.t 
+	desc = BAS.13.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAS.13.a
+		army_experience = 15
+		add_ideas = BAS_Star_Submachine_Guns
+		}
+	}
+country_event = { 
+	id = BAS.14
+	title = BAS.14.t 
+	desc = BAS.14.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAS.14.a
+		add_war_support = 0.05
+		army_experience = 25
+		}
+	}
+country_event = { 
+	id = BAS.15
+	title = BAS.15.t 
+	desc = BAS.15.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAS.15.a
+				division_template = {
+				name = "Mendigoizale"
+				division_names_group = SPR_INF_01 
+				regiments = {
+					mountaineers = { x = 0 y = 0 }
+					mountaineers = { x = 0 y = 1 }
+					mountaineers = { x = 0 y = 2 }
+					mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+					mountaineers = { x = 1 y = 2 }
+					mountaineers = { x = 2 y = 0 }
+					mountaineers = { x = 2 y = 1 }
+					mountaineers = { x = 2 y = 2 }
+					
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 172 }
+				create_unit = {
+					division = "division_template = \"Mendigoizale\" start_experience_factor = 0.8"
+					owner = BAS
+					prioritize_location = 3737
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 172 }
+				create_unit = {
+					division = "division_template = \"Mendigoizale\" start_experience_factor = 0.8"
+					owner = BAS
+					prioritize_location = 3737
+				}
+			}
+		}
+	}
+country_event = { 
+	id = BAS.16
+	title = BAS.16.t 
+	desc = BAS.16.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAS.16.a
+		army_experience = 100
+		}
+	}
+country_event = { 
+	id = BAS.17
+	title = BAS.17.t 
+	desc = BAS.17.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAS.17.a
+		army_experience = 75
+		add_war_support = 0.06
+		add_stability = 0.06
+		}
+	}
+country_event = { 
 	id = BAS.18
 	title = BAS.18.t 
 	desc = BAS.18.d 
@@ -215,7 +325,16 @@ country_event = {
 	title = BAS.20.t 
 	desc = BAS.20.d 
 	is_triggered_only = yes
-	fire_only_once = yes
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event GLC.20"
+		remove_all_ministers = yes
+		hidden_effect = {
+			country_event = {
+				id = GLC.20
+				months = 48
+			}
+		}
+	}
 	option = {
 		name = BAS.20.a
 		ai_chance = {
@@ -2670,6 +2789,7 @@ country_event = {#
 					}
 				}
 				BAS = { add_state_core = PREV }
+					}
 				}
 			}
 		}

@@ -4867,6 +4867,7 @@ country_event = { #The King's Speech
 
 	option = {
 		name = sprd.106.a
+		remove_ideas = SPR_Rising_Separatism
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = 0.05
@@ -5084,6 +5085,23 @@ country_event = {
 					ideology = social_democrat_subtype
 				}
 			}
+		}
+	}
+}
+country_event = { #Franco's Speech
+	id = sprd.110
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.105" }
+	title = sprd.110.t
+	desc = sprd.110.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.110.a
+			add_timed_idea = {
+				idea = SPR_struggle_for_castilian_survival
+				days = 100
 		}
 	}
 }
@@ -5341,7 +5359,7 @@ country_event = { #Spain goes to shit
 			popularity = -0.2
 			}
 			ai_chance = { base = 0 }
-		custom_effect_tooltip = SPR_play_galicians_tooltip
+		custom_effect_tooltip = SPR_play_rif_tooltip
 		hidden_effect = {
 			RIF = { change_tag_from = SPR }
 			}
