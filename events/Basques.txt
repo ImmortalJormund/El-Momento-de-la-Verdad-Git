@@ -2925,6 +2925,23 @@ country_event = {#
 				}
 			}
 		}
+	country_event = { 
+	id = BAS.250
+	title = BAS.250.t
+	desc = BAS.250.d
+	picture = GFX_report_event_SPA_CNT_FAI
+	fire_only_once = yes
+		trigger = {
+		tag = BAS
+		OR = {
+			41 = { is_controlled_by = BAS } 
+		}
+	}
+	option = { #oh no
+		name = BAS.250.a
+		white_peace = SPR
+			}
+		}
 country_event = { 
 	id = BAS.202
 	immediate = {log = "[GetDateText]: [Root.GetName]: event BAS.202"}

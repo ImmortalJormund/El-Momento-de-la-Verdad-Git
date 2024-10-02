@@ -153,6 +153,7 @@ focus_tree = {
 			factor = 1000
 		}
 		completion_reward = {
+			country_event = BAS.16
 			add_manpower = 10000
 			division_template = {
 				name = "Ertzaña"
@@ -1111,6 +1112,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_manpower = 12000
+			country_event = BAS.14
 		}
 	}
 	focus = {
@@ -1197,6 +1199,7 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
+			country_event = BAS.15
 			if = {
 				limit = {
 					has_idea = BAS_peoples_army_2
@@ -1308,6 +1311,7 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
+			country_event = BAS.17
 			swap_ideas = {
 				remove_idea = BAS_peoples_army_8
 				add_idea = BAS_peoples_army_9
