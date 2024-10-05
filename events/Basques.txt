@@ -29,7 +29,92 @@ country_event = {
 		}
 	}
 }
-
+country_event = { 
+	id = BAS.3
+	title = BAS.3.t 
+	desc = BAS.3.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAS.3.a
+		add_political_power = 100
+		add_manpower = -1
+		add_stability = -0.04
+		172 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+			}
+		}	
+	option = {
+		name = BAS.3.b
+		add_political_power = 150
+		add_war_support = 0.05
+		add_stability = 0.05
+		172 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = BAS.4
+	title = BAS.4.t 
+	desc = BAS.4.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAS.4.a
+		add_political_power = -75
+		add_stability = -0.1
+		add_war_support = 0.15
+			}
+		}
+country_event = { 
+	id = BAS.5
+	title = BAS.5.t 
+	desc = BAS.5.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAS.5.a
+		add_political_power = 90
+		add_war_support = 0.03
+		add_manpower = 5625
+			}
+		}
+country_event = { 
+	id = BAS.6
+	title = BAS.6.t 
+	desc = BAS.6.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAS.6.a
+		add_political_power = 20
+		add_stability = 0.01
+			}
+		}
+country_event = { 
+	id = BAS.7
+	title = BAS.7.t 
+	desc = BAS.7.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAS.7.a
+		add_political_power = 20
+		add_stability = 0.01
+			}
+		}
 country_event = { 
 	id = BAS.8
 	title = BAS.8.t 
@@ -136,7 +221,6 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = BAS.13.a
-		army_experience = 15
 		add_ideas = BAS_Star_Submachine_Guns
 		}
 	}
@@ -2925,6 +3009,20 @@ country_event = {#
 				}
 			}
 		}
+	country_event = { 
+	id = BAS.249
+	title = BAS.249.t
+	desc = BAS.249.d
+	picture = GFX_report_event_SPA_CNT_FAI
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #oh no
+		name = BAS.249.a
+			add_war_support = 0.02
+			air_experience = 50
+				}
+			}
 	country_event = { 
 	id = BAS.250
 	title = BAS.250.t

@@ -8846,6 +8846,98 @@ country_event = { #Black Monday is joever
 			}
 		}
 }
+country_event = { #Profiteering
+	id = sprd.1156
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
+	title = sprd.1156.t
+	desc = sprd.1156.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #flavor
+		name = sprd.1156.a
+		add_political_power = -20
+		}
+	option = { #flavor
+		name = sprd.1156.b
+		SPR = { country_event = { id = sprd.1157 days = 1 }}
+			}
+		}
+	}
+}
+country_event = { #Profiteering
+	id = sprd.1157
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
+	title = sprd.1157.t
+	desc = sprd.1157.d
+
+	is_triggered_only = yes
+
+	option = { #flavor
+		name = sprd.1157.a
+		}
+	option = { #flavor
+		name = sprd.1157.b
+		SPR = { country_event = { id = sprd.1158 days = 1 }}
+			}
+	option = { #flavor
+		name = sprd.1157.c
+		SPR = { country_event = { id = sprd.1159 days = 1 }}
+		}
+	option = { #flavor
+		name = sprd.1157.e
+		SPR = { country_event = { id = sprd.1161 days = 1 }}
+		}
+	option = { #flavor
+		name = sprd.1157.f
+		SPR = { country_event = { id = sprd.1162 days = 1 }}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { #Profiteering
+	id = sprd.1158
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
+	title = sprd.1158.t
+	desc = sprd.1158.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #flavor
+		name = sprd.1158.a
+		}
+	option = { #flavor
+		name = sprd.1158.b
+		SPR = { country_event = { id = sprd.1157 days = 1 }}
+			}
+		}
+	}
+}
+country_event = { #Profiteering
+	id = sprd.1159
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
+	title = sprd.1159.t
+	desc = sprd.1159.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #flavor
+		name = sprd.1159.a
+		}
+	option = { #flavor
+		name = sprd.1159.b
+		SPR = { country_event = { id = sprd.1157 days = 1 }}
+			}
+		}
+	}
+}
 country_event = { #Black Monday is joever
 	id = sprd.1160
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1169" }
@@ -8869,9 +8961,50 @@ country_event = { #Black Monday is joever
 		}
 		AUS = {
 			transfer_state = 699
+							}
+						}
+					}
 				}
 			}
 		}
+}
+country_event = { #Profiteering
+	id = sprd.1161
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
+	title = sprd.1161.t
+	desc = sprd.1161.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #flavor
+		name = sprd.1161.a
+		}
+	option = { #flavor
+		name = sprd.1161.b
+		SPR = { country_event = { id = sprd.1157 days = 1 }}
+			}
+		}
+	}
+}
+country_event = { #Profiteering
+	id = sprd.1162
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
+	title = sprd.1162.t
+	desc = sprd.1162.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #flavor
+		name = sprd.1162.a
+		}
+	option = { #flavor
+		name = sprd.1162.b
+		SPR = { country_event = { id = sprd.1157 days = 1 }}
+			}
+		}
+	}
 }
 country_event = {
 	id = sprd.1001
