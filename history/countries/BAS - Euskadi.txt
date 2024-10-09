@@ -90,6 +90,9 @@ if = {
 set_research_slots = 3
 set_convoys = 30
 
+country_event = { id = BAS.6 days = 130 }
+country_event = { id = BAS.7 days = 170 }
+country_event = { id = BAS.19 days = 75 }
 
 set_politics = {
 	ruling_party = social_conservative

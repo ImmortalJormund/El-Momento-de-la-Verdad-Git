@@ -271,13 +271,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = BAS.20
-			}
-			hidden_effect = {
-			country_event = {
-				id = BAS.19
-				days = 15			
-			}
+			country_event = BAS.20		
 		}
 	}
 	focus = {

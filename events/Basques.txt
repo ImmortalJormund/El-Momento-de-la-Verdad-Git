@@ -388,6 +388,7 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
+		country_event = { id = BAS.157 days = 15 }
 	}
 	option = {
 		name = BAS.19.b
@@ -395,6 +396,7 @@ country_event = {
 			factor = 33
 		}
 		set_cosmetic_tag = BAS_eagle
+		country_event = { id = BAS.157 days = 15 }
 	}
 	option = {
 		name = BAS.19.c
@@ -402,6 +404,7 @@ country_event = {
 			factor = 50
 		}
 		set_cosmetic_tag = BAS_aberri
+		country_event = { id = BAS.157 days = 15 }
 			}
 	}
 country_event = { 
@@ -410,11 +413,11 @@ country_event = {
 	desc = BAS.20.d 
 	is_triggered_only = yes
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event GLC.20"
+		log = "[GetDateText]: [Root.GetName]: event BAS.20"
 		remove_all_ministers = yes
 		hidden_effect = {
 			country_event = {
-				id = GLC.20
+				id = BAS.20
 				months = 48
 			}
 		}
@@ -2291,10 +2294,8 @@ country_event = { #radsoc ideology pick
 	desc = BAS.157.d
 
 	fire_only_once = yes
-	trigger = {
-	tag = BAS
-	has_completed_focus = BAS_First_Basque_Elections
-	}
+	is_triggered_only = yes
+	
 	option = { #oh no
 		name = BAS.157.a
 		increase_ruling_party_popularity_by_3 = yes
