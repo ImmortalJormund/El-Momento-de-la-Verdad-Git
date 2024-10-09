@@ -167,6 +167,7 @@ ideologies = {
 			yellow_syndicalism_subtype = {can_be_randomly_selected = no color = { 240 225 48 } } #Yellow Syndicalism
 			syn_kotahitanga_subtype = {can_be_randomly_selected = no} #kotahitanga
 			libertarian_possibilism_subtype = {can_be_randomly_selected = no} #Possibilism
+			aboriginal_garveyism_subtype = {can_be_randomly_selected = no} #aboriginal garveyism
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SYNDICALIST_1"
@@ -390,6 +391,7 @@ ideologies = {
 			authoritarian_social_democracy_subtype = {can_be_randomly_selected = no } #Authoritarian Social Democracy
 			lenschian_tendency_subtype = {can_be_randomly_selected = no } #Lenschian Tendency
 			langism_subtype = {can_be_randomly_selected = no } #langism
+			chinese_federalism_subtype = {can_be_randomly_selected = no } #Chinese Federalism
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_DEMOCRAT_1"
@@ -477,6 +479,10 @@ ideologies = {
 			soclib_internationalism_subtype = {can_be_randomly_selected = no} #Internationalism
 			kritarchy_subtype = {can_be_randomly_selected = no} #Kritarchy
 			soclib_blasquismo_subtype = {can_be_randomly_selected = no} #Blasquismo
+			jindyworobak_subtype = {can_be_randomly_selected = no} #jindyworobak
+			soclib_aboriginal_garveyism_subtype = {can_be_randomly_selected = no} #aboriginal garveyism
+			soclib_chinese_federalism_subtype = {can_be_randomly_selected = no } #Chinese Federalism
+			managerial_technicracy_subtype = {can_be_randomly_selected = no } #Managerial Technicracy
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_LIBERAL_1"
@@ -646,6 +652,8 @@ ideologies = {
 			humanisme_integral_subtype = {can_be_randomly_selected = no} #Humanisme Integral
 			soccon_liberal_conservative_subtype = {can_be_randomly_selected = no} #Liberal Conservatism
 			soccon_maurism_subtype = {can_be_randomly_selected = no} #Maurism
+			futuriblesisme_subtype = {can_be_randomly_selected = no} #Futuriblesisme
+			enlightened_conservatism_subtype = {can_be_randomly_selected = no} #Enlightened Conservatism
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_CONSERVATIVE_1"

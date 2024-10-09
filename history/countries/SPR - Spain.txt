@@ -125,6 +125,7 @@ country_event = { id = sprd.4 days = 13 }
 country_event = { id = sprd.8 days = 32 }
 country_event = { id = sprd.13 days = 57 }
 country_event = { id = sprd.21 days = 284 }
+country_event = { id = sprd.1156 days = 25 }
 
 set_politics = {
 	ruling_party = authoritarian_democrat

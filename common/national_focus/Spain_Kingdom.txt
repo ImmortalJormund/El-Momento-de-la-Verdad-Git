@@ -1285,7 +1285,7 @@ focus_tree = {
 		y = 0
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		available_if_capitulated = yes
@@ -1317,7 +1317,7 @@ focus_tree = {
 		y = 0
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		available_if_capitulated = yes
@@ -1331,7 +1331,7 @@ focus_tree = {
 	focus = {
 		id = SPR_consolidate_spain
 		icon = GFX_goal_MEX_eventual_restoration
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = SPR_victor_civil_war
 			focus = SPR_no_civil_war
@@ -1341,7 +1341,7 @@ focus_tree = {
 		y = 1
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		available_if_capitulated = yes
@@ -1397,7 +1397,7 @@ focus_tree = {
 	focus = {
 		id = SPR_replace_alfonso
 		icon = GFX_goal_MEX_republic_or_monarchy
-		cost = 7.0
+		cost = 5
 		prerequisite = {
 			focus = SPR_consolidate_spain
 		}
@@ -1417,7 +1417,7 @@ focus_tree = {
 		y = 2
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		available_if_capitulated = yes
@@ -1435,7 +1435,7 @@ focus_tree = {
 	focus = {
 		id = SPR_arrest_leaders
 		icon = GFX_TRM_Start_The_Trials
-		cost = 7.0
+		cost = 5
 		prerequisite = {
 			focus = SPR_replace_alfonso
 		}
@@ -1447,7 +1447,7 @@ focus_tree = {
 		y = 3
 
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 
 		available_if_capitulated = yes
@@ -1471,7 +1471,7 @@ focus_tree = {
 	focus = {
 		id = SPR_new_constitution
 		icon = GFX_goal_NFA_rewrite_constitution
-		cost = 7.0
+		cost = 5
 		prerequisite = {
 			focus = SPR_replace_alfonso
 		}
@@ -1486,13 +1486,14 @@ focus_tree = {
 		y = 3
 
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_new_constitution"
+			country_event = sprd.139
 			add_stability = 0.20
 			add_political_power = -10
 			set_country_flag = SPR_new_constitution
@@ -1503,7 +1504,7 @@ focus_tree = {
 	focus = {
 		id = SPR_unity_at_last
 		icon = GFX_goal_NFA_national_propaganda
-		cost = 7.0
+		cost = 5
 		prerequisite = {
 			focus = SPR_arrest_leaders
 			focus = SPR_new_constitution
@@ -1513,7 +1514,7 @@ focus_tree = {
 		y = 4
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		available_if_capitulated = yes
@@ -4712,7 +4713,7 @@ focus_tree = {
 		relative_position_id = SPR_unity_at_last
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4
 		ai_will_do = {
 		factor = 5
 		}
@@ -4728,9 +4729,8 @@ focus_tree = {
 			NOT = { has_country_flag = SPR_republic }
 		}
 		prerequisite = { focus = SPR_psoe_question }
-		mutually_exclusive = { focus = SPR_franco_question }
 		relative_position_id = SPR_unity_at_last
-		x = -1
+		x = 0
 		y = 2
 		cost = 1
 		ai_will_do = {
@@ -4746,26 +4746,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 	focus = {
-		id = SPR_franco_question
-		icon = GFX_flag_spain_republican
-		available = {
-			has_country_flag = SPR_republic
-		}
-		prerequisite = { focus = SPR_psoe_question }
-		mutually_exclusive = { focus = SPR_question_of_the_monarchy }
-		relative_position_id = SPR_unity_at_last
-		x = 1
-		y = 2
-		cost = 1
-		ai_will_do = {
-		factor = 5
-		}
-		completion_reward = {
-			country_event = { id = sprd.103 }
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
-	}
-	focus = {
 		id = SPR_absolutism
 		icon = GFX_goal_AUS_direct_rule_vienna
 		available = {
@@ -4775,7 +4755,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SPR_constitutionalism }
 		prerequisite = { focus = SPR_question_of_the_monarchy }
 		relative_position_id = SPR_question_of_the_monarchy
-		x = 4
+		x = 2
 		y = 1
 		cost = 7
 		ai_will_do = {
@@ -5059,7 +5039,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -24
 		y = 1
-		cost = 7
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -5075,7 +5055,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -25
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5095,7 +5075,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -23
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5118,7 +5098,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -24
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5141,7 +5121,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -22
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5168,7 +5148,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -26
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5193,7 +5173,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -24
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5227,7 +5207,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -25
 		y = 5
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5253,7 +5233,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -23
 		y = 5
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5308,7 +5288,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -18
 		y = 1
-		cost = 1
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -5325,7 +5305,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -19
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5351,7 +5331,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -17
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5386,7 +5366,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -18
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5406,7 +5386,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -20
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5430,7 +5410,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -18
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5452,7 +5432,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -16
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5482,7 +5462,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -17
 		y = 5
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5512,7 +5492,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -19
 		y = 5
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5535,7 +5515,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -18
 		y = 6
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5556,7 +5536,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -12
 		y = 1
-		cost = 7
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -5575,7 +5555,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -13
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5599,7 +5579,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -11
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5632,7 +5612,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -12
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5653,7 +5633,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -14
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5676,7 +5656,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -12
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5700,7 +5680,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -10
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5728,7 +5708,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -11
 		y = 5
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5756,7 +5736,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -13
 		y = 5
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5788,7 +5768,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -12
 		y = 6
-		cost = 7
+		cost = 3
 		ai_will_do = {
 		factor = 1
 		}
@@ -5808,7 +5788,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -6
 		y = 1
-		cost = 7
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -5828,7 +5808,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 0
 		y = 1
-		cost = 7
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -5847,7 +5827,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 1
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5867,7 +5847,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -1
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5892,7 +5872,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 0
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5918,7 +5898,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -2
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5941,7 +5921,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 2
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5967,7 +5947,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 0
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -5997,7 +5977,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 1
 		y = 5
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6027,7 +6007,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -1
 		y = 5
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6059,7 +6039,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 0
 		y = 6
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6077,7 +6057,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -7
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6101,7 +6081,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -5
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6128,7 +6108,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -6
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6153,7 +6133,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -8
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6180,7 +6160,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -4
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6202,7 +6182,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -6
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6224,7 +6204,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -7
 		y = 5
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6247,7 +6227,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -5
 		y = 5
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6272,7 +6252,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = -6
 		y = 6
-		cost = 7
+		cost = 3
 		ai_will_do = {
 		factor = 1
 		}
@@ -6297,7 +6277,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 6
 		y = 1
-		cost = 7
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -6313,7 +6293,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 7
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6333,7 +6313,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 5
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6354,7 +6334,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 6
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6375,7 +6355,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 8
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6397,7 +6377,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 4
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6420,7 +6400,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 6
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6443,7 +6423,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 5
 		y = 5
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6465,7 +6445,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 7
 		y = 5
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6490,7 +6470,7 @@ focus_tree = {
 		relative_position_id = SPR_constitutionalism
 		x = 6
 		y = 6
-		cost = 7
+		cost = 3
 		ai_will_do = {
 		factor = 1
 		}
@@ -6507,7 +6487,7 @@ focus_tree = {
 		icon = GFX_BEL_support_democracy
 		x = -9
 		y = 15
-		cost = 7
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -6534,7 +6514,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 4
 		y = 1
-		cost = 7
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -6553,7 +6533,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 3
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6574,7 +6554,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 5
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6598,7 +6578,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 4
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6633,7 +6613,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 5
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6665,7 +6645,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 3
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6693,7 +6673,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 4
 		y = 5
-		cost = 7
+		cost = 3
 		ai_will_do = {
 		factor = 1
 		}
@@ -6714,7 +6694,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 8
 		y = 1
-		cost = 7
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -6733,7 +6713,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 7
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6753,7 +6733,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 9
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6774,7 +6754,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 8
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6794,7 +6774,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 7
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6814,7 +6794,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 9
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6860,7 +6840,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 8
 		y = 5
-		cost = 7
+		cost = 3
 		ai_will_do = {
 		factor = 1
 		}
@@ -6881,7 +6861,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 14
 		y = 1
-		cost = 7
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -6901,7 +6881,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 12
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6922,7 +6902,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 16
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6942,7 +6922,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 14
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6963,7 +6943,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 14
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -6990,7 +6970,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 14
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7014,7 +6994,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 11
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7036,7 +7016,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 12
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7056,7 +7036,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 17
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7077,7 +7057,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 16
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7108,7 +7088,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 14
 		y = 5
-		cost = 7
+		cost = 3
 		ai_will_do = {
 		factor = 1
 		}
@@ -7132,7 +7112,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 0
 		y = 1
-		cost = 7
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -7151,7 +7131,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 1
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7174,7 +7154,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -1
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7195,7 +7175,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 0
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7215,7 +7195,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 1
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7235,7 +7215,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -1
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7264,7 +7244,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = 0
 		y = 5
-		cost = 7
+		cost = 3
 		ai_will_do = {
 		factor = 1
 		}
@@ -7284,7 +7264,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -4
 		y = 1
-		cost = 7
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -7303,7 +7283,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -5
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7322,7 +7302,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -3
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7342,7 +7322,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -4
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7362,7 +7342,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -5
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7382,7 +7362,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -3
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7410,7 +7390,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -4
 		y = 5
-		cost = 7
+		cost = 3
 		ai_will_do = {
 		factor = 1
 		}
@@ -7430,7 +7410,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -8
 		y = 1
-		cost = 7
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -7449,7 +7429,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -9
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7469,7 +7449,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -7
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7488,7 +7468,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -8
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7507,7 +7487,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -9
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7526,7 +7506,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -7
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7554,7 +7534,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -8
 		y = 5
-		cost = 7
+		cost = 3
 		ai_will_do = {
 		factor = 1
 		}
@@ -7574,7 +7554,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -12
 		y = 1
-		cost = 7
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -7593,7 +7573,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -13
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7613,7 +7593,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -11
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7633,7 +7613,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -12
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7652,7 +7632,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -13
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7674,7 +7654,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -11
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7701,7 +7681,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -12
 		y = 5
-		cost = 7
+		cost = 3
 		ai_will_do = {
 		factor = 1
 		}
@@ -7721,7 +7701,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -18
 		y = 1
-		cost = 1
+		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
@@ -7740,7 +7720,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -16
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7762,7 +7742,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -20
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7782,7 +7762,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -18
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7801,7 +7781,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -18
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7822,7 +7802,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -18
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7844,7 +7824,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -15
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7871,7 +7851,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -16
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7894,7 +7874,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -21
 		y = 3
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7915,7 +7895,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -20
 		y = 4
-		cost = 7
+		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
@@ -7943,7 +7923,7 @@ focus_tree = {
 		relative_position_id = SPR_The_Second_Election
 		x = -18
 		y = 5
-		cost = 7
+		cost = 3
 		ai_will_do = {
 		factor = 1
 		}
