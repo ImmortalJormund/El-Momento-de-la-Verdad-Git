@@ -1424,6 +1424,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = BAS.50
+			add_ideas = BAS_mdr
 		}
 	}
 	focus = {
@@ -1440,10 +1441,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = BAS_economy_1
-				add_idea = BAS_capital_economy_1
-			}
+			add_ideas = BAS_mechanization
 		}
 	}
 	focus = {
@@ -1531,6 +1529,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = BAS.51
+			add_ideas = BAS_fvd
 		}
 	}
 	focus = {

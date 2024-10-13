@@ -197,7 +197,7 @@ ideas = {
 			traits = {
 				head_of_government
 				social_conservative
-				hog_silent_workhorse
+				hog_reformist_soldier
 			}
 
 	}
@@ -216,7 +216,7 @@ ideas = {
 			traits = {
 				head_of_government
 				totalist
-				hog_happy_amateur
+				hog_reformist_soldier
 			}
 
 	}
@@ -254,7 +254,7 @@ ideas = {
 			traits = {
 				head_of_government
 				radical_socialist
-				hog_corporate_suit
+				hog_reformist_soldier
 			}
 
 	}
@@ -273,7 +273,7 @@ ideas = {
 			traits = {
 				head_of_government
 				authoritarian_democrat
-				hog_political_protege
+				hog_reformist_soldier
 			}
 
 	}
@@ -292,7 +292,7 @@ ideas = {
 			traits = {
 				head_of_government
 				authoritarian_democrat
-				hog_old_general
+				hog_reformist_soldier
 			}
 
 	}
@@ -311,7 +311,7 @@ ideas = {
 			traits = {
 				head_of_government
 				social_democrat
-				hog_ambitious_union_boss
+				hog_reformist_soldier
 			}
 		}
 
@@ -806,7 +806,7 @@ ideas = {
 				sec_brilliant_lawyer
 				}
 		}
-		CNT_Esteban_Bilbao_eco_pau = {
+		BAS_Esteban_Bilbao_eco_pau = {
 			allowed = { original_tag = BAS }
 			available = {
 				custom_trigger_tooltip = {
