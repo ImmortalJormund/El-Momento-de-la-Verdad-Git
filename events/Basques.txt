@@ -59,6 +59,7 @@ country_event = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
+						}
 					}
 				}
 			}
@@ -155,10 +156,10 @@ country_event = {
 		}
 		remove_all_ministers = yes	
 		add_ideas = {
-		BAS_Pedro_Mourlane_Michelena_hog_pau
-		BAS_Jose_Maria_de_Areilza_for_ade
-		BAS_Jose_Luis_Arrese_eco_pau
-		BAS_Rafael_Sanchez_Mazas_sec_pau
+		BAS_Tomas_Conde_de_Redezno_hog_pau
+		BAS_Elbira_Zipitria_for_ade
+		CNT_Esteban_Bilbao_eco_pau
+		BAS_Jose_Luis_Arrese_Magra_sec_pau
 		}
 		set_cosmetic_tag = BAS_navarre
 			}
@@ -444,10 +445,10 @@ country_event = {
 		}
 		remove_all_ministers = yes
 		add_ideas = {
-			BAS_Anacleto_Ortueta_hog_rso
-			BAS_Tomas_Bilbao_for_rso
-			BAS_Gonzalo_Nardiz_eco_rso
-			BAS_Anacleto_Ortueta_sec_rso
+			BAS_Manuel_de_Irujo_y_Ollo_hog_rso
+			BAS_Anacleto_Ortueta_for_sde
+			BAS_Ramon_Gonzalez_Pena_eco_sde
+			BAS_Heliodoro_de_la_Torre_sec_rso
 		}
 	}
 	option = {
@@ -472,10 +473,10 @@ country_event = {
 		}
 		remove_all_ministers = yes
 		add_ideas = {
-			BAS_Jesus_Maria_de_Leizaola_hog_sco
-			BAS_Elias_Gallastegui_Uriarte_for_sde
-			BAS_Agustin_Zumalabe_Mendiburu_eco_sde
-			BAS_Justo_Garate_sec_rso
+			BAS_Tomas_Bilbao_Hospitalet_hog_sde
+			BAS_Anacleto_Ortueta_for_sde
+			BAS_Ramon_Gonzalez_Pena_eco_sde
+			BAS_Antonio_Ortega_Gutierrez_sec_sde
 		}
 	}
 	option = {
@@ -500,10 +501,10 @@ country_event = {
 		}
 		remove_all_ministers = yes
 		add_ideas = {
-			BAS_Ramon_de_la_Sota_y_Llano_hog_sco
-			BAS_Francisco_Javier_de_Landaburu_for_sco
-			BAS_Heliodoro_de_la_Torre_eco_sco
-			BAS_Adolfo_de_Larranaga_sec_sco
+			BAS_Jose_Antonio_de_Aguirre_y_Lecube_hog_sco
+			BAS_Jesus_Maria_de_Leizaola_for_sco
+			BAS_Francisco_Javier_de_Landaburu_eco_sco
+			BAS_Heliodoro_de_la_Torre_sec_rso
 		}
 	}
 	option = {
@@ -528,10 +529,10 @@ country_event = {
 		}
 		remove_all_ministers = yes
 		add_ideas = {
-			BAS_Jose_Felix_Lequerica_hog_ade
-			BAS_Jose_Maria_de_Areilza_for_ade
-			BAS_Alejandro_Goicoechea_eco_ade
-			BAS_Rafael_Sanchez_Mazas_sec_pau
+			BAS_Elias_Gallastegi_Uriarte_hog_ade
+			BAS_Elbira_Zipitria_for_ade
+			BAS_Francisco_Javier_de_Landaburu_eco_sco
+			BAS_Jose_Luis_Arrese_Magra_sec_pau
 		}
 	}
 }
@@ -1304,10 +1305,10 @@ country_event = {
 		}
 		remove_all_ministers = yes
 		add_ideas = {
-			BAS_Telesforo_Monzon_hog_syn
-			BAS_Tomas_Bilbao_for_rso
-			BAS_Gonzalo_Nardiz_eco_rso
-			BAS_Anacleto_Ortueta_sec_rso
+			BAS_Julian_Zugazagoitia_Mendieta_hog_syn
+			BAS_Anacleto_Ortueta_for_sde
+			BAS_Ramon_Gonzalez_Pena_eco_sde
+			BAS_Ignacio_Hidalgo_de_Cisneros_sec_syn
 					}
 		hidden_effect = {
 		country_event = { id = BAS.72 days = 15}
@@ -1357,10 +1358,10 @@ country_event = {
 		}
 		remove_all_ministers = yes
 		add_ideas = {
-			BAS_Telesforo_Monzon_hog_syn
-			BAS_Tomas_Bilbao_for_rso
-			BAS_Gonzalo_Nardiz_eco_rso
-			BAS_Anacleto_Ortueta_sec_rso
+			BAS_Jesus_Hernandez_y_Tomas_hog_tot
+			BAS_Anacleto_Ortueta_for_sde
+			BAS_Vicente_Uribe_Galdeano_eco_tot
+			BAS_Dolores_Ibaurri_Gomez_sec_tot
 					}
 		hidden_effect = {
 		country_event = { id = BAS.74 days = 3}
@@ -1823,8 +1824,10 @@ country_event = {
 	id = BAS.90
 	title = BAS.90.t 
 	desc = BAS.90.d 
-	trigger = { has_country_flag = { BAS_Beyond_Iberia }
-	fire_only_once = no
+	fire_only_once = yes
+	trigger = { 
+	tag = BAS
+	has_completed_focus = BAS_Beyond_Iberia
 	}
 	option = {
 		name = BAS.90.a
@@ -2673,6 +2676,16 @@ country_event = {#
 		add_state_core = 1080
 		add_state_core = 1181
 		add_state_core = 1190
+		}
+		option = {
+		name = BAS.234.b
+			add_stability = 0.1
+			add_political_power = -150
+		}
+		option = {
+		name = BAS.234.c
+			add_stability = 0.07
+			add_political_power = 50
 			}
 		}
 	}
