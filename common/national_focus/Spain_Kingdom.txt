@@ -3958,8 +3958,7 @@ focus_tree = {
 		ai_will_do = { factor = 40 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_support_sardinia"
-				add_ideas = SPR_entente_advisors1
-			SRD = { country_event = { id = sprf.8 days = 2 } }
+				add_ideas = SPR_redcoat_fury
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}

@@ -4101,7 +4101,7 @@ country_event = { #Constitutional monarchy?
 			}
 			add_stability = 0.05
 			set_country_flag = SPR_constitutional_monarchy
-	
+			
 				create_country_leader = {
 					name = "Jaime I"
 					desc = "POLITICS_JAIME_BOURBON_DESC"
@@ -4139,7 +4139,7 @@ country_event = { #Constitutional monarchy?
 				}
 				if = {
 					limit = { has_country_flag = SPR_allow_psoe }
-					create_country_leader = {
+				create_country_leader = {
 						name = "Jaime I"
 						desc = "POLITICS_JAIME_BOURBON_DESC"
 						picture = "gfx/leaders/SPR/Portrait_SPR_Jaime_I.png"
@@ -4217,10 +4217,6 @@ country_event = {
 		log = "[GetDateText]: [Root.GetName]: event sprd.101"
 		remove_all_ministers = yes
 		hidden_effect = {
-			add_popularity = {
-				ideology = authoritarian_democrat
-				popularity = -0.20
-			}
 			country_event = {
 				id = sprd.102
 				months = 48
@@ -4275,6 +4271,7 @@ country_event = {
 	}
 	option = {
 		name = sprd.101.b #Izquierda Republicana
+		trigger	= { has_country_flag = SPR_allow_psoe }
 		ai_chance = {
 			factor = 80
 			modifier = {
@@ -4809,9 +4806,7 @@ country_event = { #Reconcile with moderate socialists
 		}	
 		add_stability = 0.01
 		add_political_power = -100
-		}
-		hidden_effect = {
-			set_country_flag = SPR_allow_psoe
+		set_country_flag = SPR_allow_psoe
 	}
 	option = { #No.
 		name = sprd.104.b
@@ -8570,11 +8565,12 @@ country_event = { #Black Monday is joever
 			every_state = {
 			limit = { is_core_of = MOR }
 			add_core_of = SPR
+						}
 					}
 				}
 			}
 		}
-}
+	}
 }
 country_event = {
 	id = sprd.1143
@@ -8758,7 +8754,7 @@ country_event = { #Black Monday is joever
 			}
 		}
 }
-country_event = { #Profiteering
+country_event = { #Regionalism event
 	id = sprd.1156
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
 	title = sprd.1156.t
@@ -8778,7 +8774,7 @@ country_event = { #Profiteering
 		}
 	}
 }
-country_event = { #Profiteering
+country_event = { #Regionalism event
 	id = sprd.1157
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
 	title = sprd.1157.t
@@ -8812,7 +8808,7 @@ country_event = { #Profiteering
 		}
 	}
 }
-country_event = { #Profiteering
+country_event = { #Regionalism event
 	id = sprd.1158
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
 	title = sprd.1158.t
@@ -8831,7 +8827,7 @@ country_event = { #Profiteering
 		}
 	}
 }
-country_event = { #Profiteering
+country_event = { #Regionalism event
 	id = sprd.1159
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
 	title = sprd.1159.t
@@ -8880,7 +8876,7 @@ country_event = { #Black Monday is joever
 			}
 		}
 }
-country_event = { #Profiteering
+country_event = { #Regionalism event
 	id = sprd.1161
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
 	title = sprd.1161.t
@@ -8899,7 +8895,7 @@ country_event = { #Profiteering
 		}
 	}
 }
-country_event = { #Profiteering
+country_event = { #Reworked starting events
 	id = sprd.1162
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
 	title = sprd.1162.t
@@ -8918,7 +8914,7 @@ country_event = { #Profiteering
 		}
 	}
 }
-country_event = { #Profiteering
+country_event = { #Reworked starting events
 	id = sprd.1163
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
 	title = sprd.1163.t
@@ -8937,7 +8933,7 @@ country_event = { #Profiteering
 		}
 	}
 }
-country_event = { #Profiteering
+country_event = { #Reworked starting events
 	id = sprd.1164
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
 	title = sprd.1164.t
@@ -8956,7 +8952,7 @@ country_event = { #Profiteering
 		}
 	}
 }
-country_event = { #Profiteering
+country_event = { #Reworked starting events
 	id = sprd.1165
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
 	title = sprd.1165.t

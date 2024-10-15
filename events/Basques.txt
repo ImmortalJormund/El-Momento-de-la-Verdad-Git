@@ -2115,7 +2115,7 @@ country_event = {
 		name = BAS.111.c
 		create_country_leader = {
 			name = "Blanca I"
-			picture = "gfx/leaders/CAR/Portrait_CAR_Carlos_VIII.png"
+			picture = "gfx/leaders/BAS/Portrait_BAS_Infanta_Blanca_of_Spain.png"
 			expire = "1.1.1"
 			ideology = carlism_subtype
 		}
@@ -2168,7 +2168,7 @@ country_event = {
 		name = BAS.112.e
 		create_country_leader = {
 			name = "Blanca I"
-			picture = "gfx/leaders/CAR/Portrait_CAR_Carlos_VIII.png"
+			picture = "gfx/leaders/BAS/Portrait_BAS_Infanta_Blanca_of_Spain.png"
 			expire = "1.1.1"
 			ideology = carlism_subtype
 			}
