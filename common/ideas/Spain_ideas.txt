@@ -852,7 +852,7 @@ ideas = {
 				conscription_factor = 0.1
 				consumer_goods_factor = -0.05
 			}
-			picture = VNC_auth_dem_victory
+			picture = SPR_a_las_barricadas
 		}
 			SPR_True_Jacobins_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_autonomous_communities"}
