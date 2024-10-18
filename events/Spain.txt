@@ -3956,7 +3956,7 @@ country_event = { #Constitutional monarchy?
 	
 
 	option = { #Yes.
-		name = sprd.100.a
+		name = sprd.99.a
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -4014,33 +4014,37 @@ country_event = { #Constitutional monarchy?
 					name = "Juan III"
 					desc = "POLITICS_JUAN_BOURBON_DESC"
 					picture = "gfx/leaders/SPR/Portrait_SPR_Juan_III.png"
-						expire = "1.1.1"
-						ideology = socdem_humanistic_capitalism_subtype
-				}
-				if = {
-					limit = { has_country_flag = SPR_allow_psoe }
-						create_country_leader = {
-						name = "Juan III"
-						desc = "POLITICS_JUAN_BOURBON_DESC"
-						picture = "gfx/leaders/SPR/Portrait_SPR_Juan_III.png"
-						expire = "1.1.1"
-						ideology = moderate_socialist_subtype
-				}
-				if = {
-					limit = { has_country_flag = SPR_allow_psoe }
-					create_country_leader = {
-						name = "Juan III"
-						desc = "POLITICS_JUAN_BOURBON_DESC"
-						picture = "gfx/leaders/SPR/Portrait_SPR_Juan_III.png"
-						expire = "1.1.1"
-						ideology = libertarian_possibilism_subtype	
-									}
-								}
+					expire = "1.1.1"
+					ideology = socdem_humanistic_capitalism_subtype
+					}
+					if = {
+						limit = { has_country_flag = SPR_allow_psoe }
+							create_country_leader = {
+							name = "Juan III"
+							desc = "POLITICS_JUAN_BOURBON_DESC"
+							picture = "gfx/leaders/SPR/Portrait_SPR_Juan_III.png"
+							expire = "1.1.1"
+							ideology = moderate_socialist_subtype
+							}
+						if = {
+							limit = { has_country_flag = SPR_allow_psoe }
+							create_country_leader = {
+								name = "Juan III"
+								desc = "POLITICS_JUAN_BOURBON_DESC"
+								picture = "gfx/leaders/SPR/Portrait_SPR_Juan_III.png"
+								expire = "1.1.1"
+								ideology = libertarian_possibilism_subtype	
 							}
 						}
-					}						
+					}
+				}
+				hidden_effect = {
+					complete_national_focus = SPR_constitutionalism
+					country_event = { id = sprd.101 days = 7}
+				}
+		}						
 	option = { #No.
-		name = sprd.100.b
+		name = sprd.99.b
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -4139,35 +4143,39 @@ country_event = { #Constitutional monarchy?
 				}
 				if = {
 					limit = { has_country_flag = SPR_allow_psoe }
-				create_country_leader = {
-						name = "Jaime I"
-						desc = "POLITICS_JAIME_BOURBON_DESC"
-						picture = "gfx/leaders/SPR/Portrait_SPR_Jaime_I.png"
-						expire = "1.1.1"
-						ideology = socdem_humanistic_capitalism_subtype
-				}
-				if = {
-					limit = { has_country_flag = SPR_allow_psoe }
-						create_country_leader = {
-						name = "Jaime I"
-						desc = "POLITICS_JAIME_BOURBON_DESC"
-						picture = "gfx/leaders/SPR/Portrait_SPR_Jaime_I.png"
-						expire = "1.1.1"
-						ideology = moderate_socialist_subtype
-				}
-				if = {
-					limit = { has_country_flag = SPR_allow_psoe }
 					create_country_leader = {
-						name = "Jaime I"
-						desc = "POLITICS_JAIME_BOURBON_DESC"
-						picture = "gfx/leaders/SPR/Portrait_SPR_Jaime_I.png"
-						expire = "1.1.1"
-						ideology = libertarian_possibilism_subtype	
-									}
-								}
+							name = "Jaime I"
+							desc = "POLITICS_JAIME_BOURBON_DESC"
+							picture = "gfx/leaders/SPR/Portrait_SPR_Jaime_I.png"
+							expire = "1.1.1"
+							ideology = socdem_humanistic_capitalism_subtype
+					}
+					if = {
+						limit = { has_country_flag = SPR_allow_psoe }
+							create_country_leader = {
+							name = "Jaime I"
+							desc = "POLITICS_JAIME_BOURBON_DESC"
+							picture = "gfx/leaders/SPR/Portrait_SPR_Jaime_I.png"
+							expire = "1.1.1"
+							ideology = moderate_socialist_subtype
+						}
+						if = {
+							limit = { has_country_flag = SPR_allow_psoe }
+							create_country_leader = {
+								name = "Jaime I"
+								desc = "POLITICS_JAIME_BOURBON_DESC"
+								picture = "gfx/leaders/SPR/Portrait_SPR_Jaime_I.png"
+								expire = "1.1.1"
+								ideology = libertarian_possibilism_subtype	
 							}
 						}
-					}						
+					}
+				}
+				hidden_effect = {
+					complete_national_focus = SPR_constitutionalism
+					country_event = { id = sprd.101 days = 7}
+				}
+		}						
 	option = { #No.
 		name = sprd.100.b
 		ai_chance = {
@@ -4200,6 +4208,10 @@ country_event = { #Constitutional monarchy?
 		}
 		add_stability = -0.05
 		set_country_flag = SPR_absolute_monarchy
+		hidden_effect = {
+			complete_national_focus = SPR_absolutism
+			country_event = { id = sprd.106 days = 1}
+		}
 	}
 }
 
@@ -4247,6 +4259,7 @@ country_event = {
 			}
 		}
 		set_country_flag = SPR_had_election
+		set_country_flag = SPR_flag_plm_elected
 		meta_effect = {
 			text = {
 				set_politics = {
@@ -4432,6 +4445,7 @@ country_event = {
 				}
 			}
 		set_country_flag = SPR_had_election
+		set_country_flag = SPR_flag_psoe_elected
 		set_cosmetic_tag = SPR_kingdom
 		add_stability = 0.05
 		meta_effect = {
@@ -4483,6 +4497,7 @@ country_event = {
 			#}
 		}
 		set_country_flag = SPR_had_election
+		set_country_flag = SPR_flag_ap_elected
 		add_stability = 0.05
 		meta_effect = {
 			text = {
@@ -4746,7 +4761,7 @@ country_event = { #Subsequent Elections
 		}
 		add_ideas = {
 			SPR_Angel_Pestana_hog_syn
-			SPR_Andreu_Nin_i_Perez_for_syn
+			SPR_Angel_Pestana_for_rso
 			SPR_Federica_Monsteny_Mane_eco_syn
 			SPR_Andreu_Nin_i_Perez_sec_syn
 		}
@@ -8286,12 +8301,6 @@ country_event = { #Black Monday is joever
 		}		
 	option = { #oh no
 		name = sprd.1112.c
-		trigger = {
-		GER = {
-				has_socialist_government = no
-				has_war = no
-			}
-		}
 		SIC = { country_event = { id = sprd.1104 days = 1 } }
 				}
 			}

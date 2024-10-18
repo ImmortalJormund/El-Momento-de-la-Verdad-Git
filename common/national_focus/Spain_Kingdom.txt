@@ -2282,7 +2282,6 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_motor_focus"
 			army_experience = 25
 			add_ideas = SPR_broad_cavalry
-			set_technology = { bicycle_infantry = 1 }
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -3246,6 +3245,7 @@ focus_tree = {
 					}
 				}
 			}
+			has_socialist_government = no
 			NOT = {
 				has_idea = SPR_splendid_isolation
 			}
@@ -3530,6 +3530,7 @@ focus_tree = {
 					}
 				}
 			}
+			has_socialist_government = no
 			NOT = {
 				has_idea = SPR_splendid_isolation
 			}
@@ -3779,6 +3780,7 @@ focus_tree = {
 			ROOT = {
 				is_in_faction = no
 				is_subject = no
+				has_socialist_government = no
 				NOT = { has_idea = SPR_splendid_isolation }
 			}
 			ENT = {
@@ -4735,10 +4737,11 @@ focus_tree = {
 		}
 		completion_reward = {
 		if = {
-				limit = { has_country_flag = SPR_King_Juan }
-				country_event = sprd.99
-				else = { country_event = sprd.100 }
-			}
+			limit = { has_country_flag = SPR_King_Juan }
+			country_event = sprd.99
+			else = { country_event = sprd.100 }
+		}
+		custom_effect_tooltip = SPR_monarchy_question_tt
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
@@ -4746,21 +4749,22 @@ focus_tree = {
 		id = SPR_absolutism
 		icon = GFX_goal_AUS_direct_rule_vienna
 		available = {
-			SPR = { has_country_flag = SPR_absolute_monarchy }
+			custom_trigger_tooltip = {
+				tooltip = SPR_absolutist_tt
+				has_country_flag = SPR_absolute_monarchy
+			}
 		}
 		mutually_exclusive = { focus = SPR_francoism }
-		mutually_exclusive = { focus = SPR_constitutionalism }
-		prerequisite = { focus = SPR_question_of_the_monarchy }
+		prerequisite = {}
 		relative_position_id = SPR_question_of_the_monarchy
-		x = 2
-		y = 1
-		cost = 7
+		x = 4
+		y = 2
+		cost = 1
 		ai_will_do = {
 		factor = 5
 		}
 		completion_reward = {
-			add_political_power = 50
-			country_event = sprd.106
+			custom_effect_tooltip = unlock_focuses
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
@@ -4771,9 +4775,9 @@ focus_tree = {
 			has_country_flag = SPR_absolutism
 		}
 		prerequisite = { focus = SPR_absolutism }
-		relative_position_id = SPR_question_of_the_monarchy
-		x = 8
-		y = 2
+		relative_position_id = SPR_absolutism
+		x = 2
+		y = 1
 		cost = 7
 		ai_will_do = {
 		factor = 1
@@ -4792,9 +4796,9 @@ focus_tree = {
 		icon = GFX_goal_COR_University_System_of_America
 		prerequisite = { focus = SPR_new_spanish_nationalism }
 		prerequisite = { focus = SPR_state_religion }
-		relative_position_id = SPR_question_of_the_monarchy
-		x = 7
-		y = 3
+		relative_position_id = SPR_absolutism
+		x = 1
+		y = 2
 		cost = 7
 		ai_will_do = {
 		factor = 1
@@ -4817,9 +4821,9 @@ focus_tree = {
 			focus = SPR_absolutism 
 			focus = SPR_francoism
 		}
-		relative_position_id = SPR_question_of_the_monarchy
-		x = 6
-		y = 2
+		relative_position_id = SPR_absolutism
+		x = 0
+		y = 1
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -4833,9 +4837,9 @@ focus_tree = {
 		icon = GFX_goal_TEX_reward_loyalty
 		available = { has_country_flag = SPR_absolute_monarchy }
 		prerequisite = { focus = SPR_absolutism }
-		relative_position_id = SPR_question_of_the_monarchy
-		x = 4
-		y = 2
+		relative_position_id = SPR_absolutism
+		x = -2
+		y = 1
 		cost = 7
 		ai_will_do = {
 		factor = 1
@@ -4857,9 +4861,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPR_enforce_loyalty }
 		prerequisite = { focus = SPR_state_religion }
-		relative_position_id = SPR_question_of_the_monarchy
-		x = 5
-		y = 3
+		relative_position_id = SPR_absolutism
+		x = -1
+		y = 2
 		cost = 7
 		ai_will_do = {
 		factor = 1
@@ -4876,9 +4880,9 @@ focus_tree = {
 			focus = SPR_expand_university
 			focus = SPR_royal_academy
 		}
-		relative_position_id = SPR_question_of_the_monarchy
-		x = 7
-		y = 4
+		relative_position_id = SPR_absolutism
+		x = 1
+		y = 3
 		cost = 7
 		ai_will_do = {
 		factor = 1
@@ -4906,9 +4910,9 @@ focus_tree = {
 			focus = SPR_expand_university
 			focus = SPR_royal_academy
 		}
-		relative_position_id = SPR_question_of_the_monarchy
-		x = 5
-		y = 4
+		relative_position_id = SPR_absolutism
+		x = -1
+		y = 3
 		cost = 7
 		ai_will_do = {
 		factor = 1
@@ -4984,9 +4988,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_national_construction_corps
 		}
-		relative_position_id = SPR_question_of_the_monarchy
-		x = 6
-		y = 5
+		relative_position_id = SPR_absolutism
+		x = 0
+		y = 4
 		cost = 8
 		ai_will_do = {
 		factor = 2
@@ -5002,27 +5006,36 @@ focus_tree = {
 		id = SPR_constitutionalism
 		icon = GFX_goal_NFA_A_New_Constitution
 		available = {
-			OR = {
-				has_country_flag = SPR_constitutional_monarchy
-				has_country_flag = SPR_constitutional_republic
+			custom_trigger_tooltip = {
+				tooltip = SPR_constitutional_tt
+				OR = {
+					has_country_flag = SPR_constitutional_monarchy
+					has_country_flag = SPR_constitutional_republic
+				}
 			}
 		}
-		prerequisite = { 
-			focus = SPR_question_of_the_monarchy
+		bypass = { 
+			custom_trigger_tooltip = {
+				tooltip = SPR_constitutional_tt
+				OR = {
+					has_country_flag = SPR_constitutional_monarchy
+					has_country_flag = SPR_constitutional_republic
+				}
+			}
+		}
+		prerequisite = {
 			focus = SPR_franco_question 
 		}
-		mutually_exclusive = { focus = SPR_absolutism }
 		mutually_exclusive = { focus = SPR_francoism }
 		relative_position_id = SPR_question_of_the_monarchy
-		x = -10
+		x = -20
 		y = 1
-		cost = 3
+		cost = 1
 		ai_will_do = {
 		factor = 10
 		}
 		completion_reward = {
-			add_political_power = 50
-			country_event = { id = sprd.101 days = 1}
+			custom_effect_tooltip = unlock_focuses
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -5030,22 +5043,28 @@ focus_tree = {
 		id = SPR_psoe_elected
 		icon = GFX_goal_SPR_psoe
 		available = {
-			has_government = radical_socialist
+			custom_trigger_tooltip = {
+				tooltip = SPR_psoe_elected_tt
+				psoe_elected = yes
+			}
 		}
 		prerequisite = { focus = SPR_constitutionalism }
 		relative_position_id = SPR_constitutionalism
-		x = -24
+		x = -15
 		y = 1
 		cost = 0
 		
 		bypass = {
-			has_government = radical_socialist
+			custom_trigger_tooltip = {
+				tooltip = SPR_psoe_elected_tt
+				psoe_elected = yes
+			}
 		}
 		ai_will_do = {
 		factor = 1
 		}
 		completion_reward = {
-			add_political_power = 25
+			custom_effect_tooltip = unlock_focuses
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
@@ -5053,9 +5072,9 @@ focus_tree = {
 		id = SPR_workers_rights
 		icon = GFX_RUS_A_New_Russian_Worker
 		prerequisite = { focus = SPR_psoe_elected }
-		relative_position_id = SPR_constitutionalism
-		x = -25
-		y = 2
+		relative_position_id = SPR_psoe_elected
+		x = -1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5073,9 +5092,9 @@ focus_tree = {
 		id = SPR_The_Elder_Takes_Its_Place
 		icon = GFX_goal_NYC_Democratic_Socialism
 		prerequisite = { focus = SPR_psoe_elected }
-		relative_position_id = SPR_constitutionalism
-		x = -23
-		y = 2
+		relative_position_id = SPR_psoe_elected
+		x = 1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5096,9 +5115,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_The_Elder_Takes_Its_Place
 		}
-		relative_position_id = SPR_constitutionalism
-		x = -24
-		y = 3
+		relative_position_id = SPR_psoe_elected
+		x = 0
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5119,9 +5138,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Towards_a_Socialist_Spain
 		}	
-		relative_position_id = SPR_constitutionalism
-		x = -22
-		y = 4
+		relative_position_id = SPR_Towards_a_Socialist_Spain
+		x = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5146,9 +5165,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Towards_a_Socialist_Spain
 		}	
-		relative_position_id = SPR_constitutionalism
-		x = -26
-		y = 4
+		relative_position_id = SPR_Towards_a_Socialist_Spain
+		x = -2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5171,9 +5190,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Towards_a_Socialist_Spain
 		}	
-		relative_position_id = SPR_constitutionalism
-		x = -24
-		y = 4
+		relative_position_id = SPR_Towards_a_Socialist_Spain
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5205,9 +5224,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Concessions_to_Syndicalists
 		}			
-		relative_position_id = SPR_constitutionalism
-		x = -25
-		y = 5
+		relative_position_id = SPR_Towards_a_Socialist_Spain
+		x = -1
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5231,9 +5250,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Concessions_to_Syndicalists
 		}			
-		relative_position_id = SPR_constitutionalism
-		x = -23
-		y = 5
+		relative_position_id = SPR_Towards_a_Socialist_Spain
+		x = 1
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5261,9 +5280,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Rework_the_Labour_Laws
 		}			
-		relative_position_id = SPR_constitutionalism
-		x = -24
-		y = 6
+		relative_position_id = SPR_Towards_a_Socialist_Spain
+		x = 0
+		y = 3
 		cost = 3
 		ai_will_do = {
 		factor = 1
@@ -5283,22 +5302,28 @@ focus_tree = {
 		id = SPR_izquierda_elected
 		icon = GFX_goal_SPR_izquierda_republicana
 		available = {
-			has_government = social_democrat
+			custom_trigger_tooltip = {
+				tooltip = SPR_ir_elected_tt
+				ir_elected = yes
+			}
 		}
 		prerequisite = { focus = SPR_constitutionalism }
 		relative_position_id = SPR_constitutionalism
-		x = -18
+		x = -9
 		y = 1
 		cost = 0
 
 		bypass = {
-			has_government = social_democrat
+			custom_trigger_tooltip = {
+				tooltip = SPR_ir_elected_tt
+				ir_elected = yes
+			}
 		}
 		ai_will_do = {
 		factor = 1
 		}
 		completion_reward = {
-			add_political_power = 25
+			custom_effect_tooltip = unlock_focuses
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
@@ -5307,9 +5332,9 @@ focus_tree = {
 		icon = GFX_goal_MEX_Rural_Socialist_Education
 		
 		prerequisite = { focus = SPR_izquierda_elected }
-		relative_position_id = SPR_constitutionalism
-		x = -19
-		y = 2
+		relative_position_id = SPR_izquierda_elected
+		x = -1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5333,9 +5358,9 @@ focus_tree = {
 		icon = GFX_goal_NIC_Victory_Social_Democracy
 		
 		prerequisite = { focus = SPR_izquierda_elected }
-		relative_position_id = SPR_constitutionalism
-		x = -17
-		y = 2
+		relative_position_id = SPR_izquierda_elected
+		x = 1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5368,9 +5393,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_social_security
 		}
-		relative_position_id = SPR_constitutionalism
-		x = -18
-		y = 3
+		relative_position_id = SPR_izquierda_elected
+		x = 0
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5388,9 +5413,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_The_Monster_Wakes
 		}
-		relative_position_id = SPR_constitutionalism
-		x = -20
-		y = 4
+		relative_position_id = SPR_The_Monster_Wakes
+		x = -2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5412,9 +5437,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_The_Monster_Wakes
 		}
-		relative_position_id = SPR_constitutionalism
-		x = -18
-		y = 4
+		relative_position_id = SPR_The_Monster_Wakes
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5434,9 +5459,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_The_Monster_Wakes
 		}
-		relative_position_id = SPR_constitutionalism
-		x = -16
-		y = 4
+		relative_position_id = SPR_The_Monster_Wakes
+		x = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5464,9 +5489,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Purge_the_Military
 		}
-		relative_position_id = SPR_constitutionalism
-		x = -17
-		y = 5
+		relative_position_id = SPR_The_Monster_Wakes
+		x = 1
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5494,9 +5519,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Purge_the_Military
 		}
-		relative_position_id = SPR_constitutionalism
-		x = -19
-		y = 5
+		relative_position_id = SPR_The_Monster_Wakes
+		x = -1
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5517,9 +5542,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Deal_With_the_Crowned_One
 		}
-		relative_position_id = SPR_constitutionalism
-		x = -18
-		y = 6
+		relative_position_id = SPR_The_Monster_Wakes
+		x = 0
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5535,11 +5560,14 @@ focus_tree = {
 		id = SPR_ue_elected
 		icon = GFX_goal_SPR_republican_union
 		available = {
-			has_government = social_liberal
+			custom_trigger_tooltip = {
+				tooltip = SPR_ue_elected_tt
+				ue_elected = yes
+			}
 		}
 		prerequisite = { focus = SPR_constitutionalism }
 		relative_position_id = SPR_constitutionalism
-		x = -12
+		x = -3
 		y = 1
 		cost = 0
 
@@ -5550,7 +5578,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-			add_political_power = 25
+			custom_effect_tooltip = unlock_focuses
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
@@ -5561,9 +5589,9 @@ focus_tree = {
 			has_government = social_liberal
 		}
 		prerequisite = { focus = SPR_ue_elected }
-		relative_position_id = SPR_constitutionalism
-		x = -13
-		y = 2
+		relative_position_id = SPR_ue_elected
+		x = -1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5585,9 +5613,9 @@ focus_tree = {
 			has_government = social_liberal
 		}
 		prerequisite = { focus = SPR_ue_elected }
-		relative_position_id = SPR_constitutionalism
-		x = -11
-		y = 2
+		relative_position_id = SPR_ue_elected
+		x = 1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5618,9 +5646,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_True_Heirs_of_the_Jacobins
 		}	
-		relative_position_id = SPR_constitutionalism
-		x = -12
-		y = 3
+		relative_position_id = SPR_ue_elected
+		x = 0
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5639,9 +5667,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Set_a_Proper_Course
 		}	
-		relative_position_id = SPR_constitutionalism
-		x = -14
-		y = 4
+		relative_position_id = SPR_Set_a_Proper_Course
+		x = -2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5662,9 +5690,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Set_a_Proper_Course
 		}	
-		relative_position_id = SPR_constitutionalism
-		x = -12
-		y = 4
+		relative_position_id = SPR_Set_a_Proper_Course
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5686,9 +5714,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Set_a_Proper_Course
 		}	
-		relative_position_id = SPR_constitutionalism
-		x = -10
-		y = 4
+		relative_position_id = SPR_Set_a_Proper_Course
+		x = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5714,9 +5742,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Raze_the_Church_Dominance
 		}	
-		relative_position_id = SPR_constitutionalism
-		x = -11
-		y = 5
+		relative_position_id = SPR_Set_a_Proper_Course
+		x = 1
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5742,9 +5770,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Raze_the_Church_Dominance
 		}	
-		relative_position_id = SPR_constitutionalism
-		x = -13
-		y = 5
+		relative_position_id = SPR_Set_a_Proper_Course
+		x = -1
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5774,9 +5802,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_The_Radicalism_with_Restraint
 		}		
-		relative_position_id = SPR_constitutionalism
-		x = -12
-		y = 6
+		relative_position_id = SPR_Set_a_Proper_Course
+		x = 0
+		y = 3
 		cost = 3
 		ai_will_do = {
 		factor = 1
@@ -5787,50 +5815,32 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
-	focus = {
-		id = SPR_plm_elected
-		icon = GFX_goal_SPR_PLM
-		available = {
-			has_government = market_liberal
-		}
-		prerequisite = { focus = SPR_constitutionalism }
-		relative_position_id = SPR_constitutionalism
-		x = -6
-		y = 1
-		cost = 0
-
-		bypass = {
-			has_government = market_liberal
-		}
-		ai_will_do = {
-		factor = 1
-		}
-		completion_reward = {
-			add_political_power = 25
-			add_ideas = SPR_DisUnited_Party
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
-	}
 			focus = {
 		id = SPR_dle_elected
 		icon = GFX_goal_SPR_Derecha_Liberal_Republicana
 		available = {
-			has_government = social_conservative
+			custom_trigger_tooltip = {
+				tooltip = SPR_dle_elected_tt
+				dle_elected = yes
+			}
 		}
 		prerequisite = { focus = SPR_constitutionalism }
 		relative_position_id = SPR_constitutionalism
-		x = 0
+		x = 9
 		y = 1
 		cost = 0
 
 		bypass = {
-			has_government = social_conservative
+			custom_trigger_tooltip = {
+				tooltip = SPR_dle_elected_tt
+				dle_elected = yes
+			}
 		}
 		ai_will_do = {
 		factor = 1
 		}
 		completion_reward = {
-			add_political_power = 25
+			custom_effect_tooltip = unlock_focuses
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
@@ -5841,9 +5851,9 @@ focus_tree = {
 			has_government = social_conservative
 		}
 		prerequisite = { focus = SPR_dle_elected }
-		relative_position_id = SPR_constitutionalism
+		relative_position_id = SPR_dle_elected
 		x = 1
-		y = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5861,9 +5871,9 @@ focus_tree = {
 			has_government = social_conservative
 		}
 		prerequisite = { focus = SPR_dle_elected }
-		relative_position_id = SPR_constitutionalism
+		relative_position_id = SPR_dle_elected
 		x = -1
-		y = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5886,9 +5896,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Learn_from_the_Republican_Disaster
 		}
-		relative_position_id = SPR_constitutionalism
+		relative_position_id = SPR_dle_elected
 		x = 0
-		y = 3
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5912,9 +5922,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Bring_the_Mauristas_Home
 		}
-		relative_position_id = SPR_constitutionalism
+		relative_position_id = SPR_Bring_the_Mauristas_Home
 		x = -2
-		y = 4
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5935,9 +5945,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Bring_the_Mauristas_Home
 		}
-		relative_position_id = SPR_constitutionalism
+		relative_position_id = SPR_Bring_the_Mauristas_Home
 		x = 2
-		y = 4
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5961,9 +5971,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Bring_the_Mauristas_Home
 		}
-		relative_position_id = SPR_constitutionalism
+		relative_position_id = SPR_Bring_the_Mauristas_Home
 		x = 0
-		y = 4
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -5991,9 +6001,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Our_Monarchist_Past
 		}
-		relative_position_id = SPR_constitutionalism
+		relative_position_id = SPR_Bring_the_Mauristas_Home
 		x = 1
-		y = 5
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6021,9 +6031,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Our_Monarchist_Past
 		}
-		relative_position_id = SPR_constitutionalism
+		relative_position_id = SPR_Bring_the_Mauristas_Home
 		x = -1
-		y = 5
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6053,9 +6063,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Autonomy_for_Those_Who_Desire_It
 		}
-		relative_position_id = SPR_constitutionalism
+		relative_position_id = SPR_Bring_the_Mauristas_Home
 		x = 0
-		y = 6
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6068,12 +6078,45 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 	focus = {
+		id = SPR_plm_elected
+		icon = GFX_goal_SPR_PLM
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SPR_plm_elected_tt
+				plm_elected = yes
+			}
+		}
+		prerequisite = { focus = SPR_constitutionalism }
+		relative_position_id = SPR_constitutionalism
+		x = 3
+		y = 1
+		cost = 0
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = SPR_plm_elected_tt
+				plm_elected = yes
+			}
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_political_power = 25
+				add_ideas = SPR_DisUnited_Party
+			}
+			custom_effect_tooltip = unlock_focuses
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+	}
+	focus = {
 		id = SPR_support_small_business
 		icon = GFX_RUS_Support_Small_Business
 		prerequisite = { focus = SPR_plm_elected }
-		relative_position_id = SPR_constitutionalism
-		x = -7
-		y = 2
+		relative_position_id = SPR_plm_elected
+		x = -1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6095,9 +6138,9 @@ focus_tree = {
 		id = SPR_reeducate_the_monarchists
 		icon = GFX_goal_generic_puppet_monarch
 		prerequisite = { focus = SPR_plm_elected }
-		relative_position_id = SPR_constitutionalism
-		x = -5
-		y = 2
+		relative_position_id = SPR_plm_elected
+		x = 1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6122,9 +6165,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_support_small_business
 		}	
-		relative_position_id = SPR_constitutionalism
-		x = -6
-		y = 3
+		relative_position_id = SPR_plm_elected
+		x = 0
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6147,9 +6190,9 @@ focus_tree = {
 		}	
 		mutually_exclusive = { focus = SPR_Fuck_Change }
 		mutually_exclusive = { focus = SPR_Return_to_Lerrouxism }	
-		relative_position_id = SPR_constitutionalism
-		x = -8
-		y = 4
+		relative_position_id = SPR_Mistakes_of_the_Past
+		x = -2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6174,9 +6217,9 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = SPR_Towards_a_New_Identity }
 		mutually_exclusive = { focus = SPR_Fuck_Change }
-		relative_position_id = SPR_constitutionalism
-		x = -4
-		y = 4
+		relative_position_id = SPR_Mistakes_of_the_Past
+		x = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6196,9 +6239,9 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = SPR_Towards_a_New_Identity }
 		mutually_exclusive = { focus = SPR_Return_to_Lerrouxism }
-		relative_position_id = SPR_constitutionalism
-		x = -6
-		y = 4
+		relative_position_id = SPR_Mistakes_of_the_Past
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6218,9 +6261,9 @@ focus_tree = {
 			focus = SPR_Towards_a_New_Identity
 		}
 		mutually_exclusive = { focus = SPR_Stamp_on_Catalans }
-		relative_position_id = SPR_constitutionalism
-		x = -7
-		y = 5
+		relative_position_id = SPR_Mistakes_of_the_Past
+		x = -1
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6241,9 +6284,9 @@ focus_tree = {
 			focus = SPR_Return_to_Lerrouxism
 		}
 		mutually_exclusive = { focus = SPR_Moderated_Regionalism }
-		relative_position_id = SPR_constitutionalism
-		x = -5
-		y = 5
+		relative_position_id = SPR_Mistakes_of_the_Past
+		x = 1
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6265,9 +6308,10 @@ focus_tree = {
 			focus = SPR_Moderated_Regionalism	
 			focus = SPR_Stamp_on_Catalans
 		}
-		relative_position_id = SPR_constitutionalism
-		x = -6
-		y = 6
+		mutually_exclusive = { focus = SPR_Moderated_Regionalism }
+		relative_position_id = SPR_Mistakes_of_the_Past
+		x = 0
+		y = 3
 		cost = 3
 		ai_will_do = {
 		factor = 1
@@ -6275,7 +6319,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.200
 			add_ideas = SPR_Populist_Spain
-			remove_ideas = SPR_Mistakes_of_the_Past
 			add_war_support = 0.1
 			add_popularity = {
 				ideology = market_liberal
@@ -6288,19 +6331,21 @@ focus_tree = {
 		id = SPR_accion_elected
 		icon = GFX_goal_SPR_Accion_Popular
 		available = {
-			has_government = authoritarian_democrat
-			has_country_flag = SPR_had_election
+			custom_trigger_tooltip = {
+				tooltip = SPR_accion_elected_tt
+				ap_elected = yes
+			}
 		}
 		prerequisite = { focus = SPR_constitutionalism }
 		relative_position_id = SPR_constitutionalism
-		x = 6
+		x = 15
 		y = 1
 		cost = 0
 		ai_will_do = {
 		factor = 1
 		}
 		completion_reward = {
-			add_political_power = 25
+			custom_effect_tooltip = unlock_focuses
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
@@ -6308,9 +6353,9 @@ focus_tree = {
 		id = SPR_catholic_unions
 		icon = GFX_goal_NYC_Catholic_Distributism_Poor
 		prerequisite = { focus = SPR_accion_elected }
-		relative_position_id = SPR_constitutionalism
-		x = 7
-		y = 2
+		relative_position_id = SPR_accion_elected
+		x = 1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6328,9 +6373,9 @@ focus_tree = {
 		id = SPR_Parliamentary_Monarchism
 		icon = GFX_goal_CAL_constitutional_monarchy
 		prerequisite = { focus = SPR_accion_elected }
-		relative_position_id = SPR_constitutionalism
-		x = 5
-		y = 2
+		relative_position_id = SPR_accion_elected
+		x = -1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6349,9 +6394,9 @@ focus_tree = {
 			focus = SPR_catholic_unions
 			focus = SPR_Parliamentary_Monarchism
 		}
-		relative_position_id = SPR_constitutionalism
-		x = 6
-		y = 3
+		relative_position_id = SPR_accion_elected
+		x = 0
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6370,9 +6415,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Align_Radicals_and_Agrarians
 		}
-		relative_position_id = SPR_constitutionalism
-		x = 8
-		y = 4
+		relative_position_id = SPR_Align_Radicals_and_Agrarians
+		x = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6392,15 +6437,16 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Align_Radicals_and_Agrarians
 		}
-		relative_position_id = SPR_constitutionalism
-		x = 4
-		y = 4
+		relative_position_id = SPR_Align_Radicals_and_Agrarians
+		x = -2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
 		}
 		completion_reward = {
-			country_event = sprd.123			
+			country_event = sprd.123
+			add_ideas = SPR_catholic_unions
 			add_popularity = {
 				ideology = authoritarian_democrat
 				popularity = 0.1
@@ -6414,9 +6460,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Align_Radicals_and_Agrarians
 		}
-		relative_position_id = SPR_constitutionalism
-		x = 6
-		y = 4
+		relative_position_id = SPR_Align_Radicals_and_Agrarians
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6437,9 +6483,9 @@ focus_tree = {
 			focus = SPR_Throw_the_Big_Tent_Out
 			focus = SPR_Tame_the_Greenshirts
 		}
-		relative_position_id = SPR_constitutionalism
-		x = 5
-		y = 5
+		relative_position_id = SPR_Align_Radicals_and_Agrarians
+		x = -1
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6459,9 +6505,9 @@ focus_tree = {
 			focus = SPR_Throw_the_Big_Tent_Out
 			focus = SPR_Tame_the_Greenshirts
 		}
-		relative_position_id = SPR_constitutionalism
-		x = 7
-		y = 5
+		relative_position_id = SPR_Align_Radicals_and_Agrarians
+		x = 1
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6484,9 +6530,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Put_Down_Carlism
 		}
-		relative_position_id = SPR_constitutionalism
-		x = 6
-		y = 6
+		relative_position_id = SPR_Align_Radicals_and_Agrarians
+		x = 0
+		y = 3
 		cost = 3
 		ai_will_do = {
 		factor = 1
@@ -6502,8 +6548,9 @@ focus_tree = {
 		focus = {
 		id = SPR_The_Second_Election
 		icon = GFX_BEL_support_democracy
-		x = -9
-		y = 15
+		relative_position_id = SPR_constitutionalism
+		x = 0
+		y = 7
 		cost = 0
 		ai_will_do = {
 		factor = 1
@@ -6528,9 +6575,9 @@ focus_tree = {
 			has_government = social_conservative
 		}
 		prerequisite = { focus = SPR_The_Second_Election }
-		relative_position_id = SPR_The_Second_Election
-		x = 4
-		y = 1
+		relative_position_id = SPR_dle_elected
+		x = 0
+		y = 7
 		cost = 0
 
 		bypass = {
@@ -6551,9 +6598,9 @@ focus_tree = {
 			has_government = social_conservative
 		}
 		prerequisite = { focus = SPR_dle_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = 3
-		y = 2
+		relative_position_id = SPR_dle_reelected
+		x = -1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6572,9 +6619,9 @@ focus_tree = {
 			has_government = social_conservative
 		}
 		prerequisite = { focus = SPR_dle_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = 5
-		y = 2
+		relative_position_id = SPR_dle_reelected
+		x = 1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6596,9 +6643,9 @@ focus_tree = {
 			has_government = social_conservative
 		}
 		prerequisite = { focus = SPR_dle_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = 4
-		y = 3
+		relative_position_id = SPR_dle_reelected
+		x = 0
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6631,9 +6678,9 @@ focus_tree = {
 			has_government = social_conservative
 		}
 		prerequisite = { focus = SPR_Usurping_Accion_Populars_Mantle }
-		relative_position_id = SPR_The_Second_Election
-		x = 5
-		y = 4
+		relative_position_id = SPR_dle_reelected
+		x = 1
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6663,9 +6710,9 @@ focus_tree = {
 			has_government = social_conservative
 		}
 		prerequisite = { focus = SPR_Steering_the_Stable_Ship_Onwards }
-		relative_position_id = SPR_The_Second_Election
-		x = 3
-		y = 4
+		relative_position_id = SPR_dle_reelected
+		x = -1
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6691,9 +6738,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Denouncing_Authoritarianism_Worldwide
 		}	
-		relative_position_id = SPR_The_Second_Election
-		x = 4
-		y = 5
+		relative_position_id = SPR_dle_reelected
+		x = 0
+		y = 4
 		cost = 3
 		ai_will_do = {
 		factor = 1
@@ -6712,9 +6759,9 @@ focus_tree = {
 			has_government = authoritarian_democrat
 		}
 		prerequisite = { focus = SPR_The_Second_Election }
-		relative_position_id = SPR_The_Second_Election
-		x = 8
-		y = 1
+		relative_position_id = SPR_accion_elected
+		x = 0
+		y = 7
 		cost = 0
 
 		bypass = {
@@ -6735,9 +6782,9 @@ focus_tree = {
 			has_government = authoritarian_democrat
 		}
 		prerequisite = { focus = SPR_ap_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = 7
-		y = 2
+		relative_position_id = SPR_ap_reelected
+		x = -1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6755,9 +6802,9 @@ focus_tree = {
 			has_government = authoritarian_democrat
 		}
 		prerequisite = { focus = SPR_ap_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = 9
-		y = 2
+		relative_position_id = SPR_ap_reelected
+		x = 1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6776,9 +6823,9 @@ focus_tree = {
 			has_government = authoritarian_democrat
 		}
 		prerequisite = { focus = SPR_ap_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = 8
-		y = 3
+		relative_position_id = SPR_ap_reelected
+		x = 0
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6796,9 +6843,9 @@ focus_tree = {
 			has_government = authoritarian_democrat
 		}
 		prerequisite = { focus = SPR_The_Divine_Mandate }
-		relative_position_id = SPR_The_Second_Election
-		x = 7
-		y = 4
+		relative_position_id = SPR_ap_reelected
+		x = -1
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6816,9 +6863,9 @@ focus_tree = {
 			has_government = authoritarian_democrat
 		}
 		prerequisite = { focus = SPR_Euthanize_Republicanism }
-		relative_position_id = SPR_The_Second_Election
-		x = 9
-		y = 4
+		relative_position_id = SPR_ap_reelected
+		x = 1
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6862,9 +6909,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Develop_the_Central_Regions
 		}	
-		relative_position_id = SPR_The_Second_Election
-		x = 8
-		y = 5
+		relative_position_id = SPR_ap_reelected
+		x = 0
+		y = 4
 		cost = 3
 		ai_will_do = {
 		factor = 1
@@ -6883,9 +6930,9 @@ focus_tree = {
 			has_government = paternal_autocrat
 		}
 		prerequisite = { focus = SPR_The_Second_Election }
-		relative_position_id = SPR_The_Second_Election
-		x = 14
-		y = 1
+		relative_position_id = SPR_ap_reelected
+		x = 7
+		y = 0
 		cost = 0
 
 		bypass = {
@@ -6907,9 +6954,9 @@ focus_tree = {
 			has_government = paternal_autocrat
 		}
 		prerequisite = { focus = SPR_pne_elected }
-		relative_position_id = SPR_The_Second_Election
-		x = 12
-		y = 2
+		relative_position_id = SPR_pne_elected
+		x = -2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6928,9 +6975,9 @@ focus_tree = {
 			has_government = paternal_autocrat
 		}
 		prerequisite = { focus = SPR_pne_elected }
-		relative_position_id = SPR_The_Second_Election
-		x = 16
-		y = 2
+		relative_position_id = SPR_pne_elected
+		x = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6948,9 +6995,9 @@ focus_tree = {
 			has_government = paternal_autocrat
 		}
 		prerequisite = { focus = SPR_pne_elected }
-		relative_position_id = SPR_The_Second_Election
-		x = 14
-		y = 2
+		relative_position_id = SPR_pne_elected
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6969,9 +7016,9 @@ focus_tree = {
 			has_government = paternal_autocrat
 		}
 		prerequisite = { focus = SPR_Burning_Heart_of_the_Countryside }
-		relative_position_id = SPR_The_Second_Election
-		x = 14
-		y = 3
+		relative_position_id = SPR_pne_elected
+		x = 0
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -6996,9 +7043,9 @@ focus_tree = {
 			has_government = paternal_autocrat
 		}
 		prerequisite = { focus = SPR_A_New_Patriotic_Union }
-		relative_position_id = SPR_The_Second_Election
-		x = 14
-		y = 4
+		relative_position_id = SPR_pne_elected
+		x = 0
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7020,9 +7067,9 @@ focus_tree = {
 			has_government = paternal_autocrat
 		}
 		prerequisite = { focus = SPR_The_Odd_One_Out }
-		relative_position_id = SPR_The_Second_Election
-		x = 11
-		y = 3
+		relative_position_id = SPR_pne_elected
+		x = -3
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7042,9 +7089,9 @@ focus_tree = {
 			has_government = paternal_autocrat
 		}
 		prerequisite = { focus = SPR_Street_Brawl_Democracy }
-		relative_position_id = SPR_The_Second_Election
-		x = 12
-		y = 4
+		relative_position_id = SPR_pne_elected
+		x = -2
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7062,9 +7109,9 @@ focus_tree = {
 			has_government = paternal_autocrat
 		}
 		prerequisite = { focus = SPR_Intimidate_the_Rabid_Leftists }
-		relative_position_id = SPR_The_Second_Election
-		x = 17
-		y = 3
+		relative_position_id = SPR_pne_elected
+		x = 3
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7083,9 +7130,9 @@ focus_tree = {
 			has_government = paternal_autocrat
 		}
 		prerequisite = { focus = SPR_Hispanic_Supremacy }
-		relative_position_id = SPR_The_Second_Election
-		x = 16
-		y = 4
+		relative_position_id = SPR_pne_elected
+		x = 2
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7114,9 +7161,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_State_Owned_Social_and_Health_Services
 		}	
-		relative_position_id = SPR_The_Second_Election
-		x = 14
-		y = 5
+		relative_position_id = SPR_pne_elected
+		x = 0
+		y = 4
 		cost = 3
 		ai_will_do = {
 		factor = 1
@@ -7138,9 +7185,9 @@ focus_tree = {
 			has_government = market_liberal
 		}
 		prerequisite = { focus = SPR_The_Second_Election }
-		relative_position_id = SPR_The_Second_Election
+		relative_position_id = SPR_plm_elected
 		x = 0
-		y = 1
+		y = 7
 		cost = 0
 
 		bypass = {
@@ -7161,9 +7208,9 @@ focus_tree = {
 			has_government = market_liberal
 		}
 		prerequisite = { focus = SPR_pr_reelected }
-		relative_position_id = SPR_The_Second_Election
+		relative_position_id = SPR_pr_reelected
 		x = 1
-		y = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7184,9 +7231,9 @@ focus_tree = {
 			has_government = market_liberal
 		}
 		prerequisite = { focus = SPR_pr_reelected }
-		relative_position_id = SPR_The_Second_Election
+		relative_position_id = SPR_pr_reelected
 		x = -1
-		y = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7205,9 +7252,9 @@ focus_tree = {
 			has_government = market_liberal
 		}
 		prerequisite = { focus = SPR_pr_reelected }
-		relative_position_id = SPR_The_Second_Election
+		relative_position_id = SPR_pr_reelected
 		x = 0
-		y = 3
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7225,9 +7272,9 @@ focus_tree = {
 			has_government = market_liberal
 		}
 		prerequisite = { focus = SPR_Emboldened_Anti_Syndicalism }
-		relative_position_id = SPR_The_Second_Election
+		relative_position_id = SPR_pr_reelected
 		x = 1
-		y = 4
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7245,9 +7292,9 @@ focus_tree = {
 			has_government = market_liberal
 		}
 		prerequisite = { focus = SPR_King_and_His_Parallel_Emperor }
-		relative_position_id = SPR_The_Second_Election
+		relative_position_id = SPR_pr_reelected
 		x = -1
-		y = 4
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7274,9 +7321,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Lift_Up_the_Veils
 		}	
-		relative_position_id = SPR_The_Second_Election
+		relative_position_id = SPR_pr_reelected
 		x = 0
-		y = 5
+		y = 4
 		cost = 3
 		ai_will_do = {
 		factor = 1
@@ -7294,9 +7341,9 @@ focus_tree = {
 			has_government = social_liberal
 		}
 		prerequisite = { focus = SPR_The_Second_Election }
-		relative_position_id = SPR_The_Second_Election
-		x = -4
-		y = 1
+		relative_position_id = SPR_ue_elected
+		x = 0
+		y = 7
 		cost = 0
 
 		bypass = {
@@ -7317,9 +7364,9 @@ focus_tree = {
 			has_government = social_liberal
 		}
 		prerequisite = { focus = SPR_ue_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = -5
-		y = 2
+		relative_position_id = SPR_ue_reelected
+		x = -1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7336,9 +7383,9 @@ focus_tree = {
 			has_government = social_liberal
 		}
 		prerequisite = { focus = SPR_ue_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = -3
-		y = 2
+		relative_position_id = SPR_ue_reelected
+		x = 1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7356,9 +7403,9 @@ focus_tree = {
 			has_government = social_liberal
 		}
 		prerequisite = { focus = SPR_ue_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = -4
-		y = 3
+		relative_position_id = SPR_ue_reelected
+		x = 0
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7376,9 +7423,9 @@ focus_tree = {
 			has_government = social_liberal
 		}
 		prerequisite = { focus = SPR_En_la_Plaza_de_Mi_Pueblo }
-		relative_position_id = SPR_The_Second_Election
-		x = -5
-		y = 4
+		relative_position_id = SPR_ue_reelected
+		x = -1
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7396,9 +7443,9 @@ focus_tree = {
 			has_government = social_liberal
 		}
 		prerequisite = { focus = SPR_Putting_the_Republican_Gang_Back_Together }
-		relative_position_id = SPR_The_Second_Election
-		x = -3
-		y = 4
+		relative_position_id = SPR_ue_reelected
+		x = 1
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7424,9 +7471,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Putting_the_Republican_Gang_Back_Together
 		}	
-		relative_position_id = SPR_The_Second_Election
-		x = -4
-		y = 5
+		relative_position_id = SPR_ue_reelected
+		x = 0
+		y = 4
 		cost = 3
 		ai_will_do = {
 		factor = 1
@@ -7444,9 +7491,9 @@ focus_tree = {
 			has_government = social_democrat
 		}
 		prerequisite = { focus = SPR_The_Second_Election }
-		relative_position_id = SPR_The_Second_Election
-		x = -8
-		y = 1
+		relative_position_id = SPR_izquierda_elected
+		x = 0
+		y = 7
 		cost = 0
 
 		bypass = {
@@ -7467,9 +7514,9 @@ focus_tree = {
 			has_government = social_democrat
 		}
 		prerequisite = { focus = SPR_ie_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = -9
-		y = 2
+		relative_position_id = SPR_ie_reelected
+		x = -1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7487,9 +7534,9 @@ focus_tree = {
 			has_government = social_democrat
 		}
 		prerequisite = { focus = SPR_ie_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = -7
-		y = 2
+		relative_position_id = SPR_ie_reelected
+		x = 1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7506,9 +7553,9 @@ focus_tree = {
 			has_government = social_democrat
 		}
 		prerequisite = { focus = SPR_ie_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = -8
-		y = 3
+		relative_position_id = SPR_ie_reelected
+		x = 0
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7525,9 +7572,9 @@ focus_tree = {
 			has_government = social_democrat
 		}
 		prerequisite = { focus = SPR_Spain_One_and_Multiple }
-		relative_position_id = SPR_The_Second_Election
-		x = -9
-		y = 4
+		relative_position_id = SPR_ie_reelected
+		x = -1
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7544,9 +7591,9 @@ focus_tree = {
 			has_government = social_democrat
 		}
 		prerequisite = { focus = SPR_Rationalism_Defeats_Rejuvenation }
-		relative_position_id = SPR_The_Second_Election
-		x = -7
-		y = 4
+		relative_position_id = SPR_ie_reelected
+		x = 1
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7572,9 +7619,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Individuality_Through_the_Nation
 		}	
-		relative_position_id = SPR_The_Second_Election
-		x = -8
-		y = 5
+		relative_position_id = SPR_ie_reelected
+		x = 0
+		y = 4
 		cost = 3
 		ai_will_do = {
 		factor = 1
@@ -7592,9 +7639,9 @@ focus_tree = {
 			has_government = radical_socialist
 		}
 		prerequisite = { focus = SPR_The_Second_Election }
-		relative_position_id = SPR_The_Second_Election
-		x = -12
-		y = 1
+		relative_position_id = SPR_psoe_elected
+		x = 0
+		y = 7
 		cost = 0
 
 		bypass = {
@@ -7615,9 +7662,9 @@ focus_tree = {
 			has_government = radical_socialist
 		}
 		prerequisite = { focus = SPR_psoe_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = -13
-		y = 2
+		relative_position_id = SPR_psoe_reelected
+		x = -1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7635,9 +7682,9 @@ focus_tree = {
 			has_government = radical_socialist
 		}
 		prerequisite = { focus = SPR_psoe_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = -11
-		y = 2
+		relative_position_id = SPR_psoe_reelected
+		x = 1
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7655,9 +7702,9 @@ focus_tree = {
 			has_government = radical_socialist
 		}
 		prerequisite = { focus = SPR_psoe_reelected }
-		relative_position_id = SPR_The_Second_Election
-		x = -12
-		y = 3
+		relative_position_id = SPR_psoe_reelected
+		x = 0
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7674,9 +7721,9 @@ focus_tree = {
 			has_government = radical_socialist
 		}
 		prerequisite = { focus = SPR_Revolution_and_Evolution_Are_Not_Opposites }
-		relative_position_id = SPR_The_Second_Election
-		x = -13
-		y = 4
+		relative_position_id = SPR_psoe_reelected
+		x = -1
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7696,9 +7743,9 @@ focus_tree = {
 			has_government = radical_socialist
 		}
 		prerequisite = { focus = SPR_The_Legitimate_Heir_of_Pablismo }
-		relative_position_id = SPR_The_Second_Election
-		x = -11
-		y = 4
+		relative_position_id = SPR_psoe_reelected
+		x = 1
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7723,9 +7770,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Rouse_the_Great_Masses_Against_Extremism
 		}	
-		relative_position_id = SPR_The_Second_Election
-		x = -12
-		y = 5
+		relative_position_id = SPR_psoe_reelected
+		x = 0
+		y = 4
 		cost = 3
 		ai_will_do = {
 		factor = 1
@@ -7743,9 +7790,9 @@ focus_tree = {
 			has_government = syndicalist		
 		}
 		prerequisite = { focus = SPR_The_Second_Election }
-		relative_position_id = SPR_The_Second_Election
-		x = -18
-		y = 1
+		relative_position_id = SPR_psoe_reelected
+		x = -7
+		y = 0
 		cost = 0
 
 		bypass = {
@@ -7766,9 +7813,9 @@ focus_tree = {
 			has_government = syndicalist
 		}
 		prerequisite = { focus = SPR_ps_elected }
-		relative_position_id = SPR_The_Second_Election
-		x = -16
-		y = 2
+		relative_position_id = SPR_ps_elected
+		x = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7788,9 +7835,9 @@ focus_tree = {
 			has_government = syndicalist
 		}
 		prerequisite = { focus = SPR_ps_elected }
-		relative_position_id = SPR_The_Second_Election
-		x = -20
-		y = 2
+		relative_position_id = SPR_ps_elected
+		x = -2
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7808,9 +7855,9 @@ focus_tree = {
 			has_government = syndicalist
 		}
 		prerequisite = { focus = SPR_ps_elected }
-		relative_position_id = SPR_The_Second_Election
-		x = -18
-		y = 2
+		relative_position_id = SPR_ps_elected
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7827,9 +7874,9 @@ focus_tree = {
 			has_government = syndicalist
 		}
 		prerequisite = { focus = SPR_From_Corrupt_Oligarchs_to_Direct_Democracy }
-		relative_position_id = SPR_The_Second_Election
-		x = -18
-		y = 3
+		relative_position_id = SPR_ps_elected
+		x = 0
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7848,9 +7895,9 @@ focus_tree = {
 			has_government = syndicalist
 		}
 		prerequisite = { focus = SPR_Set_the_Peninsula_Free_of_Castilian_Dominance }
-		relative_position_id = SPR_The_Second_Election
-		x = -18
-		y = 4
+		relative_position_id = SPR_ps_elected
+		x = 0
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7870,9 +7917,9 @@ focus_tree = {
 			has_government = syndicalist
 		}
 		prerequisite = { focus = SPR_The_Paradox }
-		relative_position_id = SPR_The_Second_Election
-		x = -15
-		y = 3
+		relative_position_id = SPR_ps_elected
+		x = 3
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7897,9 +7944,9 @@ focus_tree = {
 			has_government = syndicalist
 		}
 		prerequisite = { focus = SPR_Cremate_the_Catholic_Church }
-		relative_position_id = SPR_The_Second_Election
-		x = -16
-		y = 4
+		relative_position_id = SPR_ps_elected
+		x = 2
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7920,9 +7967,9 @@ focus_tree = {
 			has_government = syndicalist
 		}
 		prerequisite = { focus = SPR_Delegitimize_the_Terrorists }
-		relative_position_id = SPR_The_Second_Election
-		x = -21
-		y = 3
+		relative_position_id = SPR_ps_elected
+		x = -3
+		y = 2
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7941,9 +7988,9 @@ focus_tree = {
 			has_government = syndicalist
 		}
 		prerequisite = { focus = SPR_Break_Down_the_Gender_Divide }
-		relative_position_id = SPR_The_Second_Election
-		x = -20
-		y = 4
+		relative_position_id = SPR_ps_elected
+		x = -2
+		y = 3
 		cost = 5
 		ai_will_do = {
 		factor = 1
@@ -7969,9 +8016,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SPR_Liberate_the_Minds_of_the_People
 		}	
-		relative_position_id = SPR_The_Second_Election
-		x = -18
-		y = 5
+		relative_position_id = SPR_ps_elected
+		x = 0
+		y = 4
 		cost = 3
 		ai_will_do = {
 		factor = 1
@@ -8205,6 +8252,8 @@ focus_tree = {
 		prerequisite = {
 			focus = SPR_Domestic_Designs_Till_Our_Fields
 			focus = SPR_Agrarianism_Powered_by_Foreign_Engines
+			focus = SPR_Work_for_Jornaleros
+			focus = SPR_Local_Conditions_Above_All
 		}	
 		relative_position_id = SPR_agrarian_reform
 		x = 0
