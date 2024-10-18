@@ -34,7 +34,7 @@ ideas = {
 				political_power_gain = -0.50
 				stability_factor = -0.1
 			}
-			picture = memories_of_the_republic
+			picture = SPR_memories_of_the_republic
 		}
 		SPR_social_breakdown = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_social_breakdown" }
@@ -44,7 +44,7 @@ ideas = {
 				conscription_factor = -0.20
 				stability_factor = -0.20
 			}
-			picture = generic_disjointed_gov
+			picture = SPR_no_stability_mierda
 		}
 		SPR_social_breakdown_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_social_breakdown_2" }
@@ -54,7 +54,7 @@ ideas = {
 				conscription_factor = -0.15
 				stability_factor = -0.15
 			}
-			picture = generic_disjointed_gov
+			picture = SPR_no_stability_mierda
 		}
 		SPR_social_breakdown_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_social_breakdown_3" }
@@ -64,7 +64,7 @@ ideas = {
 				conscription_factor = -0.10
 				stability_factor = -0.10
 			}
-			picture = generic_disjointed_gov
+			picture = SPR_no_stability_mierda
 		}
 		SPR_diplomacy_focus = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_diplomacy_focus" }
@@ -2168,7 +2168,7 @@ ideas = {
 		}
 		SPR_Scars_of_98 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_refugees_work" }
-			picture = CAR_cuban_war
+			picture = SPR_scars_of_1898
 			allowed = { always = no }
 			modifier = {
 				war_stability_factor = -0.15
@@ -2177,7 +2177,7 @@ ideas = {
 		}
 		SPR_Rising_Separatism = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_refugees_work" }
-			picture = GAL_minority_unrest
+			picture = SPR_rising_separatism
 			allowed = { always = no }
 			modifier = {
 				conscription_factor = -0.15
@@ -2236,7 +2236,7 @@ ideas = {
 		}
 		SPR_no_food_mierda = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_refugees_work" }
-			picture = RUS_unfinished_land_reform
+			picture = SPR_agrcrisis
 			allowed = { always = no }
 			modifier = {
 				political_power_gain = -0.05
@@ -2247,7 +2247,7 @@ ideas = {
 		}
 		SPR_agr_reform_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_refugees_work" }
-			picture = RUS_land_reforms
+			picture = SPR_agrreform_ongoing
 			allowed = { always = no }
 			modifier = {
 				political_power_gain = -0.03
@@ -2258,7 +2258,7 @@ ideas = {
 		}
 		SPR_agr_reform_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_refugees_work" }
-			picture = RUS_land_reforms
+			picture = SPR_agrreform_ongoing
 			allowed = { always = no }
 			modifier = {
 				political_power_gain = -0.01
@@ -2269,7 +2269,7 @@ ideas = {
 		}
 		SPR_agr_reform_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_refugees_work" }
-			picture = RUS_land_reforms
+			picture = SPR_agrreform_ongoing
 			allowed = { always = no }
 			modifier = {
 				monthly_population = -0.10
@@ -2282,7 +2282,7 @@ ideas = {
 		}
 		SPR_agr_reform_4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_refugees_work" }
-			picture = RUS_land_reforms
+			picture = SPR_agrreform_ongoing
 			allowed = { always = no }
 			modifier = {
 				attrition = -0.05
@@ -2296,7 +2296,7 @@ ideas = {
 		}
 		SPR_agr_reform_5 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_refugees_work" }
-			picture = RUS_land_reforms
+			picture = SPR_agrreform_ongoing
 			allowed = { always = no }
 			modifier = {
 				political_power_gain = 0.05
@@ -2311,7 +2311,7 @@ ideas = {
 		}
 		SPR_agr_reform_6 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_refugees_work" }
-			picture = RUS_land_reforms
+			picture = SPR_agrreform_ongoing
 			allowed = { always = no }
 			modifier = {
 				political_power_gain = 0.05
@@ -2326,7 +2326,7 @@ ideas = {
 		}
 		SPR_agr_reform_7 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_refugees_work" }
-			picture = RUS_land_reforms
+			picture = SPR_agrreformfin
 			allowed = { always = no }
 			modifier = {
 				political_power_gain = 0.07

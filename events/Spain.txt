@@ -4306,6 +4306,7 @@ country_event = {
 			}
 		}
 		set_country_flag = SPR_had_election
+		set_country_flag = SPR_flag_ir_elected
 		set_cosmetic_tag = SPR_kingdom
 		meta_effect = {
 			text = {
@@ -4352,6 +4353,7 @@ country_event = {
 			}
 		}
 		set_country_flag = SPR_had_election
+		set_country_flag = SPR_flag_dle_elected
 		add_stability = 0.05
 		meta_effect = {
 			text = {
@@ -4398,6 +4400,7 @@ country_event = {
 			}
 		}
 		set_country_flag = SPR_had_election
+		set_country_flag = SPR_flag_ue_elected
 		add_stability = 0.05
 		meta_effect = {
 			text = {
@@ -7727,6 +7730,7 @@ country_event = {# Portugal Alliance
 		name = sprd.221.a
 		ai_chance = {
 			factor = 75
+			}
 		}
 		SPR = { country_event = { id = sprd.222 days = 1 }}
 	}
@@ -8884,6 +8888,7 @@ country_event = { #Black Monday is joever
 		}
 		AUS = {
 			transfer_state = 699
+			AUS = { add_state_claim = 699 }
 							}
 						}
 					}

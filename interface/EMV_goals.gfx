@@ -22985,5 +22985,41 @@ name= "GFX_VNC_defend_democracy"
 		name = "GFX_goal_BAS_Irredentism"
 		texturefile = "gfx/interface/goals/BAS_Irredentism.png"
 	}
+	SpriteType = {
+		name = "GFX_goal_SPR_absolute_monarchy"
+		texturefile = "gfx/interface/goals/SPR_absolute_monarchy.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_dc_wreath"
+		texturefile = "gfx/interface/goals/SPR_dc_wreath.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_defenders_of_catholicism"
+		texturefile = "gfx/interface/goals/SPR_defenders_of_catholicism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_francoism"
+		texturefile = "gfx/interface/goals/SPR_francoism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_hispanic_supremacy"
+		texturefile = "gfx/interface/goals/SPR_hispanic_supremacy.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_hs_services"
+		texturefile = "gfx/interface/goals/SPR_hs_services.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_pne_elected"
+		texturefile = "gfx/interface/goals/SPR_pne_elected.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_question_of_monarchy"
+		texturefile = "gfx/interface/goals/SPR_question_of_monarchy.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_stranger_in_strange_system"
+		texturefile = "gfx/interface/goals/SPR_stranger_in_strange_system.png"
+	}
 }
 

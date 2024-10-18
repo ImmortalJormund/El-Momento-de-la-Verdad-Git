@@ -3504,7 +3504,7 @@ focus_tree = {
 	
 	focus = {
 		id = SPR_join_austria
-		icon = GFX_goal_AUS_unter_dem_doppeladler
+		icon = GFX_goal_SPR_defenders_of_catholicism
 		cost = 3
 		prerequisite = {
 			focus = SPR_place_in_the_world
@@ -4677,7 +4677,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_Empire_Reborn
-		icon = GFX_goal_SPR_Crown
+		icon = GFX_goal_SPR_absolute_spain
 		cost = 4
 
 		relative_position_id = SPR_isolation
@@ -4723,7 +4723,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_question_of_the_monarchy
-		icon = GFX_RUS_question_of_monarchy
+		icon = GFX_goal_SPR_question_of_monarchy
 		available = {
 			NOT = { has_country_flag = SPR_republic }
 		}
@@ -4747,7 +4747,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_absolutism
-		icon = GFX_goal_AUS_direct_rule_vienna
+		icon = GFX_goal_SPR_absolute_monarchy
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = SPR_absolutist_tt
@@ -5004,7 +5004,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_constitutionalism
-		icon = GFX_goal_NFA_A_New_Constitution
+		icon = GFX_goal_SPR_conmonspain
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = SPR_constitutional_tt
@@ -6925,7 +6925,7 @@ focus_tree = {
 		}
 			focus = {
 		id = SPR_pne_elected
-		icon = GFX_PAP_legionary_spirit
+		icon = GFX_goal_SPR_pne_elected
 		available = {
 			has_government = paternal_autocrat
 		}
@@ -6949,7 +6949,7 @@ focus_tree = {
 	}
 			focus = {
 		id = SPR_The_Odd_One_Out
-		icon = GFX_goal_BRG_Legion_Employment
+		icon = GFX_goal_SPR_stranger_in_strange_system
 		available = {
 			has_government = paternal_autocrat
 		}
@@ -7084,7 +7084,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_State_Owned_Social_and_Health_Services
-		icon = GFX_goal_NFA_Social_Catholicism
+		icon = GFX_goal_SPR_hs_services
 		available = {
 			has_government = paternal_autocrat
 		}
@@ -7104,7 +7104,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_Hispanic_Supremacy
-		icon = GFX_CAR_plus_ultra
+		icon = GFX_goal_SPR_hispanic_supremacy
 		available = {
 			has_government = paternal_autocrat
 		}
@@ -7785,7 +7785,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_ps_elected
-		icon = GFX_goal_generic_socialist_democracy
+		icon = GFX_goal_SPR_pselected
 		available = {
 			has_government = syndicalist		
 		}
@@ -7808,7 +7808,7 @@ focus_tree = {
 	}
 			focus = {
 		id = SPR_The_Paradox
-		icon = GFX_goal_WHR_Question_Kropotkin
+		icon = GFX_goal_SPR_monarchistquestion
 		available = {
 			has_government = syndicalist
 		}
@@ -7912,7 +7912,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_Cremate_the_Catholic_Church
-		icon = GFX_goal_AUS_christian_vices
+		icon = GFX_goal_SPR_churchburn
 		available = {
 			has_government = syndicalist
 		}
@@ -7983,7 +7983,7 @@ focus_tree = {
 		}		
 		focus = {
 		id = SPR_Ceasefire_With_the_King
-		icon = GFX_goal_anarcho_monarchism
+		icon = GFX_goal_SPR_syndieking
 		available = {
 			has_government = syndicalist
 		}
