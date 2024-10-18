@@ -926,7 +926,6 @@ country_event = {
 	
 	option = {
 		name = BAS.50.a
-		add_ideas = BAS_Aldanzoloto
 		add_stability = 0.06
 	}
 }
@@ -961,67 +960,6 @@ country_event = {
 	option = {
 		name = BAS.52.a
 		add_ideas = BAS_Blue_Clay_found
-		hidden_effect = {
-			random_other_country = {
-				limit = {
-					NOT = { tag = BAS }
-				}
-				news_event = {
-					id = BAS.53
-					days = 1
-				}
-			}
-		}
-	}
-}
-news_event = { #
-	id = BAS.53
-	immediate = { log = "[GetDateText]: [Root.GetName]: event BAS.53" }
-	title = BAS.53.t
-	desc = BAS.53.d
-	picture = GFX_news_event_generic_factory
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = ROOT
-		}
-	}
-
-	option = {
-		name = BAS.53.a
-	}
-}
-news_event = { #
-	id = BAS.54
-	immediate = { log = "[GetDateText]: [Root.GetName]: event BAS.54" }
-	title = BAS.54.t
-	desc = BAS.54.d
-	picture = GFX_news_event_generic_riot
-
-	major = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		wants_world_news = yes
-	}
-
-	show_major = {
-		NOT = {
-			tag = ROOT
-		}
-	}
-
-	option = {
-		name = BAS.54.a
 	}
 }
 country_event = { 

@@ -3956,7 +3956,7 @@ country_event = { #Constitutional monarchy?
 	
 
 	option = { #Yes.
-		name = sprd.99.a
+		name = sprd.100.a
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -4040,7 +4040,7 @@ country_event = { #Constitutional monarchy?
 						}
 					}						
 	option = { #No.
-		name = sprd.99.b
+		name = sprd.100.b
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -4263,7 +4263,7 @@ country_event = {
 			popularity = 0.20
 		}
 		add_ideas = {
-			SPR_Ramon_Otero_Pedrayo_hog_mli
+			SPR_Alejandro_Lerroux_Garcia_hog_mli
 			SPR_Alvaro_Cunqueiro_Mora_for_mli
 			SPR_Joaquin_Chapaprieta_Torregosa_eco_mli
 			SPR_Miguel_Maura_Gamazo_sec_mli
@@ -4310,7 +4310,7 @@ country_event = {
 			popularity = 0.20
 		}
 		add_ideas = {
-			SPR_Jose_Giral_Pereira_hog_sde
+			SPR_Manuel_Azana_Diaz_hog_sde
 			SPR_Anxel_Casal_for_sde
 			SPR_Bibiano_Fernandez_Ossorio_eco_sde
 			SPR_Marcelino_Domingo_Sanjuan_sec_sde
@@ -4356,7 +4356,7 @@ country_event = {
 			popularity = 0.2
 		}
 		add_ideas = {
-			SPR_Francisco_Franco_Bahamonde_hog_ade
+			SPR_Niceto_Alcala_Zamora_hog_sco
 			SPR_Francisco_de_Borbon_de_la_Torre_for_sco
 			SPR_Alexandre_Boveda_Iglesias_eco_sco
 			SPR_Miguel_Cabanellas_Ferrer_sec_sco
@@ -4450,7 +4450,7 @@ country_event = {
 			popularity = 0.2
 		}
 		add_ideas = {
-			SPR_Francisco_Largo_Caballero_hog_rso
+			SPR_Julian_Besteiro_Fernandez_hog_rso
 			SPR_Angel_Pestana_for_rso
 			SPR_Belamino_Tomas_Alvarez_eco_rso
 			SPR_Antonio_Ortega_Gutierrez_sec_rso
@@ -4550,7 +4550,7 @@ country_event = { #Subsequent Elections
 			popularity = 0.20
 		}
 		add_ideas = {
-			SPR_Ramon_Otero_Pedrayo_hog_mli
+			SPR_Alejandro_Lerroux_Garcia_hog_mli
 			SPR_Alvaro_Cunqueiro_Mora_for_mli
 			SPR_Joaquin_Chapaprieta_Torregosa_eco_mli
 			SPR_Miguel_Maura_Gamazo_sec_mli
@@ -4580,7 +4580,7 @@ country_event = { #Subsequent Elections
 			popularity = 0.20
 		}
 		add_ideas = {
-			SPR_Jose_Giral_Pereira_hog_sde
+			SPR_Manuel_Azana_Diaz_hog_sde
 			SPR_Anxel_Casal_for_sde
 			SPR_Bibiano_Fernandez_Ossorio_eco_sde
 			SPR_Marcelino_Domingo_Sanjuan_sec_sde
@@ -4609,7 +4609,7 @@ country_event = { #Subsequent Elections
 			popularity = 0.2
 		}
 		add_ideas = {
-			SPR_Francisco_Franco_Bahamonde_hog_ade
+			SPR_Niceto_Alcala_Zamora_hog_sco
 			SPR_Francisco_de_Borbon_de_la_Torre_for_sco
 			SPR_Alexandre_Boveda_Iglesias_eco_sco
 			SPR_Miguel_Cabanellas_Ferrer_sec_sco
@@ -4677,7 +4677,7 @@ country_event = { #Subsequent Elections
 			popularity = 0.2
 		}
 		add_ideas = {
-			SPR_Juan_Garcia_Oliver_hog_rso
+			SPR_Julian_Besteiro_Fernandez_hog_rso
 			SPR_Angel_Pestana_for_rso
 			SPR_Belamino_Tomas_Alvarez_eco_rso
 			SPR_Antonio_Ortega_Gutierrez_sec_rso
@@ -4745,7 +4745,7 @@ country_event = { #Subsequent Elections
 			popularity = 0.2
 		}
 		add_ideas = {
-			SPR_Joaquin_Ascaso_Budria_hog_syn
+			SPR_Angel_Pestana_hog_syn
 			SPR_Andreu_Nin_i_Perez_for_syn
 			SPR_Federica_Monsteny_Mane_eco_syn
 			SPR_Andreu_Nin_i_Perez_sec_syn
@@ -4778,7 +4778,7 @@ country_event = { #Subsequent Elections
 			popularity = 0.2
 		}
 		add_ideas = {
-			SPR_JM_Gil_Robles_Quinones_hog_ade
+			SPR_Jose_Maria_Albinana_y_Sanz_hog_pau
 			SPR_Alberto_M_Artejo_Alvarez_for_ade
 			SPR_Mariano_Anso_eco_ade
 			SPR_Tomas_Conde_de_Redezno_sec_pau
@@ -8286,6 +8286,12 @@ country_event = { #Black Monday is joever
 		}		
 	option = { #oh no
 		name = sprd.1112.c
+		trigger = {
+		GER = {
+				has_socialist_government = no
+				has_war = no
+			}
+		}
 		SIC = { country_event = { id = sprd.1104 days = 1 } }
 				}
 			}

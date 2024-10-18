@@ -3992,36 +3992,43 @@ scripted_gui = {
 			
 			### Spain ###
 
-			Joaquin_Ascaso_Budria_visible = {
+			Jose_Maria_Albinana_y_Sanz_visible = {
 				AND = {
 					has_country_flag = HOG_veiw
-					has_idea = SPR_Joaquin_Ascaso_Budria_hog_syn
+					has_idea = SPR_Jose_Maria_Albinana_y_Sanz_hog_pau
 				}
 			}	
-			Juan_Garcia_Oliver_visible = {
+			Julian_Besteiro_Fernandez_visible = {
 				AND = {
 					has_country_flag = HOG_veiw
-					has_idea = SPR_Juan_Garcia_Oliver_hog_rso
+					has_idea = SPR_Julian_Besteiro_Fernandez_hog_rso
 				}
 			}			
-			Ramon_Otero_Pedrayo_visible = {
+			Alejandro_Lerroux_Garcia_visible = {
 				AND = {
 					has_country_flag = HOG_veiw
-					has_idea = SPR_Ramon_Otero_Pedrayo_hog_mli
+					has_idea = SPR_Alejandro_Lerroux_Garcia_hog_mli
 				}
 			}
 			
-			Jose_Giral_Pereira_visible = {
+			Manuel_Azana_Diaz_visible = {
 				AND = {
 					has_country_flag = HOG_veiw
-					has_idea = SPR_Jose_Giral_Pereira_hog_sde
+					has_idea = SPR_Manuel_Azana_Diaz_hog_sde
 				}
 			}
 			
-			Francisco_Franco_Bahamonde_visible = {
+			Angel_Pestana_visible = {
 				AND = {
 					has_country_flag = HOG_veiw
-					has_idea = SPR_Francisco_Franco_Bahamonde_hog_ade
+					has_idea = SPR_Angel_Pestana_hog_syn
+				}
+			}
+			
+			Niceto_Alcala_Zamora_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = SPR_Niceto_Alcala_Zamora_hog_sco
 				}
 			}
 			

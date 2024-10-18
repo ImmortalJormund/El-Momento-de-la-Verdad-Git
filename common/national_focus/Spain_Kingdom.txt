@@ -2282,6 +2282,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_motor_focus"
 			army_experience = 25
 			add_ideas = SPR_broad_cavalry
+			set_technology = { bicycle_infantry = 1 }
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -3245,7 +3246,6 @@ focus_tree = {
 					}
 				}
 			}
-			has_socialist_government = no
 			NOT = {
 				has_idea = SPR_splendid_isolation
 			}
@@ -3530,7 +3530,6 @@ focus_tree = {
 					}
 				}
 			}
-			has_socialist_government = no
 			NOT = {
 				has_idea = SPR_splendid_isolation
 			}
@@ -3602,10 +3601,10 @@ focus_tree = {
 		prerequisite = {
 			focus = SPR_join_austria
 		}
-		available = { is_in_faction_with = GER }
+		available = { is_in_faction_with = AUS }
 
 		bypass = {
-			NOT = { country_exists = GER }
+			NOT = { country_exists = AUS }
 		}
 
 		ai_will_do = { factor = 40 }
@@ -3780,7 +3779,6 @@ focus_tree = {
 			ROOT = {
 				is_in_faction = no
 				is_subject = no
-				has_socialist_government = no
 				NOT = { has_idea = SPR_splendid_isolation }
 			}
 			ENT = {
@@ -4665,7 +4663,7 @@ focus_tree = {
 			focus = SPR_Moroccan_Question
 		}
 		available = {
-			has_country_flag = SPR_BOURBON
+			NOT = { has_country_flag = SPR_BOURBON}
 		}
 
 		ai_will_do = { factor = 20 }
@@ -5039,6 +5037,10 @@ focus_tree = {
 		x = -24
 		y = 1
 		cost = 0
+		
+		bypass = {
+			has_government = radical_socialist
+		}
 		ai_will_do = {
 		factor = 1
 		}
@@ -5288,6 +5290,10 @@ focus_tree = {
 		x = -18
 		y = 1
 		cost = 0
+
+		bypass = {
+			has_government = social_democrat
+		}
 		ai_will_do = {
 		factor = 1
 		}
@@ -5536,6 +5542,10 @@ focus_tree = {
 		x = -12
 		y = 1
 		cost = 0
+
+		bypass = {
+			has_government = social_liberal
+		}
 		ai_will_do = {
 		factor = 1
 		}
@@ -5788,6 +5798,10 @@ focus_tree = {
 		x = -6
 		y = 1
 		cost = 0
+
+		bypass = {
+			has_government = market_liberal
+		}
 		ai_will_do = {
 		factor = 1
 		}
@@ -5808,6 +5822,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 0
+
+		bypass = {
+			has_government = social_conservative
+		}
 		ai_will_do = {
 		factor = 1
 		}
@@ -6247,7 +6265,6 @@ focus_tree = {
 			focus = SPR_Moderated_Regionalism	
 			focus = SPR_Stamp_on_Catalans
 		}
-		mutually_exclusive = { focus = SPR_Moderated_Regionalism }
 		relative_position_id = SPR_constitutionalism
 		x = -6
 		y = 6
@@ -6258,6 +6275,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.200
 			add_ideas = SPR_Populist_Spain
+			remove_ideas = SPR_Mistakes_of_the_Past
 			add_war_support = 0.1
 			add_popularity = {
 				ideology = market_liberal
@@ -6271,6 +6289,7 @@ focus_tree = {
 		icon = GFX_goal_SPR_Accion_Popular
 		available = {
 			has_government = authoritarian_democrat
+			has_country_flag = SPR_had_election
 		}
 		prerequisite = { focus = SPR_constitutionalism }
 		relative_position_id = SPR_constitutionalism
@@ -6381,8 +6400,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-			country_event = sprd.123
-			add_ideas = SPR_catholic_unions
+			country_event = sprd.123			
 			add_popularity = {
 				ideology = authoritarian_democrat
 				popularity = 0.1
@@ -6514,6 +6532,10 @@ focus_tree = {
 		x = 4
 		y = 1
 		cost = 0
+
+		bypass = {
+			has_government = social_conservative
+		}
 		ai_will_do = {
 		factor = 1
 		}
@@ -6694,6 +6716,10 @@ focus_tree = {
 		x = 8
 		y = 1
 		cost = 0
+
+		bypass = {
+			has_government = authoritarian_democrat
+		}
 		ai_will_do = {
 		factor = 1
 		}
@@ -6861,6 +6887,10 @@ focus_tree = {
 		x = 14
 		y = 1
 		cost = 0
+
+		bypass = {
+			has_government = paternal_autocrat
+		}
 		ai_will_do = {
 		factor = 1
 		}
@@ -7112,6 +7142,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 0
+
+		bypass = {
+			has_government = market_liberal
+		}
 		ai_will_do = {
 		factor = 1
 		}
@@ -7264,6 +7298,10 @@ focus_tree = {
 		x = -4
 		y = 1
 		cost = 0
+
+		bypass = {
+			has_government = social_liberal
+		}
 		ai_will_do = {
 		factor = 1
 		}
@@ -7410,6 +7448,10 @@ focus_tree = {
 		x = -8
 		y = 1
 		cost = 0
+
+		bypass = {
+			has_government = social_democrat
+		}
 		ai_will_do = {
 		factor = 1
 		}
@@ -7554,6 +7596,10 @@ focus_tree = {
 		x = -12
 		y = 1
 		cost = 0
+
+		bypass = {
+			has_government = radical_socialist
+		}
 		ai_will_do = {
 		factor = 1
 		}
@@ -7701,6 +7747,10 @@ focus_tree = {
 		x = -18
 		y = 1
 		cost = 0
+
+		bypass = {
+			has_government = syndicalist
+		}
 		ai_will_do = {
 		factor = 1
 		}
@@ -8155,8 +8205,6 @@ focus_tree = {
 		prerequisite = {
 			focus = SPR_Domestic_Designs_Till_Our_Fields
 			focus = SPR_Agrarianism_Powered_by_Foreign_Engines
-			focus = SPR_Work_for_Jornaleros
-			focus = SPR_Local_Conditions_Above_All
 		}	
 		relative_position_id = SPR_agrarian_reform
 		x = 0

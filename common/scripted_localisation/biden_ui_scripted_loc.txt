@@ -6672,35 +6672,35 @@ defined_text = {
 	
 	text = { 
 		trigger = {
-			has_idea = SPR_Joaquin_Ascaso_Budria_hog_syn
+			has_idea = SPR_Angel_Pestana_hog_syn
 		}
-		localization_key = SPR_Joaquin_Ascaso_Budria_hog_syn
+		localization_key = SPR_Angel_Pestana_hog_syn
 	}
 	text = { 
 		trigger = {
-			has_idea = SPR_Juan_Garcia_Oliver_hog_rso
+			has_idea = SPR_Julian_Besteiro_Fernandez_hog_rso
 		}
-		localization_key = SPR_Juan_Garcia_Oliver_hog_rso
+		localization_key = SPR_Julian_Besteiro_Fernandez_hog_rso
 	}		
 	text = { 
 		trigger = {
-			has_idea = SPR_Ramon_Otero_Pedrayo_hog_mli
+			has_idea = SPR_Alejandro_Lerroux_Garcia_hog_mli
 		}
-		localization_key = SPR_Ramon_Otero_Pedrayo_hog_mli
+		localization_key = SPR_Alejandro_Lerroux_Garcia_hog_mli
 	}
 	
 	text = { 
 		trigger = {
-			has_idea = SPR_Jose_Giral_Pereira_hog_sde
+			has_idea = SPR_Manuel_Azana_Diaz_hog_sde
 		}
-		localization_key = SPR_Jose_Giral_Pereira_hog_sde
+		localization_key = SPR_Manuel_Azana_Diaz_hog_sde
 	}
 	
 	text = { 
 		trigger = {
-			has_idea = SPR_Francisco_Franco_Bahamonde_hog_ade
+			has_idea = SPR_Niceto_Alcala_Zamora_hog_sco
 		}
-		localization_key = SPR_Francisco_Franco_Bahamonde_hog_ade
+		localization_key = SPR_Niceto_Alcala_Zamora_hog_sco
 	}
 	
 	text = { 
@@ -6715,6 +6715,13 @@ defined_text = {
 			has_idea = SPR_JM_Gil_Robles_Quinones_hog_ade
 		}
 		localization_key = SPR_JM_Gil_Robles_Quinones_hog_ade
+	}
+	
+	text = { 
+		trigger = {
+			has_idea = SPR_Jose_Maria_Albinana_y_Sanz_hog_pau
+		}
+		localization_key = SPR_Jose_Maria_Albinana_y_Sanz_hog_pau
 	}
 	
 	### Carlist Spain ###

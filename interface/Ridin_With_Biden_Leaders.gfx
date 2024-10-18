@@ -2399,25 +2399,25 @@ spriteTypes = {
 	### Spain ###
 	
 	spriteType = {
-		name = "GFX_Portrait_SPR_Joaquin_Ascaso_Budria"
+		name = "GFX_Portrait_SPR_angel_pestana_nunez"
 		texturefile = "gfx/leaders/SPR/Portrait_SPR_angel_pestana_nunez.png"
 	}
 	spriteType = {
-		name = "GFX_Portrait_SPR_Juan_Garcia_Oliver"
+		name = "GFX_Portrait_CNT_Julian_Besteiro_Fernandez"
 		texturefile = "gfx/leaders/CNT/Portrait_CNT_Julian_Besteiro_Fernandez.png"
 	}	
 	spriteType = {
-		name = "GFX_Portrait_CAR_Ramon_Otero_Pedrayo"
+		name = "GFX_Portrait_CNT_Alejandro_Lerroux_Garcia"
 		texturefile = "gfx/leaders/CNT/Portrait_CNT_Alejandro_Lerroux_Garcia.png"
 	}
 	
 	spriteType = {
-		name = "GFX_Portrait_SPR_Jose_Giral_Pereira"
+		name = "GFX_Portrait_CNT_Manuel_Azana_Diaz"
 		texturefile = "gfx/leaders/CNT/Portrait_CNT_Manuel_Azana_Diaz.png"
 	}
 	
 	spriteType = {
-		name = "GFX_Portrait_SPR_Franco_Bahamonde"
+		name = "GFX_Portrait_CNT_Niceto_Alcala_Zamora"
 		texturefile = "gfx/leaders/CNT/Portrait_CNT_Niceto_Alcala_Zamora.png"
 	}
 	
@@ -2429,6 +2429,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_SPR_J_M_Gil_Robles_Quinones"
 		texturefile = "gfx/leaders/SPR/Portrait_SPR_J_M_Gil_Robles_Quinones.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SPR_Jose_Maria_Albinana"
+		texturefile = "gfx/leaders/SPR/Portrait_SPR_Jose_Maria_Albinana.png"
 	}
 	
 	### Carlist Spain ###

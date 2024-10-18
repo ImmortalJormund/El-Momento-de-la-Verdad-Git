@@ -104,32 +104,32 @@ spriteType = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_AML_George_Smith_Patton_Jr_hog_pau"
-		texturefile = "gfx/interface/ministers/AML/AML_George_Smith_Patton_Jr.png"
+		name = "GFX_idea_SPR_Niceto_Alcala_Zamora_hog_sco"
+		texturefile = "gfx/interface/ministers/CNT/CNT_Niceto_Alcala_Zamora.png"
 	}
 
 	spriteType = {
-		name = "GFX_idea_AML_George_Smith_Patton_Jr_carm"
-		texturefile = "gfx/interface/ministers/AML/AML_George_Smith_Patton_Jr.png"
+		name = "GFX_idea_SPR_Angel_Pestana_hog_syn"
+		texturefile = "gfx/interface/ministers/CNT/CNT_Angel_Pestana.png"
 	}
 
 	spriteType = {
-		name = "GFX_idea_ATD_George_Smith_Patton_Jr_hog_pau"
-		texturefile = "gfx/interface/ministers/ATD/ATD_George_Smith_Patton_Jr.png"
+		name = "GFX_idea_SPR_Julian_Besteiro_Fernandez_hog_rso"
+		texturefile = "gfx/interface/ministers/CNT/CNT_Julian_Besteiro_Fernandez.png"
 	}
 
 	spriteType = {
-		name = "GFX_idea_ATD_George_Smith_Patton_Jr_carm"
-		texturefile = "gfx/interface/ministers/ATD/ATD_George_Smith_Patton_Jr.png"
+		name = "GFX_idea_SPR_Manuel_Azana_Diaz_hog_sde"
+		texturefile = "gfx/interface/ministers/CNT/CNT_Manuel_Azana_Diaz.png"
 	}
 
 	spriteType = {
-		name = "GFX_idea_AML_Dwight_D_Eisenhower_hog_pau"
-		texturefile = "gfx/interface/ministers/AML/AML_Dwight_D_Eisenhower.png"
+		name = "GFX_idea_SPR_Alejandro_Lerroux_Garcia_hog_mli"
+		texturefile = "gfx/interface/ministers/CNT/CNT_Alejandro_Lerroux_Garcia.png"
 	}
 
 	spriteType = {
-		name = "GFX_idea_AML_Dwight_D_Eisenhower_carm"
-		texturefile = "gfx/interface/ministers/AML/AML_Dwight_D_Eisenhower.png"
+		name = "GFX_idea_SPR_Jose_Maria_Albinana_y_Sanz_hog_pau"
+		texturefile = "gfx/interface/ministers/CNT/CNT_Jose_Maria_Albinana_y_Sanz.png"
 	}
 }

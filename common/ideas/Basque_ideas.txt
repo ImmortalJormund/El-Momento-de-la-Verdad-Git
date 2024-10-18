@@ -221,7 +221,7 @@ ideas = {
 			}
 		}
 		BAS_Yytachy = {
-			picture = BAS_yytachy_idea
+			picture = generic_personality_cult
 			allowed = { always = no }
             modifier = {
 				political_power_gain = 0.05
@@ -310,7 +310,7 @@ ideas = {
 			}
 		}
 		BAS_Red_San_Sebastian = {
-			picture = GRU_DSR_student_communes
+			picture = NEE_city_on_a_hill_idea
 			allowed = { always = no }
             modifier = {
 				research_speed_factor = 0.10
@@ -364,7 +364,7 @@ ideas = {
 			picture = SRI_lighthandgang
 			allowed = { always = no }
             modifier = {
-				totalist_drift = -0.05
+				totalist_drift = 0.05
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
 			}
@@ -378,7 +378,7 @@ ideas = {
 			}
 		}
 		BAS_Rekindle_Class_Warfare = {
-			picture = GRU_DSR_student_communes
+			picture = NGR_Class_Divisions
 			allowed = { always = no }
             modifier = {
 				production_speed_arms_factory_factor = 0.2
@@ -398,7 +398,7 @@ ideas = {
 			}
 		}
 		BAS_Free_Syndicates_of_Navarre	 = {
-			picture = HOL_workplace_democracy
+			picture = forced_labor_economy
 			allowed = { always = no }
             modifier = {
 				consumer_goods_factor = -0.15
@@ -408,7 +408,7 @@ ideas = {
 			}
 		}
 		BAS_Spanish_Carlist_Support	 = {
-			picture = HOL_workplace_democracy
+			picture = advisors_spain_carlist
 			allowed = { always = no }
             modifier = {
 				weekly_manpower = 400
@@ -418,7 +418,7 @@ ideas = {
 			}
 		}
 		BAS_Republicanism_Destroyed	 = {
-			picture = HOL_workplace_democracy
+			picture = generic_traditional_values
 			allowed = { always = no }
             modifier = {
 				stability_factor = -0.1
@@ -429,7 +429,7 @@ ideas = {
 			}
 		}
 		BAS_Navarran_Dominance = {
-			picture = HOL_workplace_democracy
+			picture = COR_protected_not_equal
 			allowed = { always = no }
             modifier = {
 			conscription_factor = 0.13
@@ -439,7 +439,7 @@ ideas = {
 			}
 		}
 		 BAS_Gernika_Honoured = {
-			picture = HOL_workplace_democracy
+			picture = SCW_CAR_fervor
 			allowed = { always = no }
             modifier = {
 			conscription = 0.03
@@ -449,7 +449,7 @@ ideas = {
 			}
 		}
 		 BAS_Life_According_to_Traditional_Values = {
-			picture = HOL_workplace_democracy
+			picture = NFA_trad
 			allowed = { always = no }
             modifier = {
 			monthly_population = 0.35
@@ -460,7 +460,7 @@ ideas = {
 			}
 		}
 		 BAS_Reconquista = {
-			picture = HOL_workplace_democracy
+			picture = carm_decisive_battle
 			allowed = { always = no }
             modifier = {
 			weekly_manpower = 500
@@ -470,7 +470,7 @@ ideas = {
 			}
 		}
 		 BAS_Navarre_Pearl_of_Iberia = {
-			picture = HOL_workplace_democracy
+			picture = BRG_Tradional_Goverance
 			allowed = { always = no }
             modifier = {
 			consumer_goods_factor = -0.1
@@ -490,13 +490,11 @@ ideas = {
 			}
 		}
 		BAS_Blue_Clay_found = {
-			picture = diamond_trade
+			picture = NFA_sahara_rail
 			allowed = { always = no }
             modifier = {
 				local_resources_factor = 0.05
-				consumer_goods_factor = -0.15
 				production_factory_start_efficiency_factor = 0.05
-				monthly_population = 0.35
 				industrial_factory_donations = 2
 			}
 		}
@@ -509,7 +507,7 @@ ideas = {
 			}
 		}
 		 BAS_Star_Submachine_Guns = {
-			picture = HOL_workplace_democracy
+			picture = carm_guns_and_butter
 			allowed = { always = no }
             modifier = {
 			army_attack_factor = 0.02
@@ -529,7 +527,7 @@ ideas = {
 		}
 		BAS_peoples_army_1 = { #initial
 			name = BAS_peoples_army
-			picture = BAS_peoples_army
+			picture = BAN_gray_army_mobilize
 			allowed = { always = no }
             modifier = {
 				winter_attrition_factor = -0.15
@@ -541,7 +539,7 @@ ideas = {
 		}
 		BAS_peoples_army_2 = { #conscript minorities
 			name = BAS_peoples_army
-			picture = BAS_peoples_army
+			picture = BAN_gray_army_mobilize
 			allowed = { always = no }
             modifier = {
 				winter_attrition_factor = -0.15
@@ -554,7 +552,7 @@ ideas = {
 		}
 		BAS_peoples_army_3 = { #permafrost fighting
 			name = BAS_peoples_army
-			picture = BAS_peoples_army
+			picture = BAN_gray_army_mobilize
 			allowed = { always = no }
             modifier = {
 				winter_attrition_factor = -0.2
@@ -567,7 +565,7 @@ ideas = {
 		}
 		BAS_peoples_army_4 = { #permafrost fighting + conscript
 			name = BAS_peoples_army
-			picture = BAS_peoples_army
+			picture = BAN_gray_army_mobilize
 			allowed = { always = no }
             modifier = {
 				winter_attrition_factor = -0.2
@@ -581,7 +579,7 @@ ideas = {
 		}
 		BAS_peoples_army_5 = { #nomad legacy
 			name = BAS_peoples_army
-			picture = BAS_peoples_army
+			picture = BAN_gray_army_mobilize
 			allowed = { always = no }
             modifier = {
 				winter_attrition_factor = -0.2
@@ -596,7 +594,7 @@ ideas = {
 		}
 		BAS_peoples_army_6 = { #nomad legacy + conscript
 			name = BAS_peoples_army
-			picture = BAS_peoples_army
+			picture = BAN_gray_army_mobilize
 			allowed = { always = no }
             modifier = {
 				winter_attrition_factor = -0.2
@@ -612,7 +610,7 @@ ideas = {
 		}
 		BAS_peoples_army_7 = { #partisan
 			name = BAS_peoples_army
-			picture = BAS_peoples_army
+			picture = BAN_gray_army_mobilize
 			allowed = { always = no }
             modifier = {
 				winter_attrition_factor = -0.35
@@ -629,7 +627,7 @@ ideas = {
 		}
 		BAS_peoples_army_8 = { #partisan + nomad
 			name = BAS_peoples_army
-			picture = BAS_peoples_army
+			picture = BAN_gray_army_mobilize
 			allowed = { always = no }
             modifier = {
 				winter_attrition_factor = -0.35
@@ -646,7 +644,7 @@ ideas = {
 		}
 		BAS_peoples_army_9 = { #final
 			name = BAS_peoples_army
-			picture = BAS_peoples_army
+			picture = BAN_gray_army_mobilize
 			allowed = { always = no }
             modifier = {
 				winter_attrition_factor = -0.35
@@ -674,7 +672,7 @@ ideas = {
 			}
 		}
 		BAS_powerhouse_of_iberia = {
-			picture = chi_war_of_resistance3
+			picture = SCW_SPA_fervor
 			allowed = { always = no }
             modifier = {
 				stability_factor = 0.15
@@ -685,7 +683,7 @@ ideas = {
 			}
 		}
 		BAS_free_of_castile = {
-			picture = chi_war_of_resistance3
+			picture = SCW_CAR_fervor
 			allowed = { always = no }
             modifier = {
 				political_power_factor = 0.15

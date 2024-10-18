@@ -427,5 +427,767 @@ focus_tree = {
 			country_event = CAT.20
 			}
 		}
+	focus = {
+		id = CAT_Democracy_of_Catalonia
+		icon = GFX_goal_FRA_Defenders_Commune
+		relative_position_id = CAT_Independence
+		x = 26
+		y = 0
+		available = {
+			has_completed_focus = CAT_Catalonia_Breathes_Free
+			has_war = no
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Nosaltres_Sols
+		icon = GFX_goal_NFA_By_Our_Hand_Alone
+		relative_position_id = CAT_Democracy_of_Catalonia
+		x = 14
+		y = 1
+		available = {
+			has_government = national_populist
+		}
+		prerequisite = {
+			focus = CAT_Democracy_of_Catalonia
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Deradicalize_Estat_Catala
+		icon = GFX_goal_generic_non_voilence
+		relative_position_id = CAT_Nosaltres_Sols
+		x = 2
+		y = 1
+		available = {
+			has_government = national_populist
+		}
+		prerequisite = {
+			focus = CAT_Nosaltres_Sols
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Align_Partit_Catala_Proletari
+		icon = GFX_goal_NFA_Remove_Communards
+		relative_position_id = CAT_Nosaltres_Sols
+		x = 0
+		y = 1
+		available = {
+			has_government = national_populist
+		}
+		prerequisite = {
+			focus = CAT_Nosaltres_Sols
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Expunge_the_Totalitarians
+		icon = GFX_goal_MNT_anti_terrorist
+		relative_position_id = CAT_Nosaltres_Sols
+		x = -2
+		y = 1
+		available = {
+			has_government = national_populist
+		}
+		prerequisite = {
+			focus = CAT_Nosaltres_Sols
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Vibrant_Ultranationalism
+		icon = GFX_goal_NFA_Republican_Patriotism
+		relative_position_id = CAT_Nosaltres_Sols
+		x = 0
+		y = 2
+		available = {
+			has_government = national_populist
+		}
+		prerequisite = {
+			focus = CAT_Expunge_the_Totalitarians
+			focus = CAT_Align_Partit_Catala_Proletari
+			focus = CAT_Deradicalize_Estat_Catala
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Remove_Hispanic_Inferiors
+		icon = GFX_goal_YUC_Anti-European_Trade
+		relative_position_id = CAT_Nosaltres_Sols
+		x = -1
+		y = 3
+		available = {
+			has_government = national_populist
+		}
+		prerequisite = {
+			focus = CAT_Vibrant_Ultranationalism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Fervent_Anti_Colonialism
+		icon = GFX_goal_AUS_imperial_liberation
+		relative_position_id = CAT_Nosaltres_Sols
+		x = 1
+		y = 3
+		available = {
+			has_government = national_populist
+		}
+		prerequisite = {
+			focus = CAT_Vibrant_Ultranationalism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Nationalism_From_Individual_to_State
+		icon = GFX_goal_AST_individual_liberty_outside_politics
+		relative_position_id = CAT_Nosaltres_Sols
+		x = 0
+		y = 4
+		available = {
+			has_government = national_populist
+		}
+		prerequisite = {
+			focus = CAT_Vibrant_Ultranationalism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Denounce_Anti_Religious_Violence
+		icon = GFX_goal_DSR_Church
+		relative_position_id = CAT_Nosaltres_Sols
+		x = 2
+		y = 5
+		available = {
+			has_government = national_populist
+		}
+		prerequisite = {
+			focus = CAT_Remove_Hispanic_Inferiors
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Reaffirm_Democratic_Principles
+		icon = GFX_RUS_Lessons_Of_Democracy
+		relative_position_id = CAT_Nosaltres_Sols
+		x = -2
+		y = 5
+		available = {
+			has_government = national_populist
+		}
+		prerequisite = {
+			focus = CAT_Fervent_Anti_Colonialism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Proclaim_Victory_in_La_Batlla
+		icon = GFX_DKB_Start_War
+		relative_position_id = CAT_Nosaltres_Sols
+		x = 0
+		y = 6
+		available = {
+			has_government = national_populist
+		}
+		prerequisite = {
+			focus = CAT_Reaffirm_Democratic_Principles
+		}
+		prerequisite = {
+			focus = CAT_Denounce_Anti_Religious_Violence
+		}
+		prerequisite = {
+			focus = CAT_Nationalism_From_Individual_to_State
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Union_Catalanista
+		icon = GFX_goal_COL_Authoritarian_Friends_Everywhere_Unite
+		relative_position_id = CAT_Democracy_of_Catalonia
+		x = 8
+		y = 1
+		available = {
+			has_government = authoritarian_democrat
+		}
+		prerequisite = {
+			focus = CAT_Democracy_of_Catalonia
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_In_the_Footsteps_of_the_Father
+		icon = GFX_RUS_Follow_The_Plan
+		relative_position_id = CAT_Union_Catalanista
+		x = 2
+		y = 1
+		available = {
+			has_government = authoritarian_democrat
+		}
+		prerequisite = {
+			focus = CAT_Union_Catalanista
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Making_a_Homeland_for_all_Catalans
+		icon = GFX_goal_ROM_Country_As_Sun_In_Sky
+		relative_position_id = CAT_Union_Catalanista
+		x = 0
+		y = 1
+		available = {
+			has_government = authoritarian_democrat
+		}
+		prerequisite = {
+			focus = CAT_Union_Catalanista
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Natural_Catalanism_is_Conservatism
+		icon = GFX_VNC_defend_democracy
+		relative_position_id = CAT_Union_Catalanista
+		x = -2
+		y = 1
+		available = {
+			has_government = authoritarian_democrat
+		}
+		prerequisite = {
+			focus = CAT_Union_Catalanista
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Destroy_Regionalist_Treachery
+		icon = GFX_goal_HON_Crush_Bootlickers
+		relative_position_id = CAT_Union_Catalanista
+		x = 0
+		y = 2
+		available = {
+			has_government = authoritarian_democrat
+		}
+		prerequisite = {
+			focus = CAT_In_the_Footsteps_of_the_Father
+			focus = CAT_Making_a_Homeland_for_all_Catalans
+			focus = CAT_Natural_Catalanism_is_Conservatism
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Catalan_Renaixensa
+		icon = GFX_goal_NIC_Defend_Free_Press
+		relative_position_id = CAT_Union_Catalanista
+		x = -1
+		y = 3
+		available = {
+			has_government = authoritarian_democrat
+		}
+		prerequisite = {
+			focus = CAT_Destroy_Regionalist_Treachery
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Catalan_Economic_Boom
+		icon = GFX_goal_GEO_Industrialize_the_Countryside
+		relative_position_id = CAT_Union_Catalanista
+		x = 1
+		y = 3
+		available = {
+			has_government = authoritarian_democrat
+		}
+		prerequisite = {
+			focus = CAT_Destroy_Regionalist_Treachery
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Restoration_of_the_Catalan_Volunteers
+		icon = GFX_TRM_Approach_Entente
+		relative_position_id = CAT_Union_Catalanista
+		x = 0
+		y = 4
+		available = {
+			has_government = authoritarian_democrat
+		}
+		prerequisite = {
+			focus = CAT_Destroy_Regionalist_Treachery
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_End_Atheist_Debauchery
+		icon = GFX_goal_generic_fanatic_inquisition
+		relative_position_id = CAT_Union_Catalanista
+		x = 2
+		y = 5
+		available = {
+			has_government = authoritarian_democrat
+		}
+		prerequisite = {
+			focus = CAT_Catalan_Economic_Boom
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Resurrecting_the_Protectora_Model
+		icon = GFX_goal_AUS_cultural_associations
+		relative_position_id = CAT_Union_Catalanista
+		x = -2
+		y = 5
+		available = {
+			has_government = authoritarian_democrat
+		}
+		prerequisite = {
+			focus = CAT_Catalan_Renaixensa
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_From_Rhone_to_Balearics
+		icon = GFX_goal_NFA_Restore_Medieval_Morals
+		relative_position_id = CAT_Union_Catalanista
+		x = 0
+		y = 6
+		available = {
+			has_government = authoritarian_democrat
+		}
+		prerequisite = {
+			focus = CAT_Resurrecting_the_Protectora_Model
+		}
+		prerequisite = {
+			focus = CAT_End_Atheist_Debauchery
+		}
+		prerequisite = {
+			focus = CAT_Restoration_of_the_Catalan_Volunteers
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Liga_Regionalista
+		icon = GFX_goal_FRA_Defenders_Commune
+		relative_position_id = CAT_Democracy_of_Catalonia
+		x = 2
+		y = 1
+		available = {
+			has_government = social_conservative
+		}
+		prerequisite = {
+			focus = CAT_Democracy_of_Catalonia
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Bismarck_or_Bolivar
+		icon = GFX_RUS_Follow_The_Plan
+		relative_position_id = CAT_Liga_Regionalista
+		x = 2
+		y = 1
+		available = {
+			has_government = social_conservative
+		}
+		prerequisite = {
+			focus = CAT_Liga_Regionalista
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Denounce_Collaborators
+		icon = GFX_goal_ROM_Country_As_Sun_In_Sky
+		relative_position_id = CAT_Liga_Regionalista
+		x = 0
+		y = 1
+		available = {
+			has_government = social_conservative
+		}
+		prerequisite = {
+			focus = CAT_Liga_Regionalista
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Embrace_Catalanism
+		icon = GFX_VNC_defend_democracy
+		relative_position_id = CAT_Union_Catalanista
+		x = -2
+		y = 1
+		available = {
+			has_government = social_conservative
+		}
+		prerequisite = {
+			focus = CAT_Liga_Regionalista
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Question_of_Catalan_Monarchists
+		icon = GFX_goal_HON_Crush_Bootlickers
+		relative_position_id = CAT_Liga_Regionalista
+		x = 0
+		y = 2
+		available = {
+			has_government = social_conservative
+		}
+		prerequisite = {
+			focus = CAT_Bismarck_or_Bolivar
+			focus = CAT_Denounce_Collaborators
+			focus = CAT_Embrace_Catalanism
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Decentralize_the_State
+		icon = GFX_goal_NIC_Defend_Free_Press
+		relative_position_id = CAT_Liga_Regionalista
+		x = -1
+		y = 3
+		available = {
+			has_government = social_conservative
+		}
+		prerequisite = {
+			focus = CAT_Destroy_Regionalist_Treachery
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Finish_the_Demagogic_Avalanche
+		icon = GFX_goal_GEO_Industrialize_the_Countryside
+		relative_position_id = CAT_Liga_Regionalista
+		x = 1
+		y = 3
+		available = {
+			has_government = social_conservative
+		}
+		prerequisite = {
+			focus = CAT_Destroy_Regionalist_Treachery
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Integrate_Spanish_Right_Wingers
+		icon = GFX_TRM_Approach_Entente
+		relative_position_id = CAT_Liga_Regionalista
+		x = 0
+		y = 4
+		available = {
+			has_government = social_conservative
+		}
+		prerequisite = {
+			focus = CAT_Destroy_Regionalist_Treachery
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Commonwealth_of_Catalonia
+		icon = GFX_goal_generic_fanatic_inquisition
+		relative_position_id = CAT_Liga_Regionalista
+		x = 2
+		y = 5
+		available = {
+			has_government = social_conservative
+		}
+		prerequisite = {
+			focus = CAT_Catalan_Economic_Boom
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Conservative_Modernism
+		icon = GFX_goal_AUS_cultural_associations
+		relative_position_id = CAT_Liga_Regionalista
+		x = -2
+		y = 5
+		available = {
+			has_government = social_conservative
+		}
+		prerequisite = {
+			focus = CAT_Catalan_Renaixensa
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_From_Rhone_to_Balearics
+		icon = GFX_goal_NFA_Restore_Medieval_Morals
+		relative_position_id = CAT_Liga_Regionalista
+		x = 0
+		y = 6
+		available = {
+			has_government = social_conservative
+		}
+		prerequisite = {
+			focus = CAT_Resurrecting_the_Protectora_Model
+		}
+		prerequisite = {
+			focus = CAT_End_Atheist_Debauchery
+		}
+		prerequisite = {
+			focus = CAT_Restoration_of_the_Catalan_Volunteers
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Unio_Democratica_de_Catalunya
+		icon = GFX_goal_FRA_Defenders_Commune
+		relative_position_id = CAT_Democracy_of_Catalonia
+		x = -4
+		y = 1
+		available = {
+			has_government = market_liberal
+		}
+		prerequisite = {
+			focus = CAT_Democracy_of_Catalonia
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Accio_Catalana_Republicana
+		icon = GFX_goal_FRA_Defenders_Commune
+		relative_position_id = CAT_Democracy_of_Catalonia
+		x = -10
+		y = 1
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = {
+			focus = CAT_Democracy_of_Catalonia
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Esquerra_Republicana_de_Catalunya
+		icon = GFX_goal_FRA_Defenders_Commune
+		relative_position_id = CAT_Democracy_of_Catalonia
+		x = -16
+		y = 1
+		available = {
+			has_government = social_democrat
+		}
+		prerequisite = {
+			focus = CAT_Democracy_of_Catalonia
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
 	}
 }

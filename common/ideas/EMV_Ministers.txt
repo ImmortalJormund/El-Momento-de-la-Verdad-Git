@@ -197,7 +197,7 @@ ideas = {
 			traits = {
 				head_of_government
 				social_conservative
-				hog_reformist_soldier
+				hog_silent_workhorse
 			}
 
 	}
@@ -216,7 +216,7 @@ ideas = {
 			traits = {
 				head_of_government
 				totalist
-				hog_reformist_soldier
+				hog_flamboyant_tough_guy
 			}
 
 	}
@@ -235,7 +235,7 @@ ideas = {
 			traits = {
 				head_of_government
 				syndicalist
-				hog_reformist_soldier
+				hog_influential_intellectual
 			}
 
 	}
@@ -254,7 +254,7 @@ ideas = {
 			traits = {
 				head_of_government
 				radical_socialist
-				hog_reformist_soldier
+				hog_ambitious_union_boss
 			}
 
 	}
@@ -273,7 +273,7 @@ ideas = {
 			traits = {
 				head_of_government
 				authoritarian_democrat
-				hog_reformist_soldier
+				hog_backroom_backstabber
 			}
 
 	}
@@ -292,7 +292,7 @@ ideas = {
 			traits = {
 				head_of_government
 				authoritarian_democrat
-				hog_reformist_soldier
+				hog_scholar
 			}
 
 	}
@@ -311,7 +311,121 @@ ideas = {
 			traits = {
 				head_of_government
 				social_democrat
-				hog_reformist_soldier
+				hog_ambitious_union_boss
+			}
+
+	}
+		SPR_Jose_Maria_Albinana_y_Sanz_hog_pau = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea KRK_Julian_Nowak_hog_sli"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_flamboyant_tough_guy
+			}
+
+	}
+		SPR_Alejandro_Lerroux_Garcia_hog_mli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea KRK_Julian_Nowak_hog_sli"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_flamboyant_tough_guy
+			}
+
+	}
+		SPR_Manuel_Azana_Diaz_hog_sde = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea KRK_Julian_Nowak_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_scholar
+			}
+
+	}
+		SPR_Julian_Besteiro_Fernandez_hog_rso = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea KRK_Julian_Nowak_hog_sli"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_influential_intellectual
+			}
+
+	}
+		SPR_Angel_Pestana_hog_syn = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea KRK_Julian_Nowak_hog_sli"
+			}
+			traits = {
+				head_of_government
+				syndicalist
+				hog_ambitious_union_boss
+			}
+
+	}
+		SPR_Niceto_Alcala_Zamora_hog_sco = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea KRK_Julian_Nowak_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_silent_workhorse
 			}
 		}
 

@@ -105,7 +105,7 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
-			random_owned_state = {
+			172 = {
 				add_building_construction = {
 					type = bunker
 					level = 3
@@ -220,7 +220,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = BAS.3
-			random_owned_state = { 
+			172 = { 
 				add_building_construction = {
 					type = bunker
 					level = 1
@@ -1294,7 +1294,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAS_Secure_Our_Independence
-		icon = GFX_BAS_Independence
+		icon = GFX_goal_CRO_defense_powerhouse
 		relative_position_id = BAS_Euzko_Gudariak
 		x = 0
 		y = 4
@@ -2593,7 +2593,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAS_Eusko_Itsas_Gudarostea
-		icon = GFX_BAS_Navy
+		icon = GFX_goal_VIN_expand_ba_son_shipyard
 		relative_position_id = BAS_Euzko_Gudariak
 		x = 7
 		y = 0
