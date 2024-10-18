@@ -490,6 +490,15 @@ SPR_is_kingdom:0 "§Y[SPR.GetNameDefCap]§! is a kingdom\n"
 spanish_civil_war:0 "§RThe Spanish Civil War has broken out§!\n"
 SPR_refugee_idea_tt:0 "§YOnce the Weltkrieg has ended, this influx of refugees will come to an end.§!"
 SPR_remove_bm_tt:0 "§GWe shall finally recover from Black Monday!§!"
+SPR_monarchy_question_tt:0 "§YThis focus will either unlock the§! §4constitutional§! §Yor§! §0absolutist§! §Ymonarchy trees§!"
+SPR_psoe_elected_tt:0 "The §NPartido Socialista Obrero Español§! have been elected"
+SPR_ir_elected_tt:0 "The §MIzquierda Republicana§! have been elected"
+SPR_ue_elected_tt:0 "The §lUnión Republicana§! have been elected"
+SPR_plm_elected_tt:0 "The §mPartido Radical§! have been elected"
+SPR_dle_elected_tt:0 "The §cDerecha Liberal Espanola§! have been elected"
+SPR_accion_elected_tt:0 "The §gAcción Popular§! have been elected"
+SPR_constitutional_tt:0 "§4Democratic elections have been called§!"
+SPR_absolutist_tt:0 "§0An absolutist kingdom has been declared§!"
 
 ### Focuses ###
 
@@ -1107,10 +1116,15 @@ SPR_agrarian_reform_desc:0 "Throughout the 19th century, different ideas for an 
 
 SPR_republic:0 "The republic has been declared"
 SPR_constitutional_republic:0 "Franco has decided to allow elections"
-SPR_constitutional_monarchy:0 "A constitutional monarchy has been declared"
-SPR_absolute_monarchy:0 "An absolute monarchy has been declared"
+SPR_constitutional_monarchy:0 "A §4constitutional monarchy§! has been declared"
+SPR_absolute_monarchy:0 "An §0absolute monarchy§! has been declared"
 SPR_francoist:0 "Franco held onto control"
-SPR_had_second_election:0 "Spain has held a second democratic election"
+SPR_flag_psoe_elected:0 ""
+SPR_flag_ir_elected:0 ""
+SPR_flag_ue_elected:0 ""
+SPR_flag_plm_elected:0 ""
+SPR_flag_dle_elected:0 ""
+SPR_flag_ap_elected:0 ""
 
 ### Events ###
 
@@ -1246,8 +1260,9 @@ sprd.26.d:0 "This Election day has been marred by countless acts of violence, 4 
 sprd.26.a:0 "This was a mistake!"
 
 sprd.27.t:0 "The Fate of The House of Bourbon"
-sprd.27.d:0 "The war is over and the King is still in a coma. With this precarious situation on our hands, we must decide who will lead Spain to its uncertain future. Most within our government support the claims of Infante Juan, previously known for his links to Spanish traditionalism and Renovacion Espanola, who has since become quite strong proponent of constitutional monarchism. A small contingent of monarchists however, support Infante Jaime, who however is left deaf after a childhood injury during a surgical procedure. He is also the current claimant of the French Legitimist House of Bourbon, though his support among French monarchists is limited. King Alfonso’s son and original heir, Alfonso de Borbón y Battenberg, has renounced his claims to the throne but some reports have arrived that he could be looking to invalidate this decision, although so far he seems to remain silent on the matter. Should we crown either Juan or Jaime as the new king of Spain?"
+sprd.27.d:0 "The war is over and the King is still in a coma. With this precarious situation on our hands, we must decide who will lead Spain to its uncertain future. Most within our government support the claims of Infante Juan. A small contingent of monarchists however, support Infante Jaime. Some officers believe it was the House of Bourbon that brought Spain into this crisis and we would be much better off without it. Should we crown one of Alfonso’s sons as the new king of Spain or declare a new Spanish Republic?"
 sprd.27.a:0 "Infante Juan is crowned as Juan III."
+sprd.27.b:0 "No, perhaps the time of the kingdom is over."
 sprd.27.c:0 "Infante Jaime is crowned as Jaime I."
 
 sprd.28.t:0 "Restoring the Monarchy"
@@ -1596,7 +1611,6 @@ sprd.102.e:0 "Union Republicana, led by Diego Martínez Barrio"
 sprd.102.f:0 "PSOE moderates, led by Julian Besteiro."
 sprd.102.g:0 "Accion Popular, led by José María Gil-Robles y Quiñones."
 sprd.102.h:0 "Partido Syndicalista, led by Ángel Pestaña."
-sprd.102.i:0 "Partido Nacionalista Español, led by Jose Maria Albiñana."
 
 sprd.103.t:0 "The People Demand Elections"
 sprd.103.d:0 "Despite all we have done for this country the people are protesting outside the presidential mansion, and are demanding that Franco step down and be replaced by a democratically-elected president and Cortes Generales. Of course, there is nothing stopping us from running ourselves in said elections. Also, as we have just secured victory in a bloody war now may not be the time for another revolution. Then again, as we hold all the cards right now we could always say no."
@@ -1649,8 +1663,7 @@ sprd.113.d:0 "Madrid is ablaze from socialist riots, its factories empty and its
 sprd.113.a:0 "Fall back, we will return!"
 sprd.113.b:0 "Gora Euskadi!"
 sprd.113.c:0 "Visca Catalunya!"
-sprd.113.e:0 "Galiza Ceibe!"
-sprd.113.f:0 "Viva Galicia!"
+sprd.113.d:0 "Viva Galicia!"
 
 sprd.114.t:0 "Defeat at Basque Country!"
 sprd.114.d:0 "At first, it seemed as if we could defeat the Basque separatist, with their forward militias crumbling under the regular army units, but as we entered the difficult terrain of Navarre and the urban regions of Bilbao, we were beset at every turn by Carlist requetes and Basque militants. Their frenzied attacks whittled down the morale of even the bravest Spanish soldiers, and now, general Mola has ordered a full scale retreat, as our supply routes are pillaged by anarchist guerillas. A grievous blow has been dealt to Spanish unity on this day, but perhaps one day, we can return and destroy the separatist scum once and for all."
@@ -1715,8 +1728,8 @@ sprd.129.a:0 "Ditch Soriano and promote de Laborda in his place, enough is enoug
 sprd.129.b:0 "It’s our rivals they’re hurting, Soriano stays."
 
 
-sprd.130.t:0 "PNE's Political Transformation"
-sprd.130.d:0 "As PNE's stewardship of Spain continues, the party has begun to see itself transform to fit its new role. While originally a big tent party of various right-wing ideologues, drawing its support from rural agrarian peasants, anti-syndicalist militants and radical  Catholic clergymen, the party now spends about as much time balancing these interests as it does forming policies and creating laws. Prime Minister Albiñana finds this situation untenable, as it stretches the party thin and causes internal conflicts that are easily exploited by its main rivals, socialists of PSOE and the liberals of Izquierda Española and Union Española. A small-scale congress has been called among party elites to finally settle the ideological differences and create an unified structure. After all, a party calling for Spain to unite as whole is laughable if it cannot unify itself first. As the congress begins, several blocs form within it. Among the most influential is the Legionaries of Albiñana, who propose following the Romanian and Italian Legionary model but form-fitting it to the conditions of Spain. This would see the movement pay lip service to democracy while pursuing its policies of heavy nationalism, militarization and political repression of undesirable influences on Spanish "nature".\n\n They are opposed by the Christian democratic wing, which calls for the movement to adopt policies championed by various Spanish Catholic parties, but with an even firmer grip and vision than those parties usually contain. Highly monarchist and pro-clergy, it would see the movement transition into a more traditionalist position, and likely cause the integration of various smaller Christian democrat parties, such as Partido Agrario, into our movement.\n\n However, there is one more faction within PNE that champions the adoption of a very specific brand of Catholic nationalism, the Mexican Synarchism, which would likely see our movement take a rather autocratic turn. While it would likely not be impossible to utilize this form of ideology inside a democratic system, something PNE must at least attempt to adhere to, it would mean large compromises to function. Lastly, something Albiñana himself supports, is the ideological drift towards Hispanism, something he himself became familiar with during his time in Mexico. While that particular idea is mostly a Latin American one, Albiñana argues that ideas from that movement could be applied to the Spanish setting just as well. Doing so would likely increase Spain's interest in the former colonies, although what shape this interest would take remains to be seen. It would also likely strengthen the anti-regionalist wing of PNE. The congress discussed these issues at length, but ultimately one side emerges victorious."
+sprd.130.t:0 "PNE's political transformation"
+sprd.130.d:0 "As PNE's stewardship of Spain continues, the party has begun to see itself transform to fit its new role. While originally a big tent party of various right-wing ideologues, drawing its support from rural agrarian peasants, anti-syndicalist militants and radical  Catholic clergymen, the party now spends about as much time balancing these interests as it does forming policies and creating laws. The prime minister Albiñana finds this situation untenable, as it stretches the party thin and causes internal conflicts that are easily exploited by its main rivals, socialists of PSOE and the liberals of Izquierda Española and Union Española. A small-scale congress has been called among party elites to finally settle the ideological differences and create an unified structure. After all, a party calling for Spain to unite as whole is laughable if it cannot unify itself first. As the congress begins, several blocs form within it. Among the most influential is the Legionaries of Albiñana, who propose following the Romanian and Italian Legionary model but form-fitting it to the conditions of Spain. This would see the movement pay lip service to democracy while pursuing its policies of heavy nationalism, militarization and political repression of undesirable influences on Spanish "nature".\n\n They are opposed by the Christian democratic wing, which calls for the movement to adopt policies championed by various Spanish Catholic parties, but with an even firmer grip and vision than those parties usually contain. Highly monarchist and pro-clergy, it would see the movement transition into a more traditionalist position, and likely cause the integration of various smaller Christian democrat parties, such as Partido Agrario, into our movement.\n\n However, there is one more faction within PNE that champions the adoption of a very specific brand of Catholic nationalism, the Mexican Synarchism, which would likely see our movement take a rather autocratic turn. While it would likely not be impossible to utilize this form of ideology inside a democratic system, something PNE must at least attempt to adhere to, it would mean large compromises to function. Lastly, something Albiñana himself supports, is the ideological drift towards Hispanism, something he himself became familiar with during his time in Mexico. While that particular idea is mostly a Latin American one, Albiñana argues that ideas from that movement could be applied to the Spanish setting just as well. Doing so would likely increase Spain's interest in the former colonies, although what shape this interest would take remains to be seen. It would also likely strengthen the anti-regionalist wing of PNE. The congress discussed these issues at length, but ultimately one side emerges victorious."
 sprd.130.a:0 "Let us maintain the current ideological basis of PNE."
 sprd.130.b:0 "Legionarism can be modified to suit our needs."
 sprd.130.c:0 "Albiñana commits to Synarchism as an alternative."
@@ -2065,10 +2078,6 @@ sprd.223.t:0 "Rejection!"
 sprd.223.d:0 "[From.GetName] has declined to join our faction. The scars of the colonial period or perhaps the global atmosphere of an encroaching war have made them wary of casting their lot into anyone else’s cause, and their diplomat do not view our advances as agreeable."
 sprd.223.a:0 "Damn it."
 
-sprd.281.t:0 "Diplomats Depart"
-sprd.281.d:0 "With the government’s decision being made to create a defensive alliance for the protection of Hispanic peoples worldwide, our diplomats will start a massive globe spanning campaign to seek out support for the faction and negotiate with local governments on possible alliances. Airports and harbours all around Spain are bustling with diplomants, aides and envoys hurrying to their transports, and hopefully, soon we will get the results of these negotiations."
-sprd.281.a:0 "Let us hope that the negotiations are fruitful."
-
 sprd.284.t:0 "Formation of Partido Nacionalista Espanol"
 sprd.284.d:0 "A new reactionary force has risen to the political scene of Spain, as Partido Nacionalista Espanol has taken the stage. Representing far-right mixture of non-Carlist traditionalists, legionaries, former Maurists and some militant agrarians, the party is kept together under the watchful eye of Dr. José María Albiñana, an eccentric figure whose Legionaries of Spain have been known to rough up political opponents, republicans and socialists alike. Hardly anyone saw these ruffians attempting to move to parliamentary politics, but Albiñana has announced his bid to run in the upcoming elections on a platform of bringing back a sense of pride to Spain and putting to sword those who would slander the great nation. Focusing mainly on rural farmers and Catholic workers, PNE seeks to offer an alternative to the radical anti-democratic monarchists of Renovacion Espanola and the more moderate king’s favourites in Accion Popular. Few in Spain expect PNE to be able to moderate its course, and even fewer expect them to win in the elections, but the political landscape of Spain has certainly shifted into an interesting direction." 
 sprd.284.a:0 "Democratic Legionarism? We shall see!"
@@ -2106,16 +2115,10 @@ sprd.1109.t:0 "Reclamation of French Overseas Territories"
 sprd.1109.d:0 "Now that we have reclaimed Jaime’s true birthright and restored Bourbon rule over the eternal lands of France once more, just as it was meant to be, many hawkish politicians in Spain have called us to reclaim the mantle of France not just in the metropole, but throughout their former empire. The original French republic may have fallen to the syndicalist menace, and the remnant regime in Algiers become merely an impotent facade of the old order, unable to reclaim even their own lands. However, with Spain’s loyal sons triumphant over the Syndicalist vandals and terrorists, we can set to work on reclaiming France’s lost colonies in Africa and Asia. As the new Franco-Spanish identity settles between our two peoples, we can give the French part of our society back their pride as we reclaim our rightful colonies and soar to ever greater heights. The pretender regimes claiming dominion over Madagascar, Indochina, Cameroon and Gabon will be swept away, and French rule reestablished once more, governed in union with the Spanish loyalists."
 sprd.1109.a:0 "We will achieve what the French could never do alone!"
 
-<<<<<<< HEAD
-sprd.1110.t:0 "End of the Algiers Pretender Regime"
-sprd.1110.d:0 "With Communards defeated and our birthright in France secured, the newly proclaimed Bourbon empire must make sure that the cowardly French exiles, eking out a pitiful existence in Algiers as a colonial regime, do not get any ideas about attacking us instead. With our new holdings in Southern France, our control of the Gibraltar and our possessions in Africa, we could easily defeat the French nationalists there in one fell swoop, hopefully even faster than their Canadian allies could react. Few Spaniards urge for caution in this situation, given that it is rather obvious that the revanchist and authoritarian Frenchmen would never join our regime rather than fight to the last to see it toppled. As such, preparations are well underway to scorch National France of the face of the Earth, and to secure true Legitimist rule over all parts of the Empire once more! It is doubtful that the Germans would care to intervene, and we might even receive a momentary ally in the form of the Egyptians, who eye the French possessions hungrily, though any formal alliance is likely impossible."
-sprd.1110.a:0 "Another African adventure, how delightful!"
-=======
 sprd.1110.t:0 "Pushing the Envelope to Belgium and Beyond?"
 sprd.1110.d:0 "As we now lord over the French lands, claiming them as our own as is only just and true, the matter of Belgium has been raised to the king’s attention. As Spain and France are now united under one banner, Belgium and to some extent, Netherlands have been noted as possible future conquests. Belgium, while a nation of many different language groups, has a very large French-speaking population, which has led many to argue that it should be part of France altogether, as it should have always been simply a state of France from the beginning. Similarly, many Spaniards have echoed these sentiments, claiming that Spain holds a claim on the territory given our domination of Netherlands, and through them, Belgium, earlier in our history. While these claims are far weaker than those of our French compatriots, the irredentist sentiment has found a lot of support among our more right-wing elements of government and political parties. Organizations like Renovacion Espanola or Juntas Castellanas de Actuación Hispánica have called us to launch an immediate invasion, and whatever elements of Action Francaise, that have joined our regime that is, have generally supported this attack. However, there are others who view it as pushing the new union too far, as a war right as we are integrating the former Communard lands could give enough support for the splinter remnants of the Communards to revolt and cause significant issues."
 sprd.1110.a:0 "Belgium was once ours, and it shall be again!"
 sprd.1110.b:0 "Yes, let us refrain from an invasion right now!"
->>>>>>> bd5bf97f109eb48db19747eaff018610ada437ac
 
 sprd.1111.t:0 "The Question of the Seventeen Provinces"
 sprd.1111.d:0 "As the Spanish nations set its sight upon the reclamation of its former colonies, many within the more radical parties have put forward rather outlandish ideas of conquest. Some firebrands with Renovacion Espanola have called for Spain to carve out its own Mittelafrika, others yet call for Spain to reclaim the South American colonies by force. Plans such as these are likely results of highly delusional minds, but as the sense of imperial grandeur begins to seep back into the minds of Spaniards, other, less diabolical, ideas have been put forward. One of these imperialist plans is the reclamation of Spanish Netherlands, an area that has not been a part of our empire since the Wars of Spanish Succession. Originally acquired by the Spanish Habsburgs after the split in the main Habsburg family in the mid 1550s, the provinces managed to slip away from Spanish grasp due to domestic weakness and exploitative neighboring powers. Many pacifist leaders, such as Julian Besteiro of PSOE and Angel Pestana of Partido Sindicalista have denounced any such ideas, but the more hawkish members of the Spanish parliament, especially among Accion Popular, Partido Nacionalista Espanola and Partido Radical have supported these ideas. While Netherlands itself is a price all of its own, situated right between the great powers of Europe and boasting a strong navy, its colonial possessions in Asia and the Americas are an even more lucrative price. Still, this venture could easily be considered ridiculous by the international audience, given that Spanish rule was highly contested by the Dutch during our almost two hundred year-long rule. Nonetheless, in this new age of imperialism, perhaps the time is ripe to revive the long-lost province of Spanish Habsburgs."
