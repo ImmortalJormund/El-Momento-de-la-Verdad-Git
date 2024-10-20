@@ -6970,7 +6970,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_Intimidate_the_Rabid_Leftists
-		icon = GFX_ITA_syndie_kill
+		icon = GFX_goal_SPR_Intimidate_the_Rabid_Leftists
 		available = {
 			has_government = paternal_autocrat
 		}
@@ -6990,7 +6990,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_Burning_Heart_of_the_Countryside
-		icon = GFX_goal_BEL_Rural_Ideal
+		icon = GFX_goal_SPR_Burning_Heart_of_the_Countryside
 		available = {
 			has_government = paternal_autocrat
 		}
@@ -7011,7 +7011,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_A_New_Patriotic_Union
-		icon = GFX_goal_TRM_prol_values
+		icon = GFX_goal_SPR_A_New_Patriotic_Union
 		available = {
 			has_government = paternal_autocrat
 		}
@@ -7038,7 +7038,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_Spain_is_One_Not_Many
-		icon = GFX_goal_SRI_natinalism
+		icon = GFX_goal_SPR_Spain_is_One_Not_Many
 		available = {
 			has_government = paternal_autocrat
 		}
@@ -7062,7 +7062,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_Street_Brawl_Democracy
-		icon = GFX_goal_TEX_fight_the_terrorists
+		icon = GFX_goal_SPR_Street_Brawl_Democracy
 		available = {
 			has_government = paternal_autocrat
 		}
@@ -7125,7 +7125,7 @@ focus_tree = {
 		}		
 		focus = {
 		id = SPR_Education_Belongs_to_Everyone
-		icon = GFX_goal_POL_Invest_Rural_Education
+		icon = GFX_goal_SPR_Education_Belongs_to_Everyone
 		available = {
 			has_government = paternal_autocrat
 		}
@@ -7148,7 +7148,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_Defanged_Legionarism
-		icon = GFX_goal_SIC_legionary_order
+		icon = GFX_goal_SPR_Defanged_Legionarism
 		available = {
 			has_government = paternal_autocrat
 		}
@@ -7850,7 +7850,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_From_Corrupt_Oligarchs_to_Direct_Democracy
-		icon = GFX_GRU_DIRECT_REFEREDUMS
+		icon = GFX_goal_SPR_From_Corrupt_Oligarchs_to_Direct_Democracy
 		available = {
 			has_government = syndicalist
 		}
@@ -7869,7 +7869,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_Set_the_Peninsula_Free_of_Castilian_Dominance
-		icon = GFX_UKR_State_Socialist_Mysticism
+		icon = GFX_goal_SPR_Set_the_Peninsula_Free_of_Castilian_Dominance
 		available = {
 			has_government = syndicalist
 		}
