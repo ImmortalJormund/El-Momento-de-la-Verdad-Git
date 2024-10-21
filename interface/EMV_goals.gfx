@@ -8,10 +8,6 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/SPR_republican_union.png"
 	}
 	SpriteType = {
-		name = "GFX_goal_SPR_PLM"
-		texturefile = "gfx/interface/goals/SPR_PLM.png"
-	}
-	SpriteType = {
 		name = "GFX_goal_SPR_izquierda_republicana"
 		texturefile = "gfx/interface/goals/SPR_izquierda_republicana.png"
 	}
@@ -120,5 +116,26 @@ SpriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_SPR_Set_the_Peninsula_Free_of_Castilian_Dominance"
 		texturefile = "gfx/interface/goals/SPR_Set_the_Peninsula_Free_of_Castilian_Dominance.png"
+	}
+	#PR Tree
+	SpriteType = {
+		name = "GFX_goal_SPR_PLM"
+		texturefile = "gfx/interface/goals/SPR_PLM.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_reeducate_the_monarchists"
+		texturefile = "gfx/interface/goals/SPR_reeducate_the_monarchists.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_support_small_business"
+		texturefile = "gfx/interface/goals/SPR_support_small_business.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_Mistakes_of_the_Past"
+		texturefile = "gfx/interface/goals/SPR_Mistakes_of_the_Past.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_Populist_Spain"
+		texturefile = "gfx/interface/goals/SPR_Populist_Spain.png"
 	}
 }

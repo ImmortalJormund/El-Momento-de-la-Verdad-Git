@@ -6112,7 +6112,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_support_small_business
-		icon = GFX_RUS_Support_Small_Business
+		icon = GFX_goal_SPR_support_small_business
 		prerequisite = { focus = SPR_plm_elected }
 		relative_position_id = SPR_plm_elected
 		x = -1
@@ -6136,7 +6136,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_reeducate_the_monarchists
-		icon = GFX_goal_generic_puppet_monarch
+		icon = GFX_goal_SPR_reeducate_the_monarchists
 		prerequisite = { focus = SPR_plm_elected }
 		relative_position_id = SPR_plm_elected
 		x = 1
@@ -6158,7 +6158,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_Mistakes_of_the_Past
-		icon = GFX_goal_FIU_Burn_Evidentiary_Documentation
+		icon = GFX_goal_SPR_Mistakes_of_the_Past
 		prerequisite = { 
 			focus = SPR_reeducate_the_monarchists
 		}
@@ -6303,7 +6303,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_Populist_Spain
-		icon = GFX_goal_NFA_Liberal_Economic_Boom
+		icon = GFX_goal_SPR_Populist_Spain
 		prerequisite = { 
 			focus = SPR_Moderated_Regionalism	
 			focus = SPR_Stamp_on_Catalans
