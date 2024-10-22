@@ -5584,7 +5584,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_True_Heirs_of_the_Jacobins
-		icon = GFX_goal_French_Liberty
+		icon = GFX_goal_SPR_True_Heirs_of_the_Jacobins
 		available = {
 			has_government = social_liberal
 		}
@@ -5608,7 +5608,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_Denounce_Lerrouxism
-		icon = GFX_goal_NIC_Destroy_Corruption
+		icon = GFX_goal_SPR_Denounce_Lerrouxism
 		available = {
 			has_government = social_liberal
 		}
@@ -5636,7 +5636,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_Set_a_Proper_Course
-		icon = GFX_steadyasshegoes
+		icon = GFX_goal_SPR_Set_a_Proper_Course
 		available = {
 			has_government = social_liberal
 		}
@@ -5660,7 +5660,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_Raze_the_Church_Dominance
-		icon = GFX_BRY_Destroy_Churches
+		icon = GFX_goal_SPR_Raze_the_Church_Dominance
 		available = {
 			has_government = social_liberal
 		}
@@ -5683,7 +5683,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_Radicalism_Without_Rabid_Antiregionalism
-		icon = GFX_goal_AUS_every_man_freedom
+		icon = GFX_goal_SPR_Radicalism_Without_Rabid_Antiregionalism
 		available = {
 			has_government = social_liberal
 		}
@@ -5707,7 +5707,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_Reel_in_Blasquismo
-		icon = GFX_goal_COR_Ensuring_Voting_Rights
+		icon = GFX_goal_SPR_Reel_in_Blasquismo
 		available = {
 			has_government = social_liberal
 		}
@@ -5729,7 +5729,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_The_Defenders_of_Democracy
-		icon = GFX_goal_FRA_class_rejuvenation
+		icon = GFX_goal_SPR_The_Defenders_of_Democracy
 		available = {
 			has_government = social_liberal
 		}
@@ -5757,7 +5757,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_The_Radicalism_with_Restraint
-		icon = GFX_goal_NIC_United_Liberalism
+		icon = GFX_goal_SPR_The_Radicalism_with_Restraint
 		available = {
 			has_government = social_liberal
 		}
@@ -5792,7 +5792,7 @@ focus_tree = {
 	}
 			focus = {
 		id = SPR_Radical_Spain
-		icon = GFX_goal_COR_Champion_Womens_Three_Movements
+		icon = GFX_goal_SPR_Radical_Spain
 		available = {
 			has_government = social_liberal
 		}
@@ -6184,7 +6184,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_Towards_a_New_Identity
-		icon = GFX_goal_NFA_Radical_Allies
+		icon = GFX_goal_SPR_Towards_a_New_Identity
 		prerequisite = { 
 			focus = SPR_Mistakes_of_the_Past
 		}	
@@ -6211,7 +6211,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_Return_to_Lerrouxism
-		icon = GFX_goal_FRA_revitalize_nationalism
+		icon = GFX_goal_SPR_Return_to_Lerrouxism
 		prerequisite = { 
 			focus = SPR_Mistakes_of_the_Past
 		}
@@ -6233,7 +6233,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_Fuck_Change
-		icon = GFX_goal_CAL_Corrupt_Capital
+		icon = GFX_goal_SPR_Fuck_Change
 		prerequisite = { 
 			focus = SPR_Mistakes_of_the_Past	
 		}
@@ -6255,7 +6255,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_Moderated_Regionalism
-		icon = GFX_goal_liberty
+		icon = GFX_goal_SPR_Moderated_Regionalism
 		prerequisite = { 
 			focus = SPR_Fuck_Change	
 			focus = SPR_Towards_a_New_Identity
@@ -6278,7 +6278,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SPR_Stamp_on_Catalans
-		icon = GFX_goal_generic_imprison_people
+		icon = GFX_goal_SPR_Stamp_on_Catalans
 		prerequisite = { 
 			focus = SPR_Fuck_Change	
 			focus = SPR_Return_to_Lerrouxism

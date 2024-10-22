@@ -4,10 +4,6 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/SPR_Accion_Popular.png"
 	}
 	SpriteType = {
-		name = "GFX_goal_SPR_republican_union"
-		texturefile = "gfx/interface/goals/SPR_republican_union.png"
-	}
-	SpriteType = {
 		name = "GFX_goal_SPR_izquierda_republicana"
 		texturefile = "gfx/interface/goals/SPR_izquierda_republicana.png"
 	}
@@ -135,7 +131,68 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/SPR_Mistakes_of_the_Past.png"
 	}
 	SpriteType = {
+		name = "GFX_goal_SPR_Towards_a_New_Identity"
+		texturefile = "gfx/interface/goals/SPR_Towards_a_New_Identity.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_Fuck_Change"
+		texturefile = "gfx/interface/goals/SPR_Fuck_Change.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_Return_to_Lerrouxism"
+		texturefile = "gfx/interface/goals/SPR_Return_to_Lerrouxism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_Stamp_on_Catalans"
+		texturefile = "gfx/interface/goals/SPR_Stamp_on_Catalans.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_Moderated_Regionalism"
+		texturefile = "gfx/interface/goals/SPR_Moderated_Regionalism.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_SPR_Populist_Spain"
 		texturefile = "gfx/interface/goals/SPR_Populist_Spain.png"
+	}
+	#UE Tree
+	SpriteType = {
+		name = "GFX_goal_SPR_republican_union"
+		texturefile = "gfx/interface/goals/SPR_republican_union.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_Denounce_Lerrouxism"
+		texturefile = "gfx/interface/goals/SPR_Denounce_Lerrouxism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_True_Heirs_of_the_Jacobins"
+		texturefile = "gfx/interface/goals/SPR_True_Heirs_of_the_Jacobins.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_Set_a_Proper_Course"
+		texturefile = "gfx/interface/goals/SPR_Set_a_Proper_Course.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_Raze_the_Church_Dominance"
+		texturefile = "gfx/interface/goals/SPR_Raze_the_Church_Dominance.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_Radicalism_Without_Rabid_Antiregionalism"
+		texturefile = "gfx/interface/goals/SPR_Radicalism_Without_Rabid_Antiregionalism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_Reel_in_Blasquismo"
+		texturefile = "gfx/interface/goals/SPR_Reel_in_Blasquismo.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_The_Radicalism_with_Restraint"
+		texturefile = "gfx/interface/goals/SPR_The_Radicalism_with_Restraint.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_The_Defenders_of_Democracy"
+		texturefile = "gfx/interface/goals/SPR_The_Defenders_of_Democracy.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_Radical_Spain"
+		texturefile = "gfx/interface/goals/SPR_Radical_Spain.png"
 	}
 }
