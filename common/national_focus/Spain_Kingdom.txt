@@ -7830,7 +7830,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_Delegitimize_the_Terrorists
-		icon = GFX_goal_IRE_use_IRA
+		icon = GFX_goal_SPR_Delegitimize_the_Terrorists
 		available = {
 			has_government = syndicalist
 		}
@@ -7890,7 +7890,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_Liberate_the_Minds_of_the_People
-		icon = GFX_goal_generic_female_liberation_syndicalist
+		icon = GFX_goal_SPR_Liberate_the_Minds_of_the_People
 		available = {
 			has_government = syndicalist
 		}
@@ -7939,7 +7939,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_Communalize_Every_Aspect_of_Spanish_Life
-		icon = GFX_goal_ALB_Local_Syndicate_Development
+		icon = GFX_goal_SPR_Communalize_Every_Aspect_of_Spanish_Life
 		available = {
 			has_government = syndicalist
 		}
@@ -7962,7 +7962,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_Break_Down_the_Gender_Divide
-		icon = GFX_SRI_fascist_woman
+		icon = GFX_goal_SPR_Break_Down_the_Gender_Divide
 		available = {
 			has_government = syndicalist
 		}
@@ -8003,7 +8003,7 @@ focus_tree = {
 		}
 		focus = {
 		id = SPR_Achieving_the_Impossible
-		icon = GFX_goal_NYC_Ally_Syndies
+		icon = GFX_goal_SPR_Achieving_the_Impossible
 		available = {
 			has_government = syndicalist
 		}
