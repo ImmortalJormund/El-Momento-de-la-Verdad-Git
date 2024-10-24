@@ -429,7 +429,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Democracy_of_Catalonia
-		icon = GFX_goal_FRA_Defenders_Commune
+		icon = GFX_goal_NIC_Stable_Democracy
 		relative_position_id = CAT_Independence
 		x = 26
 		y = 0
@@ -447,7 +447,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Nosaltres_Sols
-		icon = GFX_goal_NFA_By_Our_Hand_Alone
+		icon = GFX_goal_CAT_Nosaltres_Sols
 		relative_position_id = CAT_Democracy_of_Catalonia
 		x = 14
 		y = 1
@@ -482,7 +482,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_deradicalized_EC
 			}
 		}
 	focus = {
@@ -502,7 +502,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_PCP_support
 			}
 		}
 	focus = {
@@ -544,7 +544,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Vibrants_Vision
 			}
 		}
 	focus = {
@@ -564,7 +564,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Anti_Hispanism
 			}
 		}
 	focus = {
@@ -604,7 +604,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_National_Individualism
 			}
 		}
 	focus = {
@@ -624,7 +624,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Religion_Guarded
 			}
 		}
 	focus = {
@@ -644,7 +644,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_For_Freedom_and_Fatherland
 			}
 		}
 	focus = {
@@ -670,12 +670,12 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_La_Batalla
 			}
 		}
 	focus = {
 		id = CAT_Union_Catalanista
-		icon = GFX_goal_COL_Authoritarian_Friends_Everywhere_Unite
+		icon = GFX_goal_CAT_unio_catalnista
 		relative_position_id = CAT_Democracy_of_Catalonia
 		x = 8
 		y = 1
@@ -730,7 +730,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Making_a_Homeland_for_all_Catalans
 			}
 		}
 	focus = {
@@ -750,7 +750,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Natural_Catalanism_is_Conservatism
 			}
 		}
 	focus = {
@@ -772,7 +772,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Regionalism_Destroyed
 			}
 		}
 	focus = {
@@ -792,7 +792,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Catalan_Renaixensa
 			}
 		}
 	focus = {
@@ -812,7 +812,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Protectionism
 			}
 		}
 	focus = {
@@ -832,7 +832,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Catalan_Volunteers
 			}
 		}
 	focus = {
@@ -852,7 +852,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_End_Atheist_Debauchery
 			}
 		}
 	focus = {
@@ -872,7 +872,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Resurrecting_the_Protectora_Model
 			}
 		}
 	focus = {
@@ -898,7 +898,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Greater_Ambitions
 			}
 		}
 	focus = {
@@ -958,7 +958,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Denounce_Collaborators
 			}
 		}
 	focus = {
@@ -978,7 +978,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Embrace_Catalanism
 			}
 		}
 	focus = {
@@ -1020,7 +1020,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Decentralize_the_State
 			}
 		}
 	focus = {
@@ -1040,7 +1040,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Finish_the_Demagogic_Avalanche
 			}
 		}
 	focus = {
@@ -1060,7 +1060,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Integrate_Spanish_Right_Wingers
 			}
 		}
 	focus = {
@@ -1083,7 +1083,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Commonwealth_of_Catalonia
 			}
 		}
 	focus = {
@@ -1106,7 +1106,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_German_Trade
 			}
 		}
 	focus = {
@@ -1132,12 +1132,12 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_League_of_Extraordinary_Catalans
 			}
 		}
 	focus = {
 		id = CAT_Unio_Democratica_de_Catalunya
-		icon = GFX_goal_MEX_secular_but_catholic
+		icon = GFX_goal_CAT_udc
 		relative_position_id = CAT_Democracy_of_Catalonia
 		x = -4
 		y = 1
@@ -1172,7 +1172,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Dire_Straits
 			}
 		}
 	focus = {
@@ -1192,7 +1192,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Democratic_Traditionalism
 			}
 		}
 	focus = {
@@ -1212,7 +1212,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Republicanism_and_Catholicism_Are_Not_Opposites
 			}
 		}
 	focus = {
@@ -1235,6 +1235,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = CAT.20
+			add_ideas = CAT_UTCC_Integrated
 			}
 		}
 	focus = {
@@ -1254,7 +1255,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Protect_Religious_Freedom
 			}
 		}
 	focus = {
@@ -1294,7 +1295,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Lift_the_Peasants
 			}
 		}
 	focus = {
@@ -1317,7 +1318,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Our_Own_Piety_and_Ethics
 			}
 		}
 	focus = {
@@ -1340,7 +1341,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_From_Underdog_to_Leader_of_the_Right
 			}
 		}
 	focus = {
@@ -1366,12 +1367,12 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Catalonia_Under_Christ
 			}
 		}
 	focus = {
 		id = CAT_Accio_Catalana_Republicana
-		icon = GFX_RUS_New_Liberal_Era
+		icon = GFX_goal_CAT_accion_catalana
 		relative_position_id = CAT_Democracy_of_Catalonia
 		x = -10
 		y = 1
@@ -1406,7 +1407,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Intellectual_Action
 			}
 		}
 	focus = {
@@ -1426,7 +1427,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Rejuvenation_of_Catalanism
 			}
 		}
 	focus = {
@@ -1446,7 +1447,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Truly_Liberal_Economy
 			}
 		}
 	focus = {
@@ -1488,7 +1489,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Reopen_Committee_of_Culture
 			}
 		}
 	focus = {
@@ -1508,7 +1509,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Fully_Secularize_Catalonia
 			}
 		}
 	focus = {
@@ -1528,7 +1529,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Commit_to_Liberal_Internationalism
 			}
 		}
 	focus = {
@@ -1574,7 +1575,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Restore_La_Publicitat
 			}
 		}
 	focus = {
@@ -1600,12 +1601,12 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Catalan_Torch_Carried_by_the_Bourgeoisie
 			}
 		}
 	focus = {
 		id = CAT_Esquerra_Republicana_de_Catalunya
-		icon = GFX_goal_FRA_Defenders_Commune
+		icon = GFX_goal_HON_Socialist_Reforms
 		relative_position_id = CAT_Democracy_of_Catalonia
 		x = -16
 		y = 1
@@ -1625,7 +1626,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_The_Only_True_Nationalists
-		icon = GFX_goal_AUS_big_brain
+		icon = GFX_goal_NYC_New_York_New_Deal
 		relative_position_id = CAT_Esquerra_Republicana_de_Catalunya
 		x = 2
 		y = 1
@@ -1645,7 +1646,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Overtures_to_the_Left
-		icon = GFX_goal_NFA_republican_rejuvenation
+		icon = GFX_goal_MEX_Enshrine_Rights_Workers_Laborers
 		relative_position_id = CAT_Esquerra_Republicana_de_Catalunya
 		x = 0
 		y = 1
@@ -1665,7 +1666,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Push_for_the_Law_of_Cultivation
-		icon = GFX_goal_FIU_Induct_International_Investors_Inventors
+		icon = GFX_goal_TEX_soil_conservation
 		relative_position_id = CAT_Esquerra_Republicana_de_Catalunya
 		x = -2
 		y = 1
@@ -1685,7 +1686,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Old_or_New_Allies
-		icon = GFX_goal_POL_Reform_Senate_Chamber
+		icon = GFX_goal_WCC_civilian_allies
 		relative_position_id = CAT_Esquerra_Republicana_de_Catalunya
 		x = 0
 		y = 2
@@ -1707,7 +1708,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Reel_in_UDR
-		icon = GFX_goal_POL_Modern_Military_Thought
+		icon = GFX_goal_CRE_olives
 		relative_position_id = CAT_Esquerra_Republicana_de_Catalunya
 		x = -1
 		y = 3
@@ -1715,7 +1716,7 @@ focus_tree = {
 			has_government = social_democrat
 		}
 		prerequisite = {
-			focus = CAT_Question_of_the_Popular_Front
+			focus = CAT_Old_or_New_Allies
 		}
 		cost = 5
 		ai_will_do = {
@@ -1727,7 +1728,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Crack_Down_on_Escamots
-		icon = GFX_goal_MEX_begin_secularization2
+		icon = GFX_goal_AUS_reform_common_army
 		relative_position_id = CAT_Esquerra_Republicana_de_Catalunya
 		x = 1
 		y = 3
@@ -1735,7 +1736,7 @@ focus_tree = {
 			has_government = social_democrat
 		}
 		prerequisite = {
-			focus = CAT_Question_of_the_Popular_Front
+			focus = CAT_Old_or_New_Allies
 		}
 		cost = 5
 		ai_will_do = {
@@ -1747,7 +1748,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Ensure_Liga_Irrelevancy
-		icon = GFX_UKR_Accept_Liberal_Platform
+		icon = GFX_goal_ARZ_Anti_Conservatism
 		relative_position_id = CAT_Esquerra_Republicana_de_Catalunya
 		x = 0
 		y = 4
@@ -1755,7 +1756,7 @@ focus_tree = {
 			has_government = social_democrat
 		}
 		prerequisite = {
-			focus = CAT_Question_of_the_Popular_Front
+			focus = CAT_Old_or_New_Allies
 		}
 		cost = 5
 		ai_will_do = {
@@ -1766,8 +1767,8 @@ focus_tree = {
 			}
 		}
 	focus = {
-		id = CAT_Bridging_the_Blue_Sea
-		icon = GFX_goal_MLT_malta_command
+		id = CAT_League_of_Oppressed_States
+		icon = GFX_goal_AST_lenin_walks_around_the_world
 		relative_position_id = CAT_Esquerra_Republicana_de_Catalunya
 		x = 2
 		y = 5
@@ -1775,10 +1776,10 @@ focus_tree = {
 			has_government = social_democrat
 		}
 		prerequisite = {
-			focus = CAT_Fully_Secularize_Catalonia
+			focus = CAT_Ensure_Liga_Irrelevancy
 		}
 		prerequisite = {
-			focus = CAT_Commit_to_Liberal_Internationalism
+			focus = CAT_Crack_Down_on_Escamots
 		}
 		cost = 5
 		ai_will_do = {
@@ -1789,8 +1790,8 @@ focus_tree = {
 			}
 		}
 	focus = {
-		id = CAT_Restore_La_Publicitat
-		icon = GFX_goal_TEX_media_propaganda
+		id = CAT_End_to_Robber_Barons_of_Catalonia
+		icon = GFX_goal_CAN_Standardized_Industrial_Codes
 		relative_position_id = CAT_Esquerra_Republicana_de_Catalunya
 		x = -2
 		y = 5
@@ -1798,10 +1799,10 @@ focus_tree = {
 			has_government = social_democrat
 		}
 		prerequisite = {
-			focus = CAT_Reopen_Committee_of_Culture
+			focus = CAT_Reel_in_UDR
 		}
 		prerequisite = {
-			focus = CAT_Commit_to_Liberal_Internationalism
+			focus = CAT_Ensure_Liga_Irrelevancy
 		}
 		cost = 5
 		ai_will_do = {
@@ -1812,8 +1813,8 @@ focus_tree = {
 			}
 		}
 	focus = {
-		id = CAT_Catalan_Torch_Carried_by_the_Bourgeoisie
-		icon = GFX_goal_TEX_Liberalize_Democratic_Party
+		id = CAT_From_Guerillas_to_Global_Liberators
+		icon = GFX_goal_NEE_Armed_Beacon
 		relative_position_id = CAT_Esquerra_Republicana_de_Catalunya
 		x = 0
 		y = 6
@@ -1821,13 +1822,13 @@ focus_tree = {
 			has_government = social_democrat
 		}
 		prerequisite = {
-			focus = CAT_Restore_La_Publicitat
+			focus = CAT_League_of_Oppressed_States
 		}
 		prerequisite = {
-			focus = CAT_Commit_to_Liberal_Internationalism
+			focus = CAT_End_to_Robber_Barons_of_Catalonia
 		}
 		prerequisite = {
-			focus = CAT_Bridging_the_Blue_Sea
+			focus = CAT_Ensure_Liga_Irrelevancy
 		}
 		cost = 5
 		ai_will_do = {
@@ -1835,5 +1836,2742 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_JEREC_coup
+		icon = GFX_BBR_black_national_syndicalism
+		relative_position_id = CAT_Independence
+		x = 0
+		y = 6
+		available = {
+			has_completed_focus = CAT_Catalonia_Breathes_Free
+			has_government = totalist
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Totalitarianism
+		icon = GFX_goal_FRA_sorelians
+		relative_position_id = CAT_JEREC_coup
+		x = 2
+		y = 1
+		available = {
+			has_government = totalist
+		}
+		mutually_exclusive = {
+			focus = CAT_National_Syndicalism
+		}
+		prerequisite = {
+			focus = CAT_JEREC_coup
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Cult_of_the_Ideal_Catalan
+		icon = GFX_goal_FRA_clan_belonging
+		relative_position_id = CAT_JEREC_coup
+		x = 4
+		y = 2
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_Totalitarianism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Anti_Spanish_Propaganda
+		icon = GFX_goal_NIC_Removing_Cult_Personality
+		relative_position_id = CAT_JEREC_coup
+		x = 2
+		y = 2
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_Totalitarianism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Dreams_of_Totalitarian_Catalonia
+		icon = GFX_goal_FRA_red_imperialism
+		relative_position_id = CAT_JEREC_coup
+		x = 1
+		y = 3
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_Anti_Spanish_Propaganda
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Sway_Nondemocratic_Nosaltres_Sols
+		icon = GFX_goal_FIU_popular_internationalism
+		relative_position_id = CAT_JEREC_coup
+		x = 3
+		y = 3
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_Anti_Spanish_Propaganda
+		}
+		prerequisite = {
+			focus = CAT_Cult_of_the_Ideal_Catalan
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Sorelianism_Without_French_Supremacism
+		icon = GFX_goals_FRA_valois_is_gone
+		relative_position_id = CAT_JEREC_coup
+		x = 5
+		y = 3
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_Anti_Spanish_Propaganda
+		}
+		prerequisite = {
+			focus = CAT_Cult_of_the_Ideal_Catalan
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Mass_Militarization
+		icon = GFX_goal_ALB_Collective_Militarization
+		relative_position_id = CAT_JEREC_coup
+		x = 4
+		y = 4
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_Sorelianism_Without_French_Supremacism
+		}
+		prerequisite = {
+			focus = CAT_Sway_Nondemocratic_Nosaltres_Sols
+		}
+		prerequisite = {
+			focus = CAT_Dreams_of_Totalitarian_Catalonia
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Unyielding_Statism
+		icon = GFX_goal_COR_State_Supreme_Orderer
+		relative_position_id = CAT_JEREC_coup
+		x = 2
+		y = 4
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_Sorelianism_Without_French_Supremacism
+		}
+		prerequisite = {
+			focus = CAT_Sway_Nondemocratic_Nosaltres_Sols
+		}
+		prerequisite = {
+			focus = CAT_Dreams_of_Totalitarian_Catalonia
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Liberation_War
+		icon = GFX_goal_CSA_tanks_of_the_revolution
+		relative_position_id = CAT_JEREC_coup
+		x = 3
+		y = 5
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_Unyielding_Statism
+		}
+		prerequisite = {
+			focus = CAT_Mass_Militarization
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_National_Syndicalism
+		icon = GFX_goal_YUC_Adapting_Orthodoxies_Charters
+		relative_position_id = CAT_JEREC_coup
+		x = -2
+		y = 1
+		available = {
+			has_government = totalist
+		}
+		mutually_exclusive = {
+			focus = CAT_Totalitarianism
+		}
+		prerequisite = {
+			focus = CAT_JEREC_coup
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Dismantle_Misguided_ERC
+		icon = GFX_HUN_social_democracy
+		relative_position_id = CAT_JEREC_coup
+		x = -4
+		y = 2
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_National_Syndicalism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Full_Destruction_of_Anarchism
+		icon = GFX_goal_NFA_strike_hidden_socialism
+		relative_position_id = CAT_JEREC_coup
+		x = -2
+		y = 2
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_National_Syndicalism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Peninsula_Free_of_Imperialists
+		icon = GFX_BBR_socialist_vanguard
+		relative_position_id = CAT_JEREC_coup
+		x = -1
+		y = 3
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_Full_Destruction_of_Anarchism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Joining_Charterist_Brothers
+		icon = GFX_BBR_internationale_collaboration
+		relative_position_id = CAT_JEREC_coup
+		x = -3
+		y = 3
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_Dismantle_Misguided_ERC
+		}
+		prerequisite = {
+			focus = CAT_Full_Destruction_of_Anarchism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_State_Under_a_Paramilitary
+		icon = GFX_goal_COR_Socialist_Knife
+		relative_position_id = CAT_JEREC_coup
+		x = -5
+		y = 3
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_Dismantle_Misguided_ERC
+		}
+		prerequisite = {
+			focus = CAT_Full_Destruction_of_Anarchism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Cult_of_Catalan_Youth
+		icon = GFX_goal_NYC_Radical_Internationalism
+		relative_position_id = CAT_JEREC_coup
+		x = -4
+		y = 4
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_State_Under_a_Paramilitary
+		}
+		prerequisite = {
+			focus = CAT_Joining_Charterist_Brothers
+		}
+		prerequisite = {
+			focus = CAT_Peninsula_Free_of_Imperialists
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Nationalism_Stems_from_Extremism
+		icon = GFX_goal_WHR_Terror_Without_Motive
+		relative_position_id = CAT_JEREC_coup
+		x = -2
+		y = 4
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_State_Under_a_Paramilitary
+		}
+		prerequisite = {
+			focus = CAT_Joining_Charterist_Brothers
+		}
+		prerequisite = {
+			focus = CAT_Peninsula_Free_of_Imperialists
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Burying_Spain_for_Good
+		icon = GFX_goal_FRA_kill_the_eagle
+		relative_position_id = CAT_JEREC_coup
+		x = -3
+		y = 5
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_Nationalism_Stems_from_Extremism
+		}
+		prerequisite = {
+			focus = CAT_Cult_of_Catalan_Youth
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Catalan_Revolution
+		icon = GFX_goal_MEX_Red_Redder_Revolution
+		relative_position_id = CAT_Democracy_of_Catalonia
+		x = 0
+		y = 8
+		available = {
+			has_government = totalist
+			has_war = no
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Secure_Anarchist_Support
+		icon = GFX_goal_CSA_Anarchism_Capone_Clearly_Wanted
+		relative_position_id = CAT_Catalan_Revolution
+		x = 3
+		y = 1
+		available = {
+			has_government = totalist
+			has_war = no
+		}
+		prerequisite = {
+			focus = CAT_Catalan_Revolution
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Reconcile_With_ERC
+		icon = GFX_goal_MEX_Mexican_Democratic_Socialism
+		relative_position_id = CAT_Catalan_Revolution
+		x = -3
+		y = 1
+		available = {
+			has_government = totalist
+			has_war = no
+		}
+		prerequisite = {
+			focus = CAT_Catalan_Revolution
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Diplomatic_Mission_to_Paris
+		icon = GFX_goal_LUX_Ties_with_Paris
+		relative_position_id = CAT_Catalan_Revolution
+		x = -1
+		y = 1
+		available = {
+			has_government = totalist
+			has_war = no
+		}
+		prerequisite = {
+			focus = CAT_Catalan_Revolution
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Align_USC
+		icon = GFX_goal_HON_Socialist_Banner
+		relative_position_id = CAT_Catalan_Revolution
+		x = 1
+		y = 1
+		available = {
+			has_government = totalist
+			has_war = no
+		}
+		prerequisite = {
+			focus = CAT_Catalan_Revolution
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Socialist_Democracy
+		icon = GFX_goal_ENG_socialist_rebirth
+		relative_position_id = CAT_Catalan_Revolution
+		x = 0
+		y = 2
+		available = {
+			has_government = totalist
+			has_war = no
+		}
+		prerequisite = {
+			focus = CAT_Align_USC
+		}
+		prerequisite = {
+			focus = CAT_Diplomatic_Mission_to_Paris
+		}
+		prerequisite = {
+			focus = CAT_Reconcile_With_ERC
+		}
+		prerequisite = {
+			focus = CAT_Secure_Anarchist_Support
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Nosotros_Victory
+		icon = GFX_goal_FRA_synthesis_anarchism
+		relative_position_id = CAT_Socialist_Democracy
+		x = -3
+		y = 1
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Socialist_Democracy
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Remember_the_Debt
+		icon = GFX_goal_generic_bloody_heart
+		relative_position_id = CAT_Nosotros_Victory
+		x = 1
+		y = 1
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Nosotros_Victory
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Death_is_Nothing
+		icon = GFX_goal_Generic_Jungle_Death
+		relative_position_id = CAT_Nosotros_Victory
+		x = -1
+		y = 1
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Nosotros_Victory
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Wild_Hunt
+		icon = GFX_goal_ALB_Smash_Reaction
+		relative_position_id = CAT_Nosotros_Victory
+		x = -2
+		y = 2
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Death_is_Nothing
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Punching_Harder_than_Others
+		icon = GFX_goal_FOP_Sow_Organized_Illegalist_Chaos
+		relative_position_id = CAT_Nosotros_Victory
+		x = 2
+		y = 2
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Remember_the_Debt
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Idolizing_Action
+		icon = GFX_goal_GUA_Question_Direct_Action
+		relative_position_id = CAT_Nosotros_Victory
+		x = 1
+		y = 3
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Punching_Harder_than_Others
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Pistols_of_Barcelona
+		icon = GFX_focus_HKG_President_Gun
+		relative_position_id = CAT_Nosotros_Victory
+		x = -1
+		y = 3
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_The_Wild_Hunt
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_No_Name_No_Pride
+		icon = GFX_goal_FOP_Statelessness_End_Fonte_Barrel
+		relative_position_id = CAT_Nosotros_Victory
+		x = 0
+		y = 2
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Nosotros_Victory
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Nosotros_Lives_On
+		icon = GFX_goal_WHR_Anarchy_Above_All_Borders
+		relative_position_id = CAT_Nosotros_Victory
+		x = 0
+		y = 4
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_No_Name_No_Pride
+		}
+		prerequisite = {
+			focus = CAT_Pistols_of_Barcelona
+		}
+		prerequisite = {
+			focus = CAT_Idolizing_Action
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_PCP_Victory
+		icon = GFX_goal_SRI_Defense_Formations
+		relative_position_id = CAT_Socialist_Democracy
+		x = -9
+		y = 1
+		available = {
+			has_government = totalist
+		}
+		prerequisite = {
+			focus = CAT_Socialist_Democracy
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Insurgents_of_Democracy
+		icon = GFX_goal_HON_Contact_Exiled_Socialists
+		relative_position_id = CAT_PCP_Victory
+		x = 1
+		y = 1
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_PCP_Victory
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_National_Marxism
+		icon = GFX_goal_SRI_Worker_Councils
+		relative_position_id = CAT_PCP_Victory
+		x = -1
+		y = 1
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_PCP_Victory
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Mobilize_JPCP
+		icon = GFX_goal_GUA_Encourage_Union_Participation
+		relative_position_id = CAT_PCP_Victory
+		x = -2
+		y = 2
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Insurgents_of_Democracy
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Contact_Nationalist_Allies
+		icon = GFX_goal_SRI_natinalism
+		relative_position_id = CAT_PCP_Victory
+		x = 2
+		y = 2
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_National_Marxism
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Support_From_MOM
+		icon = GFX_SOV_worker_unions
+		relative_position_id = CAT_PCP_Victory
+		x = 1
+		y = 3
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Contact_Nationalist_Allies
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Seize_Bourgeoisie_Wealth
+		icon = GFX_UKR_State_Management
+		relative_position_id = CAT_PCP_Victory
+		x = -1
+		y = 3
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Mobilize_JPCP
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Finish_the_Garraf_Affair
+		icon = GFX_goal_WHR_Black_Banner_Engulfs_Nation
+		relative_position_id = CAT_PCP_Victory
+		x = 0
+		y = 2
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_PCP_Victory
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Marxist_Catalonia
+		icon = GFX_goal_ALB_Communist_Internationalism
+		relative_position_id = CAT_PCP_Victory
+		x = 0
+		y = 4
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Finish_the_Garraf_Affair
+		}
+		prerequisite = {
+			focus = CAT_Seize_Bourgeoisie_Wealth
+		}
+		prerequisite = {
+			focus = CAT_Support_From_MOM
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}		
+	focus = {
+		id = CAT_USC_Victory
+		icon = GFX_goal_CSA_revolutionary_guards
+		relative_position_id = CAT_Socialist_Democracy
+		x = 3
+		y = 1
+		available = {
+			has_government = radical_socialist
+		}
+		prerequisite = {
+			focus = CAT_Socialist_Democracy
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Tragic_Ignorance_of_Spain
+		icon = GFX_goal_AUS_spanish_crises
+		relative_position_id = CAT_USC_Victory
+		x = 1
+		y = 1
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_USC_Victory
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Social_Justice
+		icon = GFX_goal_CZE_worker_justice
+		relative_position_id = CAT_USC_Victory
+		x = -1
+		y = 1
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_USC_Victory
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Socialism_and_Catalanism_Interlinked
+		icon = GFX_goal_FRA_Red_Storm
+		relative_position_id = CAT_USC_Victory
+		x = -2
+		y = 2
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Social_Justice
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Support_the_Argentine_Fight
+		icon = GFX_goal_ARG_FOP_debacle
+		relative_position_id = CAT_USC_Victory
+		x = 2
+		y = 2
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Tragic_Ignorance_of_Spain
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Combat_Revolutionary_Lawlessness
+		icon = GFX_goal_FRA_Combat_Anarchist_Chaos
+		relative_position_id = CAT_USC_Victory
+		x = 1
+		y = 3
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Support_the_Argentine_Fight
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Army_to_Guarantee_Victory
+		icon = GFX_goal_CSA_socialist_defence_doctrine
+		relative_position_id = CAT_USC_Victory
+		x = -1
+		y = 3
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Socialism_and_Catalanism_Interlinked
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Seek_Socialist_Unity
+		icon = GFX_GRU_Shatter_Trade_Unionists
+		relative_position_id = CAT_USC_Victory
+		x = 0
+		y = 2
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_USC_Victory
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Catalonia_Free_of_Factionalism
+		icon = GFX_goal_AST_arbitrational_courts_protect_union_control
+		relative_position_id = CAT_USC_Victory
+		x = 0
+		y = 4
+		available = {
+			has_government = syndicalist
+		}
+		prerequisite = {
+			focus = CAT_Seek_Socialist_Unity
+		}
+		prerequisite = {
+			focus = CAT_Army_to_Guarantee_Victory
+		}
+		prerequisite = {
+			focus = CAT_Combat_Revolutionary_Lawlessness
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_ERC_Victory
+		icon = GFX_goal_NFA_Reconvene_Moderate_Left
+		relative_position_id = CAT_Socialist_Democracy
+		x = 9
+		y = 1
+		available = {
+			has_government = social_democrat
+		}
+		prerequisite = {
+			focus = CAT_Socialist_Democracy
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_From_Hegemon_to_Outlier
+		icon = GFX_goal_PAR_Exiled_Generals
+		relative_position_id = CAT_ERC_Victory
+		x = 1
+		y = 1
+		available = {
+			has_government = social_democrat
+		}
+		prerequisite = {
+			focus = CAT_ERC_Victory
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Rapid_Syndicalization
+		icon = GFX_goal_NYC_Syndicalism_Without_Radicalism
+		relative_position_id = CAT_ERC_Victory
+		x = -1
+		y = 1
+		available = {
+			has_government = social_democrat
+		}
+		prerequisite = {
+			focus = CAT_ERC_Victory
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Rally_the_Rabassaires
+		icon = GFX_goal_GEO_wine
+		relative_position_id = CAT_ERC_Victory
+		x = -2
+		y = 2
+		available = {
+			has_government = social_democrat
+		}
+		prerequisite = {
+			focus = CAT_Rapid_Syndicalization
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Wrest_Control_of_CACDI
+		icon = GFX_goal_NFA_Republican_National_Corporatism
+		relative_position_id = CAT_ERC_Victory
+		x = 2
+		y = 2
+		available = {
+			has_government = social_democrat
+		}
+		prerequisite = {
+			focus = CAT_From_Hegemon_to_Outlier
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Shelter_Remaining_Republicans
+		icon = GFX_goal_AUS_Republican_Realities
+		relative_position_id = CAT_ERC_Victory
+		x = 1
+		y = 3
+		available = {
+			has_government = social_democrat
+		}
+		prerequisite = {
+			focus = CAT_Wrest_Control_of_CACDI
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Fight_Against_Anarchy
+		icon = GFX_RUS_Twinkling_Social_Democracy
+		relative_position_id = CAT_ERC_Victory
+		x = -1
+		y = 3
+		available = {
+			has_government = social_democrat
+		}
+		prerequisite = {
+			focus = CAT_Rally_the_Rabassaires
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Federal_Socialist_Iberia
+		icon = GFX_goal_NIC_Victory_Social_Democracy
+		relative_position_id = CAT_ERC_Victory
+		x = 0
+		y = 2
+		available = {
+			has_government = social_democrat
+		}
+		prerequisite = {
+			focus = CAT_ERC_Victory
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Final_Surviving_Moderates
+		icon = GFX_goal_NEE_Guardians_Republic
+		relative_position_id = CAT_ERC_Victory
+		x = 0
+		y = 4
+		available = {
+			has_government = social_democrat
+		}
+		prerequisite = {
+			focus = CAT_Federal_Socialist_Iberia
+		}
+		prerequisite = {
+			focus = CAT_Fight_Against_Anarchy
+		}
+		prerequisite = {
+			focus = CAT_Shelter_Remaining_Republicans
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+		focus = {
+		id = CAT_Batet_Restores_Order
+		icon = GFX_goal_NFA_Petain_Military_Genius
+		relative_position_id = CAT_Catalan_Revolution
+		x = -16
+		y = 1
+		available = {
+			has_completed_focus = CAT_Catalonia_Breathes_Free
+			has_government = paternal_autocrat
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+		focus = {
+		id = CAT_Avoid_Unnecessary_Bloodshed
+		icon = GFX_goal_NIC_Strong_Socdem_Military
+		relative_position_id = CAT_Batet_Restores_Order
+		x = 2
+		y = 1
+		available = {
+			has_government = paternal_autocrat
+		}
+		prerequisite = {
+			focus = CAT_Batet_Restores_Order
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+		focus = {
+		id = CAT_Dismantle_the_Escamots
+		icon = GFX_goal_CAN_cleanse_red_parasites
+		relative_position_id = CAT_Batet_Restores_Order
+		x = -2
+		y = 1
+		available = {
+			has_government = paternal_autocrat
+		}
+		prerequisite = {
+			focus = CAT_Batet_Restores_Order
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+		focus = {
+		id = CAT_Evacuate_Affected_Areas
+		icon = GFX_goal_NYC_Enforce_Civil_Rights
+		relative_position_id = CAT_Batet_Restores_Order
+		x = 0
+		y = 1
+		available = {
+			has_government = paternal_autocrat
+		}
+		prerequisite = {
+			focus = CAT_Batet_Restores_Order
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+		focus = {
+		id = CAT_Manhunt_for_Captain_Cojones
+		icon = GFX_RUS_Witch_Hunt
+		relative_position_id = CAT_Batet_Restores_Order
+		x = 0
+		y = 2
+		available = {
+			has_government = paternal_autocrat
+		}
+		prerequisite = {
+			focus = CAT_Dismantle_the_Escamots
+		}
+		prerequisite = {
+			focus = CAT_Evacuate_Affected_Areas
+		}
+		prerequisite = {
+			focus = CAT_Avoid_Unnecessary_Bloodshed
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+		focus = {
+		id = CAT_Expel_Communard_Interlopers
+		icon = GFX_goal_AUS_decapitate_internationale
+		relative_position_id = CAT_Batet_Restores_Order
+		x = 1
+		y = 3
+		available = {
+			has_government = paternal_autocrat
+		}
+		prerequisite = {
+			focus = CAT_Manhunt_for_Captain_Cojones
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+		focus = {
+		id = CAT_Purge_Officers_off_Ideologues
+		icon = GFX_goal_ALB_Purge_Purgers
+		relative_position_id = CAT_Batet_Restores_Order
+		x = -1
+		y = 3
+		available = {
+			has_government = paternal_autocrat
+		}
+		prerequisite = {
+			focus = CAT_Manhunt_for_Captain_Cojones
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+		focus = {
+		id = CAT_Military_Born_Out_of_Pacifism
+		icon = GFX_goal_GUA_Pacifism_World_Stage
+		relative_position_id = CAT_Batet_Restores_Order
+		x = 2
+		y = 4
+		available = {
+			has_government = paternal_autocrat
+		}
+		prerequisite = {
+			focus = CAT_Expel_Communard_Interlopers
+		}
+		prerequisite = {
+			focus = CAT_Purge_Officers_off_Ideologues
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+		focus = {
+		id = CAT_Disband_All_Paramilitaries
+		icon = GFX_goal_AUS_Police_Paramilitarism
+		relative_position_id = CAT_Batet_Restores_Order
+		x = 0
+		y = 4
+		available = {
+			has_government = paternal_autocrat
+		}
+		prerequisite = {
+			focus = CAT_Expel_Communard_Interlopers
+		}
+		prerequisite = {
+			focus = CAT_Purge_Officers_off_Ideologues
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+		focus = {
+		id = CAT_Install_Loyal_Civilian_Administrators
+		icon = GFX_goal_NFA_Civilianisation_Service_France
+		relative_position_id = CAT_Batet_Restores_Order
+		x = -2
+		y = 4
+		available = {
+			has_government = paternal_autocrat
+		}
+		prerequisite = {
+			focus = CAT_Expel_Communard_Interlopers
+		}
+		prerequisite = {
+			focus = CAT_Purge_Officers_off_Ideologues
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+		focus = {
+		id = CAT_Order_Returns_to_Catalonia
+		icon = GFX_GRE_provisional_democratic_government
+		relative_position_id = CAT_Batet_Restores_Order
+		x = -1
+		y = 5
+		available = {
+			has_government = paternal_autocrat
+		}
+		mutually_exclusive = {
+				focus = CAT_Maintain_Military_Rule_Little_Longer
+		}
+		prerequisite = {
+			focus = CAT_Install_Loyal_Civilian_Administrators
+		}
+		prerequisite = {
+			focus = CAT_Disband_All_Paramilitaries
+		}
+		prerequisite = {
+			focus = CAT_Military_Born_Out_of_Pacifism
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+		focus = {
+		id = CAT_Maintain_Military_Rule_Little_Longer
+		icon = GFX_goal_IRE_emergency
+		relative_position_id = CAT_Batet_Restores_Order
+		x = 1
+		y = 5
+		available = {
+			has_government = paternal_autocrat
+		}
+		mutually_exclusive = {
+				focus = CAT_Order_Returns_to_Catalonia
+		}
+		prerequisite = {
+			focus = CAT_Install_Loyal_Civilian_Administrators
+		}
+		prerequisite = {
+			focus = CAT_Disband_All_Paramilitaries
+		}
+		prerequisite = {
+			focus = CAT_Military_Born_Out_of_Pacifism
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Economy_Free_of_Spain
+		icon = GFX_RUS_Economic_Draft_Scheme
+		relative_position_id = CAT_Democracy_of_Catalonia
+		x = 24
+		y = 0
+		available = {
+			has_completed_focus = CAT_Catalonia_Breathes_Free
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Fund_La_Transatlantica
+		icon = GFX_goal_FIU_Rebuild_Adriatic_Shipping_Lanes
+		relative_position_id = CAT_Economy_Free_of_Spain
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = CAT_Economy_Free_of_Spain
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Seize_Control_of_EFE
+		icon = GFX_goal_VIN_rebuild_railways
+		relative_position_id = CAT_Economy_Free_of_Spain
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = CAT_Economy_Free_of_Spain
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Moritz_and_Damm_Beer
+		icon = GFX_IRE_beer_whiskey_distilleries
+		relative_position_id = CAT_Economy_Free_of_Spain
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = CAT_Economy_Free_of_Spain
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Contracts_with_FOCSA
+		icon = GFX_CAL_executive_construction_projects
+		relative_position_id = CAT_Economy_Free_of_Spain
+		x = 2
+		y = 3
+		prerequisite = {
+			focus = CAT_CIG_Factories
+		}
+		prerequisite = {
+			focus = CAT_Fund_La_Transatlantica
+		}
+		prerequisite = {
+			focus = CAT_Moritz_and_Damm_Beer
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Seize_Hispano_Factories
+		icon = GFX_goal_NVN_Coopt_American_Military
+		relative_position_id = CAT_Economy_Free_of_Spain
+		x = -2
+		y = 3
+		prerequisite = {
+			focus = CAT_Factory_Z
+		}
+		prerequisite = {
+			focus = CAT_Seize_Control_of_EFE
+		}
+		prerequisite = {
+			focus = CAT_Moritz_and_Damm_Beer
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Factory_Z
+		icon = GFX_goal_COR_tank_commitee
+		relative_position_id = CAT_Economy_Free_of_Spain
+		x = -3
+		y = 2		
+		prerequisite = {
+			focus = CAT_Seize_Control_of_EFE
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_CIG_Factories
+		icon = GFX_goal_DAH_arms_trade
+		relative_position_id = CAT_Economy_Free_of_Spain
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = CAT_Fund_La_Transatlantica
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+		}
+	}
+	focus = {
+		id = CAT_Hold_the_Fire_Again
+		icon = GFX_goal_POL_International_Trade_Reform
+		relative_position_id = CAT_Economy_Free_of_Spain
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = CAT_Moritz_and_Damm_Beer
+		}
+		prerequisite = {
+			focus = CAT_Seize_Hispano_Factories
+		}
+		prerequisite = {
+			focus = CAT_Contracts_with_FOCSA
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+		}
+	}
+	focus = {
+		id = CAT_Mediterranean_Trade
+		icon = GFX_goal_NFE_take_mediterranean_islands
+		relative_position_id = CAT_Economy_Free_of_Spain
+		x = 1
+		y = 5
+		mutually_exclusive = {
+			focus = CAT_New_World_Trade
+		}
+		prerequisite = {
+			focus = CAT_Hold_the_Fire_Again
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+		}
+	}
+	focus = {
+		id = CAT_New_World_Trade
+		icon = GFX_goal_COS_Tourist_Hub_Central_America
+		relative_position_id = CAT_Economy_Free_of_Spain
+		x = -1
+		y = 5
+		mutually_exclusive = {
+			focus = CAT_Mediterranean_Trade
+		}
+		prerequisite = {
+			focus = CAT_Hold_the_Fire_Again
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+		}
+	}
+	focus = {
+		id = CAT_Catalan_Economic_Miracle
+		icon = GFX_goal_NFA_post_syndie_boom
+		relative_position_id = CAT_Economy_Free_of_Spain
+		x = 0
+		y = 6
+		prerequisite = {
+			focus = CAT_New_World_Trade
+			focus = CAT_Mediterranean_Trade
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Exercit_Popular
+		icon = GFX_focus_HKG_Curtail_Military
+		relative_position_id = CAT_Economy_Free_of_Spain
+		x = -4
+		y = 7
+		available = {
+			has_completed_focus = CAT_Catalonia_Breathes_Free
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Ditch_Mixed_Brigades
+		icon = GFX_goal_GUA_Militarized_Society
+		relative_position_id = CAT_Exercit_Popular
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = CAT_Exercit_Popular
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Rapid_Standardization
+		icon = GFX_goal_AUS_kickstart_military
+		relative_position_id = CAT_Exercit_Popular
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = CAT_Exercit_Popular
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Integrate_Militias
+		icon = GFX_goal_AST_expand_the_militia
+		relative_position_id = CAT_Exercit_Popular
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = CAT_Exercit_Popular
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Emergency_Conversions
+		icon = GFX_goal_NIC_Military_Industry
+		relative_position_id = CAT_Exercit_Popular
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = CAT_Exercit_Popular
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Refit_Tiznaos
+		icon = GFX_goal_COR_new_tank_forces_icon
+		relative_position_id = CAT_Exercit_Popular
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = CAT_Emergency_Conversions
+		}
+		prerequisite = {
+			focus = CAT_Integrate_Militias
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Sadurni_Tanks
+		icon = GFX_goal_NEE_armored_spearhead
+		relative_position_id = CAT_Exercit_Popular
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = CAT_Rapid_Standardization
+		}
+		prerequisite = {
+			focus = CAT_Integrate_Militias
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Torpede_Aeri
+		icon = GFX_goal_rocket
+		relative_position_id = CAT_Exercit_Popular
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = CAT_Rapid_Standardization
+		}
+		prerequisite = {
+			focus = CAT_Ditch_Mixed_Brigades
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Labora_Guns
+		icon = GFX_goal_BAN_arms_army
+		relative_position_id = CAT_Exercit_Popular
+		x = 1
+		y = 3
+		prerequisite = {
+			focus = CAT_Torpede_Aeri
+		}
+		prerequisite = {
+			focus = CAT_Sadurni_Tanks
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Urban_Warfare_Specialists
+		icon = GFX_RUS_Special_Forces_Office
+		relative_position_id = CAT_Exercit_Popular
+		x = -1
+		y = 3
+		prerequisite = {
+			focus = CAT_Refit_Tiznaos
+		}
+		prerequisite = {
+			focus = CAT_Sadurni_Tanks
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Self_Sufficient_Catalan_Army
+		icon = GFX_goal_GUA_Military_Legacy
+		relative_position_id = CAT_Exercit_Popular
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = CAT_Labora_Guns
+		}
+		prerequisite = {
+			focus = CAT_Urban_Warfare_Specialists
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Catalan_Irredentism
+		icon = GFX_UKR_Smash_Russian_Imperialism
+		relative_position_id = CAT_Economy_Free_of_Spain
+		x = 10
+		y = 7
+		available = {
+			has_completed_focus = CAT_Catalonia_Breathes_Free
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Iberianism
+		icon = GFX_goal_FRA_liberate_Iberia
+		relative_position_id = CAT_Catalan_Irredentism
+		x = 6
+		y = 1
+		prerequisite = {
+			focus = CAT_Catalan_Irredentism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Galeusca
+		icon = GFX_goal_BAS_Republicanism
+		relative_position_id = CAT_Catalan_Irredentism
+		x = 7
+		y = 2
+		mutually_exclusive = {
+			focus = CAT_Catalan_Supremacism
+		}
+		prerequisite = {
+			focus = CAT_Iberianism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Catalan_Supremacism
+		icon = GFX_goal_NFA_Fix_Federalism
+		relative_position_id = CAT_Catalan_Irredentism
+		x = 5
+		y = 2
+		mutually_exclusive = {
+			focus = CAT_Galeusca
+		}
+		prerequisite = {
+			focus = CAT_Iberianism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Slaying_the_Hispanic_Beast
+		icon = GFX_goal_SPR_churchburn
+		relative_position_id = CAT_Catalan_Irredentism
+		x = 6
+		y = 3
+		prerequisite = {
+			focus = CAT_Catalan_Supremacism
+			focus = CAT_Galeusca
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Iberia_under_Catalan_Heel
+		icon = GFX_goal_NFA_supremacy_of_pays_reel
+		relative_position_id = CAT_Catalan_Irredentism
+		x = 8
+		y = 3
+		prerequisite = {
+			focus = CAT_Catalan_Supremacism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Federation_of_Equals
+		icon = GFX_UKR_United_Indivisible_Federative_Empire
+		relative_position_id = CAT_Catalan_Irredentism
+		x = 4
+		y = 3
+		prerequisite = {
+			focus = CAT_Galeusca
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Portugal_Policy
+		icon = GFX_goal_POR_portugese_youth
+		relative_position_id = CAT_Catalan_Irredentism
+		x = 5
+		y = 4
+		prerequisite = {
+			focus = CAT_Federation_of_Equals
+			focus = CAT_Iberia_under_Catalan_Heel
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Catalan_Sardinia
+		icon = GFX_goal_VNC_venice_sardinia_new
+		relative_position_id = CAT_Catalan_Irredentism
+		x = 7
+		y = 4
+		prerequisite = {
+			focus = CAT_Federation_of_Equals
+			focus = CAT_Iberia_under_Catalan_Heel
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_New_Power_of_Iberia
+		icon = GFX_goal_GUA_Military_Legacy
+		relative_position_id = CAT_Catalan_Irredentism
+		x = 6
+		y = 5
+		prerequisite = {
+			focus = CAT_Portugal_Policy
+			focus = CAT_Catalan_Sardinia
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Mediterraneanism
+		icon = GFX_goal_generic_mediterranean
+		relative_position_id = CAT_Catalan_Irredentism
+		x = -6
+		y = 1
+		prerequisite = {
+			focus = CAT_Catalan_Irredentism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Reclamation_of_Aragon
+		icon = GFX_goal_CAN_All_In_For_Reclamation
+		relative_position_id = CAT_Catalan_Irredentism
+		x = -7
+		y = 2
+		prerequisite = {
+			focus = CAT_Mediterraneanism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Question_of_Sardinia
+		icon = GFX_goal_SRD_loyal_men_sardinia
+		relative_position_id = CAT_Catalan_Irredentism
+		x = -5
+		y = 2
+		prerequisite = {
+			focus = CAT_Mediterraneanism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Reclamation_of_Naples
+		icon = GFX_goal_SIC_kingdom_of_two_sicilies
+		relative_position_id = CAT_Catalan_Irredentism
+		x = -6
+		y = 3
+		prerequisite = {
+			focus = CAT_Question_of_Sardinia
+		}
+		prerequisite = {
+			focus = CAT_Reclamation_of_Aragon
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Roussillon_and_Corsica
+		icon = GFX_goal_NFE_peninsular_war
+		relative_position_id = CAT_Catalan_Irredentism
+		x = -8
+		y = 3
+		prerequisite = {
+			focus = CAT_Reclamation_of_Aragon
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Duchy_of_Athens
+		icon = GFX_goal_ATH_greco_catholicism3
+		relative_position_id = CAT_Catalan_Irredentism
+		x = -4
+		y = 3
+		prerequisite = {
+			focus = CAT_Question_of_Sardinia
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Reclamation_of_Malta
+		icon = GFX_goal_malta_cross
+		relative_position_id = CAT_Catalan_Irredentism
+		x = -5
+		y = 4
+		prerequisite = {
+			focus = CAT_Duchy_of_Athens
+			focus = CAT_Roussillon_and_Corsica
+			focus = CAT_Reclamation_of_Naples
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Proclamation_of_Thalassocracy
+		icon = GFX_goal_TEX_naval_prominence
+		relative_position_id = CAT_Catalan_Irredentism
+		x = -7
+		y = 4
+		prerequisite = {
+			focus = CAT_Duchy_of_Athens
+			focus = CAT_Roussillon_and_Corsica
+			focus = CAT_Reclamation_of_Naples
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Beyond_Aragon
+		icon = GFX_goal_AUS_medieval_modern_piety
+		relative_position_id = CAT_Catalan_Irredentism
+		x = -6
+		y = 5
+		prerequisite = {
+			focus = CAT_Proclamation_of_Thalassocracy
+			focus = CAT_Reclamation_of_Malta
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Alliances
+		icon = GFX_goal_CAN_united_empire_leauge
+		relative_position_id = CAT_Catalan_Irredentism
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = CAT_Catalan_Irredentism
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Old_Overlords
+		icon = GFX_goal_AUS_Kneel_To_Double_Eagle
+		relative_position_id = CAT_Catalan_Irredentism
+		x = 4
+		y = 6
+		prerequisite = {
+			focus = CAT_Alliances
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Hegemon
+		icon = GFX_goal_GER_Stable_Germany
+		relative_position_id = CAT_Catalan_Irredentism
+		x = -4
+		y = 6
+		prerequisite = {
+			focus = CAT_Alliances
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Bear
+		icon = GFX_goal_RUS_The_Bear_Awakens
+		relative_position_id = CAT_Catalan_Irredentism
+		x = -2
+		y = 6
+		prerequisite = {
+			focus = CAT_Alliances
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Exiles
+		icon = GFX_goal_NZL_entente_line
+		relative_position_id = CAT_Catalan_Irredentism
+		x = 2
+		y = 6
+		prerequisite = {
+			focus = CAT_Alliances
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Rising_Sun
+		icon = GFX_goal_CAN_rising_sun_burns_our_empire
+		relative_position_id = CAT_Catalan_Irredentism
+		x = 0
+		y = 6
+		prerequisite = {
+			focus = CAT_Alliances
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Spanish_Coup
+		icon = GFX_goal_SPR_absolute_spain
+		relative_position_id = CAT_JEREC_coup
+		x = 0
+		y = 7
+		available = {
+			has_completed_focus = CAT_Catalonia_Breathes_Free
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Working_in_the_Shadows
+		icon = GFX_goal_NFA_rule_from_shadows
+		relative_position_id = CAT_Spanish_Coup
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = CAT_Spanish_Coup
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Liquidation_of_Nationalist_Firebrands
+		icon = GFX_goal_SRI_liquidate_northern_law_order
+		relative_position_id = CAT_Spanish_Coup
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = CAT_Spanish_Coup
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Finding_Useful_Idiots
+		icon = GFX_goal_generic_indoctrinate_minds_manipulate_people
+		relative_position_id = CAT_Spanish_Coup
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = CAT_Spanish_Coup
+		}
+		prerequisite = {
+			focus = CAT_Liquidation_of_Nationalist_Firebrands
+		}
+		prerequisite = {
+			focus = CAT_Working_in_the_Shadows
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_MonSocs
+		icon = GFX_goal_HON_Burn_Conservative_Socialists
+		relative_position_id = CAT_Spanish_Coup
+		x = 1
+		y = 3
+		prerequisite = {
+			focus = CAT_Finding_Useful_Idiots
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Kleptocrat
+		icon = GFX_goal_NYC_Politics_of_Corruption
+		relative_position_id = CAT_Spanish_Coup
+		x = -1
+		y = 3
+		prerequisite = {
+			focus = CAT_Finding_Useful_Idiots
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Assert_Dominance_over_Liga
+		icon = GFX_goal_FRA_union_dominance
+		relative_position_id = CAT_Spanish_Coup
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = CAT_The_Kleptocrat
+		}
+		prerequisite = {
+			focus = CAT_MonSocs
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Blame_ERC
+		icon = GFX_goal_NIC_Socialism_Death
+		relative_position_id = CAT_Spanish_Coup
+		x = 2
+		y = 4
+		prerequisite = {
+			focus = CAT_The_Kleptocrat
+		}
+		prerequisite = {
+			focus = CAT_MonSocs
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Temporary_Alliance_With_Carlists
+		icon = GFX_goal_AUS_Spanish_Styles
+		relative_position_id = CAT_Spanish_Coup
+		x = -2
+		y = 4
+		prerequisite = {
+			focus = CAT_The_Kleptocrat
+		}
+		prerequisite = {
+			focus = CAT_MonSocs
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Dignified_Fairer_Sex
+		icon = GFX_goal_AUS_Push_Forward_Womens_Movement
+		relative_position_id = CAT_Spanish_Coup
+		x = -1
+		y = 5
+		prerequisite = {
+			focus = CAT_The_Kleptocrat
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Love_of_Catalonia
+		icon = GFX_RUS_Revive_National_Identity
+		relative_position_id = CAT_Spanish_Coup
+		x = 1
+		y = 5
+		prerequisite = {
+			focus = CAT_MonSocs
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Improve_Worker_Neighbourhoods
+		icon = GFX_goal_CAN_National_Housing_Act
+		relative_position_id = CAT_Spanish_Coup
+		x = 0
+		y = 6
+		prerequisite = {
+			focus = CAT_Love_of_Catalonia
+		}
+		prerequisite = {
+			focus = CAT_Dignified_Fairer_Sex
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Moral_Working_Class
+		icon = GFX_goal_WHR_Fair_Division_Labour
+		relative_position_id = CAT_Spanish_Coup
+		x = 2
+		y = 6
+		prerequisite = {
+			focus = CAT_Love_of_Catalonia
+		}
+		prerequisite = {
+			focus = CAT_Dignified_Fairer_Sex
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Stifle_Cynicism
+		icon = GFX_goal_AST_end_the_remnants_of_bourgeois_power
+		relative_position_id = CAT_Spanish_Coup
+		x = -2
+		y = 6
+		prerequisite = {
+			focus = CAT_Love_of_Catalonia
+		}
+		prerequisite = {
+			focus = CAT_Dignified_Fairer_Sex
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Monarchy_and_Labour
+		icon = GFX_RUS_Knights_Of_Socialism
+		relative_position_id = CAT_Spanish_Coup
+		x = 0
+		y = 7
+		prerequisite = {
+			focus = CAT_Stifle_Cynicism
+		}
+		prerequisite = {
+			focus = CAT_Moral_Working_Class
+		}
+		prerequisite = {
+			focus = CAT_Improve_Worker_Neighbourhoods
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
 	}
 }
