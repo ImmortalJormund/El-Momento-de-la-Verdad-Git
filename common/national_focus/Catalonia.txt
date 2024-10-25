@@ -3450,8 +3450,8 @@ focus_tree = {
 					
 				}
                         swap_ideas = {
-					remove_ideas = CAT_Economy_1
-					add_ideas = CAT_Economy_2
+					remove_idea = CAT_Economy_1
+					add_idea = CAT_Economy_2
 				
 			}
 		}
@@ -3487,8 +3487,8 @@ focus_tree = {
 				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
 			}
                         swap_ideas = {
-					remove_ideas = CAT_Economy_2
-					add_ideas = CAT_Economy_3
+					remove_idea = CAT_Economy_2
+					add_idea = CAT_Economy_3
 				}
 			}
 		}
@@ -3570,8 +3570,8 @@ focus_tree = {
 					
 				}
                         swap_ideas = {
-                                  remove_ideas = CAT_Economy_3
-                                  add_ideas = CAT_Economy_4
+                                  remove_idea = CAT_Economy_3
+                                  add_idea = CAT_Economy_4
                         }
 			}
 		}
@@ -3624,8 +3624,8 @@ focus_tree = {
 					
 				}
                         swap_ideas = {
-                             remove_ideas = CAT_Economy_5
-                             add_ideas = CAT_Economy_6
+                             remove_idea = CAT_Economy_5
+                             add_idea = CAT_Economy_6
 			}
 		}
 	}
@@ -3650,8 +3650,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-                             remove_ideas = CAT_Economy_6
-                             add_ideas = CAT_Economy_7
+                             remove_idea = CAT_Economy_6
+                             add_idea = CAT_Economy_7
 			}
 		}
 	}
@@ -3711,8 +3711,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-                             remove_ideas = CAT_Economy_7
-                             add_ideas = CAT_Economy_8
+                             remove_idea = CAT_Economy_7
+                             add_idea = CAT_Economy_8
 			}
 			}
 		}
