@@ -1,5 +1,5 @@
 ##################################
-# Galicia Focus Tree
+# Catalonia Focus Tree
 # Made by Immortal Jörmund
 ##################################
 
@@ -3455,6 +3455,7 @@ focus_tree = {
 				
 			}
 		}
+                }
 	focus = {
 		id = CAT_Seize_Control_of_EFE
 		icon = GFX_goal_VIN_rebuild_railways
