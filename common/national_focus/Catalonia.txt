@@ -3590,8 +3590,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-                                 remove_ideas = CAT_Economy = 4
-                                 add_ideas = CAT_Economy = 5
+                                 remove_ideas = CAT_Economy_4
+                                 add_ideas = CAT_Economy_5
 			}
                         add_extra_state_shared_building_slots = 1
                         add_building_construction = {
