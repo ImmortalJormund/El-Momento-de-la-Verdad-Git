@@ -495,8 +495,120 @@ ideas = {
  			picture = generic_economic_increase
 			allowed = { always = no }
             modifier = {
-			production_speed_buildings_factor = 0.30
+			production_speed_buildings_factor = 0.15
+                        production_speed_naval_base_factor = 0.15
+			production_speed_dockyard_factor = 0.1
 			}
 		}
+            CAT_Economy_3 = { 
+ 			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {
+			production_speed_buildings_factor = 0.2
+                        production_speed_naval_base_factor = 0.15
+			production_speed_dockyard_factor = 0.1
+                        production_speed_rail_way_factor = 0.2
+			production_speed_infrastructure_factor = 0.2
+			}
+		}
+            CAT_Economy_4 = { 
+ 			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {
+			production_speed_buildings_factor = 0.2
+                        production_speed_naval_base_factor = 0.15
+			production_speed_dockyard_factor = 0.1
+                        production_speed_rail_way_factor = 0.2
+			production_speed_infrastructure_factor = 0.2
+                        production_speed_arms_factory_factor = 0.1
+                        production_factory_efficiency_gain_factor = 0.1
+			line_change_production_efficiency_factor = 0.1
+			}
+		}
+            CAT_Economy_5 = { 
+ 			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {
+			production_speed_buildings_factor = 0.2
+                        production_speed_naval_base_factor = 0.15
+			production_speed_dockyard_factor = 0.1
+                        production_speed_rail_way_factor = 0.2
+			production_speed_infrastructure_factor = 0.2
+                        production_speed_arms_factory_factor = 0.1
+                        production_factory_efficiency_gain_factor = 0.1
+			line_change_production_efficiency_factor = 0.1
+                        global_building_slots_factor = 0.1
+                        artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+           CAT_Economy_6 = { 
+ 			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {
+			production_speed_buildings_factor = 0.2
+                        production_speed_naval_base_factor = 0.15
+			production_speed_dockyard_factor = 0.1
+                        production_speed_rail_way_factor = 0.2
+			production_speed_infrastructure_factor = 0.2
+                        production_speed_arms_factory_factor = 0.1
+                        production_factory_efficiency_gain_factor = 0.1
+			line_change_production_efficiency_factor = 0.1
+                        global_building_slots_factor = 0.1
+                        local_resources_factor = 0.1
+			production_lack_of_resource_penalty_factor = -0.1
+                        artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+           CAT_Economy_7 = { 
+ 			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {
+			production_speed_buildings_factor = 0.22
+                        production_speed_naval_base_factor = 0.17
+			production_speed_dockyard_factor = 0.12
+                        production_speed_rail_way_factor = 0.22
+			production_speed_infrastructure_factor = 0.22
+                        production_speed_arms_factory_factor = 0.12
+                        production_factory_efficiency_gain_factor = 0.12
+			line_change_production_efficiency_factor = 0.12
+                        global_building_slots_factor = 0.12
+                        local_resources_factor = 0.12
+			production_lack_of_resource_penalty_factor = -0.12
+                        artillery_equipment = {
+					build_cost_ic = -0.12
+					instant = yes
+				}
+			}
+		}
+           CAT_Economy_8 = { 
+ 			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {
+			production_speed_buildings_factor = 0.25
+                        production_speed_naval_base_factor = 0.2
+			production_speed_dockyard_factor = 0.15
+                        production_speed_rail_way_factor = 0.25
+			production_speed_infrastructure_factor = 0.25
+                        production_speed_arms_factory_factor = 0.15
+                        production_factory_efficiency_gain_factor = 0.15
+			line_change_production_efficiency_factor = 0.15
+                        global_building_slots_factor = 0.15
+                        local_resources_factor = 0.15
+			production_lack_of_resource_penalty_factor = -0.15
+                        artillery_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
+
+ 
+ 
 }
 }
