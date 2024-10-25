@@ -484,3 +484,17 @@ ideas = {
 				resistance_growth = -0.05
 			}
 		}
+                CAT_Economy_1 = { 
+ 			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {
+			production_speed_buildings_factor = 0.10
+			}
+		}
+                CAT_Economy_2 = { 
+ 			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {
+			production_speed_buildings_factor = 0.30
+			}
+		}
