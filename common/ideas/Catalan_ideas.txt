@@ -498,3 +498,5 @@ ideas = {
 			production_speed_buildings_factor = 0.30
 			}
 		}
+}
+}
