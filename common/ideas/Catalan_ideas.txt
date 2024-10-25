@@ -607,7 +607,24 @@ ideas = {
 				}
 			}
 		}
-
+          CAT_trade_mid = { 
+ 			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {
+			political_power_gain = 0.13
+                        consumer_goods_factor = -0.13 
+                        stability_factor = 0.13
+			}
+		}
+          CAT_trade_new = { 
+ 			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {
+			production_lack_of_resource_penalty_factor = -0.13
+                        line_change_production_efficiency_factor = 0.07
+                        production_speed_arms_factory_factor = 0.13
+			}
+		}
  
  
 }
