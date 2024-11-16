@@ -5448,6 +5448,18 @@ country_event = { #
 		set_truce = {
 			target = BAS
 			days = 30
+					}
+				}
+			}
+	option = { #oh no
+		name = sprd.114.b
+		ai_chance = {
+			base = 0
+		}
+			add_war_support = 0.15
+			remove_ideas = SPR_struggle_for_castilian_survival
+			add_state_core = 172
+				}
 			}
 		}
 	}
@@ -5478,10 +5490,20 @@ country_event = { #
 		set_truce = {
 			target = CAT
 			days = 30
-		}			
-		CAT = {
-			transfer_state = 177
-			transfer_state = 1313
+					}
+				}
+			}
+	option = { #oh no
+		name = sprd.115.b
+		ai_chance = {
+			base = 0
+		}
+			add_war_support = 0.15
+			remove_ideas = SPR_struggle_for_castilian_survival
+			add_state_core = 1313
+			add_state_core = 165
+			add_state_core = 167
+			add_state_core = 177
 			}
 		}
 	}
@@ -5514,6 +5536,17 @@ country_event = { #
 			country_event = {
 				id = sprd.118
 				days = 20
+					}
+				}
+			}
+	option = { #oh no
+		name = sprd.116.b
+		ai_chance = {
+			base = 0
+		}
+			add_war_support = 0.15
+			remove_ideas = SPR_struggle_for_castilian_survival
+			add_state_core = 171			
 				}
 			}
 		}

@@ -1,5 +1,5 @@
 ##################################
-# Catalonia Focus Tree
+# Galicia Focus Tree
 # Made by Immortal Jörmund
 ##################################
 
@@ -12,7 +12,7 @@ focus_tree = {
 			tag = CAT
 		}
 	}
-	continuous_focus_position = { x = 2200 y = 2500 }
+	continuous_focus_position = { x = 2200 y = 3500 }
 
 	focus = {
 		id = CAT_Independence
@@ -77,11 +77,17 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
-			171 = {
+			random_owned_state = {
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
-					province = 729
+					level = 1
+					instant_build = yes
+					}
+				}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -104,13 +110,11 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
-			171 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					province = 729
-					instant_build = yes
-				}
+			set_technology = { armored_car_battalion = 1 }	
+			add_equipment_to_stockpile = {
+				type = armored_car_equipment
+				amount = 250
+				producer = CAT
 			}
 		}
 	}
@@ -131,12 +135,29 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
-			172 = {
-				add_building_construction = {
-					type = bunker
-					level = 3
-					province = 740
-					instant_build = yes
+				add_manpower = 525
+				add_command_power = 150
+				division_template = {
+				name = "Exercit Popular"
+				division_names_group = SPR_INF_01  
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 165 }
+				create_unit = {
+					division = "division_template = \"Exercit Popular\" start_experience_factor = 0.4"
+					owner = CAT
+					prioritize_location = 6966
 				}
 			}
 		}
@@ -159,8 +180,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 5000
+				type = artillery_equipment
+				amount = 450
+				producer = SPR
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 450
 				producer = SPR
 			}
 		}
@@ -182,10 +208,11 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 5000
-				producer = SPR
+			add_manpower = 2450
+			add_war_support = 0.05
+			add_popularity = {
+			ideology = national_populist
+			popularity = 0.07
 			}
 		}
 	}
@@ -206,10 +233,11 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 5000
-				producer = SPR
+			add_manpower = 3250
+			add_war_support = 0.05
+			add_popularity = {
+			ideology = syndicalist
+			popularity = 0.07
 			}
 		}
 	}
@@ -230,10 +258,37 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 5000
-				producer = SPR
+			165 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 9764
+					instant_build = yes
+					}
+				}
+			165 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6966
+					instant_build = yes
+					}
+				}
+			165 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6836
+					instant_build = yes
+					}
+				}
+			165 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 872
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -265,7 +320,7 @@ focus_tree = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 171 }
+				prioritize = { 165 }
 				create_unit = {
 					division = "division_template = \"Mossos d'Esquadra\" start_experience_factor = 0.1"
 					owner = CAT
@@ -316,21 +371,10 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			171 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 932
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 3735
-					instant_build = yes
-				}
-			}
-			
+			add_manpower = -1500
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100
 		}
 	}
 		focus = {
@@ -350,21 +394,12 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			171 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 932
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 3735
-					instant_build = yes
-				}
+			add_manpower = 1250
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1200
+				producer = FRA		
 			}
-			
 		}
 	}
 		focus = {
@@ -384,21 +419,9 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			171 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 932
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 3735
-					instant_build = yes
-				}
-			}
-			
+			add_war_support = 0.12
+			add_command_power = 120
+			add_political_power = 65
 		}
 	}
 	focus = {
@@ -437,7 +460,7 @@ focus_tree = {
 			has_completed_focus = CAT_Catalonia_Breathes_Free
 			has_war = no
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -454,15 +477,19 @@ focus_tree = {
 		available = {
 			has_government = national_populist
 		}
+		bypass = { 
+			has_government = national_populist
+			has_country_flag = CAT_flag_NS_elected
+		}
 		prerequisite = {
 			focus = CAT_Democracy_of_Catalonia
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_political_power = 25
 			}
 		}
 	focus = {
@@ -477,11 +504,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Nosaltres_Sols
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.158
 			add_ideas = CAT_deradicalized_EC
 			}
 		}
@@ -497,11 +525,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Nosaltres_Sols
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.159
 			add_ideas = CAT_PCP_support
 			}
 		}
@@ -517,12 +546,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Nosaltres_Sols
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.160
 			}
 		}
 	focus = {
@@ -539,7 +568,7 @@ focus_tree = {
 			focus = CAT_Align_Partit_Catala_Proletari
 			focus = CAT_Deradicalize_Estat_Catala
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -559,7 +588,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Vibrant_Ultranationalism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -579,7 +608,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Vibrant_Ultranationalism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -599,7 +628,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Vibrant_Ultranationalism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -619,7 +648,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Remove_Hispanic_Inferiors
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -639,7 +668,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Fervent_Anti_Colonialism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -665,7 +694,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Nationalism_From_Individual_to_State
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -682,15 +711,19 @@ focus_tree = {
 		available = {
 			has_government = authoritarian_democrat
 		}
+		bypass = { 
+			has_government = authoritarian_democrat
+			has_country_flag = CAT_flag_UC_elected
+		}
 		prerequisite = {
 			focus = CAT_Democracy_of_Catalonia
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_political_power = 25
 			}
 		}
 	focus = {
@@ -710,7 +743,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.149
 			}
 		}
 	focus = {
@@ -730,6 +763,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.150
 			add_ideas = CAT_Making_a_Homeland_for_all_Catalans
 			}
 		}
@@ -750,6 +784,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.151
 			add_ideas = CAT_Natural_Catalanism_is_Conservatism
 			}
 		}
@@ -772,6 +807,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.152
 			add_ideas = CAT_Regionalism_Destroyed
 			}
 		}
@@ -792,6 +828,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.155
 			add_ideas = CAT_Catalan_Renaixensa
 			}
 		}
@@ -812,6 +849,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.154
 			add_ideas = CAT_Protectionism
 			}
 		}
@@ -832,6 +870,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.156
 			add_ideas = CAT_Catalan_Volunteers
 			}
 		}
@@ -872,6 +911,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.153
 			add_ideas = CAT_Resurrecting_the_Protectora_Model
 			}
 		}
@@ -898,6 +938,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.157
 			add_ideas = CAT_Greater_Ambitions
 			}
 		}
@@ -910,15 +951,19 @@ focus_tree = {
 		available = {
 			has_government = social_conservative
 		}
+		bypass = { 
+			has_government = social_conservative
+			has_country_flag = CAT_flag_LC_elected
+		}
 		prerequisite = {
 			focus = CAT_Democracy_of_Catalonia
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_political_power = 25
 			}
 		}
 	focus = {
@@ -938,7 +983,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.142
 			}
 		}
 	focus = {
@@ -958,6 +1003,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.140
 			add_ideas = CAT_Denounce_Collaborators
 			}
 		}
@@ -978,6 +1024,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.141
 			add_ideas = CAT_Embrace_Catalanism
 			}
 		}
@@ -1000,7 +1047,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.143
 			}
 		}
 	focus = {
@@ -1020,6 +1067,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.146
 			add_ideas = CAT_Decentralize_the_State
 			}
 		}
@@ -1060,6 +1108,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.146
 			add_ideas = CAT_Integrate_Spanish_Right_Wingers
 			}
 		}
@@ -1083,6 +1132,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.147
 			add_ideas = CAT_Commonwealth_of_Catalonia
 			}
 		}
@@ -1132,6 +1182,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.148
 			add_ideas = CAT_League_of_Extraordinary_Catalans
 			}
 		}
@@ -1144,15 +1195,19 @@ focus_tree = {
 		available = {
 			has_government = market_liberal
 		}
+		bypass = { 
+			has_government = market_liberal
+			has_country_flag = CAT_flag_UDC_elected
+		}
 		prerequisite = {
 			focus = CAT_Democracy_of_Catalonia
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_political_power = 25
 			}
 		}
 	focus = {
@@ -1172,6 +1227,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.132
 			add_ideas = CAT_Dire_Straits
 			}
 		}
@@ -1192,6 +1248,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.131
 			add_ideas = CAT_Democratic_Traditionalism
 			}
 		}
@@ -1212,6 +1269,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.133
 			add_ideas = CAT_Republicanism_and_Catholicism_Are_Not_Opposites
 			}
 		}
@@ -1379,10 +1437,14 @@ focus_tree = {
 		available = {
 			has_government = social_liberal
 		}
+		bypass = { 
+			has_government = social_liberal
+			has_country_flag = CAT_flag_ACR_elected
+		}
 		prerequisite = {
 			focus = CAT_Democracy_of_Catalonia
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -1427,6 +1489,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.121
 			add_ideas = CAT_Rejuvenation_of_Catalanism
 			}
 		}
@@ -1447,6 +1510,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.122
 			add_ideas = CAT_Truly_Liberal_Economy
 			}
 		}
@@ -1469,7 +1533,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.123
 			}
 		}
 	focus = {
@@ -1489,6 +1553,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.126
 			add_ideas = CAT_Reopen_Committee_of_Culture
 			}
 		}
@@ -1509,6 +1574,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.120
 			add_ideas = CAT_Fully_Secularize_Catalonia
 			}
 		}
@@ -1529,6 +1595,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.127
 			add_ideas = CAT_Commit_to_Liberal_Internationalism
 			}
 		}
@@ -1552,7 +1619,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.128
 			}
 		}
 	focus = {
@@ -1575,6 +1642,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.129
 			add_ideas = CAT_Restore_La_Publicitat
 			}
 		}
@@ -1601,6 +1669,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = CAT.130
 			add_ideas = CAT_Catalan_Torch_Carried_by_the_Bourgeoisie
 			}
 		}
@@ -1613,10 +1682,14 @@ focus_tree = {
 		available = {
 			has_government = social_democrat
 		}
+		bypass = { 
+			has_government = social_democrat
+			has_country_flag = CAT_flag_ERC_elected
+		}
 		prerequisite = {
 			focus = CAT_Democracy_of_Catalonia
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -1641,7 +1714,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.100
+			add_ideas = CAT_The_Only_True_Nationalists
 			}
 		}
 	focus = {
@@ -1661,7 +1735,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.101
+			add_ideas = CAT_Overtures_to_the_Left
 			}
 		}
 	focus = {
@@ -1681,7 +1756,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.102
+			add_ideas = CAT_Push_for_the_Law_of_Cultivation
 			}
 		}
 	focus = {
@@ -1703,7 +1779,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.103
 			}
 		}
 	focus = {
@@ -1723,7 +1799,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Reel_in_UDR
 			}
 		}
 	focus = {
@@ -1743,7 +1819,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Crack_Down_on_Escamots
+			country_event = CAT.24
 			}
 		}
 	focus = {
@@ -1763,7 +1840,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.106
 			}
 		}
 	focus = {
@@ -1786,7 +1863,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.107
 			}
 		}
 	focus = {
@@ -1809,7 +1886,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_End_to_Robber_Barons_of_Catalonia
 			}
 		}
 	focus = {
@@ -1835,7 +1912,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_From_Guerillas_to_Global_Liberators
 			}
 		}
 	focus = {
@@ -1845,15 +1922,15 @@ focus_tree = {
 		x = 0
 		y = 6
 		available = {
-			has_completed_focus = CAT_Catalonia_Breathes_Free
+			has_country_leader = { name = "Josep Dencàs" }
 			has_government = totalist
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_political_power = 25
 			}
 		}
 	focus = {
@@ -1871,12 +1948,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_JEREC_coup
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.221
 			}
 		}
 	focus = {
@@ -1891,12 +1968,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Totalitarianism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.231
+			add_ideas = CAT_Cult_of_the_Ideal_Catalan
 			}
 		}
 	focus = {
@@ -1911,12 +1989,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Totalitarianism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.232
+			add_ideas = CAT_Anti_Spanish_Propaganda
 			}
 		}
 	focus = {
@@ -1931,12 +2010,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Anti_Spanish_Propaganda
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.234
 			}
 		}
 	focus = {
@@ -1954,12 +2033,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Cult_of_the_Ideal_Catalan
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.233
+			add_ideas = CAT_Sway_Nondemocratic_Nosaltres_Sols
 			}
 		}
 	focus = {
@@ -1977,12 +2057,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Cult_of_the_Ideal_Catalan
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.236
+			add_ideas = CAT_Sorelianism_Without_French_Supremacism
 			}
 		}
 	focus = {
@@ -2003,12 +2084,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Dreams_of_Totalitarian_Catalonia
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.235
 			}
 		}
 	focus = {
@@ -2029,12 +2110,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Dreams_of_Totalitarian_Catalonia
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.237
+			add_ideas = CAT_Unyielding_Statism
 			}
 		}
 	focus = {
@@ -2052,12 +2134,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Mass_Militarization
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.238
+			add_ideas = CAT_Liberation_War
 			}
 		}
 	focus = {
@@ -2080,7 +2163,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.220
 			}
 		}
 	focus = {
@@ -2095,12 +2178,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_National_Syndicalism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.222
+			add_ideas = CAT_Dismantle_Misguided_ERC
 			}
 		}
 	focus = {
@@ -2115,12 +2199,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_National_Syndicalism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.223
+			add_ideas = CAT_Full_Destruction_of_Anarchism
 			}
 		}
 	focus = {
@@ -2135,12 +2220,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Full_Destruction_of_Anarchism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.224
+			add_ideas = CAT_Peninsula_Free_of_Imperialists
 			}
 		}
 	focus = {
@@ -2158,12 +2244,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Full_Destruction_of_Anarchism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.229
 			}
 		}
 	focus = {
@@ -2181,12 +2267,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Full_Destruction_of_Anarchism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.225
+			add_ideas = CAT_State_Under_a_Paramilitary
 			}
 		}
 	focus = {
@@ -2207,12 +2294,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Peninsula_Free_of_Imperialists
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.226
+			add_ideas = CAT_Cult_of_Catalan_Youth
 			}
 		}
 	focus = {
@@ -2233,12 +2321,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Peninsula_Free_of_Imperialists
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.228
+			add_ideas = CAT_Nationalism_Stems_from_Extremism
 			}
 		}
 	focus = {
@@ -2256,12 +2345,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Cult_of_Catalan_Youth
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.227
+			add_ideas = CAT_Burying_Spain_for_Good
 			}
 		}
 	focus = {
@@ -2272,14 +2362,18 @@ focus_tree = {
 		y = 8
 		available = {
 			has_government = totalist
-			has_war = no
+			has_country_leader = { name = "Jaume Compte i Canelles" }
 		}
-		cost = 1
+		bypass = {
+			has_government = totalist
+			has_country_leader = { name = "Jaume Compte i Canelles" }
+		}
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_political_power = 25
 			}
 		}
 	focus = {
@@ -2295,12 +2389,16 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Catalan_Revolution
 		}
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_war_support = 0.15
+			add_popularity = {
+			ideology = syndicalist
+			popularity = 0.1
+				}
 			}
 		}
 	focus = {
@@ -2316,12 +2414,16 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Catalan_Revolution
 		}
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_stability = 0.15
+			add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+				}
 			}
 		}
 	focus = {
@@ -2337,12 +2439,16 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Catalan_Revolution
 		}
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_command_power = 150
+			add_popularity = {
+			ideology = totalist
+			popularity = 0.1
+				}
 			}
 		}
 	focus = {
@@ -2358,12 +2464,16 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Catalan_Revolution
 		}
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_political_power = 150
+			add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+				}
 			}
 		}
 	focus = {
@@ -2388,12 +2498,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Secure_Anarchist_Support
 		}
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			remove_ideas = CAT_Unstable_Regime
+			country_event = CAT.21
 			}
 		}
 	focus = {
@@ -2405,15 +2516,19 @@ focus_tree = {
 		available = {
 			has_government = syndicalist
 		}
+		bypass = { 
+			has_government = syndicalist
+			has_country_flag = CAT_flag_NOS_elected
+		}
 		prerequisite = {
 			focus = CAT_Socialist_Democracy
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_political_power = 25
 			}
 		}
 	focus = {
@@ -2433,7 +2548,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Remember_the_Debt
 			}
 		}
 	focus = {
@@ -2453,7 +2568,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Death_is_Nothing
 			}
 		}
 	focus = {
@@ -2493,7 +2608,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Death_is_Nothing
 			}
 		}
 	focus = {
@@ -2513,7 +2628,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Idolizing_Action
 			}
 		}
 	focus = {
@@ -2533,7 +2648,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Pistols_of_Barcelona
 			}
 		}
 	focus = {
@@ -2579,7 +2694,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Nosotros_Lives_On
 			}
 		}
 	focus = {
@@ -2591,15 +2706,19 @@ focus_tree = {
 		available = {
 			has_government = totalist
 		}
+		bypass = { 
+			has_government = totalist
+			has_country_flag = CAT_flag_PCP_elected
+		}
 		prerequisite = {
 			focus = CAT_Socialist_Democracy
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_political_power = 25
 			}
 		}
 	focus = {
@@ -2619,7 +2738,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.239
+			add_ideas = CAT_Insurgents_of_Democracy
 			}
 		}
 	focus = {
@@ -2639,7 +2759,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.240
+			add_ideas = CAT_National_Marxism
 			}
 		}
 	focus = {
@@ -2659,7 +2780,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.241
+			add_ideas = CAT_Mobilize_JPCP
 			}
 		}
 	focus = {
@@ -2679,7 +2801,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.242
 			}
 		}
 	focus = {
@@ -2699,7 +2821,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Support_From_MOM
 			}
 		}
 	focus = {
@@ -2719,7 +2841,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Seize_Bourgeoisie_Wealth
 			}
 		}
 	focus = {
@@ -2765,7 +2887,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Marxist_Catalonia
 			}
 		}		
 	focus = {
@@ -2777,10 +2899,14 @@ focus_tree = {
 		available = {
 			has_government = radical_socialist
 		}
+		bypass = { 
+			has_government = radical_socialist
+			has_country_flag = CAT_flag_USC_elected
+		}
 		prerequisite = {
 			focus = CAT_Socialist_Democracy
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -2825,7 +2951,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Social_Justice
 			}
 		}
 	focus = {
@@ -2845,7 +2971,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Socialism_and_Catalanism_Interlinked
 			}
 		}
 	focus = {
@@ -2885,7 +3011,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Combat_Revolutionary_Lawlessness
 			}
 		}
 	focus = {
@@ -2905,7 +3031,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Army_to_Guarantee_Victory
 			}
 		}
 	focus = {
@@ -2925,7 +3051,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Seek_Socialist_Unity
 			}
 		}
 	focus = {
@@ -2951,7 +3077,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Catalonia_Free_of_Factionalism
 			}
 		}
 	focus = {
@@ -2963,10 +3089,14 @@ focus_tree = {
 		available = {
 			has_government = social_democrat
 		}
+		bypass = { 
+			has_government = social_democrat
+			has_country_flag = CAT_flag_ERCS_elected
+		}
 		prerequisite = {
 			focus = CAT_Socialist_Democracy
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -2991,7 +3121,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_From_Hegemon_to_Outlier
 			}
 		}
 	focus = {
@@ -3011,7 +3141,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Rapid_Syndicalization
 			}
 		}
 	focus = {
@@ -3031,7 +3161,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Rally_the_Rabassaires
 			}
 		}
 	focus = {
@@ -3051,7 +3181,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Wrest_Control_of_CACDI
 			}
 		}
 	focus = {
@@ -3071,7 +3201,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Shelter_Remaining_Republicans
 			}
 		}
 	focus = {
@@ -3091,7 +3221,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Fight_Against_Anarchy
 			}
 		}
 	focus = {
@@ -3137,7 +3267,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_The_Final_Surviving_Moderates
+			remove_ideas = CAT_From_Hegemon_to_Outlier
 			}
 		}
 		focus = {
@@ -3147,15 +3278,19 @@ focus_tree = {
 		x = -16
 		y = 1
 		available = {
-			has_completed_focus = CAT_Catalonia_Breathes_Free
 			has_government = paternal_autocrat
+			has_country_leader = { name = "Domenec Batet" }
 		}
-		cost = 1
+		bypass = { 
+			has_government = paternal_autocrat
+			has_country_leader = { name = "Domenec Batet" }
+		}
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_command_power = 25
 			}
 		}
 		focus = {
@@ -3175,7 +3310,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.172
+			add_ideas = CAT_Avoid_Unnecessary_Bloodshed
 			}
 		}
 		focus = {
@@ -3195,7 +3331,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.171
 			}
 		}
 		focus = {
@@ -3215,7 +3351,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.173
+			add_ideas = CAT_Evacuate_Affected_Areas
 			}
 		}
 		focus = {
@@ -3241,7 +3378,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.31
 			}
 		}
 		focus = {
@@ -3261,7 +3398,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.174
 			}
 		}
 		focus = {
@@ -3281,7 +3418,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.175
+			add_ideas = CAT_Purge_Officers_off_Ideologues
 			}
 		}
 		focus = {
@@ -3304,7 +3442,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.178
+			add_ideas = CAT_Military_Born_Out_of_Pacifism
 			}
 		}
 		focus = {
@@ -3327,7 +3466,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.177
+			add_ideas = CAT_Disband_All_Paramilitaries
 			}
 		}
 		focus = {
@@ -3350,7 +3490,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.176
+			add_ideas = CAT_Install_Loyal_Civilian_Administrators
 			}
 		}
 		focus = {
@@ -3408,7 +3549,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.179
+			add_ideas = CAT_Maintain_Military_Rule_Little_Longer
 			}
 		}
 	focus = {
@@ -3420,7 +3562,7 @@ focus_tree = {
 		available = {
 			has_completed_focus = CAT_Catalonia_Breathes_Free
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3437,7 +3579,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Economy_Free_of_Spain
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3450,14 +3592,14 @@ focus_tree = {
 					instant_build = yes
 					
 				}
-                               }
-                        swap_ideas = {
-					remove_idea = CAT_Economy_1
-					add_idea = CAT_Economy_2
+             }
+            swap_ideas = {
+			remove_idea = CAT_Economy_1
+			add_idea = CAT_Economy_2
 				
+				}
 			}
-		}
-                }
+        }
 	focus = {
 		id = CAT_Seize_Control_of_EFE
 		icon = GFX_goal_VIN_rebuild_railways
@@ -3467,7 +3609,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Economy_Free_of_Spain
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3503,7 +3645,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Economy_Free_of_Spain
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3533,7 +3675,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Moritz_and_Damm_Beer
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3563,7 +3705,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Moritz_and_Damm_Beer
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3576,9 +3718,9 @@ focus_tree = {
 			instant_build = yes
 					}
                }
-                        swap_ideas = {
-                         remove_idea = CAT_Economy_3
-                         add_idea = CAT_Economy_4
+              swap_ideas = {
+              remove_idea = CAT_Economy_3
+              add_idea = CAT_Economy_4
                         }
 			}
 		}
@@ -3591,7 +3733,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Seize_Control_of_EFE
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3602,13 +3744,12 @@ focus_tree = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
-					
 				}
 			}
-                 }
-                        swap_ideas = {
-                                 remove_ideas = CAT_Economy_4
-                                 add_ideas = CAT_Economy_5
+            swap_ideas = {
+            remove_idea = CAT_Economy_4
+            add_idea = CAT_Economy_5
+				}
 			}
 		}
 	focus = {
@@ -3620,7 +3761,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Fund_La_Transatlantica
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3655,7 +3796,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Contracts_with_FOCSA
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3678,7 +3819,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Hold_the_Fire_Again
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3698,7 +3839,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Hold_the_Fire_Again
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3716,7 +3857,7 @@ focus_tree = {
 			focus = CAT_New_World_Trade
 			focus = CAT_Mediterranean_Trade
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3736,12 +3877,15 @@ focus_tree = {
 		available = {
 			has_completed_focus = CAT_Catalonia_Breathes_Free
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			swap_ideas = {
+			remove_idea = CAT_Disorganized_Militias
+			add_idea = CAT_Exercit_Popular_0 
+				}
 			}
 		}
 	focus = {
@@ -3753,12 +3897,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Exercit_Popular
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			swap_ideas = {
+			remove_idea = CAT_Exercit_Popular_0
+			add_idea = CAT_Exercit_Popular_1
+				}
 			}
 		}
 	focus = {
@@ -3770,12 +3917,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Exercit_Popular
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			swap_ideas = {
+			remove_idea = CAT_Exercit_Popular_1
+			add_idea = CAT_Exercit_Popular_2
+				}
 			}
 		}
 	focus = {
@@ -3787,12 +3937,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Exercit_Popular
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			swap_ideas = {
+			remove_idea = CAT_Exercit_Popular_2
+			add_idea = CAT_Exercit_Popular_3
+				}
 			}
 		}
 	focus = {
@@ -3804,12 +3957,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Exercit_Popular
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			swap_ideas = {
+			remove_idea = CAT_Exercit_Popular_3
+			add_idea = CAT_Exercit_Popular_4
+				}
 			}
 		}
 	focus = {
@@ -3824,12 +3980,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Integrate_Militias
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			swap_ideas = {
+			remove_idea = CAT_Exercit_Popular_4
+			add_idea = CAT_Exercit_Popular_5
+				}
 			}
 		}
 	focus = {
@@ -3844,12 +4003,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Integrate_Militias
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			swap_ideas = {
+			remove_idea = CAT_Exercit_Popular_5
+			add_idea = CAT_Exercit_Popular_6
+				}
 			}
 		}
 	focus = {
@@ -3864,12 +4026,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Ditch_Mixed_Brigades
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			swap_ideas = {
+			remove_idea = CAT_Exercit_Popular_6
+			add_idea = CAT_Exercit_Popular_7
+				}
 			}
 		}
 	focus = {
@@ -3884,12 +4049,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Sadurni_Tanks
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			swap_ideas = {
+			remove_idea = CAT_Exercit_Popular_7
+			add_idea = CAT_Exercit_Popular_8
+				}
 			}
 		}
 	focus = {
@@ -3904,12 +4072,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Sadurni_Tanks
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			swap_ideas = {
+			remove_idea = CAT_Exercit_Popular_8
+			add_idea = CAT_Exercit_Popular_9
+				}
 			}
 		}
 	focus = {
@@ -3924,12 +4095,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Urban_Warfare_Specialists
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			swap_ideas = {
+			remove_idea = CAT_Exercit_Popular_9
+			add_idea = CAT_Exercit_Popular_10
+				}
 			}
 		}
 	focus = {
@@ -3941,7 +4115,7 @@ focus_tree = {
 		available = {
 			has_completed_focus = CAT_Catalonia_Breathes_Free
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3958,7 +4132,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Catalan_Irredentism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3978,7 +4152,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Iberianism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -3998,12 +4172,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Iberianism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
 			country_event = CAT.20
+			set_country_flag = CAT_balkanized_iberia
 			}
 		}
 	focus = {
@@ -4016,7 +4191,7 @@ focus_tree = {
 			focus = CAT_Catalan_Supremacism
 			focus = CAT_Galeusca
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -4028,12 +4203,12 @@ focus_tree = {
 		id = CAT_Iberia_under_Catalan_Heel
 		icon = GFX_goal_NFA_supremacy_of_pays_reel
 		relative_position_id = CAT_Catalan_Irredentism
-		x = 8
+		x = 4
 		y = 3
 		prerequisite = {
 			focus = CAT_Catalan_Supremacism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -4045,12 +4220,12 @@ focus_tree = {
 		id = CAT_Federation_of_Equals
 		icon = GFX_UKR_United_Indivisible_Federative_Empire
 		relative_position_id = CAT_Catalan_Irredentism
-		x = 4
+		x = 8
 		y = 3
 		prerequisite = {
 			focus = CAT_Galeusca
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -4068,7 +4243,7 @@ focus_tree = {
 			focus = CAT_Federation_of_Equals
 			focus = CAT_Iberia_under_Catalan_Heel
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -4086,7 +4261,7 @@ focus_tree = {
 			focus = CAT_Federation_of_Equals
 			focus = CAT_Iberia_under_Catalan_Heel
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -4104,7 +4279,7 @@ focus_tree = {
 			focus = CAT_Portugal_Policy
 			focus = CAT_Catalan_Sardinia
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -4121,7 +4296,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Catalan_Irredentism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -4138,12 +4313,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Mediterraneanism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.1005
+			set_country_flag = CAT_balkanized_iberia
 			}
 		}
 	focus = {
@@ -4155,12 +4331,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Mediterraneanism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.1001
 			}
 		}
 	focus = {
@@ -4175,12 +4351,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Reclamation_of_Aragon
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.1003
 			}
 		}
 	focus = {
@@ -4192,12 +4368,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Reclamation_of_Aragon
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.1004
 			}
 		}
 	focus = {
@@ -4209,12 +4385,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Question_of_Sardinia
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.1002
 			}
 		}
 	focus = {
@@ -4228,12 +4404,12 @@ focus_tree = {
 			focus = CAT_Roussillon_and_Corsica
 			focus = CAT_Reclamation_of_Naples
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.1006
 			}
 		}
 	focus = {
@@ -4247,12 +4423,12 @@ focus_tree = {
 			focus = CAT_Roussillon_and_Corsica
 			focus = CAT_Reclamation_of_Naples
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.1007
 			}
 		}
 	focus = {
@@ -4265,12 +4441,12 @@ focus_tree = {
 			focus = CAT_Proclamation_of_Thalassocracy
 			focus = CAT_Reclamation_of_Malta
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.1008
 			}
 		}
 	focus = {
@@ -4282,7 +4458,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Catalan_Irredentism
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -4299,7 +4475,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Alliances
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -4316,7 +4492,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Alliances
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -4333,7 +4509,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Alliances
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -4350,7 +4526,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Alliances
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -4367,7 +4543,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Alliances
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
@@ -4381,15 +4557,20 @@ focus_tree = {
 		relative_position_id = CAT_JEREC_coup
 		x = 0
 		y = 7
-		available = {
-			has_completed_focus = CAT_Catalonia_Breathes_Free
+		available = { 
+			has_government = paternal_autocrat
+			has_country_leader = { name = "Military Junta" }
 		}
-		cost = 1
+		bypass = { 
+			has_government = paternal_autocrat
+			has_country_leader = { name = "Military Junta" }
+		}
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_political_power = 25
 			}
 		}
 	focus = {
@@ -4401,12 +4582,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Spanish_Coup
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.180
+			add_ideas = CAT_Working_in_the_Shadows
 			}
 		}
 	focus = {
@@ -4418,12 +4600,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Spanish_Coup
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.181
 			}
 		}
 	focus = {
@@ -4441,12 +4623,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Working_in_the_Shadows
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.182
 			}
 		}
 	focus = {
@@ -4458,12 +4640,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Finding_Useful_Idiots
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.183
+			add_ideas = CAT_MonSocs
 			}
 		}
 	focus = {
@@ -4475,12 +4658,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Finding_Useful_Idiots
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.204
+			add_ideas = CAT_The_Kleptocrat
 			}
 		}
 	focus = {
@@ -4495,12 +4679,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_MonSocs
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.184
+			add_ideas = CAT_Assert_Dominance_over_Liga
 			}
 		}
 	focus = {
@@ -4515,12 +4700,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_MonSocs
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.185
+			add_ideas = CAT_Blame_ERC
 			}
 		}
 	focus = {
@@ -4535,12 +4721,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_MonSocs
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.186
+			add_ideas = CAT_Temporary_Alliance_With_Carlists
 			}
 		}
 	focus = {
@@ -4552,12 +4739,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_The_Kleptocrat
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.187
+			add_ideas = CAT_Dignified_Fairer_Sex
 			}
 		}
 	focus = {
@@ -4569,12 +4757,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_MonSocs
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Love_of_Catalonia
 			}
 		}
 	focus = {
@@ -4589,12 +4777,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Dignified_Fairer_Sex
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.188
+			add_ideas = CAT_Improve_Worker_Neighbourhoods
 			}
 		}
 	focus = {
@@ -4609,12 +4798,13 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Dignified_Fairer_Sex
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			country_event = CAT.189
+			add_ideas = CAT_Moral_Working_Class
 			}
 		}
 	focus = {
@@ -4629,12 +4819,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Dignified_Fairer_Sex
 		}
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = CAT.20
+			add_ideas = CAT_Stifle_Cynicism
 			}
 		}
 	focus = {
@@ -4652,12 +4842,1492 @@ focus_tree = {
 		prerequisite = {
 			focus = CAT_Improve_Worker_Neighbourhoods
 		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.190
+			add_ideas = CAT_Monarchy_and_Labour		
+			}
+		}
+	focus = {
+		id = CAT_Capita_Collons_Reign_of_Terror
+		icon = GFX_goal_VIN_black_fiefdom_southeast_asia
+		relative_position_id = CAT_Batet_Restores_Order
+		x = 0
+		y = 7
+		available = { 
+			has_government = national_populist
+			has_country_leader = { name = "Miquel Badia" }
+		}
+		bypass = { 
+			has_government = national_populist
+			has_country_leader = { name = "Miquel Badia" }
+		}
 		cost = 1
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
+			add_political_power = 25
+			}
+		}
+	focus = {
+		id = CAT_The_Horrors_of_the_Sewers
+		icon = GFX_goal_COR_Terror_in_the_night
+		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = CAT_Capita_Collons_Reign_of_Terror
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.191
+			}
+		}
+	focus = {
+		id = CAT_Rally_Surviving_Escamots
+		icon = GFX_goal_IRE_black_legion
+		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = CAT_Capita_Collons_Reign_of_Terror
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.192
+			}
+		}
+	focus = {
+		id = CAT_Shed_the_Red_Skin
+		icon = GFX_goal_NFA_ultranational_catholicism
+		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = CAT_Capita_Collons_Reign_of_Terror
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.193
+			}
+		}
+	focus = {
+		id = CAT_Destroy_Democratic_Falsehood
+		icon = GFX_goal_BAN_defeat_chaos
+		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = CAT_Capita_Collons_Reign_of_Terror
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.194
+			}
+		}
+	focus = {
+		id = CAT_Cleave_Off_The_Head_of_Nosotros
+		icon = GFX_goal_CRO_eliminate_syndies
+		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = CAT_Destroy_Democratic_Falsehood
+		}
+		prerequisite = {
+			focus = CAT_The_Horrors_of_the_Sewers
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.195
+			}
+		}
+	focus = {
+		id = CAT_Transform_Escamots_Into_Proper_Army
+		icon = GFX_goal_RUS_Green_Legionaries
+		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = CAT_Shed_the_Red_Skin
+		}
+		prerequisite = {
+			focus = CAT_Rally_Surviving_Escamots
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.196
+			}
+		}
+	focus = {
+		id = CAT_Follow_the_Romanian_Example
+		icon = GFX_goal_ROM_national_legionary_state
+		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
+		x = -2
+		y = 3
+		prerequisite = {
+			focus = CAT_Cleave_Off_The_Head_of_Nosotros
+		}
+		prerequisite = {
+			focus = CAT_Transform_Escamots_Into_Proper_Army
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
 			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Nationalist_Corporatism_Over_Socialist_Ruin
+		icon = GFX_goal_NFA_Towards_Corporatism
+		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = CAT_Cleave_Off_The_Head_of_Nosotros
+		}
+		prerequisite = {
+			focus = CAT_Transform_Escamots_Into_Proper_Army
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.198
+			}
+		}
+	focus = {
+		id = CAT_Our_Youthful_Roots
+		icon = GFX_goal_HON_Social_Youth
+		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
+		x = 2
+		y = 3
+		prerequisite = {
+			focus = CAT_Cleave_Off_The_Head_of_Nosotros
+		}
+		prerequisite = {
+			focus = CAT_Transform_Escamots_Into_Proper_Army
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+		focus = {
+		id = CAT_State_Built_on_Terror
+		icon = GFX_goal_CAN_national_security_act
+		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = CAT_Our_Youthful_Roots
+		}
+		prerequisite = {
+			focus = CAT_Follow_the_Romanian_Example
+		}
+		prerequisite = {
+			focus = CAT_Nationalist_Corporatism_Over_Socialist_Ruin
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.198
+			}
+		}
+	focus = {
+		id = CAT_Federal_Catalonia
+		icon = GFX_goal_CAN_Open_Federal_Relief_Camp
+		relative_position_id = CAT_Economy_Free_of_Spain
+		x = 15
+		y = 0
+		available = {
+			has_completed_focus = CAT_Catalonia_Breathes_Free
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Andorra
+		icon = GFX_goal_IRE_dodge_church_question
+		relative_position_id = CAT_Federal_Catalonia
+		x = 5
+		y = 1
+		prerequisite = {
+			focus = CAT_Federal_Catalonia
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Continued_Autonomy
+		icon = GFX_goal_CZE_autonomy_bills
+		relative_position_id = CAT_Federal_Catalonia
+		x = 6
+		y = 2
+		prerequisite = {
+			focus = CAT_Andorra
+		}
+		mutually_exclusive = {
+			focus = CAT_Taking_the_Co_Princes_Mantle
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Fortified_Buffer
+		icon = GFX_goal_POL_Establish_Border_Forts
+		relative_position_id = CAT_Federal_Catalonia
+		x = 6
+		y = 3
+		prerequisite = {
+			focus = CAT_Andorra
+		}
+		mutually_exclusive = {
+			focus = CAT_Taking_the_Co_Princes_Mantle
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Federal_Principality
+		icon = GFX_UKR_Federation_Central_Europe
+		relative_position_id = CAT_Federal_Catalonia
+		x = 6
+		y = 4
+		prerequisite = {
+			focus = CAT_Andorra
+		}
+		mutually_exclusive = {
+			focus = CAT_Taking_the_Co_Princes_Mantle
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Taking_the_Co_Princes_Mantle
+		icon = GFX_goal_BRG_Crown
+		relative_position_id = CAT_Federal_Catalonia
+		x = 4
+		y = 2
+		prerequisite = {
+			focus = CAT_Andorra
+		}
+		mutually_exclusive = {
+			focus = CAT_Continued_Autonomy
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Andorran_Catalan_Identity
+		icon = GFX_goal_AUS_Foster_Cooperation_Along_Danube
+		relative_position_id = CAT_Federal_Catalonia
+		x = 4
+		y = 3
+		prerequisite = {
+			focus = CAT_Taking_the_Co_Princes_Mantle
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Full_Unification
+		icon = GFX_goal_AFG_Kings_Mountain
+		relative_position_id = CAT_Federal_Catalonia
+		x = 4
+		y = 4
+		prerequisite = {
+			focus = CAT_Andorran_Catalan_Identity
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Two_Nations_as_One
+		icon = GFX_goal_EGY_United_in_Diversity
+		relative_position_id = CAT_Federal_Catalonia
+		x = 5
+		y = 5
+		prerequisite = {
+			focus = CAT_Full_Unification
+			focus = CAT_Federal_Principality
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Valencia
+		icon = GFX_goal_CAT_Valencia
+		relative_position_id = CAT_Federal_Catalonia
+		x = -5
+		y = 1
+		prerequisite = {
+			focus = CAT_Federal_Catalonia
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Reconcile_With_Regionalists
+		icon = GFX_goal_NEE_Those_Who_Sow_Peace
+		relative_position_id = CAT_Federal_Catalonia
+		x = -4
+		y = 2
+		prerequisite = {
+			focus = CAT_Valencia
+		}
+		mutually_exclusive = {
+			focus = CAT_Subjugate_Blaverism
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Give_Them_What_Spain_Never_Did
+		icon = GFX_goal_AUS_lady_liberty_palace
+		relative_position_id = CAT_Federal_Catalonia
+		x = -4
+		y = 3
+		prerequisite = {
+			focus = CAT_Reconcile_With_Regionalists
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Valencianism_as_Extension_of_Catalanism
+		icon = GFX_goal_AUS_Great_Peace_Great_Empire
+		relative_position_id = CAT_Federal_Catalonia
+		x = -4
+		y = 4
+		prerequisite = {
+			focus = CAT_Give_Them_What_Spain_Never_Did
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Subjugate_Blaverism
+		icon = GFX_goal_GER_Subjugate_East
+		relative_position_id = CAT_Federal_Catalonia
+		x = -6
+		y = 2
+		prerequisite = {
+			focus = CAT_Valencia
+		}
+		mutually_exclusive = {
+			focus = CAT_Reconcile_With_Regionalists
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Kick_Out_Lerrouxist_Dogs
+		icon = GFX_goal_SPR_Mistakes_of_the_Past
+		relative_position_id = CAT_Federal_Catalonia
+		x = -6
+		y = 3
+		prerequisite = {
+			focus = CAT_Subjugate_Blaverism
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Divide_and_Conquer
+		icon = GFX_goal_AST_break_urban_rural_divide
+		relative_position_id = CAT_Federal_Catalonia
+		x = -6
+		y = 4
+		prerequisite = {
+			focus = CAT_Kick_Out_Lerrouxist_Dogs
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+				}
+		}
+	focus = {
+		id = CAT_South_Pacified
+		icon = GFX_goal_SKM_Peaceful_Pink_Transition
+		relative_position_id = CAT_Federal_Catalonia
+		x = -5
+		y = 5
+		prerequisite = {
+			focus = CAT_Divide_and_Conquer
+			focus = CAT_Valencianism_as_Extension_of_Catalanism
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+				}
+		}
+	focus = {
+		id = CAT_Balearics
+		icon = GFX_goal_GUA_United_Fruit_Relations
+		relative_position_id = CAT_Federal_Catalonia
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = CAT_Federal_Catalonia
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Second_Attempt_at_Autonomy
+		icon = GFX_goal_SRD_deal_autonomy
+		relative_position_id = CAT_Federal_Catalonia
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = CAT_Balearics
+		}
+		mutually_exclusive = {
+			focus = CAT_Direct_Rule_From_Barcelona
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Menorca_Question
+		icon = GFX_goal_generic_isolation
+		relative_position_id = CAT_Federal_Catalonia
+		x = 1
+		y = 3
+		prerequisite = {
+			focus = CAT_Second_Attempt_at_Autonomy
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Budding_Balearic_Political_Scene
+		icon = GFX_goal_NFA_Eternal_Parliamentarism
+		relative_position_id = CAT_Federal_Catalonia
+		x = 1
+		y = 4
+		prerequisite = {
+			focus = CAT_Menorca_Question
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Direct_Rule_From_Barcelona
+		icon = GFX_goal_NYC_city_of_skyscrapers
+		relative_position_id = CAT_Federal_Catalonia
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = CAT_Balearics
+		}
+		mutually_exclusive = {
+			focus = CAT_Second_Attempt_at_Autonomy
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Crush_Remaining_Spaniards
+		icon = GFX_goal_RUS_crush_monarchists
+		relative_position_id = CAT_Federal_Catalonia
+		x = -1
+		y = 3
+		prerequisite = {
+			focus = CAT_Direct_Rule_From_Barcelona
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Absorb_Balearic_Parties
+		icon = GFX_focus_HKG_Dem_Central
+		relative_position_id = CAT_Federal_Catalonia
+		x = -1
+		y = 4
+		prerequisite = {
+			focus = CAT_Crush_Remaining_Spaniards
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Islands_Are_Ours
+		icon = GFX_goal_FIU_Open_Port_Tax_Havenry
+		relative_position_id = CAT_Federal_Catalonia
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = CAT_Absorb_Balearic_Parties
+			focus = CAT_Budding_Balearic_Political_Scene
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Pancatalan_Dreams_Achieved
+		icon = GFX_goal_AUS_Enact_Grunflachenplan
+		relative_position_id = CAT_Federal_Catalonia
+		x = 0
+		y = 6
+		prerequisite = {
+			focus = CAT_Two_Nations_as_One
+		}
+		prerequisite = {
+			focus = CAT_South_Pacified
+		}
+		prerequisite = {
+			focus = CAT_The_Islands_Are_Ours
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_Socialist_Foreign_Policy
+		icon = GFX_TRM_Fate_Of_Unions
+		relative_position_id = CAT_Catalan_Irredentism
+		x = 0
+		y = 8
+		available = {
+			has_completed_focus = CAT_Catalonia_Breathes_Free
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_Loyalty_to_Internationale
+		icon = GFX_SRI_future
+		relative_position_id = CAT_Socialist_Foreign_Policy
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = CAT_Socialist_Foreign_Policy
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_Launchpad_of_the_Revolution
+		icon = GFX_goal_FRA_strike_french_reaction
+		relative_position_id = CAT_Socialist_Foreign_Policy
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = CAT_Loyalty_to_Internationale
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_Clubbering_of_Castile
+		icon = GFX_goal_AUS_eagle_fallen
+		relative_position_id = CAT_Socialist_Foreign_Policy
+		x = -3
+		y = 2
+		prerequisite = {
+			focus = CAT_Loyalty_to_Internationale
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_The_Western_Beast_of_Reaction
+		icon = GFX_goal_POR_ban_republic
+		relative_position_id = CAT_Socialist_Foreign_Policy
+		x = -5
+		y = 2
+		prerequisite = {
+			focus = CAT_Loyalty_to_Internationale
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_The_German_Western_Flank
+		icon = GFX_MOR_airforce
+		relative_position_id = CAT_Socialist_Foreign_Policy
+		x = -4
+		y = 3
+		prerequisite = {
+			focus = CAT_The_Western_Beast_of_Reaction
+		}
+		prerequisite = {
+			focus = CAT_Clubbering_of_Castile
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Critical_Support_to_Egypt
+		icon = GFX_goal_UKR_comrade
+		relative_position_id = CAT_Socialist_Foreign_Policy
+		x = -2
+		y = 3
+		prerequisite = {
+			focus = CAT_Clubbering_of_Castile
+		}
+		prerequisite = {
+			focus = CAT_Launchpad_of_the_Revolution
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_European_Revolution
+		icon = GFX_goal_FRA_jacobin_nationalism
+		relative_position_id = CAT_Socialist_Foreign_Policy
+		x = -3
+		y = 4
+		prerequisite = {
+			focus = CAT_Critical_Support_to_Egypt
+		}
+		prerequisite = {
+			focus = CAT_The_German_Western_Flank
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Red_Nationalism
+		icon = GFX_goal_WHR_New_Man_Born_Seas_Fire
+		relative_position_id = CAT_Socialist_Foreign_Policy
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = CAT_Socialist_Foreign_Policy
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Liberating_the_Spanish_Prison
+		icon = GFX_goal_NFA_junta_prisoners
+		relative_position_id = CAT_Socialist_Foreign_Policy
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = CAT_Red_Nationalism
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_Saving_Sardinia_From_Reaction
+		icon = GFX_goal_WHR_Groups_Revolutionary_Actives
+		relative_position_id = CAT_Socialist_Foreign_Policy
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = CAT_Red_Nationalism
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_Commitment_to_Rifian_Cause
+		icon = GFX_goal_AFG_Mending_Our_Ties_Minor_Tribes
+		relative_position_id = CAT_Socialist_Foreign_Policy
+		x = 5
+		y = 2
+		prerequisite = {
+			focus = CAT_Red_Nationalism
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_Red_Mediterraneism
+		icon = GFX_ITA_sea_bounty
+		relative_position_id = CAT_Socialist_Foreign_Policy
+		x = 4
+		y = 3
+		prerequisite = {
+			focus = CAT_Commitment_to_Rifian_Cause
+		}
+		prerequisite = {
+			focus = CAT_Saving_Sardinia_From_Reaction
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Anti_Colonial_Action
+		icon = GFX_UKR_Anticolonial_Struggle
+		relative_position_id = CAT_Socialist_Foreign_Policy
+		x = 2
+		y = 3
+		prerequisite = {
+			focus = CAT_Saving_Sardinia_From_Reaction
+		}
+		prerequisite = {
+			focus = CAT_Liberating_the_Spanish_Prison
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_True_Internationale
+		icon = GFX_VNC_model_of_dem_socialism
+		relative_position_id = CAT_Socialist_Foreign_Policy
+		x = 3
+		y = 4
+		prerequisite = {
+			focus = CAT_Anti_Colonial_Action
+		}
+		prerequisite = {
+			focus = CAT_Red_Mediterraneism
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}			
+	focus = {
+		id = CAT_Monarchist_Catalonia
+		icon = GFX_goal_BRG_Crown
+		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
+		x = 15
+		y = 1
+		available = {
+			has_completed_focus = CAT_Catalonia_Breathes_Free
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}			
+	focus = {
+		id = CAT_The_Andorran_Theocrat
+		icon = GFX_goal_SRD_enshrine_church_collaboration
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = 6
+		y = 1
+		prerequisite = {
+			focus = CAT_Monarchist_Catalonia
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_Ties_to_Vatican
+		icon = GFX_goal_SRI_papalcrown
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = 7
+		y = 2
+		prerequisite = {
+			focus = CAT_The_Andorran_Theocrat
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_End_to_Anticlericalism
+		icon = GFX_PAP_holy_war
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = 5
+		y = 2
+		prerequisite = {
+			focus = CAT_The_Andorran_Theocrat
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Obsessive_Catalanism
+		icon = GFX_goal_ALB_Reaction_Fire
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = 5
+		y = 4
+		prerequisite = {
+			focus = CAT_End_to_Anticlericalism
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Bishop_of_Law
+		icon = GFX_goal_PAP_crusade
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = 7
+		y = 4
+		prerequisite = {
+			focus = CAT_Ties_to_Vatican
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Denounce_Spanish_Militarism
+		icon = GFX_goal_GEO_Root_Out_Resistance_Military
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = 6
+		y = 3
+		prerequisite = {
+			focus = CAT_The_Andorran_Theocrat
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Blessed_State_of_Andorra_Catalonia
+		icon = GFX_goal_CZE_respective_church
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = 6
+		y = 5
+		prerequisite = {
+			focus = CAT_Denounce_Spanish_Militarism
+		}
+		prerequisite = {
+			focus = CAT_The_Bishop_of_Law
+		}
+		prerequisite = {
+			focus = CAT_Obsessive_Catalanism
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}			
+	focus = {
+		id = CAT_The_Old_Overlord
+		icon = GFX_goal_AUS_Austrian_Auspices
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = -6
+		y = 1
+		prerequisite = {
+			focus = CAT_Monarchist_Catalonia
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Restore_the_Miquelets
+		icon = GFX_UKR_Austrian_Intervention
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = -7
+		y = 2
+		prerequisite = {
+			focus = CAT_The_Old_Overlord
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_Monarchia_Catholica
+		icon = GFX_goal_COL_Catholic_Pure_Colombia
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = -5
+		y = 2
+		prerequisite = {
+			focus = CAT_The_Old_Overlord
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Catalan_Golden_Age
+		icon = GFX_goal_AUS_culture_golden_age
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = -5
+		y = 4
+		prerequisite = {
+			focus = CAT_Monarchia_Catholica
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Catalan_Price_Revolution
+		icon = GFX_goal_FIU_i_like_money
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = -7
+		y = 4
+		prerequisite = {
+			focus = CAT_Restore_the_Miquelets
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Experts_of_the_Adriabund
+		icon = GFX_goal_AUS_donau_adriabund
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = -6
+		y = 3
+		prerequisite = {
+			focus = CAT_The_Old_Overlord
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Reclamation_of_the_Spains
+		icon = GFX_CAR_plus_ultra
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = -6
+		y = 5
+		prerequisite = {
+			focus = CAT_The_Catalan_Golden_Age
+		}
+		prerequisite = {
+			focus = CAT_Experts_of_the_Adriabund
+		}
+		prerequisite = {
+			focus = CAT_The_Catalan_Price_Revolution
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}		
+	focus = {
+		id = CAT_The_French_Connection
+		icon = GFX_goal_NFA_In_Action_Action_Francaise
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = CAT_Monarchist_Catalonia
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_Denounce_the_False_Regimes
+		icon = GFX_goal_FRA_strike_french_reaction_jacobin
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = -3
+		y = 2
+		prerequisite = {
+			focus = CAT_The_French_Connection
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_Occitan_and_Roussillon_Connections
+		icon = GFX_goal_NFA_Decentralize_France
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = CAT_The_French_Connection
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Peoples_King
+		icon = GFX_goal_NFA_Return_France_Eternelle
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = -1
+		y = 4
+		prerequisite = {
+			focus = CAT_Occitan_and_Roussillon_Connections
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Learning_from_French_Monarchism
+		icon = GFX_goal_NFA_Plea_Action_Francaise
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = -3
+		y = 4
+		prerequisite = {
+			focus = CAT_Denounce_the_False_Regimes
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_French_Military_Tradition
+		icon = GFX_goal_NFA_Frances_True_Colonies
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = -2
+		y = 3
+		prerequisite = {
+			focus = CAT_The_French_Connection
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Return_of_the_True_Crown
+		icon = GFX_goal_NFA_Eternal_France
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = -2
+		y = 5
+		prerequisite = {
+			focus = CAT_The_French_Military_Tradition
+		}
+		prerequisite = {
+			focus = CAT_Learning_from_French_Monarchism
+		}
+		prerequisite = {
+			focus = CAT_The_Peoples_King
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}		
+	focus = {
+		id = CAT_The_Italian_Exile
+		icon = GFX_goal_SRD_kingdom_of_sardinia
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = CAT_Monarchist_Catalonia
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_Unity_With_the_Lonely_Isle
+		icon = GFX_goal_SIC_sardinias_final_offer
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = CAT_The_Italian_Exile
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}	
+	focus = {
+		id = CAT_Affirm_Entente_Ties
+		icon = GFX_goal_CAN_Open_Federal_Relief_Camp
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = CAT_The_Italian_Exile
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Explorer_King
+		icon = GFX_goal_SRD_royalist_fervor
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = 1
+		y = 4
+		prerequisite = {
+			focus = CAT_Affirm_Entente_Ties
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_Staking_Our_Claim_on_Spain
+		icon = GFX_goal_SRD_restore_sassari_brigades
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = 3
+		y = 4
+		prerequisite = {
+			focus = CAT_Unity_With_the_Lonely_Isle
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Indomitable_Italian_Spirit
+		icon = GFX_SRD_irridentism
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = 2
+		y = 3
+		prerequisite = {
+			focus = CAT_The_Italian_Exile
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+			}
+		}
+	focus = {
+		id = CAT_The_Union_of_Two_Peninsulas
+		icon = GFX_UKR_United_Indivisible_Federative_Empire
+		relative_position_id = CAT_Monarchist_Catalonia
+		x = 2
+		y = 5
+		prerequisite = {
+			focus = CAT_The_Indomitable_Italian_Spirit
+		}
+		prerequisite = {
+			focus = CAT_Staking_Our_Claim_on_Spain
+		}
+		prerequisite = {
+			focus = CAT_The_Explorer_King
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = CAT.20
+
 			}
 		}
 	}

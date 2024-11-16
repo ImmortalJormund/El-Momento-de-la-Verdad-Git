@@ -2439,6 +2439,24 @@ ideas = {
 				industrial_capacity_factory = 0.1
 			}
 		}
+		SPR_shackled_castile = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_refugees_work" }
+			picture = agro_industrial_army
+			allowed = { always = no }
+			modifier = {
+				ai_call_ally_desire_factor = -1000
+				ai_join_ally_desire_factor = -1000
+				political_power_factor = -0.5
+				conscription_factor = -0.85
+				war_support_factor = -0.65
+				stability_factor = -0.65
+				stability_factor = -0.65
+				surrender_limit = -0.4
+				industrial_capacity_factory = -0.4
+				industrial_capacity_dockyard = -0.4
+				army_morale_factor = -0.4
+			}
+		}
 	}
 
 	#############

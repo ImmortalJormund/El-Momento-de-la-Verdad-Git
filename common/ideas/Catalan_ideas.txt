@@ -484,19 +484,598 @@ ideas = {
 				resistance_growth = -0.05
 			}
 		}
-                CAT_Economy_1 = { 
+		CAT_Cult_of_the_Ideal_Catalan = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				monthly_population = 0.2
+				compliance_growth = -0.01
+			}
+		}
+		CAT_Anti_Spanish_Propaganda = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = { army_attack_factor = 0.10 }
+				targeted_modifier = {
+				tag = SPR
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		CAT_Sway_Nondemocratic_Nosaltres_Sols = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				conscription = 0.03
+				national_populist_drift = -0.01
+				weekly_manpower = 150
+			}
+		}
+		CAT_Sorelianism_Without_French_Supremacism = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				production_factory_efficiency_gain_factor = 0.11
+				consumer_goods_factor = -0.15	
+				local_resources_factor = 0.15
+			}
+		}
+		CAT_Unyielding_Statism = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				stability_factor = -0.13
+				war_stability_factor = 0.25	
+				army_morale_factor = 0.12
+				encryption_factor = 0.1
+				decryption_factor = 0.1			
+			}
+		}
+		CAT_Liberation_War = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = { army_attack_factor = 0.05 }
+				targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		CAT_Dismantle_Misguided_ERC = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				stability_factor = -0.10
+				social_democrat_drift = -0.05	
+				consumer_goods_factor = -0.2
+			}
+		}
+		CAT_Full_Destruction_of_Anarchism = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				war_support_factor = 0.10
+				syndicalist_drift = -0.05	
+				industrial_capacity_factory = 0.15
+				conscription_factor = -0.1
+			}
+		}
+		CAT_Peninsula_Free_of_Imperialists = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				war_support_factor = 0.12
+				totalist_drift = 0.03	
+				political_power_factor = 0.15
+				conscription_factor = 0.15
+			}
+		}
+		CAT_State_Under_a_Paramilitary = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_org_factor = 0.10
+				stability_factor = -0.15
+			}
+		}
+		CAT_Cult_of_Catalan_Youth = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				monthly_population = 0.25
+				research_speed_factor = 0.1
+				army_speed_factor = 0.10
+				conscription_factor = 0.11
+			}
+		}
+		CAT_Nationalism_Stems_from_Extremism = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				stability_factor = -0.25
+				research_speed_factor = -0.05
+				army_attack_factor = 0.10
+				breakthrough_factor = 0.1
+			}
+		}
+		CAT_Burying_Spain_for_Good = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = { army_attack_factor = 0.05 }
+				targeted_modifier = {
+				tag = SPR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		CAT_Unstable_Regime = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				stability_factor = -0.2
+				research_speed_factor = -0.05
+				army_org_factor = -0.10	
+			}
+		}
+		CAT_Remember_the_Debt = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				stability_factor = -0.1
+				political_power_gain = -0.05
+			}
+		}
+		CAT_Death_is_Nothing = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				war_support_factor = 0.08
+				army_attack_factor = 0.05	
+				breakthrough_factor = 0.05
+			}
+		}
+		CAT_Punching_Harder_than_Others = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				land_night_attack = 0.15
+				fortification_damage = 0.15
+				industrial_capacity_factory = 0.11	
+				industrial_capacity_dockyard = 0.11
+			}
+		}
+		CAT_Idolizing_Action = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				max_dig_in = -0.1
+				terrain_penalty_reduction = -0.15
+				river_crossing_factor = -0.15	
+				army_speed_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
+			}
+		}
+		CAT_Pistols_of_Barcelona = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				weekly_manpower = 250
+				conscription_factor = 0.2
+				production_speed_arms_factory_factor = 0.15	
+			}
+		}
+		CAT_Nosotros_Lives_On = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				stability_factor = 0.12
+				war_support_factor = 0.12
+				conscription = 0.02
+			}
+		}
+		CAT_Insurgents_of_Democracy = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				resistance_growth_on_our_occupied_states = 0.15
+				resistance_damage_to_garrison_on_our_occupied_states = 0.15
+			}
+		}
+		CAT_National_Marxism = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				research_speed_factor = 0.05
+				totalist_drift = 0.02
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		CAT_Mobilize_JPCP = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				weekly_manpower = 250
+				conscription_factor = 0.1
+				political_power_cost = -0.07
+				army_org_factor = 0.1
+			}
+		}
+		CAT_Support_From_MOM = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				production_speed_buildings_factor = 0.07
+				industrial_capacity_factory = 0.07
+				industrial_capacity_dockyard = 0.07
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		CAT_Seize_Bourgeoisie_Wealth = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				consumer_goods_factor = -0.25
+				stability_factor = -0.1
+				political_power_gain = -0.03
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		CAT_Marxist_Catalonia = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_factor = 0.25
+				stability_factor = 0.1
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.08
+			}
+		}
+		CAT_Social_Justice = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_factor = -0.1
+				stability_factor = 0.2
+				consumer_goods_factor = 0.15
+				monthly_population = 0.35
+			}
+		}
+		CAT_Socialism_and_Catalanism_Interlinked = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				party_popularity_stability_factor = 0.2
+				war_support_weekly_factor = 0.002
+				army_attack_factor = 0.05
+				conscription_factor = 0.15
+			}
+		}
+		CAT_Combat_Revolutionary_Lawlessness = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_gain = -0.05
+				conscription_factor = -0.1
+				industrial_capacity_factory = 0.07
+				production_speed_buildings_factor = 0.07
+			}
+		}
+		CAT_Army_to_Guarantee_Victory = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				experience_gain_army = 0.12
+				attrition = -0.15
+				max_planning_factor = 0.2
+				army_morale_factor = 0.09
+				army_org_factor = 0.09
+			}
+		}
+		CAT_Seek_Socialist_Unity = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_cost = -0.15
+				consumer_goods_factor = -0.15
+				totalist_drift = 0.01
+				syndicalist_drift = 0.01
+				radical_socialist_drift = 0.03
+				social_democrat_drift = 0.01
+			}
+		}
+		CAT_Catalonia_Free_of_Factionalism = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_gain = 0.03
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.06
+				industrial_capacity_factory = 0.06
+			}
+		}
+		CAT_From_Hegemon_to_Outlier = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_gain = -0.03
+				social_democrat_drift = -0.01
+			}
+		}
+		CAT_Rapid_Syndicalization = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_gain = 0.05
+				consumer_goods_factor = 0.1
+				production_factory_start_efficiency_factor = 0.04
+				production_factory_max_efficiency_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.04
+				production_lack_of_resource_penalty_factor = 0.04
+				line_change_production_efficiency_factor = 0.04
+			}
+		}
+		CAT_Rally_the_Rabassaires = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				conscription_factor = 0.14
+				stability_factor = 0.1
+				local_resources_factor = 0.14
+				local_supplies = 0.14
+			}
+		}
+		CAT_Wrest_Control_of_CACDI = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_cost = 0.05
+				industrial_capacity_factory = 0.12
+				industrial_capacity_dockyard = 0.12
+			}
+		}
+		CAT_Shelter_Remaining_Republicans = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_gain = 0.06
+				stability_weekly = 0.001
+				social_democrat_drift = 0.03
+			}
+		}
+		CAT_Fight_Against_Anarchy = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_gain = -0.04
+				resistance_damage_to_garrison = -0.2
+				party_popularity_stability_factor = 0.15
+				army_morale_factor = 0.1
+			}
+		}
+		CAT_The_Final_Surviving_Moderates = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_gain = 0.03
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				consumer_goods_factor = -0.2
+			}
+		}
+		CAT_Evacuate_Affected_Areas = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_gain = -0.05
+				monthly_population = 0.15
+			}
+		}
+		CAT_Avoid_Unnecessary_Bloodshed = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_gain = 0.05
+				stability_factor = 0.1
+				party_popularity_stability_factor = 0.1
+			}
+		}
+		CAT_Purge_Officers_off_Ideologues = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_factor = 0.15
+				experience_gain_army = -0.05
+				army_morale_factor = 0.1
+				army_org_factor = 0.1
+				conscription_factor = -0.1
+			}
+		}
+		CAT_Military_Born_Out_of_Pacifism = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				experience_loss_factor = -0.15
+				experience_gain_army = 0.12
+				army_infantry_defence_factor = 0.15
+				army_infantry_attack_factor = -0.05
+				dig_in_speed_factor = 0.2
+				recon_factor_while_entrenched = 0.22
+				conscription = -0.01
+			}
+		}
+		CAT_Disband_All_Paramilitaries = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				army_org_factor = 0.09
+				army_morale_factor = 0.12
+				encryption_factor = 0.15
+				national_populist_drift = -0.01
+				totalist_drift = -0.01
+				stability_factor = 0.2
+			}
+		}
+		CAT_Install_Loyal_Civilian_Administrators = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_cost = -0.06
+				consumer_goods_factor = -0.2
+				war_support_factor = -0.2
+				conscription_factor = 0.1
+			}
+		}
+		CAT_Maintain_Military_Rule_Little_Longer = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_factor = -0.1
+				party_popularity_stability_factor = -0.1
+				conscription_factor = 0.15
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		CAT_Working_in_the_Shadows = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_factor = -0.1
+				party_popularity_stability_factor = -0.1
+				required_garrison_factor = -0.2
+				resistance_damage_to_garrison = -0.15
+			}
+		}
+		CAT_MonSocs = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				social_democrat_drift = 0.01
+				production_factory_efficiency_gain_factor = 0.1
+				monthly_population = 0.1
+			}
+		}
+		CAT_The_Kleptocrat = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				authoritarian_democrat_drift = 0.01
+				consumer_goods_factor = -0.15
+				political_power_cost = -0.05
+			}
+		}
+		CAT_Assert_Dominance_over_Liga = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				social_conservative_drift = -0.01
+				consumer_goods_factor = -0.1
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		CAT_Blame_ERC = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				stability_factor = 0.05
+				radical_socialist_drift = -0.01
+				local_resources_factor = 0.1
+				line_change_production_efficiency_factor = 0.08
+			}
+		}
+		CAT_Temporary_Alliance_With_Carlists = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				stability_factor = -0.07
+				conscription_factor = 0.2
+				resistance_growth = -0.05
+				consumer_goods_factor = -0.15
+			}
+		}
+		CAT_Dignified_Fairer_Sex = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				stability_factor = 0.1
+				conscription_factor = 0.15
+				production_factory_max_efficiency_factor = 0.07
+				monthly_population = -0.1
+			}
+		}
+		CAT_Love_of_Catalonia = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				war_support_factor = 0.1
+				army_morale_factor = 0.15
+				command_power_gain = 0.07
+			}
+		}
+		CAT_Improve_Worker_Neighbourhoods = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_gain = -0.05
+				monthly_population = 0.1
+				stability_weekly = 0.002
+				party_popularity_stability_factor = 0.1
+				consumer_goods_factor = 0.12
+			}
+		}
+		CAT_Moral_Working_Class = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				syndicalist_drift = -0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_lack_of_resource_penalty_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+			}
+		}
+		CAT_Stifle_Cynicism = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_gain = 0.02
+				industrial_capacity_factory = 0.07
+				industrial_capacity_dockyard = 0.07
+				research_speed_factor = 0.06
+			}
+		}
+		CAT_Monarchy_and_Labour = { 
+			picture = generic_economic_increase
+			allowed = { always = no }
+            modifier = {		
+				political_power_gain = 0.05
+				justify_war_goal_time = -0.25
+				compliance_growth = 0.05
+				conscription_factor = 0.15
+			}
+		}
+            CAT_Economy_1 = { 
  			picture = generic_economic_increase
 			allowed = { always = no }
             modifier = {
 			production_speed_buildings_factor = 0.10
 			}
 		}
-                CAT_Economy_2 = { 
+            CAT_Economy_2 = { 
  			picture = generic_economic_increase
 			allowed = { always = no }
             modifier = {
 			production_speed_buildings_factor = 0.15
-                        production_speed_naval_base_factor = 0.15
+            production_speed_naval_base_factor = 0.15
 			production_speed_dockyard_factor = 0.1
 			}
 		}
@@ -537,10 +1116,10 @@ ideas = {
 			production_speed_arms_factory_factor = 0.1
 			production_factory_efficiency_gain_factor = 0.1
 			line_change_production_efficiency_factor = 0.1
-                        global_building_slots_factor = 0.1
-                        artillery_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
+            global_building_slots_factor = 0.1
+            artillery_equipment = {
+			build_cost_ic = -0.1
+			instant = yes
 				}
 			}
 		}
@@ -621,11 +1200,174 @@ ideas = {
 			allowed = { always = no }
             modifier = {
 			production_lack_of_resource_penalty_factor = -0.13
-                        line_change_production_efficiency_factor = 0.07
-                        production_speed_arms_factory_factor = 0.13
+            line_change_production_efficiency_factor = 0.07
+            production_speed_arms_factory_factor = 0.13
 			}
 		}
- 
- 
-}
-}
+          CAT_Disorganized_Militias = { 
+ 			picture = army_of_militias
+			allowed = { always = no }
+            modifier = {
+			army_org_factor = -0.17
+            army_morale_factor = -0.17
+            planning_speed = -0.25
+			conscription_factor = 0.35
+			army_speed_factor = 0.15
+			}
+		}
+          CAT_Exercit_Popular_0 = { 
+ 			picture = republican_military
+			allowed = { always = no }
+            modifier = {
+			army_org_factor = -0.15
+            army_morale_factor = -0.15
+            planning_speed = -0.25
+			conscription_factor = 0.15
+			}
+		}
+          CAT_Exercit_Popular_1 = { 
+ 			picture = republican_military
+			allowed = { always = no }
+            modifier = {
+			army_org_factor = -0.11
+            army_morale_factor = -0.11
+            planning_speed = -0.2
+			conscription_factor = 0.1
+			}
+		}
+          CAT_Exercit_Popular_2 = { 
+ 			picture = republican_military
+			allowed = { always = no }
+            modifier = {
+			army_org_factor = -0.08
+            army_morale_factor = -0.08
+            planning_speed = -0.15
+			conscription_factor = 0.05
+			}
+		}
+          CAT_Exercit_Popular_3 = { 
+ 			picture = republican_military
+			allowed = { always = no }
+            modifier = {
+			army_org_factor = -0.05
+            army_morale_factor = -0.05
+            planning_speed = -0.11
+			supply_consumption_factor = -0.05
+			}
+		}
+          CAT_Exercit_Popular_4 = { 
+ 			picture = republican_military
+			allowed = { always = no }
+            modifier = {
+			army_org_factor = -0.02
+            army_morale_factor = -0.02
+            planning_speed = -0.06
+			supply_consumption_factor = -0.1
+			org_loss_when_moving = -0.1
+			}
+		}
+          CAT_Exercit_Popular_5 = { 
+ 			picture = republican_military
+			allowed = { always = no }
+            modifier = {
+			army_org_factor = 0.05
+            army_morale_factor = 0.05
+            planning_speed = 0.05
+			supply_consumption_factor = -0.05
+			org_loss_when_moving = -0.1
+			breakthrough_factor = 0.05
+			army_speed_factor = 0.05
+			}
+		}
+          CAT_Exercit_Popular_6 = { 
+ 			picture = republican_military
+			allowed = { always = no }
+            modifier = {
+			army_org_factor = 0.07
+            army_morale_factor = 0.07
+            planning_speed = 0.07
+			org_loss_when_moving = -0.1
+			breakthrough_factor = 0.05
+			army_speed_factor = 0.07
+			fortification_damage = 0.1
+			army_armor_attack_factor = 0.11
+			army_armor_defence_factor = 0.11
+			}
+		}
+          CAT_Exercit_Popular_7 = { 
+ 			picture = republican_military
+			allowed = { always = no }
+            modifier = {
+			army_org_factor = 0.1
+            army_morale_factor = 0.1
+            planning_speed = 0.15
+			org_loss_when_moving = -0.1
+			breakthrough_factor = 0.1
+			army_speed_factor = 0.07
+			fortification_damage = 0.15
+			army_armor_attack_factor = 0.11
+			army_armor_defence_factor = 0.11
+			army_infantry_attack_factor = 0.05
+			experience_loss_factor = -0.2
+			}
+		}
+          CAT_Exercit_Popular_8 = { 
+ 			picture = republican_military
+			allowed = { always = no }
+            modifier = {
+			army_org_factor = 0.1
+            army_morale_factor = 0.1
+            planning_speed = 0.15
+			org_loss_when_moving = -0.1
+			breakthrough_factor = 0.1
+			army_speed_factor = 0.07
+			fortification_damage = 0.15
+			army_armor_attack_factor = 0.11
+			army_armor_defence_factor = 0.11
+			army_infantry_attack_factor = 0.05
+			experience_loss_factor = -0.2
+			army_artillery_attack_factor = 0.12
+			army_artillery_defence_factor = 0.12
+			}
+		}
+          CAT_Exercit_Popular_9 = { 
+ 			picture = republican_military
+			allowed = { always = no }
+            modifier = {
+			army_org_factor = 0.12
+            army_morale_factor = 0.12
+            planning_speed = 0.15
+			org_loss_when_moving = -0.1
+			breakthrough_factor = 0.1
+			army_speed_factor = 0.07
+			fortification_damage = 0.15
+			army_armor_attack_factor = 0.11
+			army_armor_defence_factor = 0.11
+			army_infantry_attack_factor = 0.1
+			army_infantry_defence_factor = 0.1
+			experience_loss_factor = -0.2
+			army_artillery_attack_factor = 0.12
+			army_artillery_defence_factor = 0.12
+			}
+		}
+          CAT_Exercit_Popular_10 = { 
+ 			picture = republican_military
+			allowed = { always = no }
+            modifier = {
+			army_org_factor = 0.15
+            army_morale_factor = 0.15
+            planning_speed = 0.25
+			org_loss_when_moving = -0.1
+			breakthrough_factor = 0.1
+			army_speed_factor = 0.07
+			fortification_damage = 0.15
+			army_armor_attack_factor = 0.12
+			army_armor_defence_factor = 0.12
+			army_infantry_attack_factor = 0.12
+			army_infantry_defence_factor = 0.12
+			experience_loss_factor = -0.2
+			army_artillery_attack_factor = 0.12
+			army_artillery_defence_factor = 0.12
+			skill_bonus_factor = 0.1
+			}
+		}

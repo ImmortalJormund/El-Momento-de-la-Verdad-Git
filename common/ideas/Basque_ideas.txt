@@ -675,7 +675,7 @@ ideas = {
 			picture = SCW_SPA_fervor
 			allowed = { always = no }
             modifier = {
-				stability_factor = 0.15
+				 
 				war_support_factor = 0.15
 				army_org_regain = 0.07
 				army_core_attack_factor = 0.07

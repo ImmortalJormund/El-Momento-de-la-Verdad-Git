@@ -77,14 +77,14 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Urania Mella"
-	picture = "gfx/leaders/Operatives/EuropeFemale28.png"
+	picture = "gfx/leaders/GLC/Portrait_GLC_Urania_Mella_Serrano.png"
 	expire = "1.1.1"
 	ideology = feminist_syndicalist_subtype 
 }
 
 create_country_leader = {
 	name = "Basilio Álvarez"
-	picture = "gfx/leaders/Generic/Portrait_Europe_Generic_new_12.png"
+	picture = "gfx/leaders/GLC/Portrait_GLC_Basilio_Alvarez.png"
 	expire = "1.1.1"
 	ideology = christian_socialism_subtype
 }
