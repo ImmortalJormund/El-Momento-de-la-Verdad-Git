@@ -505,9 +505,9 @@ ideas = {
 			allowed = { always = no }
             modifier = {
 			production_speed_buildings_factor = 0.2
-                        production_speed_naval_base_factor = 0.15
+            production_speed_naval_base_factor = 0.15
 			production_speed_dockyard_factor = 0.1
-                        production_speed_rail_way_factor = 0.2
+			production_speed_rail_way_factor = 0.2
 			production_speed_infrastructure_factor = 0.2
 			}
 		}
@@ -516,12 +516,12 @@ ideas = {
 			allowed = { always = no }
             modifier = {
 			production_speed_buildings_factor = 0.2
-                        production_speed_naval_base_factor = 0.15
+			production_speed_naval_base_factor = 0.15
 			production_speed_dockyard_factor = 0.1
-                        production_speed_rail_way_factor = 0.2
+			production_speed_rail_way_factor = 0.2
 			production_speed_infrastructure_factor = 0.2
-                        production_speed_arms_factory_factor = 0.1
-                        production_factory_efficiency_gain_factor = 0.1
+			production_speed_arms_factory_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.1
 			line_change_production_efficiency_factor = 0.1
 			}
 		}
@@ -530,12 +530,12 @@ ideas = {
 			allowed = { always = no }
             modifier = {
 			production_speed_buildings_factor = 0.2
-                        production_speed_naval_base_factor = 0.15
+			production_speed_naval_base_factor = 0.15
 			production_speed_dockyard_factor = 0.1
-                        production_speed_rail_way_factor = 0.2
+			production_speed_rail_way_factor = 0.2
 			production_speed_infrastructure_factor = 0.2
-                        production_speed_arms_factory_factor = 0.1
-                        production_factory_efficiency_gain_factor = 0.1
+			production_speed_arms_factory_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.1
 			line_change_production_efficiency_factor = 0.1
                         global_building_slots_factor = 0.1
                         artillery_equipment = {
@@ -591,17 +591,17 @@ ideas = {
 			allowed = { always = no }
             modifier = {
 			production_speed_buildings_factor = 0.25
-                        production_speed_naval_base_factor = 0.2
+			production_speed_naval_base_factor = 0.2
 			production_speed_dockyard_factor = 0.15
-                        production_speed_rail_way_factor = 0.25
+			production_speed_rail_way_factor = 0.25
 			production_speed_infrastructure_factor = 0.25
-                        production_speed_arms_factory_factor = 0.15
-                        production_factory_efficiency_gain_factor = 0.15
+			production_speed_arms_factory_factor = 0.15	
+			production_factory_efficiency_gain_factor = 0.15
 			line_change_production_efficiency_factor = 0.15
-                        global_building_slots_factor = 0.15
-                        local_resources_factor = 0.15
+			global_building_slots_factor = 0.15					
+			local_resources_factor = 0.15
 			production_lack_of_resource_penalty_factor = -0.15
-                        artillery_equipment = {
+			artillery_equipment = {
 					build_cost_ic = -0.15
 					instant = yes
 				}
