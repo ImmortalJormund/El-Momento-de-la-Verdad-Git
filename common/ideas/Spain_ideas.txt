@@ -1654,7 +1654,7 @@ ideas = {
 		}
 		SPR_local_terrain_local_means = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_desire_for_victory"}
-			picture = idea_special_forces_focus
+			picture = MEX_eternal_war_economy_idea
 			allowed = { always = no }
             modifier = {
 				planning_speed = 0.25
@@ -1676,7 +1676,7 @@ ideas = {
 		}
 		SPR_traditional_doctrine = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_desire_for_victory"}
-			picture = army_slavic_idea
+			picture = generic_traditional_values
 			allowed = { always = no }
             modifier = {
 				max_planning = 0.10
@@ -1729,7 +1729,7 @@ ideas = {
 		SPR_motorization = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPR_motorization"}
 			allowed = { always = no }
-			picture = HUN_mobile_army_2
+			picture = mobile army
 			equipment_bonus = {
 				motorized_equipment = {
 					build_cost_ic = -0.2
