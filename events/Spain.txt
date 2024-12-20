@@ -4075,6 +4075,10 @@ country_event = { #Constitutional monarchy?
 		}
 		add_stability = -0.05
 		set_country_flag = SPR_absolute_monarchy
+		hidden_effect = {
+			complete_national_focus = SPR_absolutism
+			country_event = { id = sprd.106 days = 1}		
+		}
 	}
 }
 
@@ -7897,6 +7901,518 @@ country_event = {#
 			}
 		}
 	}
+country_event = {# 
+	id = sprd.350
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.350.t
+	desc = sprd.350.d
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.350.a
+		add_manpower = -1
+	}
+}
+country_event = {# 
+	id = sprd.351
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.351.t
+	desc = sprd.351.d
+	picture = GFX_report_event_SPR_stratonautical_suit
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.351.a
+		air_experience = 25
+	}
+}
+country_event = {# 
+	id = sprd.352
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.352.t
+	desc = sprd.352.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.352.a
+		add_stability = 0.01	
+		add_popularity = {
+		ideology = syndicalist
+		popularity = 0.01
+		}
+	}
+}
+country_event = {# 
+	id = sprd.353
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.353.t
+	desc = sprd.353.d
+	picture = GFX_report_event_HOL_riots_general
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.353.a
+		add_stability = -0.05
+		add_popularity = {
+		ideology = totalist
+		popularity = 0.01
+		}	
+		add_popularity = {
+		ideology = national_populist
+		popularity = 0.01
+			}
+		}
+	option = {
+		name = sprd.353.b
+		add_stability = -0.05
+		SPR = { country_event = { id = sprd.354 days = 1 }}
+		}
+	option = {
+		name = sprd.353.c
+		add_stability = -0.05
+		SPR = { country_event = { id = sprd.355 days = 1 }}
+			}
+		}
+	}
+}
+country_event = {# 
+	id = sprd.354
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.354.t
+	desc = sprd.354.d
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.354.a
+		add_stability = -0.05	
+		add_popularity = {
+		ideology = national_populist
+		popularity = 0.01
+			}
+		}
+	option = {
+		name = sprd.354.b
+		SPR = { country_event = { id = sprd.355 days = 1 }}
+			}
+		}
+	}
+}
+country_event = {# 
+	id = sprd.355
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.355.t
+	desc = sprd.355.d
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.355.a
+		add_stability = -0.05	
+		add_popularity = {
+		ideology = totalist
+		popularity = 0.01
+			}
+		}
+	option = {
+		name = sprd.355.b
+		SPR = { country_event = { id = sprd.354 days = 1 }}
+			}
+		}
+	}
+}
+country_event = {# 
+	id = sprd.356
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.356.t
+	desc = sprd.356.d
+	picture = GFX_report_event_generic_economy_growth
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.356.a
+		add_political_power = 25
+		hidden_effect = {
+		SPR = { country_event = { id = sprd.357 days = 60 }}
+		}
+	}
+}
+country_event = {# 
+	id = sprd.357
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.357.t
+	desc = sprd.357.d
+	picture = GFX_report_event_generic_scandal
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.357.a
+		add_political_power = -50
+		decrease_ruling_party_popularity_by_2
+		}
+	}
+}
+country_event = {# 
+	id = sprd.358
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.358.t
+	desc = sprd.358.d
+	picture = GFX_report_event_SPA_partido_sindicalista
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.358.a
+		add_stability = -0.03
+		add_popularity = {
+		ideology = totalist
+		popularity = -0.02
+		}	
+		add_popularity = {
+		ideology = syndicalist
+		popularity = 0.02
+			}
+		}
+	}
+}
+country_event = {# 
+	id = sprd.359
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.359.t
+	desc = sprd.359.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.359.a
+		add_political_power = 15
+	}
+}
+country_event = {# 
+	id = sprd.360
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.360.t
+	desc = sprd.360.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.360.a
+				add_political_power = 15
+				167 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+		}
+	}
+}
+country_event = {# 
+	id = sprd.361
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.361.t
+	desc = sprd.361.d
+	picture = GFX_report_event_generic_big_city
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.361.a
+			add_tech_bonus = {
+				name = SPR_automobile_barcelona
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+	}
+}
+country_event = {# 
+	id = sprd.362
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.362.t
+	desc = sprd.362.d
+	picture = GFX_report_event_CZE_1937_masaryk_grandprix
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.362.a
+			add_stability = 0.01
+			add_tech_bonus = {
+				name = SPR_automobile_barcelona
+				bonus = 0.2
+				uses = 1
+				category = motorized_equipment
+		}
+	}
+}
+country_event = {# 
+	id = sprd.364
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.364.t
+	desc = sprd.364.d
+	picture = GFX_report_event_SPA_las_huertas
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.364.a
+		add_political_power = -15
+		add_stability = -0.04
+	}
+}
+country_event = {# 
+	id = sprd.367
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.367.t
+	desc = sprd.367.d
+	picture = GFX_report_event_SPA_gp_1
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.367.a
+		air_experience = 20
+		add_war_support = 0.02
+	}
+}
+country_event = {# 
+	id = sprd.368
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.368.t
+	desc = sprd.368.d
+	picture = GFX_report_event_generic_riot3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.368.a
+		add_stability = -0.04	
+		add_popularity = {
+		ideology = social_conservative
+		popularity = 0.02
+		}
+	}
+}
+country_event = {# 
+	id = sprd.369
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.369.t
+	desc = sprd.369.d
+	picture = GFX_report_event_HOL_radio_red
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.369.a
+		add_political_power = -70
+		add_stability = 0.05
+	}
+	option = {
+		name = sprd.369.b
+		add_political_power = 20
+		add_stability = 0.01
+	}
+}
+country_event = {# 
+	id = sprd.370
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.370.t
+	desc = sprd.370.d
+	picture = GFX_report_event_SPA_gp_1
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.370.a
+		add_political_power = 20
+		add_stability = 0.01
+	}
+}
+country_event = {# 
+	id = sprd.371
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.371.t
+	desc = sprd.371.d
+	picture = GFX_report_event_generic_conference1
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.371.a
+		add_political_power = 5
+	}
+}
+country_event = {# 
+	id = sprd.372
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.372.t
+	desc = sprd.372.d
+	picture = GFX_report_event_SPR_infante
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.372.a
+		add_war_support = -0.03
+	}
+}
+country_event = {# 
+	id = sprd.373
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.373.t
+	desc = sprd.373.d
+	picture = GFX_report_event_USA_morocco
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.373.a
+		add_political_power = -20
+	}
+}
+country_event = {# 
+	id = sprd.374
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.374.t
+	desc = sprd.374.d
+	picture = GFX_report_event_SPR_infante
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.374.a
+		add_political_power = 20	
+		add_popularity = {
+		ideology = paternal_autocrat
+		popularity = 0.02
+		}	
+		add_popularity = {
+		ideology = national_populist
+		popularity = 0.02
+		}
+	}
+}
+	country_event = { #Merc time
+	id = sprd.375
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.104" }
+	title = sprd.375.t
+	desc = sprd.375.d
+	picture = GFX_report_event_UMN_generic_merc
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Yes.
+		name = sprd.375.a
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -150
+		add_manpower = -1500
+		add_war_support = -0.1
+		}
+	option = { #Yes.
+		name = sprd.375.b
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -75
+		add_manpower = -750
+		add_war_support = -0.05
+		}
+	option = { #Yes.
+		name = sprd.375.c
+		ai_chance = {
+			factor = 1
+		}
+		SPR = { country_event = { id = sprd.376 days = 5 }}
+				}
+			}
+		}
+	}
+	country_event = { #Merc time
+	id = sprd.376
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.104" }
+	title = sprd.376.t
+	desc = sprd.376.d
+	picture = GFX_report_event_UMN_generic_merc
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Yes.
+		name = sprd.376.a
+		ai_chance = {
+			factor = 1
+		}
+		set_global_flag = SPR_mercs_hired
+		add_political_power = -250
+			air_experience = 25	
+			add_ace = {
+				name = "Charles"
+				surname = "Sweeny"
+				callsign = "Eagle"
+				type = fighter_genius
+				is_female = no
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe amount = 15 producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = medium_plane_airframe
+				amount = 15
+				producer = USA
+			}
+		}
+	option = { #Yes.
+		name = sprd.376.b
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -150
+		add_manpower = -1500
+					}
+				}
+			}
+		}
+	}
+country_event = {# 
+	id = sprd.377
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.377.t
+	desc = sprd.377.d
+	picture = GFX_report_event_SPR_infante
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.377.a
+		add_political_power = 15
+		}	
+		add_popularity = {
+		ideology = paternal_autocrat
+		popularity = 0.01
+		}
+	}
+}
+country_event = {# 
+	id = sprd.378
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.378.t
+	desc = sprd.378.d
+	picture = GFX_report_event_SPR_infante
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.378.a
+		add_political_power = 10
+		add_stability = 0.01
+	}
+}
+country_event = {# 
+	id = sprd.379
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.379.t
+	desc = sprd.379.d
+	picture = GFX_report_event_SPR_infante
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.379.a
+		add_political_power = 50
+		add_stability = -0.03
+		add_manpower = -1525
+	}
+}
 country_event = {
 	id = sprd.1000
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1000" }
@@ -9036,5 +9552,59 @@ country_event = {
 			helicopter = 1
 		}
 		add_equipment_to_stockpile = { type = helicopter_1 amount = 25 }
+	}
+}
+country_event = { #Don bros the dream will never end
+	id = sprd.7000
+        immediate = { log = "[GetDateText]: [Root.GetName]: event sprdqx.7" }
+	title = sprd.7000.t
+	desc = sprd.7000.d
+	picture = GFX_report_event_SPA_CNT_FAI
+
+	is_triggered_only = yes
+
+	option = {
+                 name = sprd.7000.a
+		 set_politics = {
+	         ruling_party = radical_socialist
+	         elections_allowed = no	
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.5
+                }
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.2
+                }
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.1
+                }
+		set_party_name = { 
+			ideology = radical_socialist
+			long_name = SPR_DQX_long
+			name = SPR_DQX_party
+                }
+                set_party_name = { 
+			ideology = syndicalist
+			long_name = SPR_DQX_long
+			name = SPR_DQX_party
+                }
+                set_party_name = { 
+			ideology = totalist
+			long_name = SPR_DQX_long
+			name = SPR_DQX_party
+                }
+                create_country_leader = {
+					name = "Don Quixote?"
+					desc = "POLITICS_DON_BROS_WE_RIDE_DESC"
+					picture = "gfx/leaders/SPR/DONDONDON.png"
+					expire = "1.1.1"
+					ideology = left_carlism_subtype
+		}
+		add_tot_to_coalition = yes
+		add_radsoc_to_coalition = yes
+                }
 	}
 }

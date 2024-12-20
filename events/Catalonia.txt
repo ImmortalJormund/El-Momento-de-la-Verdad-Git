@@ -5,14 +5,184 @@ country_event = {
 	id = CAT.1
 	title = CAT.1.t 
 	desc = CAT.1.d 
+	picture = GFX_report_event_SPR_civwar3
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = CAT.1.a
 		add_political_power = 50
+	create_corps_commander = {
+	name = "Miquel Badia"
+	portrait_path = "gfx/leaders/CAT/Portrait_CAT_Miquel_Badia.png"
+	traits = {
+		politically_connected
+		harsh_leader
+		commando
+	}
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 7246
+		}
+	create_corps_commander = {
+	name = "Josep Dencàs"
+	portrait_path = "gfx/leaders/CAT/Portrait_CAT_Josep_Dencas.png"
+	traits = {
+		politically_connected
+		guerilla_fighter
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 7247
+		}
 	}
 }
-
+country_event = { 
+	id = CAT.2
+	title = CAT.2.t 
+	desc = CAT.2.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CAT.2.a
+		army_experience = 50
+		create_field_marshal = {
+		name = "Domenec Batet"
+		portrait_path = "gfx/leaders/CNT/Portrait_CNT_Domenec_Batet.png"
+		traits = {
+		inspirational_leader
+		old_guard
+		}
+		skill = 3
+		attack_skill = 1
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+		id = 7255
+		}
+	}
+}
+country_event = { 
+	id = CAT.3
+	title = CAT.3.t 
+	desc = CAT.3.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CAT.3.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 950
+				producer = CAT
+			}
+		}
+	}	
+country_event = { 
+	id = CAT.5
+	title = CAT.5.t 
+	desc = CAT.5.d 
+	picture = GFX_report_event_SPR_civwar
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CAT.5.a
+			add_stability = -0.05
+			add_political_power = 20
+			add_synd_to_coalition = yes
+				}
+			}
+		}
+	}
+country_event = { 
+	id = CAT.6
+	title = CAT.6.t 
+	desc = CAT.6.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CAT.6.a
+			add_command_power = 30
+			add_war_support = 0.05
+				}
+			}
+		}
+	}
+country_event = { 
+	id = CAT.7
+	title = CAT.7.t 
+	desc = CAT.7.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CAT.7.a	
+			add_political_power = 20
+			add_natpop_to_coalition = yes
+			create_corps_commander = {
+			name = "Daniel Cardona i Civit"
+			portrait_path = "gfx/leaders/CAT/Portrait_CAT_Daniel_Cardona_i_Civit.png"
+			traits = {
+			politically_connected
+			guerilla_fighter
+			commando
+			}
+			skill = 1
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			id = 7256
+			}
+		}
+	}
+country_event = { 
+	id = CAT.8
+	title = CAT.8.t 
+	desc = CAT.8.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CAT.8.a
+			add_command_power = 50
+			add_war_support = 0.02
+				}
+			}
+		}
+	}
+country_event = { 
+	id = CAT.9
+	title = CAT.9.t 
+	desc = CAT.9.d 
+	picture = GFX_report_event_spanish_invade_cuba
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CAT.8.a
+			add_manpower = -346
+			add_command_power = -100
+			add_political_power = -50
+			transfer_state = 177
+			transfer_state = 1313			
+				}
+			}
+		}
+	}
+country_event = { 
+	id = CAT.10
+	title = CAT.10.t 
+	desc = CAT.10.d 
+	picture = GFX_qie_armored_car
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CAT.10.a
+			army_experience = 15
+		}
+	}
 country_event = { 
 	id = CAT.20
 	title = CAT.20.t 
@@ -543,15 +713,14 @@ country_event = {
 	
 	option = {
 		name = CAT.25.a
-		country_event = {
-			id = CAT.26
-			days = 7
+		add_stability = 0.1
 			}
 		}
 	option = {
 		name = CAT.25.b
-		add_stability = -0.05
-		add_political_power = -150
+		country_event = {
+			id = CAT.26
+			days = 7
 			}
 		}
 	}
@@ -565,8 +734,10 @@ country_event = {
 	
 	option = {
 		name = CAT.26.a
-		add_political_power = -55
-		add_manpower = -150
+			country_event = {
+			id = CAT.201
+			days = 5
+			}
 		}
 	option = {
 		name = CAT.26.b
@@ -587,12 +758,6 @@ country_event = {
 	
 	option = {
 		name = CAT.27.a
-		add_political_power = -100
-		add_manpower = -1000
-		add_stability = 0.1
-		}
-	option = {
-		name = CAT.27.b
 			country_event = {
 			id = CAT.200
 			days = 2
@@ -605,13 +770,13 @@ country_event = {
 	id = CAT.28
 	title = CAT.28.t 
 	desc = CAT.28.d 
+	picture = GFX_report_event_SPR_civwar
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = {
 		name = CAT.28.a
 		add_political_power = -100
-		add_manpower = -1000
 		add_stability = 0.1
 		}
 	option = {
@@ -628,13 +793,15 @@ country_event = {
 	id = CAT.29
 	title = CAT.29.t 
 	desc = CAT.29.d 
+	picture = GFX_report_event_SPR_civwar
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = {
 		name = CAT.29.a
 		add_command_power = -100
-		add_stability = -0.02
+		add_manpower = -1000
+		add_stability = -0.1
 		}
 	option = {
 		name = CAT.29.b
@@ -650,6 +817,7 @@ country_event = {
 	id = CAT.30
 	title = CAT.30.t 
 	desc = CAT.30.d 
+	picture = GFX_report_event_SPR_civwar
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -671,6 +839,7 @@ country_event = {
 	id = CAT.31
 	title = CAT.31.t 
 	desc = CAT.31.d 
+	picture = GFX_USA_military_trial
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -698,11 +867,12 @@ country_event = {
 	id = CAT.32
 	title = CAT.32.t 
 	desc = CAT.32.d 
+	picture = GFX_Siam_Car_Crash_Minister_Died
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = {
-		name = CAT.31.a
+		name = CAT.32.a
 		country_event = {
 			id = CAT.203
 			days = 5
@@ -915,7 +1085,7 @@ country_event = {
 	option = {
 		name = CAT.107.b
 		country_event = { id = CAT.108 days = 5 }
-		create_faction = "League of Oppressed States"
+		create_faction = "Lliga dels Estats Oprimits"
 					}
 				}
 			}
@@ -3719,7 +3889,6 @@ country_event = {
 			add_war_support = 0.15
 			add_stability = 0.15
 			increase_ruling_party_popularity_by_6 = yes
-		}
 	}
 }
 country_event = { 
@@ -3734,7 +3903,6 @@ country_event = {
 			add_war_support = -0.15
 			add_stability = 0.15
 			increase_ruling_party_popularity_by_5 = yes
-		}
 	}
 }
 country_event = { 
@@ -3748,7 +3916,6 @@ country_event = {
 		name = CAT.240.a
 			add_war_support = 0.07
 			increase_ruling_party_popularity_by_3 = yes
-		}
 	}
 }
 country_event = { 
@@ -3763,7 +3930,6 @@ country_event = {
 			add_command_power = -75
 			add_war_support = 0.05
 			add_manpower = 1575
-		}
 	}
 }
 country_event = { 
@@ -3779,7 +3945,6 @@ country_event = {
 			add_war_support = 0.08
 			add_manpower = 2568
 			add_natpop_to_coalition = yes
-		}
 	}
 }
 country_event = { 
@@ -3836,6 +4001,968 @@ country_event = {
 			}
 		}
 	}
+country_event = { 
+	id = CAT.244
+	title = CAT.244.t 
+	desc = CAT.244.d 
+	picture = train_bombing
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.244.a
+			add_war_support = 0.2
+			add_stability = 0.1
+			army_experience = 25
+			POR = { country_event = { id = CAT.245 days = 5 }}			
+	}
+}
+country_event = { 
+	id = CAT.245
+	title = CAT.245.t 
+	desc = CAT.245.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.245.a
+			add_manpower = -25
+			CAT = { country_event = { id = CAT.246 days = 2 }}
+	}
+}
+country_event = { 
+	id = CAT.246
+	title = CAT.246.t 
+	desc = CAT.246.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.246.a
+			decrease_ruling_party_popularity_by_3 = yes
+			add_political_power = -100
+			POR = { country_event = { id = CAT.247 days = 4 }}
+		}
+	option = {
+		name = CAT.246.b
+			add_political_power = 150
+			add_war_support = 0.04
+			increase_ruling_party_popularity_by_3 = yes
+			POR = { country_event = { id = CAT.248 days = 4 }}
+	}
+}
+country_event = { 
+	id = CAT.247
+	title = CAT.247.t 
+	desc = CAT.247.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.247.a
+		add_political_power = 150
+	}
+}
+country_event = { 
+	id = CAT.248
+	title = CAT.248.t 
+	desc = CAT.248.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.248.a
+		add_political_power = -150
+	}
+	option = {
+		name = CAT.248.a
+			add_war_support = 0.03
+			create_wargoal = {
+				type = annex_everything
+				target = 165.owner
+		}
+	}
+}
+country_event = { 
+	id = CAT.249
+	title = CAT.249.t 
+	desc = CAT.249.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.249.a
+		add_political_power = 75
+		increase_ruling_party_popularity_by_7
+		}
+	}
+}
+country_event = { 
+	id = CAT.250
+	title = CAT.250.t 
+	desc = CAT.250.d 
+	picture = GFX_report_event_SPR_civwar3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.250.a
+				division_template = {
+				name = "Patrulles de Control"
+				division_names_group = SPR_INF_01 
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 165 }
+				create_unit = {
+					division = "division_template = \"Patrulles de Control\" start_experience_factor = 0.2"
+					owner = CAT
+					prioritize_location = 9764
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 165 }
+				create_unit = {
+					division = "division_template = \"Patrulles de Control\" start_experience_factor = 0.2"
+					owner = CAT
+					prioritize_location = 9764
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 165 }
+				create_unit = {
+					division = "division_template = \"Patrulles de Control\" start_experience_factor = 0.2"
+					owner = CAT
+					prioritize_location = 9764
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 165 }
+				create_unit = {
+					division = "division_template = \"Patrulles de Control\" start_experience_factor = 0.2"
+					owner = CAT
+					prioritize_location = 9764
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 165 }
+				create_unit = {
+					division = "division_template = \"Patrulles de Control\" start_experience_factor = 0.2"
+					owner = CAT
+					prioritize_location = 9764
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 165 }
+				create_unit = {
+					division = "division_template = \"Patrulles de Control\" start_experience_factor = 0.2"
+					owner = CAT
+					prioritize_location = 9764
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+country_event = { 
+	id = CAT.251
+	title = CAT.251.t 
+	desc = CAT.251.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.251.a
+		add_political_power = 50
+		add_command_power = 50
+		increase_ruling_party_popularity_by_5
+		}
+	}
+}
+country_event = { 
+	id = CAT.252
+	title = CAT.252.t 
+	desc = CAT.252.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.252.a
+		add_stability = 0.05
+		add_political_power = -25
+		add_command_power = -25
+		army_experience = 25
+		add_manpower = -574
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = -0.07
+		}
+	option = {
+		name = CAT.252.b
+		add_stability = 0.08
+		add_political_power = -45
+		add_command_power = -45
+		army_experience = 75
+		add_manpower = -1246
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = -0.07
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = -0.07
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = -0.07
+			}
+	option = {
+		name = CAT.252.c
+		add_stability = 0.03
+		add_political_power = -15
+		add_command_power = -15
+		army_experience = 10
+		add_manpower = -345
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.07
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = CAT.253
+	title = CAT.253.t 
+	desc = CAT.253.d 
+	picture = GFX_report_event_IRE_tanks
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.253.a
+		add_tech_bonus = {
+			name = CAT_Idolizing_Action_1
+			category = cat_armored_cars
+			bonus = 1
+			uses = 2
+		}
+	}
+	option = {
+		name = CAT.253.b
+		add_tech_bonus = {
+			name = CAT_Idolizing_Action_1
+			category = motorized_equipment
+			bonus = 1
+			uses = 2
+		}
+	}
+	option = {
+		name = CAT.253.c
+		add_tech_bonus = {
+			name = CAT_Idolizing_Action_1
+			category = cat_light_armor
+			bonus = 1
+			uses = 2
+		}
+	}
+	option = {
+		name = CAT.253.e
+		add_tech_bonus = {
+			name = CAT_Idolizing_Action_1
+			category = cat_mechanized_equipment
+			bonus = 1
+			uses = 2
+						}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = CAT.254
+	title = CAT.254.t 
+	desc = CAT.254.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.254.a
+		add_manpower = 3542
+		add_command_power = -100
+		decrease_ruling_party_popularity_by_2
+		}
+	}
+}
+country_event = { 
+	id = CAT.255
+	title = CAT.255.t 
+	desc = CAT.255.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.255.a
+		add_war_support = 0.07
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2200
+				producer = SPR
+		}
+	}
+}
+country_event = { 
+	id = CAT.256
+	title = CAT.256.t 
+	desc = CAT.256.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.256.a
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+								}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+country_event = { 
+	id = CAT.257
+	title = CAT.257.t 
+	desc = CAT.257.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.257.a
+		add_war_support = 0.07
+		add_stability = 0.03
+		army_experience = 15
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = SPR
+		}
+	}
+}
+country_event = { 
+	id = CAT.258
+	title = CAT.258.t 
+	desc = CAT.258.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.258.a
+		add_war_support = 0.08
+		add_stability = 0.05
+		add_command_power = -100
+		add_political_power = -100
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = CAT
+		}
+		add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 400
+				producer = CAT
+		}
+	}
+}
+country_event = { 
+	id = CAT.259
+	title = CAT.259.t 
+	desc = CAT.259.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.258.a
+		add_war_support = 0.08
+		add_stability = 0.05
+		add_command_power = -100
+		add_political_power = -100
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = CAT
+		}
+		add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 400
+				producer = CAT
+		}
+	}
+}
+country_event = { 
+	id = CAT.260
+	title = CAT.260.t 
+	desc = CAT.260.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.260.a
+		increase_ruling_party_popularity_by_3 = yes
+		add_political_power = 25
+		add_stability = 0.1
+	}
+
+	option = { #oh no
+		name = CAT.260.b
+		set_country_leader_ideology = radsoc_communism_subtype
+	}
+
+	option = { #oh no
+		name = CAT.260.c
+		set_country_leader_ideology = radsoc_national_communism_subtype
+			}
+		}
+	}
+}
+country_event = { 
+	id = CAT.261
+	title = CAT.261.t 
+	desc = CAT.261.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.261.a
+		increase_ruling_party_popularity_by_3 = yes
+		add_manpower = 5550
+		add_war_support = 0.12
+	}
+}
+country_event = { 
+	id = CAT.262
+	title = CAT.262.t 
+	desc = CAT.262.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.262.a
+		add_stability = 0.11
+	}
+}
+country_event = { 
+	id = CAT.263
+	title = CAT.263.t 
+	desc = CAT.263.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.263.a
+		add_stability = 0.06
+		add_political_power = 100
+		add_manpower = 8900
+	}
+}
+country_event = { 
+	id = CAT.264
+	title = CAT.264.t 
+	desc = CAT.264.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.264.a
+		trigger	= { country_exists = FOP }
+		give_guarantee = FOP
+	}
+
+	option = { #oh no
+		name = CAT.264.b
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = FOP
+						is_claimed_by = FOP
+					}
+				}
+				CAT = { add_state_core = PREV }
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = 278.owner
+			}
+		}
+	}
+}
+country_event = { 
+	id = CAT.265
+	title = CAT.265.t 
+	desc = CAT.265.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.265.a
+		add_stability = 0.16
+		add_political_power = 100
+		increase_ruling_party_popularity_by_6 = yes
+	}
+}
+country_event = { 
+	id = CAT.266
+	title = CAT.266.t 
+	desc = CAT.266.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.266.a
+		add_political_power = -100
+		decrease_ruling_party_popularity_by_7 = yes
+	}
+}
+country_event = { 
+	id = CAT.267
+	title = CAT.267.t 
+	desc = CAT.267.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.267.a
+				add_political_power = -125
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+								}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+country_event = { 
+	id = CAT.268
+	title = CAT.268.t 
+	desc = CAT.268.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.268.a
+		add_political_power = 55
+		add_command_power = 55
+		increase_ruling_party_popularity_by_7 = yes
+	}
+}
+country_event = { 
+	id = CAT.269
+	title = CAT.269.t 
+	desc = CAT.269.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.269.a
+		add_stability = 0.05
+		add_political_power = 65
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = -0.08
+		}
+	}
+}
+country_event = { 
+	id = CAT.270
+	title = CAT.270.t 
+	desc = CAT.270.d 
+	picture = GFX_Portugal_312
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.270.a
+		add_stability = 0.05
+		add_political_power = 65
+		add_soclib_to_coalition = yes
+		add_marlib_to_coalition = yes
+		add_authdem_to_coalition = yes
+		add_natpop_to_coalition = yes
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.03
+			}
+		}
+	}
+}
+country_event = {# Galeusca Invitation
+	id = CAT.271
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.248"}
+	title = CAT.271.t
+	desc = CAT.271.d
+	picture = GFX_report_event_generic_diplomacy4
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {# accept
+		name = CAT.271.a
+		ai_chance = {
+			factor = 75
+		}
+		every_state = {
+			limit = { is_core_of = SPR }
+			add_core_of = CAT
+		}
+		BAS = { country_event = { id = CAT.272 days = 1 }}
+		GLC = { country_event = { id = CAT.275 days = 1 }}
+	}
+	option = { #reject
+		name = CAT.271.b
+		ai_chance = {
+			factor = 25
+			}
+		add_stability = 0.07
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {# Basques
+	id = CAT.272
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.248"}
+	title = CAT.272.t
+	desc = CAT.272.d
+	picture = GFX_report_event_generic_diplomacy4
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {# accept
+		name = CAT.272.a
+		ai_chance = {
+			factor = 75
+		}
+		CAT = { country_event = { id = CAT.273 days = 1 }}
+	}
+	option = { #reject
+		name = CAT.272.b
+		ai_chance = {
+			factor = 15
+		}
+		CAT = { country_event = { id = CAT.274 days = 1 }}
+	}
+}
+country_event = {# 
+	id = CAT.273
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BAS.223"}
+	title = CAT.273.t
+	desc = CAT.273.d
+	picture = GFX_report_event_generic_diplomacy3
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CAT.273.a
+				set_cosmetic_tag = BAS_minority_confed
+				add_political_power = 150
+		CAT = {
+			annex_country = {
+			target = BAS
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = { is_core_of = BAS }
+			add_core_of = CAT
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {# 
+	id = CAT.274
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BAS.224"}
+	title = CAT.274.t
+	desc = CAT.274.d
+	picture = GFX_report_event_generic_diplomacy3
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CAT.274.a
+		add_political_power = -50
+
+	}
+}
+country_event = {# Galicians
+	id = CAT.275
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.248"}
+	title = CAT.275.t
+	desc = CAT.275.d
+	picture = GFX_report_event_generic_diplomacy4
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {# accept
+		name = CAT.275.a
+		ai_chance = {
+			factor = 75
+		}
+		CAT = { country_event = { id = CAT.276 days = 1 }}
+	}
+	option = { #reject
+		name = CAT.275.b
+		ai_chance = {
+			factor = 25
+		}
+		CAT = { country_event = { id = CAT.277 days = 1 }}
+	}
+}
+country_event = {# 
+	id = CAT.276
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BAS.223"}
+	title = CAT.276.t
+	desc = CAT.276.d
+	picture = GFX_report_event_generic_diplomacy3
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CAT.276.a
+				set_cosmetic_tag = BAS_minority_confed
+				add_political_power = 150
+		CAT = {
+			annex_country = {
+			target = GLC
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = { is_core_of = GLC }
+			add_core_of = CAT
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {# 
+	id = CAT.277
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BAS.224"}
+	title = CAT.277.t
+	desc = CAT.277.d
+	picture = GFX_report_event_generic_diplomacy3
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CAT.277.a
+		add_political_power = -50
+
+	}
+}
+country_event = {# 
+	id = CAT.278
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BAS.224"}
+	title = CAT.278.t
+	desc = CAT.278.d
+	picture = GFX_report_event_generic_diplomacy3
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CAT.278.a
+		add_political_power = 150
+		add_stability = 0.15
+		increase_ruling_party_popularity_by_10
+		}
+	}
+}
+country_event = { 
+	id = CAT.402
+	title = CAT.402.t 
+	desc = CAT.402.d 
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.402.a
+			add_political_power = 25
+			add_stability = 0.02
+			set_country_flag = CAT_Balearics_Crackdown
+		}
+	option = {
+		name = CAT.402.b
+			add_political_power = 50
+			add_stability = -0.02
+			set_country_flag = CAT_Balearics_Autonomy
+			}
+		}
+	}
+}
+country_event = { 
+	id = CAT.403
+	title = CAT.403.t 
+	desc = CAT.403.d 
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.403.a
+			add_political_power = 25
+			add_stability = -0.03
+			set_country_flag = CAT_Andorra_Catalonia
+		}
+	option = {
+		name = CAT.403.b
+			add_political_power = 50
+			add_stability = 0.01
+			set_country_flag = CAT_Andorra_Autonomy
+			}
+		}
+	}
+}
+country_event = { 
+	id = CAT.404
+	title = CAT.404.t 
+	desc = CAT.404.d 
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.404.a
+			add_political_power = 25
+			add_stability = -0.03
+			set_country_flag = CAT_Valencian_Crackdown
+		}
+	option = {
+		name = CAT.404.b
+			add_political_power = 50
+			add_stability = -0.01
+			set_country_flag = CAT_Valencian_Autonomism
+			}
+		}
+	}
+}
+country_event = { 
+	id = CAT.405
+	title = CAT.405.t 
+	desc = CAT.405.d 
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.405.a
+			add_political_power = 50
+			add_stability = -0.05
+			add_manpower = -505
+		add_tech_bonus = {
+			name = CAT_Blaverist_Crackdown
+			category = military_police_tech
+			bonus = 1
+			uses = 1
+			}
+		}
+	option = {
+		name = CAT.405.b
+			add_political_power = -50
+			add_stability = -0.02
+			add_manpower = -1250
+			army_experience = 50
+		add_tech_bonus = {
+			name = CAT_Blaverist_Crackdown_2
+			category = military_police_tech
+			bonus = 1
+			uses = 2
+			}
+		}
+	}
+}
 country_event = { #Balkanized Spain
 	id = CAT.1000
 	title = CAT.1000.t 
@@ -4049,6 +5176,7 @@ country_event = { #Balkanized Spain
 		create_wargoal = {
 			type = annex_everything
 			target = 940.owner
+					}
 				}
 			}
 		}
@@ -4228,3 +5356,961 @@ country_event = { #Balkanized Spain
 			}
 		}
 	}
+country_event = { 
+	id = CAT.1008
+	title = CAT.1008.t 
+	desc = CAT.1008.d 
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.1008.a
+		ai_chance = {
+			factor = 70
+		}
+		set_country_flag = CAT_FRA
+		add_political_power = 100
+		FRA = {
+			country_event = {
+				id = CAT.1009
+				days = 5
+			}
+		}
+		
+	}
+	option = {
+		name = CAT.1008.b
+		ai_chance = {
+			factor = 30
+			add_war_support = 0.2
+			add_command_power = 200
+						}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = CAT.1009
+	title = CAT.1009.t 
+	desc = CAT.1009.d 
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.1009.a
+		add_to_faction = FROM
+	}
+}
+country_event = { 
+	id = CAT.1010
+	title = CAT.1010.t 
+	desc = CAT.1010.d 
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.1010.a
+		ai_chance = {
+			factor = 70
+		}
+		set_country_flag = CAT_RUS
+		add_political_power = 100
+		RUS = {
+			country_event = {
+				id = CAT.1009
+				days = 5
+			}
+		}
+		
+	}
+	option = {
+		name = CAT.1010.b
+		ai_chance = {
+			factor = 30
+			add_war_support = 0.2
+			add_command_power = 200
+						}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = CAT.1011
+	title = CAT.1011.t 
+	desc = CAT.1011.d 
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.1011.a
+		ai_chance = {
+			factor = 70
+		}
+		set_country_flag = CAT_AUS
+		add_political_power = 100
+		AUS = {
+			country_event = {
+				id = CAT.1009
+				days = 5
+			}
+		}
+		
+	}
+	option = {
+		name = CAT.1011.b
+		ai_chance = {
+			factor = 30
+			add_war_support = 0.2
+			add_command_power = 200
+						}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = CAT.1012
+	title = CAT.1012.t 
+	desc = CAT.1012.d 
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.1012.a
+		ai_chance = {
+			factor = 70
+		}
+		set_country_flag = CAT_ENT
+		add_political_power = 100
+		CAN = {
+			country_event = {
+				id = CAT.1009
+				days = 5
+			}
+		}
+		
+	}
+	option = {
+		name = CAT.1012.b
+		ai_chance = {
+			factor = 30
+			add_war_support = 0.2
+			add_command_power = 200
+						}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = CAT.1013
+	title = CAT.1013.t 
+	desc = CAT.1013.d 
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = CAT.1013.a
+		ai_chance = {
+			factor = 70
+		}
+		set_country_flag = CAT_GER
+		add_political_power = 100
+		GER = {
+			country_event = {
+				id = CAT.1009
+				days = 5
+			}
+		}
+		
+	}
+	option = {
+		name = CAT.1013.b
+		ai_chance = {
+			factor = 30
+			add_war_support = 0.2
+			add_command_power = 200
+						}
+					}
+				}
+			}
+		}
+	}
+}
+	country_event = { #French Catalonia conquest
+	id = CAT.1014
+	title = CAT.1014.t
+	desc = CAT.1014.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Spain Reborn
+		name = CAT.1014.a
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = SPR
+					}
+				}
+				CAT = { add_state_core = PREV }
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = 41.owner
+			}
+		}
+		option = { #Galeuscaism
+		name = CAT.1014.b
+		add_state_core = 940
+		add_state_core = 166
+		add_state_core = 172
+		add_state_claim = 176
+		add_state_core = 174
+		add_state_core = 793
+		add_state_core = 171
+		add_state_core = 951
+		create_wargoal = {
+			type = annex_everything
+			target = 41.owner
+			}
+		}
+		option = { #No war
+		name = CAT.1014.c
+		add_state_core = 940
+		add_state_core = 166
+		add_state_core = 172
+		add_state_claim = 176
+		add_state_core = 174
+		add_state_core = 793
+		add_state_core = 171
+		add_state_core = 951
+		add_state_core = 168
+		add_state_core = 173
+		add_state_core = 169
+		add_state_core = 118
+		add_state_core = 795
+		add_state_core = 178
+		create_wargoal = {
+			type = annex_everything
+			target = 41.owner
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+country_event = {# Galeusca Invitation
+	id = CAT.1015
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.248"}
+	title = CAT.1015.t
+	desc = CAT.1015.d
+	picture = GFX_report_event_generic_diplomacy4
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {# accept
+		name = CAT.1015.a
+		ai_chance = {
+			factor = 25
+		}
+		BAS = { country_event = { id = CAT.1016 days = 1 }}
+		GLC = { country_event = { id = CAT.1019 days = 1 }}
+	}
+	option = { #reject
+		name = CAT.1015.b
+		ai_chance = {
+			factor = 75
+					}
+		add_stability = 0.07
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {# Basques
+	id = CAT.1016
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.248"}
+	title = CAT.1016.t
+	desc = CAT.1016.d
+	picture = GFX_report_event_generic_diplomacy4
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {# accept
+		name = CAT.1016.a
+		ai_chance = {
+			factor = 75
+		}
+		CAT = { country_event = { id = CAT.1017 days = 1 }}
+	}
+	option = { #reject
+		name = CAT.1016.b
+		ai_chance = {
+			factor = 25
+		}
+		CAT = { country_event = { id = CAT.1018 days = 1 }}
+	}
+}
+country_event = {# 
+	id = CAT.1017
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BAS.223"}
+	title = CAT.1017.t
+	desc = CAT.1017.d
+	picture = GFX_report_event_generic_diplomacy3
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CAT.1017.a
+				set_cosmetic_tag = BAS_minority_confed
+				add_political_power = 150
+		CAT = {
+			annex_country = {
+			target = BAS
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = { is_core_of = BAS }
+			add_core_of = CAT
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {# 
+	id = CAT.1018
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BAS.224"}
+	title = CAT.1018.t
+	desc = CAT.1018.d
+	picture = GFX_report_event_generic_diplomacy3
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CAT.1018.a
+		add_political_power = -50
+
+	}
+}
+country_event = {# Galicians
+	id = CAT.1019
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.248"}
+	title = CAT.1019.t
+	desc = CAT.1019.d
+	picture = GFX_report_event_generic_diplomacy4
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {# accept
+		name = CAT.1019.a
+		ai_chance = {
+			factor = 75
+		}
+		CAT = { country_event = { id = CAT.1020 days = 1 }}
+	}
+	option = { #reject
+		name = CAT.1019.b
+		ai_chance = {
+			factor = 25
+		}
+		CAT = { country_event = { id = CAT.1021 days = 1 }}
+	}
+}
+country_event = {# 
+	id = CAT.1020
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BAS.223"}
+	title = CAT.1020.t
+	desc = CAT.1020.d
+	picture = GFX_report_event_generic_diplomacy3
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CAT.1020.a
+				set_cosmetic_tag = BAS_minority_confed
+				add_political_power = 150
+		CAT = {
+			annex_country = {
+			target = GLC
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = { is_core_of = GLC }
+			add_core_of = CAT
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {# 
+	id = CAT.1021
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BAS.224"}
+	title = CAT.1021.t
+	desc = CAT.1021.d
+	picture = GFX_report_event_generic_diplomacy3
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CAT.1021.a
+		add_political_power = -50
+
+	}
+}
+	country_event = { #Iberianism Under Catalanism
+	id = CAT.1022
+	title = CAT.1022.t
+	desc = CAT.1022.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Greater Catalonia
+		name = CAT.1022.a
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = SPR
+					}
+				}
+				CAT = { add_state_core = PREV }
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = 41.owner
+				}
+			}
+		}
+	}
+}
+	country_event = { #Iberianism Under Catalanism- Basque and Galicia Edition
+	id = CAT.1023
+	title = CAT.1023.t
+	desc = CAT.1023.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Greater Catalonia
+		name = CAT.1023.a
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = BAS
+					}
+				}
+				CAT = { add_state_core = PREV }
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = 172.owner
+		}
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = GLC
+					}
+				}
+				CAT = { add_state_core = PREV }
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = 171.owner
+				}
+			}
+		}
+	}
+}
+	country_event = { #Iberianism Under Catalanism- Portugal Edition
+	id = CAT.1024
+	title = CAT.1024.t
+	desc = CAT.1024.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Greater Catalonia
+		name = CAT.1024.a
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = POR
+					}
+				}
+				CAT = { add_state_core = PREV }
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = 112.owner
+				}
+			}
+		}
+	}
+}
+	country_event = { #Iberian Sardinia
+	id = CAT.1025
+	title = CAT.1025.t
+	desc = CAT.1025.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Greater Catalonia
+		name = CAT.1025.a
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = SRD
+					}
+				}
+				CAT = { add_state_core = PREV }
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = 114.owner
+				}
+			}
+		}
+	}
+}
+	country_event = { #Red Iberism Spain
+	id = CAT.1026
+	title = CAT.1026.t
+	desc = CAT.1026.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Greater Catalonia
+		name = CAT.1026.a
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = SPR
+					}
+				}
+				CAT = { add_state_core = PREV }
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = 41.owner
+				}
+			}
+		}
+	}
+}
+	country_event = { #No Morocco
+	id = CAT.1027
+	title = CAT.1027.t
+	desc = CAT.1027.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Greater Catalonia
+		name = CAT.1027.a
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = MOR
+					}
+				}
+				CAT = { add_state_claim = PREV }
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = 461.owner
+				}
+			}
+		}
+	}
+}
+	country_event = { #Red Iberism Portugal
+	id = CAT.1028
+	title = CAT.1028.t
+	desc = CAT.1028.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Greater Catalonia
+		name = CAT.1028.a
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = POR
+					}
+				}
+				CAT = { add_state_core = PREV }
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = 112.owner
+				}
+			}
+		}
+	}
+}
+	country_event = { #Red Iberism Portugal
+	id = CAT.1029
+	title = CAT.1029.t
+	desc = CAT.1029.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Greater Catalonia
+		name = CAT.1029.a
+				add_political_power = 75
+				add_ideas = CAT_Egyptian_Alliance
+	}
+}
+country_event = {# 
+	id = CAT.1030
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CAT.111"}
+	title = CAT.1030.t
+	desc = CAT.1030.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = CAT.1030.a
+			add_political_power = -150
+			add_stability = 0.1
+			177 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+									}
+								}
+			177 = {
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+									}
+								}
+			177 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 6
+					province = 9793
+					instant_build = yes
+									}
+								}
+			177 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+									}
+								}
+			177 = {
+				add_building_construction = {
+					type = radar_station
+					level = 3
+					instant_build = yes
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	country_event = { #Red Iberism Portugal
+	id = CAT.1031
+	title = CAT.1031.t
+	desc = CAT.1031.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Greater Catalonia
+		name = CAT.1031.a
+				add_political_power = 75
+				add_war_support = 0.12
+				add_stability = 0.12
+	}
+}
+	country_event = { #French Catalonia conquest
+	id = CAT.1032
+	title = CAT.1032.t
+	desc = CAT.1032.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Spain Reborn
+		name = CAT.1032.a
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = SPR
+					}
+				}
+				CAT = { add_state_core = PREV }
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = 41.owner
+			}
+		}
+		option = { #Galeuscaism
+		name = CAT.1032.b
+		add_state_core = 940
+		add_state_core = 166
+		add_state_core = 172
+		add_state_claim = 176
+		add_state_core = 174
+		add_state_core = 793
+		add_state_core = 171
+		add_state_core = 951
+		create_wargoal = {
+			type = annex_everything
+			target = 41.owner
+			}
+		}
+		option = { #No war
+		name = CAT.1032.c
+		add_state_core = 940
+		add_state_core = 166
+		add_state_core = 172
+		add_state_claim = 176
+		add_state_core = 174
+		add_state_core = 793
+		add_state_core = 171
+		add_state_core = 951
+		add_state_core = 168
+		add_state_core = 173
+		add_state_core = 169
+		add_state_core = 118
+		add_state_core = 795
+		add_state_core = 178
+		create_wargoal = {
+			type = annex_everything
+			target = 41.owner
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	country_event = { #Iberian Sardinia
+	id = CAT.1033
+	title = CAT.1033.t
+	desc = CAT.1033.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Greater Catalonia
+		name = CAT.1033.a
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = SRD
+					}
+				}
+				CAT = { add_state_core = PREV }
+			}
+			add_state_core = 1
+			add_state_core = 115
+			create_wargoal = {
+				type = annex_everything
+				target = 114.owner
+				}
+			}
+		}
+	}
+}
+	country_event = { #Iberian Sardinia
+	id = CAT.1034
+	title = CAT.1034.t
+	desc = CAT.1034.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Greater Catalonia
+		name = CAT.1034.a
+			add_political_power = 150
+			add_manpower = -1550
+			add_ideas = CAT_Learning_From_Rif
+	}
+}
+	country_event = { #Mediterranism
+	id = CAT.1035
+	title = CAT.1035.t
+	desc = CAT.1035.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Murcia too
+		name = CAT.1035.a
+		CAT = {
+		add_state_core = 764
+		add_state_core = 162
+		add_state_core = 838
+		add_state_core = 157
+		add_state_core = 161
+		add_state_core = 160		
+		add_state_core = 759
+		add_state_core = 1100
+		add_state_core = 1144
+		add_state_core = 1206
+		add_state_core = 103
+		add_state_core = 163
+		add_state_core = 1098
+		add_state_core = 105
+		add_state_core = 1270
+		add_state_core = 731
+		add_state_core = 769
+		add_state_core = 1225		
+		add_state_core = 341
+		add_state_core = 773
+		add_state_core = 187
+		add_state_core = 340
+		add_state_core = 339
+		add_state_core = 164
+		add_state_core = 342
+		add_state_core = 346
+		add_state_core = 344
+		add_state_core = 680
+		add_state_core = 553
+		add_state_core = 992		
+		add_state_core = 454
+		add_state_core = 453
+		add_state_core = 446
+		add_state_core = 447
+		add_state_core = 452
+		add_state_core = 451
+		add_state_core = 663
+		add_state_core = 450
+		add_state_core = 448
+		add_state_core = 665
+		add_state_core = 458
+		add_state_core = 460
+		add_state_core = 459
+		add_state_core = 805
+		add_state_core = 290
+		add_state_core = 173
+		add_state_core = 169
+		add_state_core = 118
+		add_state_core = 184
+		add_state_core = 461
+		add_state_core = 1005
+		create_wargoal = {
+			type = annex_everything
+			target = 838.owner
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = 773.owner
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = 163.owner
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = 160.owner
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = 454.owner
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = 447.owner
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = 290.owner
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = 663.owner
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = 448.owner
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = 459.owner
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = 461.owner
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = 184.owner	
+						}
+					}
+				}
+			}
+		}
+	}
+	country_event = { #Iberian Sardinia
+	id = CAT.1036
+	title = CAT.1036.t
+	desc = CAT.1036.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Greater Catalonia
+		name = CAT.1036.a
+			add_political_power = 125
+			add_manpower = 7560
+			add_ideas = CAT_Anti_Colonial_Action
+	}
+}
+	country_event = { #Iberian Sardinia
+	id = CAT.1037
+	title = CAT.1037.t
+	desc = CAT.1037.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Greater Catalonia
+		name = CAT.1037.a
+			create_faction = "Lliga Contra l'Imperialisme"
+	}
+}

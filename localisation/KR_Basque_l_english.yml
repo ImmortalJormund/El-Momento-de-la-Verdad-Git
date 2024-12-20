@@ -90,6 +90,10 @@ BAS_SPR_CNT:0 "Confederation of Iberia"
 BAS_SPR_CNT_ADJ:0 "Iberian"
 BAS_SPR_CNT_DEF:0 "Confederation of Iberia"
 
+BAS_minority_confed:0 "Confederation of Galeusca"
+BAS_minority_confed_ADJ:0 "Galeusca"
+BAS_minority_confed_DEF:0 "Confederation of Galeusca"
+
 ### Focuses ###
 Basque_focus:0 "Basque Focus Tree"
 

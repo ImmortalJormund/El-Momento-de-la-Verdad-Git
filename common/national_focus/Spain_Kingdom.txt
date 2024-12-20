@@ -6748,7 +6748,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.190
 			add_ideas = SPR_No_More_Elitism
-			add_political_power = 150
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		}
