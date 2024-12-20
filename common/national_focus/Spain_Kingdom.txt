@@ -6308,7 +6308,6 @@ focus_tree = {
 			focus = SPR_Moderated_Regionalism	
 			focus = SPR_Stamp_on_Catalans
 		}
-		mutually_exclusive = { focus = SPR_Moderated_Regionalism }
 		relative_position_id = SPR_Mistakes_of_the_Past
 		x = 0
 		y = 3
