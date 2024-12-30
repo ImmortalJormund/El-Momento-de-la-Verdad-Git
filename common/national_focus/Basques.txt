@@ -12,7 +12,7 @@ focus_tree = {
 			tag = BAS
 		}
 	}
-	continuous_focus_position = { x = 2200 y = 800 }
+	continuous_focus_position = { x = 2200 y = 1500 }
 
 	focus = {
 		id = BAS_Freedom
@@ -264,7 +264,7 @@ focus_tree = {
 	focus = {
 		id = BAS_First_Basque_Elections
 		icon = GFX_goal_generic_elections
-		x = 14
+		x = 18
 		y = 0
 		cost = 2
 		available = {
@@ -279,10 +279,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAS_ELA_Victory
+		id = BAS_EAS_Victory
 		icon = GFX_goal_BRG_Moderate_Unions
 		relative_position_id = BAS_First_Basque_Elections
-		x = -5
+		x = -9
 		y = 1
 		cost = 0
 		prerequisite = {
@@ -299,13 +299,220 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus = {
+		id = BAS_Galvanize_the_Workers
+		icon = GFX_goal_KIV_uplift_workers
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -11
+		y = 2
+		cost = 0
+		prerequisite = {
+			focus = BAS_EAS_Victory
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Red_Nationalism
+		icon = GFX_goal_ALB_Red_Horse
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -7
+		y = 2
+		cost = 0
+		prerequisite = {
+			focus = BAS_EAS_Victory
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Hunt_Down_Jacobins
+		icon = GFX_goal_GER_Red_Marx
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -9
+		y = 2
+		cost = 0
+		prerequisite = {
+			focus = BAS_EAS_Victory
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Reel_in_the_Anarchists
+		icon = GFX_goal_FRA_Anarchist_Mobilization_Techniques
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -10
+		y = 3
+		cost = 0
+		prerequisite = {
+			focus = BAS_Galvanize_the_Workers
+		}
+		prerequisite = {
+			focus = BAS_Red_Nationalism
+		}
+		prerequisite = {
+			focus = BAS_Hunt_Down_Jacobins
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Open_Hand_to_EAJ
+		icon = GFX_goal_SKM_Paternalist_Humanism
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -8
+		y = 3
+		cost = 0
+		prerequisite = {
+			focus = BAS_Galvanize_the_Workers
+		}
+		prerequisite = {
+			focus = BAS_Red_Nationalism
+		}
+		prerequisite = {
+			focus = BAS_Hunt_Down_Jacobins
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Worker_Led_Industrialization
+		icon = GFX_RUS_Cautious_Industrialization
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -7
+		y = 4
+		cost = 0
+		prerequisite = {
+			focus = BAS_Reel_in_the_Anarchists
+		}
+		prerequisite = {
+			focus = BAS_Open_Hand_to_EAJ
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Seize_ELA_From_the_Hand_of_Capitalist
+		icon = GFX_goal_USA_Combat_Capitalism
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -9
+		y = 4
+		cost = 0
+		prerequisite = {
+			focus = BAS_Reel_in_the_Anarchists
+		}
+		prerequisite = {
+			focus = BAS_Open_Hand_to_EAJ
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Pluralist_Patriotism
+		icon = GFX_RUS_Support_Pluralism
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -11
+		y = 4
+		cost = 0
+		prerequisite = {
+			focus = BAS_Reel_in_the_Anarchists
+		}
+		prerequisite = {
+			focus = BAS_Open_Hand_to_EAJ
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Socialism_Under_Ikurrina
+		icon = GFX_UKR_Progressive_National_Policy
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -9
+		y = 5
+		cost = 0
+		prerequisite = {
+			focus = BAS_Worker_Led_Industrialization
+		}
+		prerequisite = {
+			focus = BAS_Seize_ELA_From_the_Hand_of_Capitalist
+		}
+		prerequisite = {
+			focus = BAS_Pluralist_Patriotism
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
 		}
 	}
 	focus = {
 		id = BAS_EAE_Victory
 		icon = GFX_goal_generic_solidarity
 		relative_position_id = BAS_First_Basque_Elections
-		x = -2
+		x = -3
 		y = 1
 		cost = 0
 		prerequisite = {
@@ -322,13 +529,220 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus = {
+		id = BAS_Take_the_Stray_Spaniards_In
+		icon = GFX_flag_spain_republican
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -5
+		y = 2
+		cost = 0
+		prerequisite = {
+			focus = BAS_EAE_Victory
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Mend_the_Autonomist_Divide
+		icon = GFX_goal_IRE_good_friday_agreement
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -3
+		y = 2
+		cost = 0
+		prerequisite = {
+			focus = BAS_EAE_Victory
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Flirt_With_the_Internationale
+		icon = GFX_goal_SKM_Talks_With_Internationale
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -1
+		y = 2
+		cost = 0
+		prerequisite = {
+			focus = BAS_EAE_Victory
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Form_the_Popular_Front
+		icon = GFX_goal_FRA_popularfront
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -4
+		y = 3
+		cost = 0
+		prerequisite = {
+			focus = BAS_Mend_the_Autonomist_Divide
+		}
+		prerequisite = {
+			focus = BAS_Take_the_Stray_Spaniards_In
+		}
+		prerequisite = {
+			focus = BAS_Flirt_With_the_Internationale
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Fund_Eusko_Ikaskuntza
+		icon = GFX_goal_KSV_science
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -2
+		y = 3
+		cost = 0
+		prerequisite = {
+			focus = BAS_Mend_the_Autonomist_Divide
+		}
+		prerequisite = {
+			focus = BAS_Take_the_Stray_Spaniards_In
+		}
+		prerequisite = {
+			focus = BAS_Flirt_With_the_Internationale
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Secular_Rationalism
+		icon = GFX_goal_AUS_Productive_Rationality
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -3
+		y = 4
+		cost = 0
+		prerequisite = {
+			focus = BAS_Form_the_Popular_Front
+		}
+		prerequisite = {
+			focus = BAS_Fund_Eusko_Ikaskuntza
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Building_a_Welfare_State_From_the_Ground_Up
+		icon = GFX_CAL_executive_construction_projects
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -5
+		y = 4
+		cost = 0
+		prerequisite = {
+			focus = BAS_Form_the_Popular_Front
+		}
+		prerequisite = {
+			focus = BAS_Fund_Eusko_Ikaskuntza
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Destroy_the_Backbone_of_Reaction
+		icon = GFX_goal_RUS_crush_monarchists
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -1
+		y = 4
+		cost = 0
+		prerequisite = {
+			focus = BAS_Form_the_Popular_Front
+		}
+		prerequisite = {
+			focus = BAS_Fund_Eusko_Ikaskuntza
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Splinter_Party_No_More
+		icon = GFX_RUS_Stronghold_Of_Social_Democracy
+		relative_position_id =  BAS_First_Basque_Elections
+		x = -3
+		y = 5
+		cost = 0
+		prerequisite = {
+			focus = BAS_Destroy_the_Backbone_of_Reaction
+		}
+		prerequisite = {
+			focus = BAS_Building_a_Welfare_State_From_the_Ground_Up
+		}
+		prerequisite = {
+			focus = BAS_Secular_Rationalism
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
 		}
 	}
 	focus = {
 		id = BAS_EAJ_Victory
 		icon = GFX_BEL_Improve_Catholic_Relations
 		relative_position_id = BAS_First_Basque_Elections
-		x = 2
+		x = 3
 		y = 1
 		cost = 0
 		prerequisite = {
@@ -345,13 +759,450 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus = {
+		id = BAS_Ensure_ELA_Support
+		icon = GFX_RUS_Let_The_Trade_Unions_Decide
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 5
+		y = 2
+		cost = 0
+		prerequisite = {
+			focus = BAS_EAJ_Victory
+		}
+		available = {
+			has_government = social_conservative
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Sota_and_Sabino
+		icon = GFX_goal_generic_cult_personality
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 3
+		y = 2
+		cost = 0
+		prerequisite = {
+			focus = BAS_EAJ_Victory
+		}
+		available = {
+			has_government = social_conservative
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Expand_the_Ikastolak_System
+		icon = GFX_goal_TEX_rural_schools
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 1
+		y = 2
+		cost = 0
+		prerequisite = {
+			focus = BAS_EAJ_Victory
+		}
+		available = {
+			has_government = social_conservative
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Expand_Social_Welfare
+		icon = GFX_DKB_Welfare_All
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 4
+		y = 3
+		cost = 0
+		prerequisite = {
+			focus = BAS_Ensure_ELA_Support
+		}
+		prerequisite = {
+			focus = BAS_Expand_the_Ikastolak_System
+		}
+		prerequisite = {
+			focus = BAS_Sota_and_Sabino
+		}
+		available = {
+			has_government = social_conservative
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Redeeming_the_Concept_of_Republic
+		icon = GFX_goal_COR_Solid_Republic
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 2
+		y = 3
+		cost = 0
+		prerequisite = {
+			focus = BAS_Ensure_ELA_Support
+		}
+		prerequisite = {
+			focus = BAS_Expand_the_Ikastolak_System
+		}
+		prerequisite = {
+			focus = BAS_Sota_and_Sabino
+		}
+		available = {
+			has_government = social_conservative
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Nationalism_without_Extremism
+		icon = GFX_goal_FRA_revitalize_nationalism
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 3
+		y = 4
+		cost = 0
+		prerequisite = {
+			focus = BAS_Redeeming_the_Concept_of_Republic
+		}
+		prerequisite = {
+			focus = BAS_Expand_Social_Welfare
+		}
+		available = {
+			has_government = social_conservative
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_The_Women_Patriots
+		icon = GFX_goal_TEX_Christian_Compasion_Towards_Poor
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 5
+		y = 4
+		cost = 0
+		prerequisite = {
+			focus = BAS_Redeeming_the_Concept_of_Republic
+		}
+		prerequisite = {
+			focus = BAS_Expand_Social_Welfare
+		}
+		available = {
+			has_government = social_conservative
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Deal_With_Spanish_Troublemakers
+		icon = GFX_goal_BEL_Crush_Socialist_Rabble
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 1
+		y = 4
+		cost = 0
+		prerequisite = {
+			focus = BAS_Redeeming_the_Concept_of_Republic
+		}
+		prerequisite = {
+			focus = BAS_Expand_Social_Welfare
+		}
+		available = {
+			has_government = social_conservative
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_The_Hegemon_Remains
+		icon = GFX_goal_NFA_Populist_Catholic
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 3
+		y = 5
+		cost = 0
+		prerequisite = {
+			focus = BAS_Deal_With_Spanish_Troublemakers
+		}
+		prerequisite = {
+			focus = BAS_The_Women_Patriots
+		}
+		prerequisite = {
+			focus = BAS_Nationalism_without_Extremism
+		}
+		available = {
+			has_government = social_conservative
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_EMB_Victory
+		icon = GFX_goal_SKM_Mastery_Mountains
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 9
+		y = 1
+		cost = 0
+		prerequisite = {
+			focus = BAS_First_Basque_Elections
+		}
+		available = {
+			has_government = authoritarian_democrat
+		}
+		bypass = {
+			has_government = authoritarian_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus = {
+		id = BAS_Modernized_Vision_of_Arana
+		icon = GFX_goal_POL_New_Vision
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 11
+		y = 2
+		cost = 0
+		prerequisite = {
+			focus = BAS_EMB_Victory
+		}
+		available = {
+			has_government = authoritarian_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Mobilize_the_Mendigoizales
+		icon = GFX_goal_generic_mountain_warfare2
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 9
+		y = 2
+		cost = 0
+		prerequisite = {
+			focus = BAS_EMB_Victory
+		}
+		available = {
+			has_government = authoritarian_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Only_Through_Sacrifice
+		icon = GFX_goal_FRA_sacrificial_apotheosis
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 7
+		y = 2
+		cost = 0
+		prerequisite = {
+			focus = BAS_EMB_Victory
+		}
+		available = {
+			has_government = authoritarian_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Subtle_Steer_to_the_Left
+		icon = GFX_goal_KEN_new_left
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 10
+		y = 3
+		cost = 0
+		prerequisite = {
+			focus = BAS_Modernized_Vision_of_Arana
+		}
+		prerequisite = {
+			focus = BAS_Mobilize_the_Mendigoizales
+		}
+		prerequisite = {
+			focus = BAS_Only_Through_Sacrifice
+		}
+		available = {
+			has_government = authoritarian_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Form_the_Nationalist_Ikastolak
+		icon = GFX_goal_MEX_no_more_secular_school
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 8
+		y = 3
+		cost = 0
+		prerequisite = {
+			focus = BAS_Modernized_Vision_of_Arana
+		}
+		prerequisite = {
+			focus = BAS_Mobilize_the_Mendigoizales
+		}
+		prerequisite = {
+			focus = BAS_Only_Through_Sacrifice
+		}
+		available = {
+			has_government = authoritarian_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Nationalization_Through_Respect
+		icon = GFX_UKR_Necessary_Nationalizations
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 9
+		y = 4
+		cost = 0
+		prerequisite = {
+			focus = BAS_Form_the_Nationalist_Ikastolak
+		}
+		prerequisite = {
+			focus = BAS_Subtle_Steer_to_the_Left
+		}
+		available = {
+			has_government = authoritarian_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Just_Catholic_Basques
+		icon = GFX_goal_MEX_secular_but_catholic
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 11
+		y = 4
+		cost = 0
+		prerequisite = {
+			focus = BAS_Form_the_Nationalist_Ikastolak
+		}
+		prerequisite = {
+			focus = BAS_Subtle_Steer_to_the_Left
+		}
+		available = {
+			has_government = authoritarian_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Crushing_Capitalist_Hoarders
+		icon = GFX_goal_generic_overthrow_capitalists
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 7
+		y = 4
+		cost = 0
+		prerequisite = {
+			focus = BAS_Form_the_Nationalist_Ikastolak
+		}
+		prerequisite = {
+			focus = BAS_Subtle_Steer_to_the_Left
+		}
+		available = {
+			has_government = authoritarian_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_The_Height_of_Our_Power
+		icon = GFX_goal_NEE_From_Soldiers_Rebuilders
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 9
+		y = 5
+		cost = 0
+		prerequisite = {
+			focus = BAS_Crushing_Capitalist_Hoarders
+		}
+		prerequisite = {
+			focus = BAS_Just_Catholic_Basques
+		}
+		prerequisite = {
+			focus = BAS_Nationalization_Through_Respect
+		}
+		available = {
+			has_government = authoritarian_democrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
 		}
 	}
 	focus = {
 		id = BAS_Aberri_Victory
 		icon = GFX_goal_SRI_stronkpope
 		relative_position_id =  BAS_First_Basque_Elections
-		x = 5
+		x = 15
 		y = 1
 		cost = 0
 		prerequisite = {
@@ -371,402 +1222,241 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAS_Rally_the_Unions
-		icon = GFX_focus_HOL_deal_with_left
-		relative_position_id = BAS_First_Basque_Elections
-		x = -5
+		id = BAS_Republican_Traditionalism
+		icon = GFX_goal_COL_Traditional_Family_Roles
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 17
 		y = 2
-		prerequisite = {
-			focus = BAS_ELA_Victory
-		}
-		available = {
-			has_government = radical_socialist
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_ideas = BAS_Rallied_Union
-		}
-	}
-	focus = {
-		id = BAS_Enshrine_Catholic_Socialist_Values
-		icon = GFX_BEL_Catholic_Construction
-		relative_position_id = BAS_First_Basque_Elections
-		x = -7
-		y = 3
-		prerequisite = {
-			focus = BAS_Rally_the_Unions
-		}
-		available = {
-			has_government = radical_socialist
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_ideas = BAS_Solidarism
-		}
-	}
-	focus = {
-		id = BAS_Taxation_for_the_Common_Man
-		icon = GFX_goal_generic_happy_workers
-		relative_position_id = BAS_First_Basque_Elections
-		x = -3
-		y = 3
-		prerequisite = {
-			focus = BAS_Rally_the_Unions
-			focus = BAS_Build_Bridges_Over_the_Pyrenees
-			focus = BAS_Form_the_Popular_Front
-		}
-		available = {
-			OR = {
-				has_government = social_democrat
-				has_government = radical_socialist
-			}
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_ideas = BAS_Progressive_Taxation_idea
-			country_event = BAS.8
-		}
-	}
-	focus = {
-		id = BAS_Democratize_Unionism
-		icon = GFX_goal_FRA_commune_of_liberty
-		relative_position_id = BAS_First_Basque_Elections
-		x = -5
-		y = 3
-		prerequisite = {
-			focus = BAS_Rally_the_Unions
-		}
-		available = {
-			OR = {
-				has_government = radical_socialist
-			}
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			country_event = BAS.156
-			add_ideas = BAS_Union_into_Party
-		}
-	}
-	focus = {
-		id = BAS_Devotion_of_the_Basque_Worker
-		icon = GFX_DKB_Christian_Unions
-		relative_position_id = BAS_First_Basque_Elections
-		x = -5
-		y = 4
-		prerequisite = {
-			focus = BAS_Enshrine_Catholic_Socialist_Values
-		}
-		prerequisite = {
-			focus = BAS_Taxation_for_the_Common_Man
-		}
-		prerequisite = {
-			focus = BAS_Democratize_Unionism
-		}
-		available = {
-			has_government = radical_socialist
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_ideas = BAS_Crimson_Catholicism
-			country_event = BAS.21
-		}
-	}
-	focus = {
-		id = BAS_Build_Bridges_Over_the_Pyrenees
-		icon = GFX_goal_KTG_Educate_natives
-		relative_position_id = BAS_First_Basque_Elections
-		x = 0
-		y = 2
-		prerequisite = {
-			focus = BAS_EAE_Victory
-			focus = BAS_EAJ_Victory
-		}
-		available = {
-			OR = {
-				has_government = social_democrat
-				has_government = social_conservative
-			}
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			country_event = BAS.22
-			add_ideas = BAS_Vseobuch
-		}
-	}
-	focus = {
-		id = BAS_Attract_Foreign_Capital
-		icon = GFX_goal_AST_new_markets
-		relative_position_id = BAS_First_Basque_Elections
-		x = 0
-		y = 3
-		prerequisite = {
-			focus = BAS_Build_Bridges_Over_the_Pyrenees
-		}
-		available = {
-			OR = {
-				has_government = social_democrat
-				has_government = social_conservative
-			}
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			country_event = BAS.23
-			add_ideas = BAS_Booming_Trade
-		}
-	}
-	focus = {
-		id = BAS_Strengthen_Republicanism
-		icon = GFX_ITA_democracy
-		relative_position_id = BAS_First_Basque_Elections
-		x = 2
-		y = 2
-		prerequisite = {
-			focus = BAS_EAJ_Victory
-		}
-		available = {
-			OR = {
-				has_government = social_conservative
-			}
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			country_event = BAS.158
-			add_ideas = BAS_True_Republicanism
-			}
-	}
-	focus = {
-		id = BAS_Form_the_Popular_Front
-		icon = GFX_goal_FRA_popularfront
-		relative_position_id = BAS_First_Basque_Elections
-		x = -2
-		y = 2
-		prerequisite = {
-			focus = BAS_EAE_Victory
-		}
-		available = {
-			OR = {
-				has_government = social_democrat
-			}
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			country_event = BAS.155
-			add_ideas = BAS_Popular_Front
-			add_synd_to_coalition
-			}
-			add_radsoc_to_coalition
-			}
-			add_soclib_to_coalition
-			}
-			add_marlib_to_coalition
-			}
-		}
-	}
-	focus = {
-		id = BAS_Propel_Euskadi_Into_Modernity
-		icon = GFX_goal_social_reforms
-		relative_position_id = BAS_First_Basque_Elections
-		x = -2
-		y = 4
-		prerequisite = {
-			focus = BAS_Taxation_for_the_Common_Man
-		}
-		prerequisite = {
-			focus = BAS_Attract_Foreign_Capital
-		}
-		available = {
-			has_government = social_democrat
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			country_event = BAS.31
-			add_ideas = BAS_Liberal_Reforms
-		}
-	}
-	focus = {
-		id = BAS_Preserve_Basque_Culture
-		icon = GFX_goal_generic_cathedral
-		relative_position_id = BAS_First_Basque_Elections
-		x = 3
-		y = 3
-		prerequisite = {
-			focus = BAS_Build_Bridges_Over_the_Pyrenees
-			focus = BAS_The_Founders_Vision
-			focus = BAS_Strengthen_Republicanism
-		}
-		available = {
-			OR = {
-				has_government = social_conservative
-				has_government = authoritarian_democrat
-			}
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			country_event = BAS.70
-			add_ideas = BAS_Local_Culture
-		}
-	}
-	focus = {
-		id = BAS_Curtail_Harmful_Vices
-		icon = GFX_goal_generic_prohibition
-		relative_position_id = BAS_First_Basque_Elections
-		x = 2
-		y = 4
-		prerequisite = {
-			focus = BAS_Attract_Foreign_Capital
-		}
-		prerequisite = {
-			focus = BAS_Preserve_Basque_Culture
-		}
-		available = {
-			has_government = social_conservative
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			country_event = BAS.32
-			add_ideas = BAS_Local_Customs
-		}
-	}
-	focus = {
-		id = BAS_The_Founders_Vision
-		icon = GFX_goal_generic_cult_personality
-		relative_position_id = BAS_First_Basque_Elections
-		x = 5
-		y = 2
+		cost = 0
 		prerequisite = {
 			focus = BAS_Aberri_Victory
 		}
 		available = {
-			has_government = authoritarian_democrat
+			has_government = paternal_autocrat
 		}
-		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = BAS.33
-			add_ideas = BAS_Yytachy
+			add_political_power = 25
 		}
 	}
 	focus = {
-		id = BAS_Mobilize_the_Masses
-		icon = GFX_goal_SER_mobilize_the_che
-		relative_position_id = BAS_First_Basque_Elections
-		x = 5
-		y = 3
-		cost = 5
+		id = BAS_Crush_Carlist_Bootlickers
+		icon = GFX_goal_AUS_spanish_crises
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 15
+		y = 2
+		cost = 0
 		prerequisite = {
-			focus = BAS_The_Founders_Vision
+			focus = BAS_Aberri_Victory
 		}
 		available = {
-			has_government = authoritarian_democrat
+			has_government = paternal_autocrat
 		}
-		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = BAS.154
+			add_political_power = 25
 		}
 	}
 	focus = {
-		id = BAS_Expel_the_Outsiders
-		icon = GFX_goal_generic_expel_people
-		relative_position_id = BAS_First_Basque_Elections
-		x = 7
-		y = 3
-		cost = 5
+		id = BAS_Jesuitism_Without_Hispanism
+		icon = GFX_goal_POL_Wisdom_Of_Church
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 13
+		y = 2
+		cost = 0
 		prerequisite = {
-			focus = BAS_The_Founders_Vision
+			focus = BAS_Aberri_Victory
 		}
 		available = {
-			has_government = authoritarian_democrat
+			has_government = paternal_autocrat
 		}
-		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = BAS.34
-			add_ideas = BAS_assimilating_evenks
+			add_political_power = 25
 		}
 	}
 	focus = {
-		id = BAS_Contact_Our_Irish_Comrades
-		icon = GFX_goal_irish_flag
-		relative_position_id = BAS_First_Basque_Elections
-		x = 5
+		id = BAS_Purity_of_Basque_Blood
+		icon = GFX_goal_NFA_Restore_Purity
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 16
+		y = 3
+		cost = 0
+		prerequisite = {
+			focus = BAS_Crush_Carlist_Bootlickers
+		}
+		prerequisite = {
+			focus = BAS_Republican_Traditionalism
+		}
+		prerequisite = {
+			focus = BAS_Jesuitism_Without_Hispanism
+		}
+		available = {
+			has_government = paternal_autocrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Question_of_Maketos
+		icon = GFX_NEE_block_foreign_hordes
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 14
+		y = 3
+		cost = 0
+		prerequisite = {
+			focus = BAS_Crush_Carlist_Bootlickers
+		}
+		prerequisite = {
+			focus = BAS_Republican_Traditionalism
+		}
+		prerequisite = {
+			focus = BAS_Jesuitism_Without_Hispanism
+		}
+		available = {
+			has_government = paternal_autocrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Allies_on_the_Emerald_Isle
+		icon = GFX_goal_IRE_irish_unity
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 15
 		y = 4
-		cost = 5
+		cost = 0
 		prerequisite = {
-			focus = BAS_Expel_the_Outsiders
+			focus = BAS_Purity_of_Basque_Blood
 		}
 		prerequisite = {
-			focus = BAS_Preserve_Basque_Culture
+			focus = BAS_Question_of_Maketos
 		}
 		available = {
-			has_government = authoritarian_democrat
+			has_government = paternal_autocrat
 		}
-		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = BAS.35
-			add_ideas = BAS_Praising_Gods
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Aranaist_Language_Studies
+		icon = GFX_goal_CAN_english_language_act
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 17
+		y = 4
+		cost = 0
+		prerequisite = {
+			focus = BAS_Purity_of_Basque_Blood
+		}
+		prerequisite = {
+			focus = BAS_Question_of_Maketos
+		}
+		available = {
+			has_government = paternal_autocrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_The_First_Nationalists
+		icon = GFX_goal_NFA_Bolster_Nationalism
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 13
+		y = 4
+		cost = 0
+		prerequisite = {
+			focus = BAS_Purity_of_Basque_Blood
+		}
+		prerequisite = {
+			focus = BAS_Question_of_Maketos
+		}
+		available = {
+			has_government = paternal_autocrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_The_Pious_Homeland_of_Basques
+		icon = GFX_goal_NFA_Secular_Pious
+		relative_position_id =  BAS_First_Basque_Elections
+		x = 15
+		y = 5
+		cost = 0
+		prerequisite = {
+			focus = BAS_The_First_Nationalists
+		}
+		prerequisite = {
+			focus = BAS_Aranaist_Language_Studies
+		}
+		prerequisite = {
+			focus = BAS_Allies_on_the_Emerald_Isle
+		}
+		available = {
+			has_government = paternal_autocrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BAS_Looking_for_Allies
+		icon = GFX_goal_SRI_stronkpope
+		relative_position_id =  BAS_Basque_Irredentism
+		x = 0
+		y = 5
+		cost = 0
+		available = {
+			has_government = paternal_autocrat
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
 		}
 	}
 	focus = {
 		id = BAS_Armed_Neutrality
 		icon = GFX_goal_army_guy
-		relative_position_id = BAS_First_Basque_Elections
+		relative_position_id = BAS_Looking_for_Allies
 		x = -1
-		y = 5
+		y = 1
 		cost = 0
 		available = {
 		is_subject = no
 		}
 		prerequisite = {
-			focus = BAS_Devotion_of_the_Basque_Worker
-			focus = BAS_Propel_Euskadi_Into_Modernity
-			focus = BAS_Curtail_Harmful_Vices
-			focus = BAS_Contact_Our_Irish_Comrades
+			focus = BAS_Looking_for_Allies
 		}
 		mutually_exclusive = {
 			focus = BAS_Join_The_Double_Eagle
@@ -802,13 +1492,12 @@ focus_tree = {
 	focus = {
 		id = BAS_Align_with_the_Hegemon
 		icon = GFX_goal_GER_For_Germany
-		relative_position_id = BAS_First_Basque_Elections
+		relative_position_id = BAS_Looking_for_Allies
 		x = -3
-		y = 5
+		y = 1
 		cost = 0
 		prerequisite = {
-			focus = BAS_Devotion_of_the_Basque_Worker
-			focus = BAS_Propel_Euskadi_Into_Modernity
+			focus = BAS_Looking_for_Allies
 		}
 		available = {
 			is_subject = no
@@ -852,9 +1541,9 @@ focus_tree = {
 	focus = {
 		id = BAS_Compromise_with_Internationale
 		icon = GFX_goal_FRA_Internationale_Congress
-		relative_position_id = BAS_First_Basque_Elections
+		relative_position_id = BAS_Looking_for_Allies
 		x = -5
-		y = 5
+		y = 1
 		cost = 0
 		available = {
 			is_subject = no
@@ -877,8 +1566,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-			focus = BAS_Devotion_of_the_Basque_Worker
-			focus = BAS_Propel_Euskadi_Into_Modernity
+			focus = BAS_Looking_for_Allies
 		}
 		mutually_exclusive = {
 			focus = BAS_Join_The_Double_Eagle
@@ -915,9 +1603,9 @@ focus_tree = {
 	focus = {
 		id = BAS_Join_The_Double_Eagle
 		icon = GFX_goal_AUS_tanks
-		relative_position_id = BAS_First_Basque_Elections
+		relative_position_id = BAS_Looking_for_Allies
 		x = 3
-		y = 5
+		y = 1
 		cost = 0
 		available = {
 			country_exists = AUS
@@ -928,7 +1616,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-			focus = BAS_Curtail_Harmful_Vices
+			focus = BAS_Looking_for_Allies
 		}
 		mutually_exclusive = {
 			focus = BAS_Armed_Neutrality
@@ -965,9 +1653,9 @@ focus_tree = {
 	focus = {
 		id = BAS_Contact_the_Exiles
 		icon = GFX_NEE_entente_support
-		relative_position_id = BAS_First_Basque_Elections
+		relative_position_id = BAS_Looking_for_Allies
 		x = 5
-		y = 5
+		y = 1
 		cost = 0
 		available = {
 			is_subject = no
@@ -979,7 +1667,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-			focus = BAS_Curtail_Harmful_Vices
+			focus = BAS_Looking_for_Allies
 		}
 		mutually_exclusive = {
 			focus = BAS_Join_The_Double_Eagle
@@ -1007,9 +1695,9 @@ focus_tree = {
 	focus = {
 		id = BAS_The_Wild_Card
 		icon = GFX_goal_japan_helmet
-		relative_position_id = BAS_First_Basque_Elections
+		relative_position_id = BAS_Looking_for_Allies
 		x = 1
-		y = 5
+		y = 1
 		cost = 0
 		available = {
 			is_subject = no
@@ -1021,10 +1709,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-			focus = BAS_Devotion_of_the_Basque_Worker
-			focus = BAS_Propel_Euskadi_Into_Modernity
-			focus = BAS_Curtail_Harmful_Vices
-			focus = BAS_Contact_Our_Irish_Comrades
+			focus = BAS_Looking_for_Allies
 		}
 		mutually_exclusive = {
 			focus = BAS_Armed_Neutrality
@@ -1320,7 +2005,7 @@ focus_tree = {
 		id = BAS_Euskadi_Economy_Springs_Up
 		icon = GFX_goal_generic_recovery
 		relative_position_id = BAS_First_Basque_Elections
-		x = 12
+		x = 22
 		y = 0
 		cost = 3
 		available = {
