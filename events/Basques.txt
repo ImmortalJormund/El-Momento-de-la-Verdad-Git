@@ -1831,6 +1831,30 @@ country_event = {
 	}
 }
 	country_event = { 
+	id = BAS.94
+	title = BAS.94.t
+	desc = BAS.94.d
+	picture = GFX_report_event_SPA_CNT_FAI
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #oh no
+		name = BAS.94.a
+		add_stability = -0.25
+		add_political_power = -150
+		country_event = {
+		id = BAS.95
+		days = 7
+			}
+		}
+	option = { #oh no
+		name = BAS.94.b
+		add_stability = 0.1
+				}
+			}
+		}
+	}
+	country_event = { 
 	id = BAS.95
 	title = BAS.95.t
 	desc = BAS.95.d
@@ -1864,13 +1888,6 @@ country_event = {
 		picture = "gfx/leaders/BAS/Portrait_BAS_Jose_Maria_Arizmendiarrieta.png"
 		expire = "1.1.1"
 		ideology = christian_technocracy_subtype
-		}
-	}
-	option = {
-		name = BAS.95.d
-		add_stability = 0.1
-		add_war_support = 0.1
-		add_political_power = 100
 					}
 				}
 			}
@@ -3758,7 +3775,7 @@ country_event = {#
 				}
 			}
 	option = { #oh no
-		name = BAS.330.a
+		name = BAS.330.c
 		hidden_effect = {
 		country_event = {
 		id = BAS.331
