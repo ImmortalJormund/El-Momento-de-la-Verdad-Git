@@ -4959,6 +4959,7 @@ country_event = {
 			category = military_police_tech
 			bonus = 1
 			uses = 2
+				}
 			}
 		}
 	}

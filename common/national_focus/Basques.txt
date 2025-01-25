@@ -270,6 +270,7 @@ focus_tree = {
 		available = {
 			has_war = no
 			has_completed_focus = BAS_The_Great_Enemy_Falters
+			has_country_flag = BAS_democracy_secured
 		}
 		ai_will_do = {
 			factor = 100
@@ -307,18 +308,19 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -11
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_EAS_Victory
 		}
 		available = {
-			has_government = social_democrat
+			has_government = radical_socialist
 		}
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.21
+			add_ideas = BAS_Galvanize_the_Workers
 		}
 	}
 	focus = {
@@ -327,18 +329,18 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -7
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_EAS_Victory
 		}
 		available = {
-			has_government = social_democrat
+			has_government = radical_socialist
 		}
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = BAS_Red_Nationalism
 		}
 	}
 	focus = {
@@ -347,7 +349,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -9
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_EAS_Victory
 		}
@@ -358,7 +360,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.22
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -367,7 +370,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -10
 		y = 3
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Galvanize_the_Workers
 		}
@@ -378,12 +381,13 @@ focus_tree = {
 			focus = BAS_Hunt_Down_Jacobins
 		}
 		available = {
-			has_government = social_democrat
+			has_government = radical_socialist
 		}
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
+			country_event = BAS.23
 			add_political_power = 25
 		}
 	}
@@ -393,7 +397,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -8
 		y = 3
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Galvanize_the_Workers
 		}
@@ -404,13 +408,14 @@ focus_tree = {
 			focus = BAS_Hunt_Down_Jacobins
 		}
 		available = {
-			has_government = social_democrat
+			has_government = radical_socialist
 		}
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.26
+			add_ideas = BAS_Open_Hand_to_EAJ
 		}
 	}
 	focus = {
@@ -419,7 +424,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -7
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Reel_in_the_Anarchists
 		}
@@ -427,13 +432,30 @@ focus_tree = {
 			focus = BAS_Open_Hand_to_EAJ
 		}
 		available = {
-			has_government = social_democrat
+			has_government = radical_socialist
 		}
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.27
+			add_ideas = BAS_Worker_Led_Industrialization
+			172 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			172 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -442,7 +464,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -9
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Reel_in_the_Anarchists
 		}
@@ -450,13 +472,14 @@ focus_tree = {
 			focus = BAS_Open_Hand_to_EAJ
 		}
 		available = {
-			has_government = social_democrat
+			has_government = radical_socialist
 		}
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.24
+			add_ideas = BAS_Seize_ELA_From_the_Hand_of_Capitalist
 		}
 	}
 	focus = {
@@ -465,7 +488,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -11
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Reel_in_the_Anarchists
 		}
@@ -473,13 +496,13 @@ focus_tree = {
 			focus = BAS_Open_Hand_to_EAJ
 		}
 		available = {
-			has_government = social_democrat
+			has_government = radical_socialist
 		}
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			remove_ideas = BAS_Question_of_Spanish_Immigrants
 		}
 	}
 	focus = {
@@ -488,7 +511,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -9
 		y = 5
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Worker_Led_Industrialization
 		}
@@ -499,13 +522,14 @@ focus_tree = {
 			focus = BAS_Pluralist_Patriotism
 		}
 		available = {
-			has_government = social_democrat
+			has_government = radical_socialist
 		}
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.28
+			remove_ideas = BAS_Looming_Threat_of_Carlism
 		}
 	}
 	focus = {
@@ -537,7 +561,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -5
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_EAE_Victory
 		}
@@ -548,7 +572,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.31
+			remove_ideas = BAS_Question_of_Spanish_Immigrants
 		}
 	}
 	focus = {
@@ -557,7 +582,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -3
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_EAE_Victory
 		}
@@ -568,7 +593,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.30
+			add_ideas = BAS_Mend_the_Autonomist_Divide
 		}
 	}
 	focus = {
@@ -577,7 +603,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -1
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_EAE_Victory
 		}
@@ -588,7 +614,15 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.32
+			add_offsite_building = {
+				type = synthetic_refinery
+				level = 2
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
 		}
 	}
 	focus = {
@@ -597,7 +631,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -4
 		y = 3
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Mend_the_Autonomist_Divide
 		}
@@ -614,7 +648,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.33
+			add_ideas = BAS_Form_the_Popular_Front
 		}
 	}
 	focus = {
@@ -623,7 +658,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -2
 		y = 3
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Mend_the_Autonomist_Divide
 		}
@@ -640,7 +675,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = BAS_Fund_Eusko_Ikaskuntza
 		}
 	}
 	focus = {
@@ -649,7 +684,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -3
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Form_the_Popular_Front
 		}
@@ -663,7 +698,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.34
+			add_ideas = BAS_Secular_Rationalism
 		}
 	}
 	focus = {
@@ -672,7 +708,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -5
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Form_the_Popular_Front
 		}
@@ -686,7 +722,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.35
+			add_ideas = BAS_Building_a_Welfare_State_From_the_Ground_Up
 		}
 	}
 	focus = {
@@ -695,7 +732,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -1
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Form_the_Popular_Front
 		}
@@ -709,7 +746,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			remove_ideas = BAS_Looming_Threat_of_Carlism
 		}
 	}
 	focus = {
@@ -718,7 +755,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = -3
 		y = 5
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Destroy_the_Backbone_of_Reaction
 		}
@@ -735,7 +772,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = BAS_Splinter_Party_No_More
 		}
 	}
 	focus = {
@@ -767,7 +804,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 5
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_EAJ_Victory
 		}
@@ -778,7 +815,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.44
+			add_ideas = BAS_Ensure_ELA_Support
 		}
 	}
 	focus = {
@@ -787,7 +825,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 3
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_EAJ_Victory
 		}
@@ -798,7 +836,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.48
 		}
 	}
 	focus = {
@@ -807,7 +845,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 1
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_EAJ_Victory
 		}
@@ -818,7 +856,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.47
+			add_ideas = BAS_Expand_the_Ikastolak_System
 		}
 	}
 	focus = {
@@ -827,7 +866,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 4
 		y = 3
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Ensure_ELA_Support
 		}
@@ -844,7 +883,15 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = BAS_Expand_Social_Welfare
+			172 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+			type = industrial_complex 
+			level = 3
+			instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -853,7 +900,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 2
 		y = 3
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Ensure_ELA_Support
 		}
@@ -870,7 +917,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = BAS_Redeeming_the_Concept_of_Republic
 		}
 	}
 	focus = {
@@ -879,7 +926,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 3
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Redeeming_the_Concept_of_Republic
 		}
@@ -893,7 +940,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.46
+			remove_ideas = BAS_Question_of_Spanish_Immigrants
 		}
 	}
 	focus = {
@@ -902,7 +950,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 5
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Redeeming_the_Concept_of_Republic
 		}
@@ -916,7 +964,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.49
+			add_ideas = BAS_The_Women_Patriots
 		}
 	}
 	focus = {
@@ -925,7 +974,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 1
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Redeeming_the_Concept_of_Republic
 		}
@@ -939,7 +988,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.45
+			remove_ideas = BAS_Looming_Threat_of_Carlism
 		}
 	}
 	focus = {
@@ -948,7 +998,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 3
 		y = 5
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Deal_With_Spanish_Troublemakers
 		}
@@ -965,7 +1015,11 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.43
+			add_ideas = BAS_The_Hegemon_Remains
+			hidden_effect = {
+			BAS = { country_event = { id = BAS.95 days = 100 }}			
+			}
 		}
 	}
 	focus = {
@@ -997,7 +1051,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 11
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_EMB_Victory
 		}
@@ -1008,7 +1062,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.83
+			add_ideas = BAS_Modernized_Vision_of_Arana
 		}
 	}
 	focus = {
@@ -1017,7 +1072,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 9
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_EMB_Victory
 		}
@@ -1028,7 +1083,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = BAS_Mobilize_the_Mendigoizales
 		}
 	}
 	focus = {
@@ -1037,7 +1092,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 7
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_EMB_Victory
 		}
@@ -1048,7 +1103,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.84
+			remove_ideas = BAS_Looming_Threat_of_Carlism
 		}
 	}
 	focus = {
@@ -1057,7 +1113,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 10
 		y = 3
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Modernized_Vision_of_Arana
 		}
@@ -1074,7 +1130,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.86
+			add_ideas = BAS_Subtle_Steer_to_the_Left
 		}
 	}
 	focus = {
@@ -1083,7 +1140,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 8
 		y = 3
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Modernized_Vision_of_Arana
 		}
@@ -1100,7 +1157,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.85
+			add_ideas = BAS_Form_the_Nationalist_Ikastolak
 		}
 	}
 	focus = {
@@ -1109,7 +1167,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 9
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Form_the_Nationalist_Ikastolak
 		}
@@ -1123,7 +1181,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = BAS_Nationalization_Through_Respect
 		}
 	}
 	focus = {
@@ -1132,7 +1190,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 11
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Form_the_Nationalist_Ikastolak
 		}
@@ -1146,7 +1204,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.88
+			add_ideas = BAS_Just_Catholic_Basques
 		}
 	}
 	focus = {
@@ -1155,7 +1214,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 7
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Form_the_Nationalist_Ikastolak
 		}
@@ -1169,7 +1228,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.87
+			add_ideas = BAS_Crushing_Capitalist_Hoarders
 		}
 	}
 	focus = {
@@ -1178,7 +1238,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 9
 		y = 5
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Crushing_Capitalist_Hoarders
 		}
@@ -1195,7 +1255,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.89
+			add_ideas = BAS_The_Height_of_Our_Power
 		}
 	}
 	focus = {
@@ -1209,10 +1270,10 @@ focus_tree = {
 			focus = BAS_First_Basque_Elections
 		}
 		available = {
-			has_government = authoritarian_democrat
+			has_government = paternal_autocrat
 		}
 		bypass = {
-			has_government = authoritarian_democrat
+			has_government = paternal_autocrat
 		}
 		ai_will_do = {
 			factor = 100
@@ -1227,7 +1288,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 17
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Aberri_Victory
 		}
@@ -1238,7 +1299,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.54
+			add_ideas = BAS_Republican_Traditionalism
 		}
 	}
 	focus = {
@@ -1247,7 +1309,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 15
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Aberri_Victory
 		}
@@ -1258,7 +1320,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.55
+			remove_ideas = BAS_Looming_Threat_of_Carlism
 		}
 	}
 	focus = {
@@ -1267,7 +1330,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 13
 		y = 2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Aberri_Victory
 		}
@@ -1278,7 +1341,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.52
+			add_ideas = BAS_Jesuitism_Without_Hispanism
 		}
 	}
 	focus = {
@@ -1287,7 +1351,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 16
 		y = 3
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Crush_Carlist_Bootlickers
 		}
@@ -1304,7 +1368,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.58
+			add_ideas = BAS_Purity_of_Basque_Blood
 		}
 	}
 	focus = {
@@ -1313,7 +1378,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 14
 		y = 3
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Crush_Carlist_Bootlickers
 		}
@@ -1330,7 +1395,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.56
+			remove_ideas = BAS_Question_of_Spanish_Immigrants
 		}
 	}
 	focus = {
@@ -1339,7 +1405,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 15
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Purity_of_Basque_Blood
 		}
@@ -1353,7 +1419,12 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.59
+			add_ideas = BAS_Allies_on_the_Emerald_Isle
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
 		}
 	}
 	focus = {
@@ -1362,7 +1433,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 17
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Purity_of_Basque_Blood
 		}
@@ -1376,7 +1447,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.57
+			add_ideas = BAS_Aranaist_Language_Studies
 		}
 	}
 	focus = {
@@ -1385,7 +1457,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 13
 		y = 4
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_Purity_of_Basque_Blood
 		}
@@ -1399,7 +1471,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = BAS.53
+			add_ideas = BAS_The_First_Nationalists
 		}
 	}
 	focus = {
@@ -1408,7 +1481,7 @@ focus_tree = {
 		relative_position_id =  BAS_First_Basque_Elections
 		x = 15
 		y = 5
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = BAS_The_First_Nationalists
 		}
@@ -1425,7 +1498,10 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = BAS_The_Pious_Homeland_of_Basques
+			hidden_effect = {
+			BAS = { country_event = { id = BAS.96 days = 90 }}			
+			}
 		}
 	}
 	focus = {
@@ -1434,15 +1510,16 @@ focus_tree = {
 		relative_position_id =  BAS_Basque_Irredentism
 		x = 0
 		y = 5
-		cost = 0
+		cost = 2
 		available = {
-			has_government = paternal_autocrat
+		has_country_flag = BAS_democratic_rule_secured	
 		}
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
 			add_political_power = 25
+			add_war_support = 0.08
 		}
 	}
 	focus = {
@@ -1474,19 +1551,8 @@ focus_tree = {
 			focus = BAS_Contact_the_Exiles
 		}
 		cost = 5
-		ai_will_do = {
-			factor = 30
-			modifier = {
-				factor = 30000
-				has_game_rule = {
-					rule = BAS_foreign
-					option = BAS_FOREIGN_NEUTRAL
-				}
-			}
-		}
 		completion_reward = {
 			add_ideas = BAS_armed_neutrality
-			create_faction = "Galeusca"
 		}
 	}
 	focus = {
@@ -1524,16 +1590,6 @@ focus_tree = {
 			focus = BAS_Contact_the_Exiles
 		}
 		cost = 5
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				factor = 1000
-				has_game_rule = {
-					rule = BAS_foreign
-					option = BAS_FOREIGN_RUSSIA
-				}
-			}
-		}
 		completion_reward = {
 				country_event = BAS.108
 		}
@@ -1584,16 +1640,6 @@ focus_tree = {
 			focus = BAS_Contact_the_Exiles
 		}
 		cost = 5
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				factor = 1000
-				has_game_rule = {
-					rule = BAS_foreign
-					option = BAS_FOREIGN_SIBERIA
-				}
-			}
-		}
 		completion_reward = {
 			FRA = {
 				country_event = BAS.100
@@ -1634,16 +1680,6 @@ focus_tree = {
 			focus = BAS_Contact_the_Exiles
 		}
 		cost = 5
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				factor = 1000
-				has_game_rule = {
-					rule = BAS_foreign
-					option = BAS_FOREIGN_BROTHERHOOD
-				}
-			}
-		}
 		completion_reward = {
 			AUS = {
 				country_event = BAS.103
@@ -1727,16 +1763,6 @@ focus_tree = {
 			focus = BAS_Contact_the_Exiles
 		}
 		cost = 5
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				factor = 1000
-				has_game_rule = {
-					rule = BAS_foreign
-					option = BAS_FOREIGN_JAPAN
-				}
-			}
-		}
 		completion_reward = {
 			JAP = {
 				country_event = BAS.103
@@ -2110,6 +2136,9 @@ focus_tree = {
 		completion_reward = {
 			country_event = BAS.50
 			add_ideas = BAS_mdr
+			hidden_effect = {
+			BAS = { country_event = { id = BAS.320 days = 100 }}			
+				}
 		}
 	}
 	focus = {
@@ -2246,30 +2275,71 @@ focus_tree = {
 		cost = 0
 		available = {
 			has_government = syndicalist
+			has_country_flag = BAS_anarchist_victory
 		}
 		bypass = {
 			has_government = syndicalist
+			has_country_flag = BAS_anarchist_victory
 		}
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
 			custom_effect_tooltip = unlock_focuses
-			set_cosmetic_tag = BAS_cnt
-			create_country_leader = {
-				name = "Justo Gárate Arriola"
-				picture = "gfx/leaders/Generic/Portrait_South_America_Generic_new_1.png"
-				ideology = agrarian_syndicalism_subtype
-			}
 		}
 	}
 	focus = {
-		id = BAS_Destroy_Nationalist_Influence
-		icon = GFX_BBR_red_militia_justice
+		id = BAS_Bury_the_Red_Berets
+		icon = GFX_UKR_Hammer_And_Heart
 		relative_position_id = BAS_Syndicalist_Revolution
-		x = 1
+		x = 3
 		y = 1
-		cost = 4
+		cost = 5
+		prerequisite = {
+			focus = BAS_Syndicalist_Revolution
+		}
+		available = {
+			has_government = syndicalist
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = BAS_Carlism_Destroyed
+			hidden_effect = {
+			BAS = { country_event = { id = BAS.234 days = 15 }}			
+				}
+			}
+	}
+	focus = {
+		id = BAS_Form_Emakume_Askeak
+		icon = GFX_goal_AUS_Circle_Red_Counts_Countesses
+		relative_position_id = BAS_Syndicalist_Revolution
+		x = 3
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = BAS_Bury_the_Red_Berets
+		}
+		available = {
+			has_government = syndicalist
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = BAS.244
+			add_ideas = BAS_Milicianas
+			
+			}
+	}
+	focus = {
+		id = BAS_Unite_the_Abertzales
+		icon = GFX_goal_HON_Organize_Red_Guards
+		relative_position_id = BAS_Syndicalist_Revolution
+		x = 0
+		y = 1
+		cost = 5
 		prerequisite = {
 			focus = BAS_Syndicalist_Revolution
 		}
@@ -2281,20 +2351,17 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = BAS.243
-			add_stability = -0.15
-			decrease_ruling_party_popularity_by_5 = yes
-			add_political_power = 150
 			add_ideas = BAS_Reeling_Nationalists
 			
-			}
+		}
 	}
 	focus = {
 		id = BAS_Memory_of_Los_Justicieros
 		icon = GFX_UKR_Strike_Organized_Crime
 		relative_position_id = BAS_Syndicalist_Revolution
-		x = -1
+		x = -3
 		y = 1
-		cost = 4
+		cost = 5
 		prerequisite = {
 			focus = BAS_Syndicalist_Revolution
 		}
@@ -2307,7 +2374,28 @@ focus_tree = {
 		completion_reward = {
 			country_event = BAS.237
 			add_ideas = BAS_Los_Justiciaros
-			}
+		}
+	}
+	focus = {
+		id = BAS_No_Corporations_Nor_Caciquismos
+		icon = GFX_goal_SKM_Socialized_Land_Redistribution
+		relative_position_id = BAS_Syndicalist_Revolution
+		x = -3
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = BAS_Memory_of_Los_Justicieros
+		}
+		available = {
+			has_government = syndicalist
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = BAS.236
+			add_ideas = BAS_Red_Agrarianism
+		}
 	}
 	focus = {
 		id = BAS_Refurbish_San_Sebastian
@@ -2315,9 +2403,9 @@ focus_tree = {
 		relative_position_id = BAS_Syndicalist_Revolution
 		x = 0
 		y = 2
-		cost = 4
+		cost = 5
 		prerequisite = {
-			focus = BAS_Syndicalist_Revolution
+			focus = BAS_Unite_the_Abertzales
 		}
 		available = {
 			has_government = syndicalist
@@ -2327,22 +2415,21 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = BAS.238
-			add_research_slot = 1
 			add_ideas = BAS_Red_San_Sebastian
+			172 = {
+				add_extra_state_shared_building_slots = 3
+			}
 		}
 	}
 	focus = {
-		id = BAS_Concessions_to_Tradition
-		icon = GFX_goal_syndicalist_congress
+		id = BAS_Jakintza_Baitha_Allies
+		icon = GFX_goal_SKM_Bring_Red_Truth_Masses
 		relative_position_id = BAS_Syndicalist_Revolution
 		x = -2
 		y = 2
-		cost = 4
+		cost = 5
 		prerequisite = {
-			focus = BAS_Memory_of_Los_Justicieros
-		}
-		prerequisite = {
-			focus = BAS_Destroy_Nationalist_Influence
+			focus = BAS_Unite_the_Abertzales
 		}
 		available = {
 			has_government = syndicalist
@@ -2351,23 +2438,20 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = BAS.241
+			country_event = BAS.235
 			add_political_power = -150
 			add_ideas = BAS_Concessions_to_Tradition
 		}
 	}
 	focus = {
-		id = BAS_Create_Syndicalist_Unions
-		icon = GFX_goal_Workers_Paradise
+		id = BAS_Merge_Nationalist_Unions
+		icon = GFX_RUS_Trade_Unions_Discussion
 		relative_position_id = BAS_Syndicalist_Revolution
 		x = 2
 		y = 2
-		cost = 4
+		cost = 5
 		prerequisite = {
-			focus = BAS_Memory_of_Los_Justicieros
-		}
-		prerequisite = {
-			focus = BAS_Destroy_Nationalist_Influence
+			focus = BAS_Unite_the_Abertzales
 		}
 		available = {
 			has_government = syndicalist
@@ -2390,14 +2474,14 @@ focus_tree = {
 	}
 	focus = {
 		id = BAS_Nationalize_Euskalduna
-		icon = GFX_goal_CSA_business_unionism
+		icon = GFX_goal_AUS_field_factory
 		relative_position_id = BAS_Syndicalist_Revolution
 		x = -1
 		y = 3
-		cost = 4
+		cost = 5
 		prerequisite = {
-			focus = BAS_Create_Syndicalist_Unions
-			focus = BAS_Concessions_to_Tradition
+			focus = BAS_Merge_Nationalist_Unions
+			focus = BAS_Jakintza_Baitha_Allies
 			focus = BAS_Refurbish_San_Sebastian
 		}
 		available = {
@@ -2426,10 +2510,10 @@ focus_tree = {
 		relative_position_id = BAS_Syndicalist_Revolution
 		x = 1
 		y = 3
-		cost = 4
+		cost = 5
 		prerequisite = {
-			focus = BAS_Create_Syndicalist_Unions
-			focus = BAS_Concessions_to_Tradition
+			focus = BAS_Merge_Nationalist_Unions
+			focus = BAS_Jakintza_Baitha_Allies
 			focus = BAS_Refurbish_San_Sebastian
 		}
 		available = {
@@ -2448,9 +2532,17 @@ focus_tree = {
 		relative_position_id = BAS_Syndicalist_Revolution
 		x = 0
 		y = 4
-		cost = 4
+		cost = 5
 		prerequisite = {
 			focus = BAS_The_Course_of_Our_Movement	
+		}
+		prerequisite = {
+			focus = BAS_Form_Emakume_Askeak
+		}
+		prerequisite = {
+			focus = BAS_No_Corporations_Nor_Caciquismos
+		}
+		prerequisite = {
 			focus = BAS_Nationalize_Euskalduna
 		}
 		available = {
@@ -2698,10 +2790,11 @@ focus_tree = {
 		y = 6
 		cost = 4
 		available = {
-			has_government = paternal_autocrat
+			has_government = national_populist
+			has_country_flag = BAS_traditionalist_victory
 		}
 		bypass = {
-			has_government = paternal_autocrat
+			has_government = national_populist
 		}
 		ai_will_do = {
 			factor = 100
@@ -2718,7 +2811,7 @@ focus_tree = {
 		y = 1
 		cost = 4
 		available = {
-			has_government = paternal_autocrat
+			has_government = national_populist
 		}
 		prerequisite = {
 			focus = BAS_Return_to_Tradition
@@ -2740,7 +2833,7 @@ focus_tree = {
 		y = 1
 		cost = 4
 		available = {
-			has_government = paternal_autocrat
+			has_government = national_populist
 		}
 		prerequisite = {
 			focus = BAS_Return_to_Tradition
@@ -2762,7 +2855,7 @@ focus_tree = {
 		y = 3
 		cost = 4
 		available = {
-			has_government = paternal_autocrat
+			has_government = national_populist
 		}
 		prerequisite = {
 			focus = BAS_Invite_Spanish_Carlists
@@ -2786,7 +2879,7 @@ focus_tree = {
 		y = 1
 		cost = 4
 		available = {
-			has_government = paternal_autocrat
+			has_government = national_populist
 		}
 		prerequisite = {
 			focus = BAS_Return_to_Tradition
@@ -2806,7 +2899,7 @@ focus_tree = {
 		y = 3
 		cost = 4
 		available = {
-			has_government = paternal_autocrat
+			has_government = national_populist
 		}
 		prerequisite = {
 			focus = BAS_Contact_Claimants
@@ -2854,7 +2947,7 @@ focus_tree = {
 		y = 1
 		cost = 4
 		available = {
-			has_government = paternal_autocrat
+			has_government = national_populist
 		}
 		prerequisite = {
 			focus = BAS_Return_to_Tradition
@@ -2882,7 +2975,7 @@ focus_tree = {
 		y = 2
 		cost = 4
 		available = {
-			has_government = paternal_autocrat
+			has_government = national_populist
 		}
 		prerequisite = {
 			focus = BAS_Return_to_Tradition
@@ -2902,7 +2995,7 @@ focus_tree = {
 		y = 2
 		cost = 4
 		available = {
-			has_government = paternal_autocrat
+			has_government = national_populist
 		}
 		prerequisite = {
 			focus = BAS_Return_to_Tradition
@@ -2923,7 +3016,7 @@ focus_tree = {
 		y = 2
 		cost = 4
 		available = {
-			has_government = paternal_autocrat
+			has_government = national_populist
 		}
 		prerequisite = {
 			focus = BAS_Return_to_Tradition
@@ -2946,7 +3039,7 @@ focus_tree = {
 		cost = 4
 		available = {
 			is_subject = no
-			has_government = paternal_autocrat
+			has_government = national_populist
 		}	
 		prerequisite = {
 			focus = BAS_Eradicate_Socialist_Vermin
@@ -2974,7 +3067,7 @@ focus_tree = {
 		cost = 4
 		available = {
 			is_subject = no
-			has_government = paternal_autocrat
+			has_government = national_populist
 		}
 		prerequisite = {
 			focus = BAS_Show_of_Goodwill
@@ -3001,7 +3094,7 @@ focus_tree = {
 		cost = 4
 		available = {
 			is_subject = no
-			has_government = paternal_autocrat
+			has_government = national_populist
 			41 = { is_fully_controlled_by = ROOT } #Madrid
 		}
 		prerequisite = {
@@ -3046,8 +3139,7 @@ focus_tree = {
 			is_subject = no
 			NOT = {
 			has_government = totalist
-			has_government = paternal_autocrat
-			has_government = syndicalist
+			has_government = national_populist
 			}
 		}
 		ai_will_do = {
@@ -3074,6 +3166,12 @@ focus_tree = {
 		cost = 4
 		available = {
 			is_subject = no
+			NOT = {
+			has_government = syndicalist
+			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			has_government = national_populist
+			}
 		}
 		prerequisite = {
 			focus = BAS_Basque_Irredentism
@@ -3110,12 +3208,9 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = BAS.234
+			country_event = BAS.251
 			add_political_power = 75
 			add_command_power = 150
-			}
-			hidden_effect = {
-			set_country_flag = BAS_Beyond Iberia
 		}
 	}
 		focus = {
@@ -3136,7 +3231,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			country_event = BAS.227
+			country_event = BAS.255
 		}
 	}
 		focus = {
@@ -3218,8 +3313,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-		create_faction = "Pact of San Sebastian"
-		country_event = BAS.233
+		create_faction = "Galeusca"
+		country_event = BAS.260
 		}
 	}
 		focus = {

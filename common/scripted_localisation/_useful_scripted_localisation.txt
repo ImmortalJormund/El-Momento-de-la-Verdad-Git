@@ -956,7 +956,13 @@ defined_text = {
 		}
 		localization_key = aboriginal_garveyism_subtype 
    	}
-
+	text = {
+		trigger = {
+			has_country_leader_ideology = anarcho_abertzalism_subtype
+		}
+		localization_key = anarcho_abertzalism_subtype 
+   	}
+	
 	text = {
 		trigger = {
 			has_country_leader_ideology = radical_socialist_subtype
@@ -3771,6 +3777,12 @@ defined_text = {
 		}
 		localization_key = pataut_maurism_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = integrism_subtype
+		}
+		localization_key = integrism_subtype
+	}
 
 	text = {
 		trigger = {
@@ -4372,6 +4384,12 @@ defined_text = {
 			has_country_leader_ideology = liberating_nationalism_subtype
 		}
 		localization_key = liberating_nationalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_integrism_subtype
+		}
+		localization_key = natpop_integrism_subtype
 	}
 	
 	### YOU GO IN THE CORNER OF SHAME ###

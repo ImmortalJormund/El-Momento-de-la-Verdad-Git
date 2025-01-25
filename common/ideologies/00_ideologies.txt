@@ -168,6 +168,7 @@ ideologies = {
 			syn_kotahitanga_subtype = {can_be_randomly_selected = no} #kotahitanga
 			libertarian_possibilism_subtype = {can_be_randomly_selected = no} #Possibilism
 			aboriginal_garveyism_subtype = {can_be_randomly_selected = no} #aboriginal garveyism
+			anarcho_abertzalism_subtype = {can_be_randomly_selected = no} #Anarcho Abertzalism
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SYNDICALIST_1"
@@ -865,6 +866,7 @@ ideologies = {
 			poujadisme_subtype = {can_be_randomly_selected = no} #Poujadisme
 			pataut_synarchism_subtype = {can_be_randomly_selected = no} #Synarchism
 			pataut_maurism_subtype = {can_be_randomly_selected = no} #Maurism
+			integrism_subtype = {can_be_randomly_selected = no} #Integrism
 	    }
 		dynamic_faction_names = {
 			"FACTION_NAME_PATERNAL_AUTOCRAT_1"
@@ -998,6 +1000,7 @@ ideologies = {
 			natpop_poujadisme_subtype = {can_be_randomly_selected = no} #Poujadisme
 			natpop_humanisme_integral_subtype = {can_be_randomly_selected = no} #Humanisme Integral
 			liberating_nationalism_subtype = {can_be_randomly_selected = no} #Vibrantism
+			natpop_integrism_subtype = {can_be_randomly_selected = no} #Integrism
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_NATIONAL_POPULIST_1"

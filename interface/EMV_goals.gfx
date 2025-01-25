@@ -219,4 +219,48 @@ SpriteTypes = {
 		name = "GFX_goal_SPR_Radical_Spain"
 		texturefile = "gfx/interface/goals/SPR_Radical_Spain.png"
 	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Capt_Balls_raises_the_black_banner"
+		texturefile = "gfx/interface/goals/CAT_Capt_Balls_raises_the_black_banner.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_catalanism_under_one_party"
+		texturefile = "gfx/interface/goals/CAT_catalanism_under_one_party.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Cleave_off_the_head_of_Nosotros"
+		texturefile = "gfx/interface/goals/CAT_Cleave_off_the_head_of_Nosotros.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Corporatism_over_socialism"
+		texturefile = "gfx/interface/goals/CAT_Corporatism_over_socialism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Horrors_from_the_sewers"
+		texturefile = "gfx/interface/goals/CAT_Horrors_from_the_sewers.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Inspiration_from_foreign_comrades"
+		texturefile = "gfx/interface/goals/CAT_Inspiration_from_foreign_comrades.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_New_escamot_army"
+		texturefile = "gfx/interface/goals/CAT_New_escamot_army.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Nurture_youthful_roots"
+		texturefile = "gfx/interface/goals/CAT_Nurture_youthful_roots.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Paramilitary_dictatorship"
+		texturefile = "gfx/interface/goals/CAT_Paramilitary_dictatorship.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Rally_the_holy_brohood"
+		texturefile = "gfx/interface/goals/CAT_Rally_the_holy_brohood.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Shed_false_red_skin_foot"
+		texturefile = "gfx/interface/goals/CAT_Shed_false_red_skin_foot.png"
+	}
 }

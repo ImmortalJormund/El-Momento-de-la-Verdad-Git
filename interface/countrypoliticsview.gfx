@@ -1038,6 +1038,10 @@ spriteTypes = {
 		name = "GFX_ideology_aboriginal_garveyism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/aboriginal_garveyism_group.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_anarcho_abertzalism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/anarcho_abertzalism_group.png"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_christian_socialism_subtype"
@@ -2889,6 +2893,10 @@ spriteTypes = {
 		name = "GFX_ideology_pataut_synarchism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/pataut_synarchism_group.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_integrism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/integrism_group.png"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_integralism_subtype"
@@ -3293,6 +3301,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_liberating_nationalism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/liberating_nationalism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_natpop_integrism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/natpop_integrism_group.png"
 	}
 	
 	### YOU GO IN THE CORNER OF SHAME ###

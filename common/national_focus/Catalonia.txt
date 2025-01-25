@@ -4897,7 +4897,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Capita_Collons_Reign_of_Terror
-		icon = GFX_goal_VIN_black_fiefdom_southeast_asia
+		icon = GFX_goal_CAT_Capt_Balls_raises_the_black_banner
 		relative_position_id = CAT_Batet_Restores_Order
 		x = 0
 		y = 7
@@ -4919,7 +4919,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_The_Horrors_of_the_Sewers
-		icon = GFX_goal_COR_Terror_in_the_night
+		icon = GFX_goal_CAT_Horrors_from_the_sewers
 		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
 		x = 1
 		y = 1
@@ -4937,7 +4937,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Rally_Surviving_Escamots
-		icon = GFX_goal_IRE_black_legion
+		icon = GFX_goal_CAT_Rally_the_holy_brohood
 		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
 		x = -1
 		y = 1
@@ -4955,7 +4955,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Shed_the_Red_Skin
-		icon = GFX_goal_NFA_ultranational_catholicism
+		icon = GFX_goal_CAT_Shed_false_red_skin_foot
 		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
 		x = -3
 		y = 1
@@ -4973,7 +4973,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Destroy_Democratic_Falsehood
-		icon = GFX_goal_BAN_defeat_chaos
+		icon = GFX_goal_CAT_catalanism_under_one_party
 		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
 		x = 3
 		y = 1
@@ -4991,7 +4991,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Cleave_Off_The_Head_of_Nosotros
-		icon = GFX_goal_CRO_eliminate_syndies
+		icon = GFX_goal_CAT_Cleave_off_the_head_of_Nosotros
 		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
 		x = 1
 		y = 2
@@ -5012,7 +5012,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Transform_Escamots_Into_Proper_Army
-		icon = GFX_goal_RUS_Green_Legionaries
+		icon = GFX_goal_CAT_New_escamot_army
 		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
 		x = -1
 		y = 2
@@ -5034,7 +5034,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Follow_the_Romanian_Example
-		icon = GFX_goal_ROM_national_legionary_state
+		icon = GFX_goal_CAT_Inspiration_from_foreign_comrades
 		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
 		x = -2
 		y = 3
@@ -5054,7 +5054,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Nationalist_Corporatism_Over_Socialist_Ruin
-		icon = GFX_goal_NFA_Towards_Corporatism
+		icon = GFX_goal_CAT_Corporatism_over_socialism
 		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
 		x = 0
 		y = 3
@@ -5075,7 +5075,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Our_Youthful_Roots
-		icon = GFX_goal_HON_Social_Youth
+		icon = GFX_goal_CAT_Nurture_youthful_roots
 		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
 		x = 2
 		y = 3
@@ -5095,7 +5095,7 @@ focus_tree = {
 		}
 		focus = {
 		id = CAT_State_Built_on_Terror
-		icon = GFX_goal_CAN_national_security_act
+		icon = GFX_goal_CAT_Paramilitary_dictatorship
 		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
 		x = 0
 		y = 4

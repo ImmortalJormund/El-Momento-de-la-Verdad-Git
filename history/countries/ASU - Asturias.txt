@@ -83,7 +83,7 @@ set_politics = {
 
 add_socdem_to_coalition = yes
 add_radsoc_to_coalition = yes
-add_totalist_to_coalition = yes
+add_tot_to_coalition = yes
 
 set_popularities = {
 	totalist = 5

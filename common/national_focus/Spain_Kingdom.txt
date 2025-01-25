@@ -123,6 +123,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_talks_with_CNT"
+			country_event = sprd.358
 			swap_ideas = {
 				remove_idea = SPR_social_breakdown
 				add_idea = SPR_social_breakdown_2
@@ -2098,7 +2099,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_new_equipment"
-			add_ideas = SPR_the_big_guns
+			add_ideas = SPR_bustin
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2122,15 +2123,22 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_motor_focus"
-			add_ideas = SPR_bustin
-			add_tech_bonus = {
-				name = SPR_fortress_busters
-				bonus = 1
-				uses = 1
-				technology = artillery
+			if = {
+				limit = {
+					has_idea = SPR_bustin_1
+				}
+				swap_ideas = {
+					remove_idea = SPR_bustin_1
+					add_idea = SPR_bustin_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SPR_bustin
+					add_idea = SPR_bustin_1
+				}
 			}
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = SPR_composite_divisions
@@ -2152,9 +2160,22 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_motor_focus"
 			army_experience = 25
-			add_ideas = SPR_composite_divisions
+			if = {
+				limit = {
+					has_idea = SPR_bustin_1
+				}
+				swap_ideas = {
+					remove_idea = SPR_bustin_1
+					add_idea = SPR_bustin_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SPR_bustin
+					add_idea = SPR_bustin_1
+				}
+			}
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = SPR_the_queen_on_our_board
@@ -2178,7 +2199,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_motor_focus"
-			add_ideas = SPR_queen_on_our_board
+				swap_ideas = {
+				remove_idea = SPR_bustin_2
+				add_idea = SPR_bustin_3
+				}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2201,7 +2225,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_motor_focus"
-			add_ideas = SPR_endless_shells
+				swap_ideas = {
+				remove_idea = SPR_bustin_3
+				add_idea = SPR_bustin_4
+				}
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
@@ -2304,7 +2331,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_motor_focus"
-			add_ideas = SPR_modern_heavy_cavalry 
+				swap_ideas = {
+					remove_idea = SPR_mongol_moment
+					add_idea = SPR_mongol_moment_1
+				}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2357,7 +2387,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_motor_focus"
-			add_ideas = SPR_flesh_over_machine
+				swap_ideas = {
+					remove_idea = SPR_mongol_moment_1
+					add_idea = SPR_mongol_moment_2
+				}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2432,9 +2465,22 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_motor_focus"
 			army_experience = 25
-			add_ideas = SPR_morale_above_all
+			if = {
+				limit = {
+					has_idea = SPR_traditional_doctrine_1
+				}
+				swap_ideas = {
+					remove_idea = SPR_traditional_doctrine_1
+					add_idea = SPR_traditional_doctrine_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SPR_traditional_doctrine
+					add_idea = SPR_traditional_doctrine_1
+				}
+			}
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = SPR_local_terrain_local_means
@@ -2455,9 +2501,22 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_motor_focus"
-			add_ideas = SPR_local_terrain_local_means
+			if = {
+				limit = {
+					has_idea = SPR_traditional_doctrine_1
+				}
+				swap_ideas = {
+					remove_idea = SPR_traditional_doctrine_1
+					add_idea = SPR_traditional_doctrine_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SPR_traditional_doctrine
+					add_idea = SPR_traditional_doctrine_1
+				}
+			}
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = SPR_the_desire_for_victory
@@ -2481,7 +2540,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_motor_focus"
-			add_ideas = SPR_desire_for_victory
+				swap_ideas = {
+					remove_idea = SPR_traditional_doctrine_2
+					add_idea = SPR_traditional_doctrine_3
+				}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2504,7 +2566,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_motor_focus"
-			add_ideas = SPR_military_autarky
+				swap_ideas = {
+					remove_idea = SPR_traditional_doctrine_3
+					add_idea = SPR_traditional_doctrine_4
+			}
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
@@ -2558,7 +2623,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_tank_focus"
 			army_experience = 25
-			add_ideas = SPR_armored_steeds
+				swap_ideas = {
+					remove_idea = SPR_tank_focus
+					add_idea = SPR_tank_focus_1
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2611,7 +2679,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_tank_focus"
-			add_ideas = SPR_new_trubias
+				swap_ideas = {
+					remove_idea = SPR_tank_focus_1
+					add_idea = SPR_tank_focus_2
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2634,7 +2705,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SPR_tank_focus"
-			add_ideas = SPR_weapons_of_opportunity
+				swap_ideas = {
+					remove_idea = SPR_tank_focus_2
+					add_idea = SPR_tank_focus_3
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -3151,12 +3225,6 @@ focus_tree = {
 		cost = 7.0
 		prerequisite = {
 			focus = SPR_expand_navy
-		}
-		prerequisite = {
-			focus = SPR_expand_airforce
-		}
-		mutually_exclusive = {
-			focus = SPR_air_focus
 		}
 		relative_position_id = SPR_rebuild_command
 		x = 18
@@ -4754,7 +4822,6 @@ focus_tree = {
 				has_country_flag = SPR_absolute_monarchy
 			}
 		}
-		mutually_exclusive = { focus = SPR_francoism }
 		prerequisite = {}
 		relative_position_id = SPR_question_of_the_monarchy
 		x = 4
@@ -4819,7 +4886,6 @@ focus_tree = {
 		}
 		prerequisite = { 
 			focus = SPR_absolutism 
-			focus = SPR_francoism
 		}
 		relative_position_id = SPR_absolutism
 		x = 0
@@ -5023,10 +5089,6 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = {
-			focus = SPR_franco_question 
-		}
-		mutually_exclusive = { focus = SPR_francoism }
 		relative_position_id = SPR_question_of_the_monarchy
 		x = -20
 		y = 1
@@ -5081,10 +5143,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SPR_workers_rights_idea
-			add_popularity = {
-				ideology = radical_socialist
-				popularity = 0.1
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 	}
@@ -5101,7 +5159,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SPR_The_Rightful_Elder_idea
-			add_political_power = 55
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 	}
@@ -5124,10 +5181,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = sprd.159
-			add_popularity = {
-				ideology = radical_socialist
-				popularity = 0.1
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 	}
@@ -5148,13 +5201,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.154
 			add_ideas = SPR_Peace_with_the_Anarchists_idea			
-			add_synd_to_coalition
-			}
-			add_political_power = 150
-			add_popularity = {
-				ideology = syndicalist
-				popularity = 0.03
-			}
+			add_synd_to_coalition = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 	}
@@ -5175,11 +5222,6 @@ focus_tree = {
 		completion_reward = { 
 			country_event = sprd.156
 			add_ideas = SPR_Commitment_to_Democracy_idea
-			add_stability = 0.06
-			add_popularity = {
-				ideology = totalist
-				popularity = -0.1
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 	}
@@ -5233,7 +5275,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SPR_Labour_Laws_for_the_Worker_idea
-			add_stability = 0.05
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 	}
@@ -5261,12 +5302,6 @@ focus_tree = {
 			country_event = sprd.155
 			add_ideas = SPR_Crushed_Caciquismo_idea
 			remove_ideas = SPR_Rising_Separatism
-			add_stability = 0.05
-			add_political_power = -150
-			add_popularity = {
-				ideology = paternal_autocrat
-				popularity = -0.15
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 	}
@@ -5290,11 +5325,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.157
 			add_ideas = SPR_Socialist_Spain_idea
-			add_war_support = 0.1
-			add_popularity = {
-				ideology = radical_socialist
-				popularity = 0.1
-			}
+
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 	}
@@ -5341,7 +5372,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SPR_social_security_idea
-			add_stability = 0.07
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -5368,18 +5398,10 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.167
 			add_ideas = SPR_Popular_Front_idea
-			add_tot_to_coalition
-		}
-			add_synd_to_coalition
-		}
-			add_radsoc_to_coalition
-		}
-			add_soclib_to_coalition
-		}
-			add_popularity = {				
-				ideology = social_democrat
-				popularity = 0.15			
-			}
+			add_tot_to_coalition = yes
+			add_synd_to_coalition = yes
+			add_radsoc_to_coalition = yes
+			add_soclib_to_coalition = yes			
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -5402,7 +5424,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = sprd.166
-			add_political_power = 150
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -5423,10 +5444,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.165
 			add_ideas = SPR_Army_Unburdened_by_Sycophants_idea
-			add_popularity = {
-				ideology = paternal_autocrat
-				popularity = -0.1
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -5448,7 +5465,6 @@ focus_tree = {
 			
 			add_ideas = SPR_Minority_Rights_Honoured_idea
 			remove_ideas = SPR_Rising_Separatism
-			add_stability = 0.1
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -5468,11 +5484,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SPR_Secularized_Schools_idea
-			add_political_power = -100
-			add_popularity = {
-				ideology = authoritarian_democrat
-				popularity = -0.1
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -5498,7 +5509,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = sprd.164
-			add_political_power = 150
+			add_political_power = 75
 			add_popularity = {
 				ideology = social_democrat
 				popularity = 0.1
@@ -5552,7 +5563,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.169
 			add_ideas = SPR_Progressive_Spain_idea
-			add_stability = 0.05
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -5622,15 +5632,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = sprd.176
-			add_political_power = 50
-			add_popularity = {
-				ideology = social_liberal
-				popularity = 0.1
-			}	
-			add_popularity = {
-				ideology = market_liberal
-				popularity = -0.1
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
@@ -6104,7 +6105,6 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				add_political_power = 25
-				add_ideas = SPR_DisUnited_Party
 			}
 			custom_effect_tooltip = unlock_focuses
 		}
@@ -6149,10 +6149,6 @@ focus_tree = {
 			country_event = sprd.193
 			remove_ideas = SPR_DisUnited_Party
 			add_ideas = SPR_United_Party
-			add_popularity = {
-				ideology = market_liberal
-				popularity = 0.1
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6175,10 +6171,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.194
 			add_ideas = SPR_Mistakes_of_the_Past
-			add_popularity = {
-				ideology = market_liberal
-				popularity = -0.03
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6202,10 +6194,8 @@ focus_tree = {
 			add_political_power = -75
 			add_ideas = SPR_True_Jacobins_idea
 			remove_ideas = SPR_Rising_Separatism
-			add_soclib_to_coalition
-			}
-			add_socdem_to_coalition
-			}
+			add_soclib_to_coalition = yes
+			add_socdem_to_coalition = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6227,7 +6217,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.197
 			add_ideas = SPR_Lerrouxism_Unbowed
-			add_war_support = 0.05
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6249,7 +6238,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.196
 			add_ideas = SPR_Endorsed_Kleptocracy
-			add_political_power = 150
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6271,8 +6259,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.199
 			add_ideas = SPR_Catalans_Are_Okay_I_Guess
-			add_manpower = 5000
-			add_stability = 0.1
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6318,11 +6304,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.200
 			add_ideas = SPR_Populist_Spain
-			add_war_support = 0.1
-			add_popularity = {
-				ideology = market_liberal
-				popularity = 0.15
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6361,10 +6342,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SPR_catholic_unions
-			add_popularity = {
-				ideology = authoritarian_democrat
-				popularity = 0.1
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6382,7 +6359,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.125
 			add_ideas = SPR_True_Monarchists
-			add_stability = 0.1
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6403,8 +6379,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.126
 			add_ideas = SPR_United_Right
-			add_marlib_to_coalition
-			}
+			add_marlib_to_coalition = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6423,10 +6398,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SPR_State_Corporatism
-			add_popularity = {
-				ideology = syndicalist
-				popularity = -0.05
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6469,8 +6440,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.129
 			add_ideas = SPR_Moderated_Greenshirts
-			add_stability = 0.05
-			add_war_support = -0.05
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6492,7 +6461,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.127
 			add_ideas = SPR_Papal_Support
-			add_political_power = 70
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6515,8 +6483,6 @@ focus_tree = {
 			country_event = sprd.128
 			add_ideas = SPR_Carlists_Destroyed
 			remove_ideas = SPR_Rising_Separatism
-			add_stability = 0.07
-			add_manpower = -600
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6539,8 +6505,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.124
 			add_ideas = SPR_Monarchist_Spain
-			add_political_power = 100
-			add_stability = 0.1
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
@@ -6808,7 +6772,6 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-			add_political_power = -60
 			add_stability = -0.05
 			add_ideas = SPR_Euthanize_Republicanism
 		}
@@ -6869,7 +6832,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-			add_political_power = -150
+			add_political_power = -75
 				41 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -6916,7 +6879,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = sprd.192
-			add_political_power = 100
 			add_ideas = SPR_Marching_Onwards
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
@@ -6940,8 +6902,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.05
+			add_political_power = 25
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
@@ -6982,7 +6943,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SPR_No_More_Syndies
-			add_stability = 0.1
+			add_stability = 0.05
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		}
@@ -7001,7 +6962,6 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-			add_political_power = 100
 			country_event = sprd.132
 			add_ideas = SPR_Pro_Agrarianism
 		}
@@ -7075,8 +7035,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.136
 			add_ideas = SPR_Legiories_of_Albinana
-			add_stability = -0.08
-			add_war_support = 0.08
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		}
@@ -7095,7 +7053,6 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-			add_political_power = -75
 			add_ideas = SPR_State_Owned_Social_and_Health_Services
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
@@ -7117,7 +7074,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.133
 			add_ideas = SPR_Hispanism
-			add_war_support = 0.05
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		}		
@@ -7299,7 +7255,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = sprd.203
-			add_political_power = 150
 			add_stability = 0.05
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
@@ -7449,7 +7404,6 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-			add_political_power = -150
 			add_ideas = SPR_True_Secularism 
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
@@ -7728,8 +7682,6 @@ focus_tree = {
 		}
 		completion_reward = {
 				country_event = sprd.151
-				add_stability = 0.03
-				add_command_power = 150
 				add_war_support = 0.05
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
@@ -7881,8 +7833,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = sprd.142
-			add_political_power = 150
-			add_war_support = 0.05
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		}
@@ -7903,8 +7853,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.145
 			add_ideas = SPR_Liberated_Minds
-			add_stability = 0.02
-			add_political_power = 50
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		}
@@ -7925,12 +7873,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.143
 			add_ideas = SPR_Cremation
-			add_stability = -0.05
-			add_political_power = -100
-				add_popularity = {
-				ideology = paternal_autocrat
-				popularity = -0.05
-			}
 				
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
@@ -7951,10 +7893,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SPR_Peoples_Communes
-			add_popularity = {
-				ideology = syndicalist
-				popularity = 0.05
-				}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		}
@@ -7975,7 +7913,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.144
 			add_ideas = SPR_Mujeres_Libres
-			add_manpower = 7000
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		}		
@@ -8024,9 +7961,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = sprd.146
 			remove_ideas = SPR_Paradox
-			add_stability = 0.15
-			add_war_support = 0.15
-			add_political_power = 150
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		}

@@ -69,6 +69,154 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Europe/Spain/report_event_SPR_stratonautical_suit.png"
 
 	}
-	
+	## SPR - Spain
+	spriteType = {
+		name = "GFX_report_event_BAS_shepherd_dog"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_shepherd_dog.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_BAS_bertsolari"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_bertsolari.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_BAS_bidegaray"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_bidegaray.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_BAS_euskaltzaindia"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_euskaltzaindia.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_BAS_foosball"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_foosball.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_BAS_football_not_soccer"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_football_not_soccer.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_BAS_hanging_bridge"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_hanging_bridge.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_BAS_jesusman"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_jesusman.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_BAS_jose_arujo"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_jose_arujo.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_BAS_san_fermin"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_san_fermin.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_BAS_cagot"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_cagot.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_BAS_drummer"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_drummer.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_BAS_albania_euskadi_will_be_real"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_albania_euskadi_will_be_real.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_aberri"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_aberri.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_aberri_propaganda"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_aberri_propaganda.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_abertzale"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_abertzale.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_abertzale"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_abertzale_1.png"			
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_jesusman_1"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_jesusman_1.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_socialist"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_socialist.png"	
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_socialist_1"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_socialist_1.png"	
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_socialist_2"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_socialist_2.png"		
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_eaj_priest_man"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_eaj_priest_man.png"		
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_alfa"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_alfa.png"	
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_ela"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_ela.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_ela_1"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_ela_1.png"		
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_ela_2"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_ela_2.png"	
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_sabin_extea"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_sabin_extea.png"	
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_tomas_bilbao_hospitalet"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_tomas_bilbao_hospitalet.png"		
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_mendigoxale"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_mendigoxale.png"		
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_mendigoxale_1"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_mendigoxale_1.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_mendigoxale_2"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_mendigoxale_2.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_mendigoxale_3"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_mendigoxale_3.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_likinianos"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_likinianos.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_likinianos_2"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_likinianos_2.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_krutwig"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_krutwig.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_kasilda"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_kasilda.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_luis_arana"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_luis_arana.png"
+	}	
 
 }
