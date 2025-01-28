@@ -1038,6 +1038,10 @@ spriteTypes = {
 		name = "GFX_ideology_aboriginal_garveyism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/aboriginal_garveyism_group.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_anarcho_abertzalism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/anarcho_abertzalism_group.png"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_christian_socialism_subtype"
@@ -2311,6 +2315,14 @@ spriteTypes = {
 		name = "GFX_ideology_soccon_liberal_conservative_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/soccon_liberal_conservative_group.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_noucentisme_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/noucentisme_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_iberian_federalism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/iberian_federalism_group.png"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_autdem_christian_democracy_subtype"
@@ -2571,6 +2583,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_maurism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/maurism_group.png"
+	}
+		spriteType = {
+		name = "GFX_ideology_authdem_noucentisme_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/authdem_noucentisme_group.png"
 	}
 	
 	spriteType = {
@@ -2876,6 +2892,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_pataut_synarchism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/pataut_synarchism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_integrism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/integrism_group.png"
 	}
 	
 	spriteType = {
@@ -3277,6 +3297,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_natpop_humanisme_integral_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/natpop_humanisme_integral_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_liberating_nationalism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/liberating_nationalism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_natpop_integrism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/natpop_integrism_group.png"
 	}
 	
 	### YOU GO IN THE CORNER OF SHAME ###

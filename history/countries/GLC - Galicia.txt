@@ -76,15 +76,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Urania Mella"
-	picture = "gfx/leaders/Operatives/EuropeFemale28.png"
+	name = "Ricardo Mella"
+	picture = "gfx/leaders/GLC/Portrait_GLC_Ricardo_Mella.png"
 	expire = "1.1.1"
-	ideology = feminist_syndicalist_subtype 
+	ideology = anarcho_syndicalist_subtype 
 }
 
 create_country_leader = {
 	name = "Basilio Álvarez"
-	picture = "gfx/leaders/Generic/Portrait_Europe_Generic_new_12.png"
+	picture = "gfx/leaders/GLC/Portrait_GLC_Basilio_Alvarez.png"
 	expire = "1.1.1"
 	ideology = christian_socialism_subtype
 }
@@ -111,17 +111,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Valentin Paz Andrade"
-	picture = "gfx/leaders/CAR/Portrait_CAR_Valentin_Paz_Andrade.png"
-	expire = "1.1.1"
-	ideology = progressive_conservatism_subtype 
-}
-
-create_country_leader = {
 	name = "Ramón Otero Pedrayo"
 	picture = "gfx/leaders/CAR/Portrait_CAR_Ramon_Otero_Pedrayo.png"
 	expire = "1.1.1"
-	ideology = national_democracy_subtype
+	ideology = moderate_authoritarianism_subtype 
+}
+
+create_country_leader = {
+	name = "Antonio Losada Dieguez"
+	picture = "gfx/leaders/GLC/Portrait_GLC_Antonio_Losada_Dieguez.png"
+	expire = "1.1.1"
+	ideology = authdem_agrarianism_subtype
 }
 
 create_country_leader = {
