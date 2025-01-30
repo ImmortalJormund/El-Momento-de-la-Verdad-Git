@@ -218,5 +218,25 @@ spriteTypes = {
 		name = "GFX_report_event_BAS_luis_arana"
 		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_luis_arana.png"
 	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_cyclistman"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_cyclistman.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_fournier"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_fournier.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_fournier_1"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_fournier_1.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_ruby"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_ruby.png"
+	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_galindez"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_galindez.png"
+	}	
 
 }

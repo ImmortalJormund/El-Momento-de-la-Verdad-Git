@@ -180,6 +180,7 @@ country_event = {
 				id = BAS.330
 				days = 3
 			}
+		}
 	}
 }
 
@@ -565,6 +566,7 @@ country_event = {
 			BAS_Elbira_Zipitria_for_ade
 			BAS_Francisco_Javier_de_Landaburu_eco_sco
 			BAS_Jose_Luis_Arrese_Magra_sec_pau
+				}
 			}
 		}
 	}
@@ -1888,7 +1890,6 @@ country_event = {
 		picture = "gfx/leaders/BAS/Portrait_BAS_Jose_Maria_Arizmendiarrieta.png"
 		expire = "1.1.1"
 		ideology = christian_technocracy_subtype
-					}
 				}
 			}
 		}		
@@ -2415,10 +2416,10 @@ country_event = {
 
 	option = { #oh no
 		name = BAS.222.a
-		add_state_core = 331
-		add_state_core = 332
-		add_state_core = 1131
-		add_state_core = 730
+		add_state_claim = 331
+		add_state_claim = 332
+		add_state_claim = 1131
+		add_state_claim = 730
 	}	
 	option = { #oh no
 		name = BAS.222.b
@@ -2629,6 +2630,25 @@ country_event = {#
 					}
 				}
 				BAS = { add_state_core = PREV }
+					}
+				}
+		option = { #Galeuscaism
+		name = BAS.232.b
+		set_cosmetic_tag = BAS_minority_confed_1
+		add_state_core = 940
+		add_state_core = 166
+		add_state_core = 177
+		add_state_claim = 176
+		add_state_core = 174
+		add_state_core = 793
+		add_state_core = 171
+		add_state_core = 951
+		add_state_core = 165
+		add_state_core = 167
+		add_state_core = 1313
+		create_wargoal = {
+			type = annex_everything
+			target = 41.owner
 							}
 						}
 					}		
@@ -2696,7 +2716,7 @@ country_event = {#
 		add_stability = -0.02
 		add_political_power = 150
 			hidden_effect = {
-			BAS = { country_event = { id = BAS.269 days = 5 }}
+			BAS = { country_event = { id = BAS.269 days = 60 }}
 		}
 	}
 }
@@ -2948,7 +2968,7 @@ country_event = {#
 	desc = BAS.250.d
 	picture = GFX_report_event_SPA_CNT_FAI
 	fire_only_once = yes
-		trigger = {
+	trigger = {
 		tag = BAS
 		41 = { is_controlled_by = BAS } 
 		has_country_flag = BAS_separatist_war
@@ -3097,6 +3117,7 @@ country_event = {#
 		add_state_core = 31
 		add_state_core = 22		
 		add_state_core = 1313
+		add_state_core = 176
 		create_wargoal = {
 			type = annex_everything
 			 target = FRA
@@ -3121,6 +3142,7 @@ country_event = {#
 		add_state_core = 31
 		add_state_core = 22		
 		add_state_core = 1313
+		add_state_core = 176
 		create_wargoal = {
 			type = annex_everything
 			 target = FRA
@@ -3132,6 +3154,7 @@ country_event = {#
 		create_wargoal = {
 			type = annex_everything
 			 target = CAT
+						}
 					}
 				}
 			 }
@@ -3410,6 +3433,126 @@ country_event = {#
 	}
 }
 	country_event = { 
+	id = BAS.270
+	title = BAS.270.t 
+	desc = BAS.270.d 
+	picture = GFX_report_event_ICE_norway
+	fire_only_once = yes
+	trigger = { 
+	tag = BAS
+	owns_state = 165
+	owns_state = 171
+	owns_state = 41
+	has_cosmetic_tag = BAS_SPR_FED
+	}
+	option = { #Yes Portugal
+		name = BAS.270.a
+		every_state = {
+		limit = {
+		OR = {
+		is_core_of = POR
+			}
+		}
+		BAS = { add_state_core = PREV }
+				}
+			 }
+	option = { #No Portugal
+		name = BAS.270.b
+		add_stability = 0.05
+			}
+		}
+	}
+}
+	country_event = { 
+	id = BAS.271
+	title = BAS.271.t 
+	desc = BAS.271.d 
+	picture = GFX_report_event_ICE_norway
+	fire_only_once = yes
+	trigger = { 
+	tag = BAS
+	owns_state = 41
+	has_cosmetic_tag = BAS_minority_confed_1
+	}
+	option = {
+		name = BAS.271.a
+				release_puppet = SPR
+				SPR = {
+					add_ideas = SPR_shackled_castile
+					set_cosmetic_tag = SPR_cuck				
+					set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+					create_country_leader = {
+					name = "Mariano Gámir Ulíbarri"
+					picture = "gfx/leaders/CAR/Portrait_CAR_Mariano_Gamir_Ulibarri.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+					add_popularity = {
+					ideology = paternal_autocrat
+					popularity = 0.15
+				}
+				SPR = {
+				remove_state_core = 940
+				remove_state_core = 166
+				remove_state_core = 177
+				remove_state_core = 176
+				remove_state_core = 174
+				remove_state_core = 793
+				remove_state_core = 171
+				remove_state_core = 951
+				remove_state_core = 165
+				remove_state_core = 167
+				remove_state_core = 1313	
+			}
+		}
+	}
+}
+	country_event = { 
+	id = BAS.272
+	title = BAS.272.t 
+	desc = BAS.272.d 
+	picture = GFX_report_event_ICE_norway
+	fire_only_once = yes
+	trigger = { 
+	tag = BAS
+	owns_state = 331
+	has_completed_focus = BAS_Our_Colonies_in_the_New_World
+	}
+	option = {
+		name = BAS.272.a
+				release_puppet = NFL
+				NFL = {
+					set_cosmetic_tag = BAS_ternua			
+					set_politics = {
+					ruling_party = national_populist
+					elections_allowed = no
+				}
+					add_popularity = {
+					ideology = national_populist
+					popularity = 0.15	
+				}
+				BAS = {
+				remove_state_claim = 331
+				remove_state_claim = 332
+				remove_state_claim = 730
+				remove_state_claim = 1330
+			}
+		}
+	}
+	option = {
+		name = BAS.272.b
+				add_state_core = 331
+				add_state_core = 332
+				add_state_core = 730
+				add_state_core = 1330
+			}
+		}
+	}
+}
+	country_event = { 
 	id = BAS.300
 	title = BAS.300.t
 	desc = BAS.300.d
@@ -3469,7 +3612,7 @@ country_event = {#
 	fire_only_once = yes
 	trigger = {
 		tag = BAS
-		date > 1937.1.20
+		date > 1938.1.20
 		date < 1938.1.21
 	}
 	
@@ -3752,6 +3895,185 @@ country_event = {#
 		}
 	}
 	country_event = { 
+	id = BAS.321
+	title = BAS.321.t
+	desc = BAS.321.d
+	fire_only_once = yes
+	trigger = { 
+	tag = BAS
+	has_completed_focus = BAS_Iparralde
+	}
+	
+	option = { #oh no
+		name = BAS.321.a
+			add_war_support = 0.01
+			add_popularity = {
+			ideology = social_conservative
+			popularity = 0.01
+			}
+			add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.01
+			}			
+			add_popularity = {
+			ideology = national_populist
+			popularity = 0.01
+			}
+		}
+	}
+	country_event = { 
+	id = BAS.322
+	title = BAS.322.t
+	desc = BAS.322.d
+	fire_only_once = yes
+	trigger = { 
+	tag = BAS
+	has_completed_focus = BAS_Remembering_the_Cause
+	}
+	
+	option = { #oh no
+		name = BAS.322.a
+			add_stability = 0.03
+			}			
+			add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.01
+			}			
+			add_popularity = {
+			ideology = syndicalist
+			popularity = 0.01
+			}
+		}
+	}
+	country_event = { 
+	id = BAS.323
+	title = BAS.323.t
+	desc = BAS.323.d
+	picture = GFX_report_event_BAS_fournier
+	fire_only_once = yes
+	trigger = { 
+	tag = BAS
+	has_completed_focus = BAS_Kickstart_Basque_Industrial_Revolution
+	}
+	
+	option = { #oh no
+		name = BAS.323.a
+			add_political_power = 10		
+			add_popularity = {
+			ideology = market_liberal
+			popularity = 0.01
+			}			
+		}
+	}
+	country_event = { 
+	id = BAS.324
+	title = BAS.324.t
+	desc = BAS.324.d
+	picture = GFX_report_event_BAS_fournier_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #oh no
+		name = BAS.324.a
+		set_technology = {
+			helicopter = 1
+		}
+		add_equipment_to_stockpile = { type = helicopter_1 amount = 50 }								
+				}
+			}
+		}
+	}
+	country_event = { 
+	id = BAS.325
+	title = BAS.325.t
+	desc = BAS.325.d
+	picture = GFX_report_event_BAS_fournier_1
+	fire_only_once = yes
+	trigger = { 
+	tag = BAS
+	has_completed_focus = BAS_Open_Pilot_Academy
+	}
+	
+	option = { #oh no
+		name = BAS.325.a
+		air_experience = 10
+		hidden_effect = {
+		country_event = {
+		id = BAS.324
+		days = 1	
+				}
+			}
+		}
+	}
+	country_event = { 
+	id = BAS.326
+	title = BAS.326.t
+	desc = BAS.326.d
+	picture = GFX_report_event_BAS_ruby
+	fire_only_once = yes
+	trigger = { 
+	tag = BAS
+	has_completed_focus = BAS_Llama_and_Star
+	}
+	
+	option = { #oh no
+		name = BAS.326.a
+		add_political_power = 10
+		}
+	}
+	country_event = { 
+	id = BAS.327
+	title = BAS.327.t
+	desc = BAS.327.d
+	picture = GFX_report_event_BAS_cyclistman
+	fire_only_once = yes
+	trigger = { 
+	tag = BAS
+	has_completed_focus = BAS_Spy_on_Our_Enemies
+	}
+	
+	option = { #oh no
+		name = BAS.327.a
+		set_technology = { bicycle_infantry = 1 }		
+		}
+	}
+country_event = { #
+	id = BAS.329
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.104" }
+	title = BAS.329.t
+	desc = BAS.329.d
+	picture = GFX_report_event_BAS_galindez
+
+	fire_only_once = yes
+	trigger = {
+		tag = BAS
+		has_completed_focus = BAS_Basque_Irredentism
+		}
+		DOM = {
+			has_country_leader = { ruling_only = yes name = "Rafael Trujillo Molina" }
+			is_subject = no
+	}
+		option = { #
+		name = BAS.329.a
+		ai_chance = {
+			factor = 33
+			}
+			declare_war_on = {
+				target = DOM
+				type = annex_everything
+				}
+			}
+		option = { #Yes.
+		ai_chance = {
+			factor = 33
+		}
+		name = BAS.329.b
+		add_political_power = 20
+				}
+			}
+		}
+	}
+	country_event = { 
 	id = BAS.330
 	title = BAS.330.t
 	desc = BAS.330.d
@@ -3855,3 +4177,54 @@ country_event = {#
 			}
 		}
 	}
+	country_event = { 
+	id = BAS.350
+	title = BAS.350.t 
+	desc = BAS.350.d 
+	picture = GFX_report_event_CAN_greenland_map
+	fire_only_once = yes
+	trigger = { 
+	tag = BAS
+	is_in_faction = no
+	controls_state = 101
+	has_country_flag = BAS_vengeance
+	}
+	option = {
+		name = BAS.350.a
+		transfer_state = 101
+		transfer_state = 926
+		transfer_state = 337
+		white_peace = DEN
+		set_truce = {
+			target = DEN
+			days = 30
+				}
+			 }
+		}
+	}
+}
+	country_event = { 
+	id = BAS.351
+	title = BAS.351.t 
+	desc = BAS.351.d 
+	picture = GFX_report_event_CAN_greenland_map
+	fire_only_once = yes
+	trigger = { 
+	tag = BAS
+	is_in_faction = no
+	controls_state = 1147
+	has_country_flag = BAS_vengeance
+	}
+	option = {
+		name = BAS.351.a
+		transfer_state = 1147
+		transfer_state = 1146
+		white_peace = NOR
+		set_truce = {
+			target = NOR
+			days = 30
+				}
+			 }
+		}
+	}
+}

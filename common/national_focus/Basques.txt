@@ -1512,7 +1512,7 @@ focus_tree = {
 		y = 5
 		cost = 2
 		available = {
-		has_country_flag = BAS_democratic_rule_secured	
+		has_completed_focus = BAS_First_Basque_Elections	
 		}
 		ai_will_do = {
 			factor = 100
@@ -3293,7 +3293,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.1
-			country_event = BAS.235
+			country_event = BAS.232
 		}
 	}
 		focus = {
@@ -3313,7 +3313,6 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-		create_faction = "Galeusca"
 		country_event = BAS.260
 		}
 	}

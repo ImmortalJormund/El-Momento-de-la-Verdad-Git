@@ -47,6 +47,7 @@ if = {
 set_research_slots = 3
 set_convoys = 30
 
+country_event = { id = GLC.22 days = 250 }
 
 set_politics = {
 	ruling_party = market_liberal
@@ -76,10 +77,10 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Urania Mella"
-	picture = "gfx/leaders/GLC/Portrait_GLC_Urania_Mella_Serrano.png"
+	name = "Ricardo Mella"
+	picture = "gfx/leaders/GLC/Portrait_GLC_Ricardo_Mella.png"
 	expire = "1.1.1"
-	ideology = feminist_syndicalist_subtype 
+	ideology = anarcho_syndicalist_subtype 
 }
 
 create_country_leader = {
@@ -111,17 +112,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Valentin Paz Andrade"
-	picture = "gfx/leaders/CAR/Portrait_CAR_Valentin_Paz_Andrade.png"
-	expire = "1.1.1"
-	ideology = progressive_conservatism_subtype 
-}
-
-create_country_leader = {
 	name = "Ramón Otero Pedrayo"
 	picture = "gfx/leaders/CAR/Portrait_CAR_Ramon_Otero_Pedrayo.png"
 	expire = "1.1.1"
-	ideology = national_democracy_subtype
+	ideology = moderate_authoritarianism_subtype 
+}
+
+create_country_leader = {
+	name = "Antonio Losada Dieguez"
+	picture = "gfx/leaders/GLC/Portrait_GLC_Antonio_Losada_Dieguez.png"
+	expire = "1.1.1"
+	ideology = authdem_agrarianism_subtype
 }
 
 create_country_leader = {

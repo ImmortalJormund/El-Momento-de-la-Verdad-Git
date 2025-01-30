@@ -7968,6 +7968,38 @@ country_event = {#
 	}
 }
 country_event = {# 
+	id = sprd.363
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.363.t
+	desc = sprd.363.d
+	picture = GFX_report_event_CZE_1937_masaryk_grandprix
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.363.a
+			add_stability = 0.05
+			add_political_power = -100
+			set_technology = {
+			airships1 = 1
+		}
+	}
+	option = {
+		name = sprd.363.b
+			add_war_support = 0.03
+			add_political_power = -200
+			set_technology = {
+			airships1 = 1
+		}
+		add_equipment_to_stockpile = { type = heavy_airship_equipment_0 amount = 2 }
+	}
+	option = {
+		name = sprd.363.c
+			add_stability = -0.01
+			add_political_power = 100
+		}
+	}
+}
+country_event = {# 
 	id = sprd.364
 	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
 	title = sprd.364.t
@@ -9424,59 +9456,5 @@ country_event = {
 			helicopter = 1
 		}
 		add_equipment_to_stockpile = { type = helicopter_1 amount = 25 }
-	}
-}
-country_event = { #Don bros the dream will never end
-	id = sprd.7000
-        immediate = { log = "[GetDateText]: [Root.GetName]: event sprdqx.7" }
-	title = sprd.7000.t
-	desc = sprd.7000.d
-	picture = GFX_report_event_SPA_CNT_FAI
-
-	is_triggered_only = yes
-
-	option = {
-                 name = sprd.7000.a
-		 set_politics = {
-	         ruling_party = radical_socialist
-	         elections_allowed = no	
-		}
-		add_popularity = {
-			ideology = radical_socialist
-			popularity = 0.5
-                }
-		add_popularity = {
-			ideology = totalist
-			popularity = 0.2
-                }
-		add_popularity = {
-			ideology = syndicalist
-			popularity = 0.1
-                }
-		set_party_name = { 
-			ideology = radical_socialist
-			long_name = SPR_DQX_long
-			name = SPR_DQX_party
-                }
-                set_party_name = { 
-			ideology = syndicalist
-			long_name = SPR_DQX_long
-			name = SPR_DQX_party
-                }
-                set_party_name = { 
-			ideology = totalist
-			long_name = SPR_DQX_long
-			name = SPR_DQX_party
-                }
-                create_country_leader = {
-					name = "Don Quixote?"
-					desc = "POLITICS_DON_BROS_WE_RIDE_DESC"
-					picture = "gfx/leaders/SPR/DONDONDON.png"
-					expire = "1.1.1"
-					ideology = left_carlism_subtype
-		}
-		add_tot_to_coalition = yes
-		add_radsoc_to_coalition = yes
-                }
 	}
 }
