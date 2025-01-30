@@ -3293,7 +3293,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.1
-			country_event = BAS.235
+			country_event = BAS.232
 		}
 	}
 		focus = {

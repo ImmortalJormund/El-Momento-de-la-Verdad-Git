@@ -234,5 +234,9 @@ spriteTypes = {
 		name = "GFX_report_event_BAS_ruby"
 		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_ruby.png"
 	}	
+	spriteType = {
+		name = "GFX_report_event_BAS_galindez"
+		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_galindez.png"
+	}	
 
 }

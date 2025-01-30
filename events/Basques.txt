@@ -2968,7 +2968,7 @@ country_event = {#
 	desc = BAS.250.d
 	picture = GFX_report_event_SPA_CNT_FAI
 	fire_only_once = yes
-		trigger = {
+	trigger = {
 		tag = BAS
 		41 = { is_controlled_by = BAS } 
 		has_country_flag = BAS_separatist_war
@@ -3117,6 +3117,7 @@ country_event = {#
 		add_state_core = 31
 		add_state_core = 22		
 		add_state_core = 1313
+		add_state_core = 176
 		create_wargoal = {
 			type = annex_everything
 			 target = FRA
@@ -3141,6 +3142,7 @@ country_event = {#
 		add_state_core = 31
 		add_state_core = 22		
 		add_state_core = 1313
+		add_state_core = 176
 		create_wargoal = {
 			type = annex_everything
 			 target = FRA
@@ -4033,6 +4035,42 @@ country_event = {#
 	option = { #oh no
 		name = BAS.327.a
 		set_technology = { bicycle_infantry = 1 }		
+		}
+	}
+country_event = { #
+	id = BAS.329
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.104" }
+	title = BAS.329.t
+	desc = BAS.329.d
+	picture = GFX_report_event_BAS_galindez
+
+	fire_only_once = yes
+	trigger = {
+		tag = BAS
+		has_completed_focus = BAS_Basque_Irredentism
+		}
+		DOM = {
+			has_country_leader = { ruling_only = yes name = "Rafael Trujillo Molina" }
+			is_subject = no
+	}
+		option = { #
+		name = BAS.329.a
+		ai_chance = {
+			factor = 33
+			}
+			declare_war_on = {
+				target = DOM
+				type = annex_everything
+				}
+			}
+		option = { #Yes.
+		ai_chance = {
+			factor = 33
+		}
+		name = BAS.329.b
+		add_political_power = 20
+				}
+			}
 		}
 	}
 	country_event = { 
