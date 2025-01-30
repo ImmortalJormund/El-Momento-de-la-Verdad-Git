@@ -5463,6 +5463,7 @@ country_event = { #
 			add_war_support = 0.15
 			remove_ideas = SPR_struggle_for_castilian_survival
 			add_state_core = 172
+					}
 				}
 			}
 		}
@@ -5494,7 +5495,6 @@ country_event = { #
 		set_truce = {
 			target = CAT
 			days = 30
-					}
 				}
 			}
 	option = { #oh no
@@ -5508,6 +5508,7 @@ country_event = { #
 			add_state_core = 165
 			add_state_core = 167
 			add_state_core = 177
+				}
 			}
 		}
 	}
