@@ -47,6 +47,7 @@ if = {
 set_research_slots = 3
 set_convoys = 30
 
+country_event = { id = GLC.5 days = 100 }
 country_event = { id = GLC.22 days = 250 }
 
 set_politics = {

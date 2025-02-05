@@ -427,8 +427,26 @@ ideas = {
 				social_conservative
 				hog_silent_workhorse
 			}
-		}
 
+	}
+		BAS_Manu_Robles_Arangiz_hog_pau = {
+			allowed = { original_tag = BAS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea KRK_Julian_Nowak_hog_sli"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_ambitious_union_boss
+			}
+		}
 	}
 
 	person_of_influence = { ### Person of Influence ###
@@ -954,6 +972,78 @@ ideas = {
 				security_minister
 				radical_socialist
 				sec_health_and_safety		
+				}
+		}
+		BAS_Astrea_Barrios_Garcia_Sanz_for_rso = {
+			allowed = { original_tag = BAS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea KRK_Zygmunt_Klemensiewicz_hog_sde"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_ideological_crusader		
+				}
+		}
+		BAS_Luis_Arana_for_pau = {
+			allowed = { original_tag = BAS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea KRK_Zygmunt_Klemensiewicz_hog_sde"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_biased_intellectual		
+				}
+		}
+		BAS_Manu_Robles_Arangiz_eco_pau = {
+			allowed = { original_tag = BAS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea KRK_Zygmunt_Klemensiewicz_hog_sde"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_administrative_genius		
+				}
+		}
+		BAS_Zeferino_Jemein_sec_pau = {
+			allowed = { original_tag = BAS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDatext]: [Root.GetName]: add idea KRK_Zygmunt_Klemensiewicz_hog_sde"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_crime_fighter		
 				}
 		}
 		BAS_Dolores_Ibaurri_Gomez_sec_tot = {

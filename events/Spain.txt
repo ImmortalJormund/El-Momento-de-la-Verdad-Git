@@ -5595,24 +5595,6 @@ country_event = { #
 			declare_war_on = {
 				target = GLC
 				type = annex_everything
-			}
-			SPR = {
-			country_event = {
-				id = sprd.114
-				days = 40
-			}
-			SPR = {
-			country_event = {
-				id = sprd.115
-				days = 40
-			}
-			SPR = {
-			country_event = {
-				id = sprd.116
-				days = 40
-							}
-						}
-					}
 				}
 			}
 		}
@@ -7626,6 +7608,217 @@ country_event = {#
 	}
 }
 
+country_event = { 
+	id = sprd.230
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.230.t
+	desc = sprd.230.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.230.a
+		add_political_power = -100
+		add_manpower = -4275
+		add_stability = 0.15
+	}
+}
+country_event = {
+	id = sprd.231
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.231.t
+	desc = sprd.231.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.231.a
+		add_ideas = SPR_Limited_Regionalism
+		add_political_power = -75
+		increase_ruling_party_popularity_by_10 = yes
+		add_war_support = 0.05
+		add_stability = 0.05
+	}
+	option = {
+		name = sprd.231.b
+		add_ideas = SPR_Castilian_Dominance
+		add_political_power = 100
+		increase_ruling_party_popularity_by_3 = yes
+		add_war_support = -0.05
+		add_stability = -0.05
+	}
+}
+country_event = {
+	id = sprd.232
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.232.t
+	desc = sprd.232.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.232.a
+		add_political_power = 75
+		add_research_slot = 1
+	}
+}
+country_event = { 
+	id = sprd.233
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.233.t
+	desc = sprd.233.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.233.a
+		add_political_power = 50
+		add_command_power = 50
+		add_pataut_to_coalition = yes
+	}
+}
+country_event = { 
+	id = sprd.234
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.234.t
+	desc = sprd.234.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.234.a
+		army_experience = 25
+		add_manpower = 5700
+		add_stability = -0.1
+		add_popularity = {
+		ideology = syndicalist
+		popularity = -0.2
+		}	
+	}
+}
+country_event = { 
+	id = sprd.235
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.235.t
+	desc = sprd.235.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.235.a
+		add_political_power = 50
+		add_stability = 0.05
+		add_soccon_to_coalition = yes
+	}
+}
+country_event = { 
+	id = sprd.236
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.236.t
+	desc = sprd.236.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.236.a
+		add_political_power = 75
+		add_stability = -0.05
+		add_war_support = 0.1
+		add_manpower = -5745
+	}
+}
+country_event = { 
+	id = sprd.237
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.237.t
+	desc = sprd.237.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.237.a
+		army_experience = 65
+		add_political_power = 50
+		increase_ruling_party_popularity_by_10 = yes
+		add_authdem_to_coalition = yes
+	}
+}
+country_event = { 
+	id = sprd.238
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.238.t
+	desc = sprd.238.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.238.a
+		army_experience = 25
+		add_war_support = 0.1
+		add_stability = 0.1
+		add_popularity = {
+		ideology = syndicalist
+		popularity = -0.2
+		}	
+	}
+}
+country_event = {
+	id = sprd.239
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.239.t
+	desc = sprd.239.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.239.a
+		add_political_power = 75
+		add_research_slot = 1
+	}
+}
+country_event = { 
+	id = sprd.240
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.240.t
+	desc = sprd.240.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.240.a
+		add_political_power = 50
+		add_stability = 0.05
+		add_pataut_to_coalition = yes
+	}
+}
+country_event = { 
+	id = sprd.241
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.241.t
+	desc = sprd.241.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.241.a
+		add_political_power = -125
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
+}
+country_event = { 
+	id = sprd.242
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.242.t
+	desc = sprd.242.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.242.a
+		increase_ruling_party_popularity_by_10 = yes
+	}
+}
 country_event = {# 
 	id = sprd.281
 	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.281"}
@@ -9336,6 +9529,7 @@ country_event = { #Black Monday is joever
 
 	option = { #oh no
 		name = sprd.1160.b
+		SPR = {
 		add_timed_idea = {
 			idea = SPR_west_sahara_purchase
 			days = 200	
@@ -9458,4 +9652,236 @@ country_event = {
 		}
 		add_equipment_to_stockpile = { type = helicopter_1 amount = 25 }
 	}
+}
+country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
+	id = sprd.1166
+	title = sprd.1166.t
+	desc = sprd.1166.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.118" }
+
+	option = { #oh no
+		name = sprd.1166.a
+		set_politics = {
+		ruling_party = social_conservative
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.15
+		}
+		create_country_leader = {
+			name = "Juan III"
+			desc = "POLITICS_JUAN_BOURBON_DESC"
+			picture = "gfx/leaders/SPR/Portrait_SPR_Juan_III.png"
+			expire = "1.1.1"
+			ideology = clientelism_subtype
+				}
+			}
+		option = { #oh no
+		name = sprd.1166.b
+		set_politics = {
+		ruling_party = authoritarian_democrat
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.15
+		}
+		create_country_leader = {
+			name = "Juan III"
+			desc = "POLITICS_JUAN_BOURBON_DESC"
+			picture = "gfx/leaders/SPR/Portrait_SPR_Juan_III.png"
+			expire = "1.1.1"
+			ideology = oligarchy_subtype
+				}
+			}
+	option = { #oh no
+		name = sprd.1166.c
+		set_politics = {
+		ruling_party = paternal_autocrat
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.15
+		}
+		create_country_leader = {
+			name = "Juan III"
+			desc = "POLITICS_JUAN_BOURBON_DESC"
+			picture = "gfx/leaders/SPR/Portrait_SPR_Juan_III.png"
+			expire = "1.1.1"
+			ideology = absolute_monarchy_subtype
+				}
+			}
+	option = { #oh no
+		name = sprd.1166.e
+			set_politics = {
+			ruling_party = national_populist
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.15
+		}
+		create_country_leader = {
+			name = "Juan III"
+			desc = "POLITICS_JUAN_BOURBON_DESC"
+			picture = "gfx/leaders/SPR/Portrait_SPR_Juan_III.png"
+			expire = "1.1.1"
+			ideology = integralism_subtype
+					}
+				}
+			}
+		}
+	}
+country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
+	id = sprd.1167
+	title = sprd.1167.t
+	desc = sprd.1167.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.118" }
+
+	option = { #oh no
+		name = sprd.1167.a
+		set_politics = {
+		ruling_party = social_conservative
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.15
+		}
+		create_country_leader = {
+			name = "Jaime I"
+			desc = "POLITICS_JAIME_BOURBON_DESC"
+			picture = "gfx/leaders/SPR/Portrait_SPR_Jaime_I.png"
+			expire = "1.1.1"
+			ideology = soccon_agrarianism_subtype
+				}
+			}
+		option = { #oh no
+		name = sprd.1167.b
+		set_politics = {
+		ruling_party = authoritarian_democrat
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.15
+		}
+		create_country_leader = {
+			name = "Jaime I"
+			desc = "POLITICS_JAIME_BOURBON_DESC"
+			picture = "gfx/leaders/SPR/Portrait_SPR_Jaime_I.png"
+			expire = "1.1.1"
+			ideology = authdem_national_conservative_subtype
+				}
+			}
+	option = { #oh no
+		name = sprd.1167.c
+		set_politics = {
+		ruling_party = paternal_autocrat
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.15
+		}
+		create_country_leader = {
+			name = "Jaime I"
+			desc = "POLITICS_JAIME_BOURBON_DESC"
+			picture = "gfx/leaders/SPR/Portrait_SPR_Jaime_I.png"
+			expire = "1.1.1"
+			ideology = pataut_legionarism_subtype
+				}
+			}
+	option = { #oh no
+		name = sprd.1167.e
+			set_politics = {
+			ruling_party = national_populist
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.15
+		}
+		create_country_leader = {
+			name = "Jaime I"
+			desc = "POLITICS_JAIME_BOURBON_DESC"
+			picture = "gfx/leaders/SPR/Portrait_SPR_Jaime_I.png"
+			expire = "1.1.1"
+			ideology = maurrassism_subtype
+					}
+				}
+			}
+		}
+	}
+country_event = { #Regionalism event
+	id = sprd.1168
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
+	title = sprd.1168.t
+	desc = sprd.1168.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #flavor
+		name = sprd.1168.a
+		}
+	option = { #flavor
+		name = sprd.1168.b
+		AUS = { country_event = { id = sprd.1160 days = 1 }}
+			}
+		}
+	}
+}
+country_event = { #Regionalism event
+	id = sprd.1169
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
+	title = sprd.1169.t
+	desc = sprd.1169.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #flavor
+		name = sprd.1169.a
+		add_political_power = 20
+		}
+	option = { #flavor
+		name = sprd.1169.b
+		GER = { country_event = { id = sprd.1170 days = 1 }}
+			}
+		}
+	}
+}
+country_event = { #Black Monday is joever
+	id = sprd.1170
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1169" }
+	title = sprd.1170.t
+	desc = sprd.1170.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #oh no
+		name = sprd.1170.a
+		add_political_power = 25
+	}
+
+	option = { #oh no
+		name = sprd.1170.b
+		GER = {
+		add_timed_idea = {
+			idea = SPR_west_sahara_purchase
+			days = 200	
+		}
+		SPR = {
+			transfer_state = 684
+			SPR = { add_state_claim = 684 }
+							}
+						}
+					}
+				}
+			}
+		}
 }

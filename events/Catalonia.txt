@@ -84,6 +84,21 @@ country_event = {
 		}
 	}	
 country_event = { 
+	id = CAT.4
+	title = CAT.4.t 
+	desc = CAT.4.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CAT.4.a
+		SPR = {
+			country_event = {
+				id = sprd.115
+				days = 7
+		}
+	}
+}
+country_event = { 
 	id = CAT.5
 	title = CAT.5.t 
 	desc = CAT.5.d 

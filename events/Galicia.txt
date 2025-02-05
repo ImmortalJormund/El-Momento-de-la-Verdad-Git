@@ -79,6 +79,21 @@ country_event = {
 		}
 	}
 country_event = { 
+	id = GLC.5
+	title = GLC.5.t 
+	desc = GLC.5.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GLC.5.a
+		SPR = {
+			country_event = {
+				id = sprd.116
+				days = 7
+		}
+	}
+}
+country_event = { 
 	id = GLC.20
 	title = GLC.20.t 
 	desc = GLC.20.d 

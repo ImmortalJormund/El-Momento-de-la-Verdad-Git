@@ -5,6 +5,7 @@ country_event = {
 	id = BAS.1
 	title = BAS.1.t 
 	desc = BAS.1.d 
+	picture = GFX_report_event_BAS_propaganda_3
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -17,6 +18,7 @@ country_event = {
 	id = BAS.2
 	title = BAS.2.t 
 	desc = BAS.2.d 
+	picture = GFX_report_event_BAS_mendigoxale_3
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -107,6 +109,7 @@ country_event = {
 	id = BAS.7
 	title = BAS.7.t 
 	desc = BAS.7.d 
+	picture = GFX_report_event_BAS_food_event
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -168,6 +171,7 @@ country_event = {
 	id = BAS.10
 	title = BAS.10.t 
 	desc = BAS.10.d 
+	picture = GFX_report_event_BAS_jeltzale_1
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -202,6 +206,7 @@ country_event = {
 	id = BAS.12
 	title = BAS.12.t 
 	desc = BAS.12.d 
+	picture = GFX_report_event_BAS_ruby
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -233,6 +238,7 @@ country_event = {
 	id = BAS.14
 	title = BAS.14.t 
 	desc = BAS.14.d 
+	picture = GFX_report_event_BAS_gudari1
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -245,6 +251,7 @@ country_event = {
 	id = BAS.15
 	title = BAS.15.t 
 	desc = BAS.15.d 
+	picture = GFX_report_event_BAS_mendigoxale
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -288,6 +295,7 @@ country_event = {
 	id = BAS.16
 	title = BAS.16.t 
 	desc = BAS.16.d 
+	picture = GFX_report_event_BAS_gudari2
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -299,6 +307,7 @@ country_event = {
 	id = BAS.17
 	title = BAS.17.t 
 	desc = BAS.17.d 
+	picture = GFX_report_event_BAS_gudari
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -312,7 +321,7 @@ country_event = {
 	id = BAS.18
 	title = BAS.18.t 
 	desc = BAS.18.d 
-	picture = GFX_BASque_celebration
+	picture = GFX_report_event_BAS_gernika
 	trigger = {
 		tag = BAS
 		OR = {
@@ -366,7 +375,7 @@ country_event = {
 	id = BAS.180
 	title = BAS.18.t 
 	desc = BAS.18.d 
-	picture = GFX_BASutia_celebration
+	picture = GFX_report_event_BAS_gernika
 	is_triggered_only = yes
 	fire_only_once = no
 	
@@ -385,7 +394,7 @@ country_event = {
 	id = BAS.19
 	title = BAS.19.t 
 	desc = BAS.19.d 
-	picture = GFX_report_event_aberri_eagle
+	picture = GFX_report_event_BAS_gernika
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -417,6 +426,7 @@ country_event = {
 	id = BAS.20
 	title = BAS.20.t 
 	desc = BAS.20.d 
+	picture = GFX_report_event_aberri_eagle
 	is_triggered_only = yes
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event BAS.20"
@@ -799,6 +809,66 @@ country_event = {
 	option = {
 		name = BAS.35.a
 		add_stability = 0.06
+	}
+}
+country_event = { 
+	id = BAS.36
+	title = BAS.36.t 
+	desc = BAS.36.d 
+	picture = GFX_report_event_BAS_emakume
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = BAS.36.a
+		add_political_power = 25
+		increase_ruling_party_popularity_by_2 = yes
+		add_war_support = 0.03
+	}
+}
+country_event = { 
+	id = BAS.37
+	title = BAS.37.t 
+	desc = BAS.37.d 
+	picture = GFX_report_event_BAS_propaganda_2
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = BAS.37.a
+		add_political_power = 70
+		add_stability = -0.04
+	}
+}
+country_event = { #socdem ideology pick
+	id = BAS.38
+	title = BAS.38.t
+	desc = BAS.38.d
+	picture = GFX_report_event_BAS_abertzale_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #oh no
+		name = BAS.38.a
+		set_country_leader_ideology = socdem_democratic_socialism_subtype
+	}
+
+	option = { #oh no
+		name = BAS.38.b
+		set_country_leader_ideology = socdem_humanistic_capitalism_subtype
+	}
+
+	option = { #oh no
+		name = BAS.38.c
+		set_country_leader_ideology = socdem_utopian_technocracy_subtype
+	}
+
+	option = { #oh no
+		name = BAS.38.e
+		set_country_leader_ideology = liberal_socialism_subtype
+			}
+		}
 	}
 }
 country_event = { 
@@ -2315,34 +2385,6 @@ country_event = { #syn ideology pick
 		}
 	}
 }
-country_event = { #socdem ideology pick
-	id = BAS.155
-	title = BAS.155.t
-	desc = BAS.155.d
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #oh no
-		name = BAS.155.a
-		increase_ruling_party_popularity_by_3 = yes
-		add_political_power = 25
-		add_stability = 0.1
-	}
-
-	option = { #oh no
-		name = BAS.155.b
-		set_country_leader_ideology = socdem_radical_progressivism_subtype
-	}
-
-	option = { #oh no
-		name = BAS.155.c
-		set_country_leader_ideology = popular_patriotism_subtype
-			}
-		}
-	}
-}
 country_event = {
 	id = BAS.220
 	immediate = { log = "[GetDateText]: [Root.GetName]: event por.323" }
@@ -2418,7 +2460,8 @@ country_event = {
 		name = BAS.222.a
 		add_state_claim = 331
 		add_state_claim = 332
-		add_state_claim = 1131
+		add_state_claim = 1330
+		add_state_claim = 1331
 		add_state_claim = 730
 	}	
 	option = { #oh no
@@ -3514,7 +3557,7 @@ country_event = {#
 	id = BAS.272
 	title = BAS.272.t 
 	desc = BAS.272.d 
-	picture = GFX_report_event_ICE_norway
+	picture = GFX_report_event_NFL_mikmaq_coup
 	fire_only_once = yes
 	trigger = { 
 	tag = BAS
@@ -4037,6 +4080,19 @@ country_event = {#
 		set_technology = { bicycle_infantry = 1 }		
 		}
 	}
+	country_event = { 
+	id = BAS.328
+	title = BAS.328.t
+	desc = BAS.328.d
+	picture = GFX_report_event_BAS_paganism
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #oh no
+		name = BAS.328.a
+			add_war_support = 0.02
+		}
+	}
 country_event = { #
 	id = BAS.329
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.104" }
@@ -4225,6 +4281,34 @@ country_event = { #
 			days = 30
 				}
 			 }
+		}
+	}
+}
+	country_event = { 
+	id = BAS.352
+	title = BAS.352.t
+	desc = BAS.352.d
+	picture = GFX_report_event_BAS_corsica
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #oh no
+		name = BAS.352.a
+			add_war_support = 0.01
+		}
+	}
+country_event = { 
+	id = BAS.354
+	title = BAS.354.t 
+	desc = BAS.354.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAS.354.a
+		SPR = {
+			country_event = {
+				id = sprd.114
+				days = 7
 		}
 	}
 }
