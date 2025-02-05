@@ -5263,7 +5263,10 @@ focus_tree = {
 		id = SPR_Our_Rule_Absolute
 		icon = GFX_goal_SPR_francoism
 		available = {  
+		has_government = social_conservative
+		has_government = authoritarian_democrat		
 		has_government = paternal_autocrat
+		has_government = national_populist
 		}
 		prerequisite = { 
 			focus = SPR_ideas_of_dictablanda
@@ -5273,8 +5276,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SPR_traditionalist_economic_doctrine
-		}
-		prerequisite = {
 			focus = SPR_economic_protectionism
 		}
 		relative_position_id = SPR_absolutism
