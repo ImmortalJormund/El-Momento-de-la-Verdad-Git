@@ -263,4 +263,64 @@ SpriteTypes = {
 		name = "GFX_goal_CAT_Shed_false_red_skin_foot"
 		texturefile = "gfx/interface/goals/CAT_Shed_false_red_skin_foot.png"
 	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Delegating_power_to_loyal_civilians"
+		texturefile = "gfx/interface/goals/CAT_Delegating_power_to_loyal_civilians.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Companys_mistakes_laid_bare"
+		texturefile = "gfx/interface/goals/CAT_Companys_mistakes_laid_bare.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Dignified_fairer_sex"
+		texturefile = "gfx/interface/goals/CAT_Dignified_fairer_sex.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Hispanic_officers_oust_Batet"
+		texturefile = "gfx/interface/goals/CAT_Hispanic_officers_oust_Batet.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Hispano_catalanism"
+		texturefile = "gfx/interface/goals/CAT_Hispano_catalanism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Hovels_to_haciendas"
+		texturefile = "gfx/interface/goals/CAT_Hovels_to_haciendas.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Iron_fist_shrouded_in_shadows"
+		texturefile = "gfx/interface/goals/CAT_Iron_fist_shrouded_in_shadows.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Monarchy_and_labour"
+		texturefile = "gfx/interface/goals/CAT_Monarchy_and_labour.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Piety_of_the_proletariat"
+		texturefile = "gfx/interface/goals/CAT_Piety_of_the_proletariat.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Pressing_Liga_into_the_fold"
+		texturefile = "gfx/interface/goals/CAT_Pressing_Liga_into_the_fold.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Strangle_snake_of_cynicism"
+		texturefile = "gfx/interface/goals/CAT_Strangle_snake_of_cynicism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Suffocating_the_fire_of_Catalanism"
+		texturefile = "gfx/interface/goals/CAT_Suffocating_the_fire_of_Catalanism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_Temporary_red_beret_allies"
+		texturefile = "gfx/interface/goals/CAT_Temporary_red_beret_allies.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_The_monarcho_labourites"
+		texturefile = "gfx/interface/goals/CAT_The_monarcho_labourites.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAT_The_political_chamelion"
+		texturefile = "gfx/interface/goals/CAT_The_political_chamelion.png"
+	}
 }

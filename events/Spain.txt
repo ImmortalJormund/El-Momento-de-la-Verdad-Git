@@ -7748,7 +7748,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
 	title = sprd.238.t
 	desc = sprd.238.d
-	picture = GFX_report_event_generic_diplomacy3
+	picture = GFX_report_event_SPR_UMN
 	is_triggered_only = yes
 
 	option = {
@@ -7767,13 +7767,17 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
 	title = sprd.239.t
 	desc = sprd.239.d
-	picture = GFX_report_event_generic_diplomacy3
+	picture = GFX_report_event_generic_economic_policy
 	is_triggered_only = yes
 
 	option = {
 		name = sprd.239.a
 		add_political_power = 75
-		add_research_slot = 1
+	}
+	option = {
+		name = sprd.239.b
+		add_political_power = 75
+		}
 	}
 }
 country_event = { 
@@ -7818,6 +7822,256 @@ country_event = {
 		name = sprd.242.a
 		increase_ruling_party_popularity_by_10 = yes
 	}
+}
+country_event = { 
+	id = sprd.243
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.223"}
+	title = sprd.243.t
+	desc = sprd.243.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+
+	option = {
+		name = sprd.243.a
+		increase_ruling_party_popularity_by_5 = yes
+		add_political_power = 50
+	}
+}
+	country_event = { #Black Monday is joever
+	id = sprd.244
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.195" }
+	title = sprd.244.t
+	desc = sprd.244.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = { #oh no
+		name = sprd.244.a
+		increase_ruling_party_popularity_by_3 = yes
+	}
+
+	option = { #oh no
+		name = sprd.244.b
+		set_country_leader_ideology = integralism_subtype
+	}
+
+	option = { #oh no
+		name = sprd.244.c
+		set_country_leader_ideology = natpop_integrism_subtype
+	}
+
+	option = { #oh no
+		name = sprd.244.e
+		set_country_leader_ideology = rexism_subtype
+	}
+
+	option = { #oh no
+		name = sprd.244.f
+		set_country_leader_ideology = natpop_paneuropeanism_subtype
+						}
+					}
+				}
+			}
+		}
+}
+	country_event = { #Krutwig loses the plot
+	id = sprd.245
+	title = sprd.245.t
+	desc = sprd.245.d
+	picture = GFX_report_event_BAS_krutwig
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #HRE
+		name = sprd.245.a
+		set_cosmetic_tag = SPR_HRE
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = HOL
+						is_core_of = BEL
+						is_core_of = SWI
+						is_core_of = SRI
+						is_claimed_by = SRI
+						is_core_of = AUS
+						is_core_of = CZE
+					}
+				}
+				SPR = { add_state_core = PREV }
+				}
+				SPR = { 
+						add_state_core = 741
+						add_state_core = 8
+						add_state_core = 28
+						add_state_core = 779		
+						add_state_core = 780
+						add_state_core = 50
+						add_state_core = 52		
+						add_state_core = 53
+						add_state_core = 54
+						add_state_core = 55
+						add_state_core = 57
+						add_state_core = 56		
+						add_state_core = 59
+						add_state_core = 839
+						add_state_core = 782		
+						add_state_core = 58
+						add_state_core = 61
+						add_state_core = 64		
+						add_state_core = 65
+						add_state_core = 60
+						add_state_core = 42
+						add_state_core = 51
+						add_state_core = 781
+						add_state_core = 62
+						add_state_core = 66
+						add_state_core = 67
+						add_state_core = 63
+						}
+					}	
+	option = { #HRE without stinky frenchies
+		name = sprd.245.b
+		set_cosmetic_tag = SPR_HRE
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = FRA
+						is_core_of = HOL
+						is_core_of = BEL
+						is_core_of = SWI
+						is_core_of = SRI
+						is_claimed_by = SRI
+						is_core_of = AUS
+						is_core_of = CZE
+					}
+				}
+				SPR = { add_state_core = PREV }
+				}
+				SPR = { 
+						add_state_core = 741
+						add_state_core = 8
+						add_state_core = 28
+						add_state_core = 779		
+						add_state_core = 780
+						add_state_core = 50
+						add_state_core = 52		
+						add_state_core = 53
+						add_state_core = 54
+						add_state_core = 55
+						add_state_core = 57
+						add_state_core = 56		
+						add_state_core = 59
+						add_state_core = 839
+						add_state_core = 782		
+						add_state_core = 58
+						add_state_core = 61
+						add_state_core = 64		
+						add_state_core = 65
+						add_state_core = 60
+						add_state_core = 42
+						add_state_core = 51
+						add_state_core = 781
+						add_state_core = 62
+						add_state_core = 66
+						add_state_core = 67
+						add_state_core = 63
+						}
+					}
+	option = { #larp denied, bag it up boys
+		name = sprd.245.b
+		add_political_power = 50
+
+						}
+					}					
+				}
+			}
+		}
+	}
+	country_event = { #Black Monday is joever
+	id = sprd.252
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.195" }
+	title = sprd.252.t
+	desc = sprd.252.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = { #oh no
+		name = sprd.252.a
+		set_country_leader_ideology = soccon_oligarchy_subtype
+	}
+
+	option = { #oh no
+		name = sprd.252.b
+		set_country_leader_ideology = soccon_right_georgism_subtype
+		}
+	}
+}
+	country_event = { #Black Monday is joever
+	id = sprd.253
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.253" }
+	title = sprd.253.t
+	desc = sprd.253.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = { #oh no
+		name = sprd.253.a
+		increase_ruling_party_popularity_by_3 = yes
+	}
+
+	option = { #oh no
+		name = sprd.253.b
+		set_country_leader_ideology = revolution_nationale_subtype
+	}
+
+	option = { #oh no
+		name = sprd.253.c
+		set_country_leader_ideology = pataut_right_syndicalism_subtype
+						}
+					}
+				}
+			}
+		}
+}
+	country_event = { #Black Monday is joever
+	id = sprd.254
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.254" }
+	title = sprd.254.t
+	desc = sprd.254.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = { #oh no
+		name = sprd.254.a
+		increase_ruling_party_popularity_by_3 = yes
+	}
+
+	option = { #oh no
+		name = sprd.254.b
+		set_country_leader_ideology = authdem_caudillo_populism_subtype
+	}
+
+	option = { #oh no
+		name = sprd.254.c
+		set_country_leader_ideology = authdem_austropopulism_subtype
+	}
+
+	option = { #oh no
+		name = sprd.254.e
+		set_country_leader_ideology = maurism_subtype
+						}
+					}
+				}
+			}
+		}
 }
 country_event = {# 
 	id = sprd.281
@@ -8625,6 +8879,7 @@ country_event = { #
 
 	option = { #Damn it
 		name = sprd.1101.a
+		set_country_flag = SPR_cameroon
 		add_state_claim = 952
 		add_state_claim = 927
 		add_state_claim = 539
@@ -9653,7 +9908,7 @@ country_event = {
 		add_equipment_to_stockpile = { type = helicopter_1 amount = 25 }
 	}
 }
-country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
+country_event = { #Absolutism event
 	id = sprd.1166
 	title = sprd.1166.t
 	desc = sprd.1166.d
@@ -9672,6 +9927,11 @@ country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
 			ideology = social_conservative
 			popularity = 0.15
 		}
+		set_party_name = { 
+		ideology = social_conservative
+		long_name = SPR_social_conservative_party_pf_long
+		name = SPR_social_conservative_party_pf
+		}
 		create_country_leader = {
 			name = "Juan III"
 			desc = "POLITICS_JUAN_BOURBON_DESC"
@@ -9682,12 +9942,18 @@ country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
 			}
 		option = { #oh no
 		name = sprd.1166.b
+		set_cosmetic_tag = SPR_ap_kingdom
 		set_politics = {
 		ruling_party = authoritarian_democrat
 		}
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = 0.15
+		}
+		set_party_name = { 
+		ideology = authoritarian_democrat
+		long_name = SPR_authoritarian_democrat_party_alt_long
+		name = SPR_authoritarian_democrat_party_alt
 		}
 		create_country_leader = {
 			name = "Juan III"
@@ -9699,6 +9965,7 @@ country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
 			}
 	option = { #oh no
 		name = sprd.1166.c
+		set_cosmetic_tag = SPR_umn_kingdom
 		set_politics = {
 		ruling_party = paternal_autocrat
 		}
@@ -9716,6 +9983,7 @@ country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
 			}
 	option = { #oh no
 		name = sprd.1166.e
+		set_cosmetic_tag = SPR_ae_kingdom
 			set_politics = {
 			ruling_party = national_populist
 		}
@@ -9723,6 +9991,11 @@ country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
 			ideology = national_populist
 			popularity = 0.15
 		}
+		set_party_name = { 
+		ideology = national_populist
+		long_name = SPR_national_populist_party_ae_long
+		name = SPR_national_populist_party_ae
+					}
 		create_country_leader = {
 			name = "Juan III"
 			desc = "POLITICS_JUAN_BOURBON_DESC"
@@ -9734,7 +10007,7 @@ country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
 			}
 		}
 	}
-country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
+country_event = { #Absolutism event
 	id = sprd.1167
 	title = sprd.1167.t
 	desc = sprd.1167.d
@@ -9746,12 +10019,18 @@ country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
 
 	option = { #oh no
 		name = sprd.1167.a
+		set_cosmetic_tag = SPR_agr_kingdom
 		set_politics = {
 		ruling_party = social_conservative
 		}
 		add_popularity = {
 			ideology = social_conservative
 			popularity = 0.15
+		}
+		set_party_name = { 
+		ideology = social_conservative
+		long_name = SPR_social_conservative_party_pae_long
+		name = SPR_social_conservative_party_pae
 		}
 		create_country_leader = {
 			name = "Jaime I"
@@ -9763,12 +10042,18 @@ country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
 			}
 		option = { #oh no
 		name = sprd.1167.b
+		set_cosmetic_tag = SPR_ap_kingdom
 		set_politics = {
 		ruling_party = authoritarian_democrat
 		}
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = 0.15
+		}
+		set_party_name = { 
+		ideology = authoritarian_democrat
+		long_name = SPR_authoritarian_democrat_party_alt_long
+		name = SPR_authoritarian_democrat_party_alt
 		}
 		create_country_leader = {
 			name = "Jaime I"
@@ -9780,12 +10065,18 @@ country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
 			}
 	option = { #oh no
 		name = sprd.1167.c
+		set_cosmetic_tag = SPR_pne_kingdom
 		set_politics = {
 		ruling_party = paternal_autocrat
 		}
 		add_popularity = {
 			ideology = paternal_autocrat
 			popularity = 0.15
+		}
+		set_party_name = { 
+		ideology = paternal_autocrat
+		long_name = SPR_paternal_autocrat_party_alt_long
+		name = SPR_paternal_autocrat_party_alt
 		}
 		create_country_leader = {
 			name = "Jaime I"
@@ -9797,12 +10088,18 @@ country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
 			}
 	option = { #oh no
 		name = sprd.1167.e
+			set_cosmetic_tag = SPR_re_kingdom		
 			set_politics = {
 			ruling_party = national_populist
 		}
 		add_popularity = {
 			ideology = national_populist
 			popularity = 0.15
+		}
+		set_party_name = { 
+		ideology = national_populist
+		long_name = SPR_national_populist_party_tyre_long
+		name = SPR_national_populist_party_tyre
 		}
 		create_country_leader = {
 			name = "Jaime I"
@@ -9815,7 +10112,7 @@ country_event = { #King Flees, Junta Proclaimed, yay, OTL reference
 			}
 		}
 	}
-country_event = { #Regionalism event
+country_event = { #Sahara Sale
 	id = sprd.1168
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
 	title = sprd.1168.t
@@ -9834,12 +10131,12 @@ country_event = { #Regionalism event
 		}
 	}
 }
-country_event = { #Regionalism event
+country_event = { #Caroline Islands sale
 	id = sprd.1169
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
 	title = sprd.1169.t
 	desc = sprd.1169.d
-
+	picture = GFX_report_event_GEA_pacific
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -9854,12 +10151,12 @@ country_event = { #Regionalism event
 		}
 	}
 }
-country_event = { #Black Monday is joever
+country_event = { #Caroline Islands sale
 	id = sprd.1170
 	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1169" }
 	title = sprd.1170.t
 	desc = sprd.1170.d
-
+	picture = GFX_report_event_GEA_pacific
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -9876,6 +10173,7 @@ country_event = { #Black Monday is joever
 			days = 200	
 		}
 		SPR = {
+			country_event = sprd.1172
 			transfer_state = 684
 			SPR = { add_state_claim = 684 }
 							}
@@ -9885,3 +10183,109 @@ country_event = { #Black Monday is joever
 			}
 		}
 }
+	country_event = {#Cameroon wp
+	id = sprd.1171
+	title = sprd.1171.t 
+	desc = sprd.1171.d 
+	picture = GFX_report_event_CEA_countryside
+	fire_only_once = yes
+	trigger = { 
+	tag = SPR
+	is_in_faction = no
+	controls_state = 927
+	has_country_flag = SPR_cameroon
+	}
+	option = {
+		name = sprd.1171.a
+		transfer_state = 952
+		transfer_state = 927
+		transfer_state = 539
+		transfer_state = 971
+		white_peace = MAF
+		set_truce = {
+			target = MAF
+			days = 30
+				}
+			 }
+		}
+	}
+}
+country_event = { #Caroline Islands sale
+	id = sprd.1172
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1150" }
+	title = sprd.1172.t
+	desc = sprd.1172.d
+	picture = GFX_report_event_GEA_pacific
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #flavor
+		name = sprd.1172.a
+		add_political_power = 20
+	}
+}
+country_event = { #
+	id = sprd.1173
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1169" }
+	title = sprd.1173.t
+	desc = sprd.1173.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Damn it
+		name = sprd.1173.a
+		add_state_claim = 805
+		add_state_claim = 459
+		add_state_claim = 513
+		add_state_claim = 968
+		add_state_claim = 514
+		add_state_claim = 967
+		add_state_claim = 860
+			create_wargoal = {
+				type = annex_everything
+				target = 459.owner
+				}
+			}
+	option = { #Damn it
+		name = sprd.1173.b
+		add_stability = 0.05
+		add_political_power = 50
+				}
+			}
+		}
+}
+country_event = { #Kill Portugal or nah
+	id = sprd.1174
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.1174" }
+	title = sprd.1174.t
+	desc = sprd.1174.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Nah.
+		name = sprd.1174.a
+		ai_chance = {
+			factor = 33
+		}
+		increase_ruling_party_popularity_by_5 = yes
+		add_political_power = 35
+		}
+		option = { #Yes but no Iberism.
+		name = sprd.1174.b
+		ai_chance = {
+			factor = 33
+			}
+			declare_war_on = {
+				target = POR
+				type = annex_everything
+		}
+		every_state = {
+			limit = { is_core_of = POR }
+			add_core_of = SPR
+			}
+			}
+		}
+	}

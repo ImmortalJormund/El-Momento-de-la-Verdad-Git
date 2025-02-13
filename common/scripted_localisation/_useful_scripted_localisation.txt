@@ -2917,6 +2917,12 @@ defined_text = {
 		}
 		localization_key = iberian_federalism_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon_right_georgism_subtype
+		}
+		localization_key = soccon_right_georgism_subtype
+	}
 
 	text = {
 		trigger = {

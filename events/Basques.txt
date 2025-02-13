@@ -990,23 +990,6 @@ country_event = {
 	}
 }
 country_event = { 
-	id = BAS.50
-	title = BAS.50.t 
-	desc = BAS.50.d 
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = {
-		name = BAS.50.a
-		add_political_power = 50
-		add_resource = {
-		type = steel
-		amount = 8
-		state = 172
-		}
-	}
-}
-country_event = { 
 	id = BAS.52
 	title = BAS.52.t 
 	desc = BAS.52.d 
@@ -2331,6 +2314,23 @@ country_event = {
 			}
 		}
 	}
+country_event = { 
+	id = BAS.150
+	title = BAS.150.t 
+	desc = BAS.150.d 
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = BAS.150.a
+		add_political_power = 50
+		add_resource = {
+		type = steel
+		amount = 8
+		state = 172
+		}
+	}
+}
 country_event = { 
 	id = BAS.151
 	title = BAS.151.t 

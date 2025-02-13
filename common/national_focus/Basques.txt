@@ -2144,7 +2144,7 @@ focus_tree = {
 			factor = 95
 		}
 		completion_reward = {
-			country_event = BAS.50
+			country_event = BAS.150
 			add_ideas = BAS_mdr
 			hidden_effect = {
 			BAS = { country_event = { id = BAS.320 days = 100 }}			
@@ -2252,7 +2252,7 @@ focus_tree = {
 			factor = 85
 		}
 		completion_reward = {
-			country_event = BAS.51
+			country_event = BAS.151
 			add_ideas = BAS_fvd
 		}
 	}

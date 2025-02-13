@@ -3144,7 +3144,7 @@ country_event = {#
 		}
 	}
 }
-country_event = { 
+country_event = {
 	id = CAT.200
 	title = CAT.200.t 
 	desc = CAT.200.d 
@@ -3308,7 +3308,7 @@ country_event = {
 		}
 	}
 }
-country_event = { 
+country_event = {#I'm sure this will bring peace and prosperity to Catalonia
 	id = CAT.205
 	title = CAT.205.t 
 	desc = CAT.205.d 

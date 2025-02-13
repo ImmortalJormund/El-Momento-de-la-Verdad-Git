@@ -5360,7 +5360,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Solution_to_Carlism
-		icon = GFX_goal_AUS_carlist_confederalism
+		icon = GFX_goal_AUS_Spanish_Styles
 		available = {  
 		has_government = national_populist
 		}

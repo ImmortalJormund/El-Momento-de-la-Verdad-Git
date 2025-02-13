@@ -2323,6 +2323,10 @@ spriteTypes = {
 		name = "GFX_ideology_iberian_federalism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/iberian_federalism_group.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_soccon_right_georgism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/soccon_right_georgism_group.png"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_autdem_christian_democracy_subtype"

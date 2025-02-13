@@ -657,6 +657,7 @@ ideologies = {
 			enlightened_conservatism_subtype = {can_be_randomly_selected = no} #Enlightened Conservatism
 			noucentisme_subtype = {can_be_randomly_selected = no} #Noucentisme
 			iberian_federalism_subtype = {can_be_randomly_selected = no} #Iberian Federalism
+			soccon_right_georgism_subtype = {can_be_randomly_selected = no}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_CONSERVATIVE_1"

@@ -67,9 +67,45 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_SPR_stratonautical_suit"
 		texturefile = "gfx/event_pictures/Europe/Spain/report_event_SPR_stratonautical_suit.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SPR_AP"
+		texturefile = "gfx/event_pictures/Europe/Spain/report_event_SPR_AP.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SPR_AP1"
+		texturefile = "gfx/event_pictures/Europe/Spain/report_event_SPR_AP1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SPR_AP2"
+		texturefile = "gfx/event_pictures/Europe/Spain/report_event_SPR_AP2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SPR_AP3"
+		texturefile = "gfx/event_pictures/Europe/Spain/report_event_SPR_AP3.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SPR_RE"
+		texturefile = "gfx/event_pictures/Europe/Spain/report_event_SPR_RE.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SPR_RE1"
+		texturefile = "gfx/event_pictures/Europe/Spain/report_event_SPR_RE1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SPR_UMN"
+		texturefile = "gfx/event_pictures/Europe/Spain/report_event_SPR_UMN.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SPR_UMN1"
+		texturefile = "gfx/event_pictures/Europe/Spain/report_event_SPR_UMN1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SPR_UMN2"
+		texturefile = "gfx/event_pictures/Europe/Spain/report_event_SPR_UMN2.png"
 
 	}
-	## SPR - Spain
+	## BAS - Basques
 	spriteType = {
 		name = "GFX_report_event_BAS_shepherd_dog"
 		texturefile = "gfx/event_pictures/Europe/Basque/report_event_BAS_shepherd_dog.png"
