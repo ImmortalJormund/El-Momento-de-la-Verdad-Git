@@ -4839,7 +4839,7 @@ focus_tree = {
 		id = SPR_new_spanish_nationalism
 		icon = GFX_CAR_conquer_mexico
 		available = {
-			has_country_flag = SPR_absolutism
+			has_country_flag = SPR_absolute_monarchy
 		}
 		prerequisite = { focus = SPR_absolutism }
 		relative_position_id = SPR_absolutism
@@ -4929,7 +4929,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-			add_political_power = 69
+			add_political_power = 15
 			}
 	}
 	focus = {
@@ -5014,7 +5014,11 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-		country_event = sprd.230		
+		if = {
+			limit = { has_country_flag = SPR_King_Juan }
+			country_event = sprd.230
+			else = { country_event = sprd.248 }
+			}		
 		add_ideas = SPR_dismantle_militias
 			}
 	}
@@ -5057,7 +5061,11 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-		country_event = sprd.233	
+		if = {
+			limit = { has_country_flag = SPR_King_Juan }
+			country_event = sprd.233
+			else = { country_event = sprd.249 }
+			}
 		add_ideas = SPR_ideas_of_dictablanda
 			}
 	}
@@ -5084,7 +5092,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-		add_political_power = 69	
+		add_political_power = 15
 			}
 	}
 	focus = {
@@ -5171,7 +5179,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-		add_political_power = 69	
+		add_political_power = 15	
 			}
 	}
 	focus = {
@@ -5191,7 +5199,11 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-		country_event = sprd.236	
+		if = {
+			limit = { has_country_flag = SPR_King_Juan }
+			country_event = sprd.236
+			else = { country_event = sprd.251 }
+			}
 		add_ideas = SPR_the_second_expulsion
 			}
 	}
@@ -5255,7 +5267,11 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-		country_event = sprd.237
+		if = {
+			limit = { has_country_flag = SPR_King_Juan }
+			country_event = sprd.237
+			else = { country_event = sprd.250 }
+			}
 		add_ideas = SPR_hyper_militarism		
 			}
 	}
@@ -5313,7 +5329,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-		add_political_power = 69	
+		add_political_power = 15	
 			}
 	}
 	focus = {
@@ -5333,7 +5349,11 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-		country_event = sprd.241
+		if = {
+			limit = { has_country_flag = SPR_King_Juan }
+			country_event = sprd.241
+			else = { country_event = sprd.243 }
+			}
 		add_ideas = SPR_Mediterranean_examples
 			}
 	}
@@ -5354,7 +5374,11 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-		country_event = sprd.242
+		if = {
+			limit = { has_country_flag = SPR_King_Juan }
+			country_event = sprd.242
+			else = { country_event = sprd.244 }
+			}
 		add_ideas = SPR_mystical_totalitarianism		
 			}
 	}
@@ -5375,8 +5399,12 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-		country_event = sprd.240	
+		if = {
+			limit = { has_country_flag = SPR_King_Juan }
+			country_event = sprd.240
+			else = { country_event = sprd.246 }
 			}
+		}
 	}
 	focus = {
 		id = SPR_eradicate_the_spawns_of_syndicalism
