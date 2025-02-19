@@ -2641,6 +2641,11 @@ sprd.1172.t:0 "Islas Carolinas"
 sprd.1172.d:0 "The German government has agreed to transfer the Micronesian island chain Islas Carolinas to us. A small naval force from Barcelona will depart today and sail through the Red Sea to the Asian waters. They will install a Spanish governor to the islands and man the local garrison once the German colonial troops leave the islands, with possible further reinforcements departing once the islands are fully secured. The local population is unlikely to cause issues, but the conversion from a German colonial machine to a Spanish one will take a long while."
 sprd.1172.a:0 "Excellent news!"
 
+sprd.1174.t:0 "To Reforge an Union"
+sprd.1174.d:0 "As a new Spain rises from the ashes, the nationalist forces now governing the kingdom have triumphed over their many adversaries. With their authoritarian rule secure, the party now looks towards new conquests, hungry to return to the imperial glory of Spain’s past and forge a new empire worthy of the world’s adoration. Among the many potential targets for this expansion is Portugal, long standing at the edge of Iberia, and formerly an integral part of the Kingdoms of Spain, this nation slowly drifted away from our grasp and despite attempts to reignite relations, such as the Iberian Union project, the nations of Spain and Portugal have remained separate. Yet to many, this reality is unacceptable, as the destiny of Portugal is intrinsically linked to that of Spain, and as such, many view a military conquest of this strip of land at the end of Europe to be the glorious re-entry to global politics that Spain needs. Yet the moderates within the new regime have viewed such attacks as illegitimate, as the Portuguese have been good neighbours to us and did not use our recent weakness to their advantage. Would it really be worthwhile to throw such long-lasting friendship away just to sate imperialist ambitions?"
+sprd.1174.a:0 "We shall march to the coast of Atlantic and rebuild the Union of Iberia!"
+sprd.1174.b:0 "Moderates are right, cooler heads must prevail."
+
 
 ### Cosmetic Tags ###
 SPR_republic_national_populist:0 "Spanish Republic"
