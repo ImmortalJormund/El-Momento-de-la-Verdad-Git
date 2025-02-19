@@ -5302,7 +5302,7 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
-		country_event = sprd.242	
+		country_event = sprd.1174	
 		add_ideas = SPR_Our_Rule_Absolute		
 			}
 	}
