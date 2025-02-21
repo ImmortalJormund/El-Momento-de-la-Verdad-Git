@@ -185,6 +185,12 @@ guiTypes = {
 		}
 		
 		iconType = {
+			name = "Joshua_N_Haldeman"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Canada_Joshua_N_Haldeman"
+		}
+		
+		iconType = {
 			name = "Adrien_Arcand"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Canada_Adrien_Arcand_KX"
@@ -247,6 +253,18 @@ guiTypes = {
 		}
 		
 		iconType = {
+			name = "Frederick_Gordon_Bradley"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Newfoundland_Frederick_Gordon_Bradley"
+		}
+		
+		iconType = {
+			name = "Thomas_Nangle"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Newfoundland_Thomas_Nangle"
+		}
+		
+		iconType = {
 			name = "Frederick_C_Alderdice"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Newfoundland_Frederick_C_Alderdice"
@@ -256,6 +274,18 @@ guiTypes = {
 			name = "Walter_Stanley_Monroe"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Newfoundland_Walter_Stanley_Monroe"
+		}
+		
+		iconType = {
+			name = "Albert_Boyle_Butt"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Newfoundland_Albert_Boyle_Butt"
+		}
+		
+		iconType = {
+			name = "Harry_Mews"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Newfoundland_Harry_Mews"
 		}
 		
 		### Quebec ###
@@ -506,7 +536,7 @@ guiTypes = {
 		iconType = { #Has a Portrait, but won't actually appear in game
 			name = "Manfred_Freiherr_von_Richthofen"
 			position = { x = 8 y = 10 }
-			spriteType = "GFX_Portrait_Germany_Manfred_von_Richtofen_Kanzler"
+			spriteType = "GFX_Portrait_Germany_Manfred_von_Richthofen_Kanzler"
 		}
 		
 		iconType = { #Has a Portrait, but won't actually appear in game
@@ -838,6 +868,12 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "Peter_Fraser"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_NZL_Peter_Fraser"
+		}
+
+		iconType = {
 			name = "Robert_Begg"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_NZL_Robert_Begg"
@@ -871,6 +907,12 @@ guiTypes = {
 			name = "Colin_Scrimgeour"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_NZL_Colin_Scrimgeour"
+		}
+
+		iconType = {
+			name = "Alexander_Scott"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_NZL_Alexander_Scott"
 		}
 
 		### Liberia
@@ -1136,7 +1178,7 @@ guiTypes = {
 		iconType = { #
 			name = "Karl_Renner"
 			position = { x = 8 y = 10 }
-			spriteType = "GFX_Portrait_AUS_Karl_Renner"
+			spriteType = "GFX_Portrait_AUS_Karl_Renner_KX"
 		}
 		
 		iconType = { #
@@ -1865,6 +1907,12 @@ guiTypes = {
 			name = "Clyde_Tingley"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_CAL_Clyde_Tingley"
+		}
+		
+		iconType = { #
+			name = "James_E_Murray"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_CAL_James_Murray"
 		}
 		
 		iconType = { #
@@ -2940,6 +2988,31 @@ guiTypes = {
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_SPR_Jose_Maria_Albinana"
 		}
+		iconType = { #
+			name = "Jose_Calvo_Sotelo"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SPR_Jose_Calvo_Sotelo"
+		}
+		iconType = { #
+			name = "Ramiro_de_Maeztu"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SPR_Ramiro_de_Maeztu"
+		}
+		iconType = { #
+			name = "Jose_Sanjurjo_Sacanell"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SPR_Jose_Sanjurjo_Sacanell"
+		}
+		iconType = { #
+			name = "Alvaro_de_Figueroa"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SPR_Alvaro_de_Figueroa"
+		}
+		iconType = { #
+			name = "Jose_Martinez_de_Velasco"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SPR_Jose_Martinez_de_Velasco"
+		}
 		
 		### Carlist Spain ###
 		
@@ -3141,6 +3214,16 @@ guiTypes = {
 			name = "Viktor_Baydalakov"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Viktor_Baydalakov_portrait"
+		}
+		iconType = { #
+			name = "Patriarch_Sergius"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Sergius_portrait"
+		}
+		iconType = { #
+			name = "Vladimir_Purishkevich"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Purishkevich_portrait"
 		}
 		
 		### South Africa ###
@@ -3834,9 +3917,9 @@ guiTypes = {
 		}
 		
 		iconType = { #
-			name = "Kashiraj_Pradhan"
+			name = "Nahakul_Pradhan"
 			position = { x = 8 y = 10 }
-			spriteType = "GFX_Portrait_SKM_Kashiraj_Pradhan"
+			spriteType = "GFX_Portrait_SKM_Nahakul_Pradhan"
 		}
 		
 		iconType = { #
