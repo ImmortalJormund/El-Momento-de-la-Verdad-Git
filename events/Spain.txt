@@ -8388,7 +8388,7 @@ country_event = {
 }
 	country_event = { #oran expansion
 	id = sprd.260
-	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.195" }
+	immediate = { country_event = { id = sprd.267 days = 35 } }
 	title = sprd.260.t
 	desc = sprd.260.d
 	picture = GFX_report_event_SPR_AP3
@@ -8579,6 +8579,21 @@ country_event = {
 		}
 	}
 }
+	country_event = { #agrarian reform time
+	id = sprd.267
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sprd.195" }
+	title = sprd.267.t
+	desc = sprd.267.d
+	picture = GFX_report_event_generic_farming
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = { #yah
+		name = sprd.267.a
+		complete_national_focus = SPR_Second_Phase_of_Reform
+		}
+	}
 country_event = {# 
 	id = sprd.281
 	immediate = {log = "[GetDateText]: [Root.GetName]: event sprd.281"}
