@@ -463,6 +463,7 @@ focus_tree = {
 		id = CAT_Democracy_of_Catalonia
 		icon = GFX_goal_NIC_Stable_Democracy
 		relative_position_id = CAT_Independence
+		allow_branch = { has_country_flag = CAT_full_tree }
 		x = 26
 		y = 0
 		available = {
@@ -1926,8 +1927,9 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_JEREC_coup
-		icon = GFX_BBR_black_national_syndicalism
+		icon = GFX_goal_CAT_Catalonia_under_EC
 		relative_position_id = CAT_Independence
+		allow_branch = { has_country_flag = CAT_full_tree }
 		x = 0
 		y = 6
 		available = {
@@ -1944,7 +1946,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Totalitarianism
-		icon = GFX_goal_FRA_sorelians
+		icon = GFX_goal_CAT_Nationalist_totalitarians_victorious
 		relative_position_id = CAT_JEREC_coup
 		x = 2
 		y = 1
@@ -1967,7 +1969,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Cult_of_the_Ideal_Catalan
-		icon = GFX_goal_FRA_clan_belonging
+		icon = GFX_goal_CAT_Cult_of_ideal_catalan
 		relative_position_id = CAT_JEREC_coup
 		x = 4
 		y = 2
@@ -1988,7 +1990,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Anti_Spanish_Propaganda
-		icon = GFX_goal_NIC_Removing_Cult_Personality
+		icon = GFX_goal_CAT_Inferiority_of_spanish_blood
 		relative_position_id = CAT_JEREC_coup
 		x = 2
 		y = 2
@@ -2009,7 +2011,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Dreams_of_Totalitarian_Catalonia
-		icon = GFX_goal_FRA_red_imperialism
+		icon = GFX_goal_CAT_Dream_of_totalitarian_catalonia
 		relative_position_id = CAT_JEREC_coup
 		x = 1
 		y = 3
@@ -2029,7 +2031,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Sway_Nondemocratic_Nosaltres_Sols
-		icon = GFX_goal_FIU_popular_internationalism
+		icon = GFX_goal_CAT_True_believers_among_Nosaltres_Sols
 		relative_position_id = CAT_JEREC_coup
 		x = 3
 		y = 3
@@ -2053,7 +2055,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Sorelianism_Without_French_Supremacism
-		icon = GFX_goals_FRA_valois_is_gone
+		icon = GFX_goal_CAT_Sorelianism_without_french_delusions
 		relative_position_id = CAT_JEREC_coup
 		x = 5
 		y = 3
@@ -2077,7 +2079,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Mass_Militarization
-		icon = GFX_goal_ALB_Collective_Militarization
+		icon = GFX_goal_CAT_Everything_for_warriors
 		relative_position_id = CAT_JEREC_coup
 		x = 4
 		y = 4
@@ -2103,7 +2105,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Unyielding_Statism
-		icon = GFX_goal_COR_State_Supreme_Orderer
+		icon = GFX_goal_CAT_Overbearing_state
 		relative_position_id = CAT_JEREC_coup
 		x = 2
 		y = 4
@@ -2130,7 +2132,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_The_Liberation_War
-		icon = GFX_goal_CSA_tanks_of_the_revolution
+		icon = GFX_goal_CAT_Liberation_of_occitania
 		relative_position_id = CAT_JEREC_coup
 		x = 3
 		y = 5
@@ -2154,7 +2156,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_National_Syndicalism
-		icon = GFX_goal_YUC_Adapting_Orthodoxies_Charters
+		icon = GFX_goal_CAT_Orthodox_EC
 		relative_position_id = CAT_JEREC_coup
 		x = -2
 		y = 1
@@ -2177,7 +2179,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Dismantle_Misguided_ERC
-		icon = GFX_HUN_social_democracy
+		icon = GFX_goal_CAT_Dismantle_pretenders_to_Macia_legacy
 		relative_position_id = CAT_JEREC_coup
 		x = -4
 		y = 2
@@ -2198,7 +2200,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Full_Destruction_of_Anarchism
-		icon = GFX_goal_NFA_strike_hidden_socialism
+		icon = GFX_goal_CAT_Stomp_out_anarchists
 		relative_position_id = CAT_JEREC_coup
 		x = -2
 		y = 2
@@ -2219,7 +2221,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Peninsula_Free_of_Imperialists
-		icon = GFX_BBR_socialist_vanguard
+		icon = GFX_goal_CAT_No_Spaniards_below_pyrenees
 		relative_position_id = CAT_JEREC_coup
 		x = -1
 		y = 3
@@ -2240,7 +2242,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Joining_Charterist_Brothers
-		icon = GFX_BBR_internationale_collaboration
+		icon = GFX_goal_CAT_Charterist_brotherhood
 		relative_position_id = CAT_JEREC_coup
 		x = -3
 		y = 3
@@ -2263,7 +2265,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_State_Under_a_Paramilitary
-		icon = GFX_goal_COR_Socialist_Knife
+		icon = GFX_goal_CAT_Escamot_surviellance
 		relative_position_id = CAT_JEREC_coup
 		x = -5
 		y = 3
@@ -2287,7 +2289,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Cult_of_Catalan_Youth
-		icon = GFX_goal_NYC_Radical_Internationalism
+		icon = GFX_goal_CAT_Celebrate_Catalan_youth
 		relative_position_id = CAT_JEREC_coup
 		x = -4
 		y = 4
@@ -2314,7 +2316,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Nationalism_Stems_from_Extremism
-		icon = GFX_goal_WHR_Terror_Without_Motive
+		icon = GFX_goal_CAT_Nationalism_from_extremism
 		relative_position_id = CAT_JEREC_coup
 		x = -2
 		y = 4
@@ -2341,7 +2343,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Burying_Spain_for_Good
-		icon = GFX_goal_FRA_kill_the_eagle
+		icon = GFX_goal_CAT_Euthanize_the_rotting_corpse
 		relative_position_id = CAT_JEREC_coup
 		x = -3
 		y = 5
@@ -2367,6 +2369,7 @@ focus_tree = {
 		id = CAT_Catalan_Revolution
 		icon = GFX_goal_MEX_Red_Redder_Revolution
 		relative_position_id = CAT_Democracy_of_Catalonia
+		allow_branch = { has_country_flag = CAT_full_tree }
 		x = 0
 		y = 8
 		available = {
@@ -3294,8 +3297,9 @@ focus_tree = {
 		}
 		focus = {
 		id = CAT_Batet_Restores_Order
-		icon = GFX_goal_NFA_Petain_Military_Genius
+		icon = GFX_goal_CAT_Exercit_popular_restores_order
 		relative_position_id = CAT_Catalan_Revolution
+		allow_branch = { has_country_flag = CAT_full_tree }
 		x = -16
 		y = 1
 		available = {
@@ -3316,7 +3320,7 @@ focus_tree = {
 		}
 		focus = {
 		id = CAT_Avoid_Unnecessary_Bloodshed
-		icon = GFX_goal_NIC_Strong_Socdem_Military
+		icon = GFX_goal_CAT_Avoid_bloodshed
 		relative_position_id = CAT_Batet_Restores_Order
 		x = 2
 		y = 1
@@ -3337,7 +3341,7 @@ focus_tree = {
 		}
 		focus = {
 		id = CAT_Dismantle_the_Escamots
-		icon = GFX_goal_CAN_cleanse_red_parasites
+		icon = GFX_goal_CAT_Decapitate_escamot_leadership
 		relative_position_id = CAT_Batet_Restores_Order
 		x = -2
 		y = 1
@@ -3357,7 +3361,7 @@ focus_tree = {
 		}
 		focus = {
 		id = CAT_Evacuate_Affected_Areas
-		icon = GFX_goal_NYC_Enforce_Civil_Rights
+		icon = GFX_goal_CAT_Evac_corridors_out_of_Barcelona
 		relative_position_id = CAT_Batet_Restores_Order
 		x = 0
 		y = 1
@@ -3378,7 +3382,7 @@ focus_tree = {
 		}
 		focus = {
 		id = CAT_Manhunt_for_Captain_Cojones
-		icon = GFX_RUS_Witch_Hunt
+		icon = GFX_goal_CAT_Manhunt_for_captain_balls
 		relative_position_id = CAT_Batet_Restores_Order
 		x = 0
 		y = 2
@@ -3404,7 +3408,7 @@ focus_tree = {
 		}
 		focus = {
 		id = CAT_Expel_Communard_Interlopers
-		icon = GFX_goal_AUS_decapitate_internationale
+		icon = GFX_goal_CAT_Expel_communard_vermin
 		relative_position_id = CAT_Batet_Restores_Order
 		x = 1
 		y = 3
@@ -3424,7 +3428,7 @@ focus_tree = {
 		}
 		focus = {
 		id = CAT_Purge_Officers_off_Ideologues
-		icon = GFX_goal_ALB_Purge_Purgers
+		icon = GFX_goal_CAT_Army_free_of_agitators
 		relative_position_id = CAT_Batet_Restores_Order
 		x = -1
 		y = 3
@@ -3445,7 +3449,7 @@ focus_tree = {
 		}
 		focus = {
 		id = CAT_Military_Born_Out_of_Pacifism
-		icon = GFX_goal_GUA_Pacifism_World_Stage
+		icon = GFX_goal_CAT_Militarism_born_from_pacifism
 		relative_position_id = CAT_Batet_Restores_Order
 		x = 2
 		y = 4
@@ -3469,7 +3473,7 @@ focus_tree = {
 		}
 		focus = {
 		id = CAT_Disband_All_Paramilitaries
-		icon = GFX_goal_AUS_Police_Paramilitarism
+		icon = GFX_goal_CAT_No_room_for_paramilitaries
 		relative_position_id = CAT_Batet_Restores_Order
 		x = 0
 		y = 4
@@ -3493,7 +3497,7 @@ focus_tree = {
 		}
 		focus = {
 		id = CAT_Install_Loyal_Civilian_Administrators
-		icon = GFX_goal_NFA_Civilianisation_Service_France
+		icon = GFX_goal_CAT_Admin_staffed_by_moderates
 		relative_position_id = CAT_Batet_Restores_Order
 		x = -2
 		y = 4
@@ -3517,7 +3521,7 @@ focus_tree = {
 		}
 		focus = {
 		id = CAT_Order_Returns_to_Catalonia
-		icon = GFX_GRE_provisional_democratic_government
+		icon = GFX_goal_CAT_Retvrn_to_democracy
 		relative_position_id = CAT_Batet_Restores_Order
 		x = -1
 		y = 5
@@ -3546,7 +3550,7 @@ focus_tree = {
 		}
 		focus = {
 		id = CAT_Maintain_Military_Rule_Little_Longer
-		icon = GFX_goal_IRE_emergency
+		icon = GFX_goal_CAT_Republic_with_temp_strongman
 		relative_position_id = CAT_Batet_Restores_Order
 		x = 1
 		y = 5
@@ -3578,6 +3582,7 @@ focus_tree = {
 		id = CAT_Economy_Free_of_Spain
 		icon = GFX_RUS_Economic_Draft_Scheme
 		relative_position_id = CAT_Democracy_of_Catalonia
+		allow_branch = { has_country_flag = CAT_full_tree }
 		x = 24
 		y = 0
 		available = {
@@ -3893,6 +3898,7 @@ focus_tree = {
 		id = CAT_Exercit_Popular
 		icon = GFX_focus_HKG_Curtail_Military
 		relative_position_id = CAT_Economy_Free_of_Spain
+		allow_branch = { has_country_flag = CAT_full_tree }
 		x = -4
 		y = 7
 		available = {
@@ -4131,6 +4137,7 @@ focus_tree = {
 		id = CAT_Catalan_Irredentism
 		icon = GFX_UKR_Smash_Russian_Imperialism
 		relative_position_id = CAT_Economy_Free_of_Spain
+		allow_branch = { has_country_flag = CAT_full_tree }
 		x = 10
 		y = 7
 		available = {
@@ -4598,8 +4605,9 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Spanish_Coup
-		icon = GFX_goal_SPR_absolute_spain
+		icon = GFX_goal_CAT_Hispanic_officers_oust_Batet
 		relative_position_id = CAT_JEREC_coup
+		allow_branch = { has_country_flag = CAT_full_tree }
 		x = 0
 		y = 7
 		available = { 
@@ -4620,7 +4628,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Working_in_the_Shadows
-		icon = GFX_goal_NFA_rule_from_shadows
+		icon = GFX_goal_CAT_Iron_fist_shrouded_in_shadows
 		relative_position_id = CAT_Spanish_Coup
 		x = 2
 		y = 1
@@ -4638,7 +4646,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Liquidation_of_Nationalist_Firebrands
-		icon = GFX_goal_SRI_liquidate_northern_law_order
+		icon = GFX_goal_CAT_Suffocating_the_fire_of_Catalanism
 		relative_position_id = CAT_Spanish_Coup
 		x = -2
 		y = 1
@@ -4655,7 +4663,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Finding_Useful_Idiots
-		icon = GFX_goal_generic_indoctrinate_minds_manipulate_people
+		icon = GFX_goal_CAT_Delegating_power_to_loyal_civilians
 		relative_position_id = CAT_Spanish_Coup
 		x = 0
 		y = 2
@@ -4678,7 +4686,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_MonSocs
-		icon = GFX_goal_HON_Burn_Conservative_Socialists
+		icon = GFX_goal_CAT_The_monarcho_labourites
 		relative_position_id = CAT_Spanish_Coup
 		x = 1
 		y = 3
@@ -4696,7 +4704,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_The_Kleptocrat
-		icon = GFX_goal_NYC_Politics_of_Corruption
+		icon = GFX_goal_CAT_The_political_chamelion
 		relative_position_id = CAT_Spanish_Coup
 		x = -1
 		y = 3
@@ -4714,7 +4722,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Assert_Dominance_over_Liga
-		icon = GFX_goal_FRA_union_dominance
+		icon = GFX_goal_CAT_Pressing_Liga_into_the_fold
 		relative_position_id = CAT_Spanish_Coup
 		x = 0
 		y = 4
@@ -4735,7 +4743,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Blame_ERC
-		icon = GFX_goal_NIC_Socialism_Death
+		icon = GFX_goal_CAT_Companys_mistakes_laid_bare
 		relative_position_id = CAT_Spanish_Coup
 		x = 2
 		y = 4
@@ -4756,7 +4764,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Temporary_Alliance_With_Carlists
-		icon = GFX_goal_AUS_Spanish_Styles
+		icon = GFX_goal_CAT_Temporary_red_beret_allies
 		relative_position_id = CAT_Spanish_Coup
 		x = -2
 		y = 4
@@ -4777,7 +4785,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Dignified_Fairer_Sex
-		icon = GFX_goal_AUS_Push_Forward_Womens_Movement
+		icon = GFX_goal_CAT_Dignified_fairer_sex
 		relative_position_id = CAT_Spanish_Coup
 		x = -1
 		y = 5
@@ -4795,7 +4803,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Love_of_Catalonia
-		icon = GFX_RUS_Revive_National_Identity
+		icon = GFX_goal_CAT_Hispano_catalanism
 		relative_position_id = CAT_Spanish_Coup
 		x = 1
 		y = 5
@@ -4812,7 +4820,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Improve_Worker_Neighbourhoods
-		icon = GFX_goal_CAN_National_Housing_Act
+		icon = GFX_goal_CAT_Hovels_to_haciendas
 		relative_position_id = CAT_Spanish_Coup
 		x = 0
 		y = 6
@@ -4833,7 +4841,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Moral_Working_Class
-		icon = GFX_goal_WHR_Fair_Division_Labour
+		icon = GFX_goal_CAT_Piety_of_the_proletariat
 		relative_position_id = CAT_Spanish_Coup
 		x = 2
 		y = 6
@@ -4854,7 +4862,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Stifle_Cynicism
-		icon = GFX_goal_AST_end_the_remnants_of_bourgeois_power
+		icon = GFX_goal_CAT_Strangle_snake_of_cynicism
 		relative_position_id = CAT_Spanish_Coup
 		x = -2
 		y = 6
@@ -4874,7 +4882,7 @@ focus_tree = {
 		}
 	focus = {
 		id = CAT_Monarchy_and_Labour
-		icon = GFX_RUS_Knights_Of_Socialism
+		icon = GFX_goal_CAT_Monarchy_and_labour
 		relative_position_id = CAT_Spanish_Coup
 		x = 0
 		y = 7
@@ -4900,6 +4908,7 @@ focus_tree = {
 		id = CAT_Capita_Collons_Reign_of_Terror
 		icon = GFX_goal_CAT_Capt_Balls_raises_the_black_banner
 		relative_position_id = CAT_Batet_Restores_Order
+		allow_branch = { has_country_flag = CAT_full_tree }
 		x = 0
 		y = 7
 		available = { 
@@ -5122,6 +5131,7 @@ focus_tree = {
 		id = CAT_Federal_Catalonia
 		icon = GFX_goal_CAN_Open_Federal_Relief_Camp
 		relative_position_id = CAT_Economy_Free_of_Spain
+		allow_branch = { has_country_flag = CAT_full_tree }
 		x = 15
 		y = 0
 		available = {
@@ -5663,6 +5673,7 @@ focus_tree = {
 		id = CAT_Socialist_Foreign_Policy
 		icon = GFX_TRM_Fate_Of_Unions
 		relative_position_id = CAT_Catalan_Irredentism
+		allow_branch = { has_country_flag = CAT_full_tree }
 		x = 0
 		y = 8
 		available = {
@@ -5950,6 +5961,7 @@ focus_tree = {
 		id = CAT_Monarchist_Catalonia
 		icon = GFX_goal_BRG_Crown
 		relative_position_id = CAT_Capita_Collons_Reign_of_Terror
+		allow_branch = { has_country_flag = CAT_full_tree }
 		x = 15
 		y = 1
 		available = {
